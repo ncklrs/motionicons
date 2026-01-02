@@ -1,0 +1,144 @@
+{
+  "name": "motion-icons",
+  "version": "1.0.0",
+  "description": "A comprehensive library of animated icons powered by Motion for React",
+  "icons": {
+    "arrow-left": {
+      "name": "ArrowLeft",
+      "file": "icons/arrow-left.tsx",
+      "animationType": "translate",
+      "tags": ["navigation", "back", "previous", "left"]
+    },
+    "arrow-right": {
+      "name": "ArrowRight",
+      "file": "icons/arrow-right.tsx",
+      "animationType": "translate",
+      "tags": ["navigation", "forward", "next", "right"]
+    },
+    "bell": {
+      "name": "Bell",
+      "file": "icons/bell.tsx",
+      "animationType": "shake",
+      "tags": ["notification", "alert", "ring", "alarm"]
+    },
+    "check": {
+      "name": "Check",
+      "file": "icons/check.tsx",
+      "animationType": "draw",
+      "tags": ["success", "complete", "done", "confirm"]
+    },
+    "chevron-down": {
+      "name": "ChevronDown",
+      "file": "icons/chevron-down.tsx",
+      "animationType": "translate",
+      "tags": ["navigation", "expand", "dropdown", "down"]
+    },
+    "chevron-up": {
+      "name": "ChevronUp",
+      "file": "icons/chevron-up.tsx",
+      "animationType": "translate",
+      "tags": ["navigation", "collapse", "up"]
+    },
+    "copy": {
+      "name": "Copy",
+      "file": "icons/copy.tsx",
+      "animationType": "scale",
+      "tags": ["clipboard", "duplicate", "paste"]
+    },
+    "download": {
+      "name": "Download",
+      "file": "icons/download.tsx",
+      "animationType": "translate",
+      "tags": ["file", "save", "export", "down"]
+    },
+    "eye": {
+      "name": "Eye",
+      "file": "icons/eye.tsx",
+      "animationType": "scale",
+      "tags": ["visibility", "show", "view", "visible"]
+    },
+    "eye-off": {
+      "name": "EyeOff",
+      "file": "icons/eye-off.tsx",
+      "animationType": "opacity",
+      "tags": ["visibility", "hide", "hidden", "invisible"]
+    },
+    "heart": {
+      "name": "Heart",
+      "file": "icons/heart.tsx",
+      "animationType": "pulse",
+      "tags": ["like", "favorite", "love", "social"]
+    },
+    "loader": {
+      "name": "Loader",
+      "file": "icons/loader.tsx",
+      "animationType": "spin",
+      "tags": ["loading", "spinner", "wait", "progress"]
+    },
+    "menu": {
+      "name": "Menu",
+      "file": "icons/menu.tsx",
+      "animationType": "stagger",
+      "tags": ["hamburger", "navigation", "toggle"]
+    },
+    "minus": {
+      "name": "Minus",
+      "file": "icons/minus.tsx",
+      "animationType": "draw",
+      "tags": ["subtract", "remove", "decrease", "collapse"]
+    },
+    "plus": {
+      "name": "Plus",
+      "file": "icons/plus.tsx",
+      "animationType": "draw",
+      "tags": ["add", "create", "new", "expand"]
+    },
+    "refresh": {
+      "name": "Refresh",
+      "file": "icons/refresh.tsx",
+      "animationType": "rotate",
+      "tags": ["reload", "sync", "update", "retry"]
+    },
+    "search": {
+      "name": "Search",
+      "file": "icons/search.tsx",
+      "animationType": "scale",
+      "tags": ["find", "lookup", "magnify", "query"]
+    },
+    "settings": {
+      "name": "Settings",
+      "file": "icons/settings.tsx",
+      "animationType": "rotate",
+      "tags": ["preferences", "config", "gear", "options"]
+    },
+    "star": {
+      "name": "Star",
+      "file": "icons/star.tsx",
+      "animationType": "pulse",
+      "tags": ["favorite", "rating", "bookmark"]
+    },
+    "upload": {
+      "name": "Upload",
+      "file": "icons/upload.tsx",
+      "animationType": "translate",
+      "tags": ["file", "import", "send", "up"]
+    },
+    "x": {
+      "name": "X",
+      "file": "icons/x.tsx",
+      "animationType": "draw",
+      "tags": ["close", "cancel", "remove", "delete"]
+    }
+  },
+  "animationTypes": [
+    "draw",
+    "rotate",
+    "pulse",
+    "translate",
+    "scale",
+    "stagger",
+    "opacity",
+    "shake",
+    "spin"
+  ]
+}

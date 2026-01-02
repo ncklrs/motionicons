@@ -1,0 +1,39 @@
+"use client"
+
+import { motion } from "motion/react"
+import { useIconAnimation } from "../hooks/useIconAnimation"
+import type { IconProps } from "../lib/types"
+
+export const Airplay = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  motionType = 'scale',
+  trigger = 'hover',
+  'aria-label': ariaLabel
+}: IconProps) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, motionType, trigger)
+  const isDraw = motionType === 'draw'
+
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${className || ''} ${isDraw ? 'draw-animation' : ''}`.trim()}
+      {...(!isDraw ? animationProps : drawWrapperProps)}
+      role={ariaLabel ? "img" : undefined}
+      aria-label={ariaLabel}
+      aria-hidden={ariaLabel ? undefined : true}
+    >
+      <motion.path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.polygon points="12 15 17 21 7 21 12 15" {...(isDraw ? pathAnimationProps : {})} />
+    </motion.svg>
+  )
+}
