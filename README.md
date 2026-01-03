@@ -44,7 +44,7 @@ pnpm add livelyicons motion react react-dom
 yarn add livelyicons motion react react-dom
 ```
 
-### Option 2: shadcn/ui Registry (Recommended for shadcn projects)
+### Option 2: shadcn/ui Registry (Recommended for shadcn projects) - COMING SOON
 
 Install individual icons or bundles directly into your project:
 
@@ -94,7 +94,7 @@ function App() {
 }
 ```
 
-### shadcn Registry Usage
+### shadcn Registry Usage - COMING SOON
 
 ```tsx
 // After installing via shadcn CLI
