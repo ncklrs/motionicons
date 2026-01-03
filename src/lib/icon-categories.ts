@@ -193,6 +193,7 @@ export const iconCategories: Record<string, IconCategory[]> = {
   Award: ['social', 'sports'],
   Crown: ['social'],
   Gift: ['social', 'shopping'],
+  Lively: ['social', 'nature'],
 
   // Files & Documents
   File: ['files'],
