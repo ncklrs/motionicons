@@ -2,6 +2,14 @@
   "name": "livelyicons",
   "version": "1.0.1",
   "description": "A comprehensive library of animated icons powered by Lively for React",
+  "homepage": "https://livelyicons.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livelyicons/icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/livelyicons/icons/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
