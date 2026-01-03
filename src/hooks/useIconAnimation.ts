@@ -50,7 +50,7 @@ export interface UseIconAnimationReturn {
   transition: TransitionConfig | undefined;
 
   /**
-   * Pre-built variants from the motion preset (based on motionType)
+   * Pre-built variants from the motion preset (based on lively)
    */
   presetVariants: AnimationVariants | undefined;
 
@@ -86,7 +86,7 @@ export interface UseIconAnimationReturn {
  * 3. System prefers-reduced-motion preference
  *
  * @param animated - Optional override from component props
- * @param motionType - Optional motion type to use preset variants
+ * @param lively - Optional motion type to use preset variants
  * @returns Animation state and helper functions
  *
  * @example
@@ -104,7 +104,7 @@ export interface UseIconAnimationReturn {
  * // Using preset motion type
  * const { isAnimated, presetVariants, presetTransition } = useIconAnimation(
  *   props.animated,
- *   props.motionType
+ *   props.lively
  * );
  *
  * return (
@@ -118,14 +118,14 @@ export interface UseIconAnimationReturn {
  */
 export function useIconAnimation(
   animated?: boolean,
-  motionType: MotionType = 'scale',
+  lively: MotionType = 'scale',
   trigger: TriggerType = 'hover'
 ): UseIconAnimationReturn {
   const context = useIconContext();
   const prefersReducedMotion = useReducedMotion();
 
   // Get the motion preset based on type
-  const preset = getMotionPreset(motionType);
+  const preset = getMotionPreset(lively);
 
   /**
    * Determine final animation state
@@ -240,7 +240,7 @@ export function useIconAnimation(
    * Uses variants so parent hover triggers child animations
    */
   const getPathAnimationProps = (): AnimationProps => {
-    if (!isAnimated || motionType !== 'draw') {
+    if (!isAnimated || lively !== 'draw') {
       return {};
     }
 
@@ -320,7 +320,7 @@ export function useIconAnimation(
    * Parent needs whileHover/whileInView to propagate to children
    */
   const getDrawWrapperProps = (): AnimationProps => {
-    if (!isAnimated || motionType !== 'draw') {
+    if (!isAnimated || lively !== 'draw') {
       return {};
     }
 

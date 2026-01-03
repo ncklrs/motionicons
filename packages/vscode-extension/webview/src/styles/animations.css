@@ -1,0 +1,569 @@
+/**
+ * MotionIcon Animation Presets - CSS Keyframe Animations
+ *
+ * Replicates the 9 motion presets from the MotionIcons library for webview preview.
+ * Based on motion-presets.ts specifications.
+ */
+
+/* ==========================================================================
+   CSS Custom Properties for Animation Tuning
+   ========================================================================== */
+
+:root {
+  /* Spring-like durations approximating motion/react springs */
+  --motion-duration-bouncy: 0.35s;
+  --motion-duration-soft: 0.4s;
+  --motion-duration-snappy: 0.25s;
+
+  /* Animation values */
+  --motion-scale-hover: 1.15;
+  --motion-rotate-angle: 180deg;
+  --motion-translate-x: 2px;
+  --motion-translate-y: -2px;
+  --motion-shake-distance: 3px;
+  --motion-bounce-height: -6px;
+  --motion-pulse-scale: 1.1;
+  --motion-pulse-opacity: 0.8;
+
+  /* Easing curves */
+  --ease-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-snappy: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   Keyframe Definitions
+   ========================================================================== */
+
+/* Scale - Spring bounce effect */
+@keyframes scale-in {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(var(--motion-scale-hover));
+  }
+}
+
+@keyframes scale-out {
+  0% {
+    transform: scale(var(--motion-scale-hover));
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-loop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(var(--motion-scale-hover));
+  }
+}
+
+/* Rotate - 180 degree rotation */
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(var(--motion-rotate-angle));
+  }
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(var(--motion-rotate-angle));
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-loop {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(var(--motion-rotate-angle));
+  }
+}
+
+/* Translate - Quick snap movement */
+@keyframes translate-in {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--motion-translate-x), var(--motion-translate-y));
+  }
+}
+
+@keyframes translate-out {
+  from {
+    transform: translate(var(--motion-translate-x), var(--motion-translate-y));
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+/* Shake - Wobble side-to-side */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  16.67% {
+    transform: translateX(calc(var(--motion-shake-distance) * -1));
+  }
+  33.33% {
+    transform: translateX(var(--motion-shake-distance));
+  }
+  50% {
+    transform: translateX(calc(var(--motion-shake-distance) * -1));
+  }
+  66.67% {
+    transform: translateX(var(--motion-shake-distance));
+  }
+  83.33% {
+    transform: translateX(0);
+  }
+}
+
+/* Pulse - Heart-beat rhythm */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(var(--motion-pulse-scale));
+    opacity: var(--motion-pulse-opacity);
+  }
+}
+
+/* Bounce - Move up then back */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--motion-bounce-height));
+  }
+}
+
+/* Draw - SVG path drawing with scale */
+@keyframes draw-in {
+  0% {
+    stroke-dashoffset: var(--path-length, 100);
+    opacity: 0.4;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes draw-container {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes draw-container-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+}
+
+@keyframes draw-loop {
+  0% {
+    stroke-dashoffset: var(--path-length, 100);
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: calc(var(--path-length, 100) * -1);
+  }
+}
+
+/* Spin - Full 360 rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+   Base Animation Container
+   ========================================================================== */
+
+.animation-preview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.animation-preview svg {
+  display: block;
+}
+
+/* ==========================================================================
+   Hover-Triggered Animations
+   ========================================================================== */
+
+/* Scale */
+.animate-scale {
+  transition: transform var(--motion-duration-bouncy) var(--ease-bouncy);
+}
+
+.animate-scale:hover {
+  transform: scale(var(--motion-scale-hover));
+}
+
+/* Alternative: Using keyframes for more spring-like feel */
+.animate-scale-spring:hover {
+  animation: scale-in var(--motion-duration-bouncy) var(--ease-bouncy) forwards;
+}
+
+/* Rotate */
+.animate-rotate {
+  transition: transform var(--motion-duration-soft) var(--ease-soft);
+}
+
+.animate-rotate:hover {
+  transform: rotate(var(--motion-rotate-angle));
+}
+
+/* Translate */
+.animate-translate {
+  transition: transform var(--motion-duration-snappy) var(--ease-snappy);
+}
+
+.animate-translate:hover {
+  transform: translate(var(--motion-translate-x), var(--motion-translate-y));
+}
+
+/* Shake */
+.animate-shake:hover {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Pulse */
+.animate-pulse:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+/* Bounce */
+.animate-bounce:hover {
+  animation: bounce 0.4s var(--ease-snappy);
+}
+
+/* Draw - Hover */
+.animate-draw {
+  transition: transform 0.5s var(--ease-smooth), opacity 0.5s var(--ease-smooth);
+  transform: scale(0.9);
+  opacity: 0.4;
+}
+
+.animate-draw:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.animate-draw path,
+.animate-draw line,
+.animate-draw polyline,
+.animate-draw circle,
+.animate-draw rect,
+.animate-draw ellipse {
+  stroke-dasharray: var(--path-length, 100);
+  stroke-dashoffset: var(--path-length, 100);
+  transition: stroke-dashoffset 0.5s var(--ease-smooth);
+}
+
+.animate-draw:hover path,
+.animate-draw:hover line,
+.animate-draw:hover polyline,
+.animate-draw:hover circle,
+.animate-draw:hover rect,
+.animate-draw:hover ellipse {
+  stroke-dashoffset: 0;
+}
+
+/* Spin - Single rotation on hover */
+.animate-spin:hover {
+  animation: spin 0.8s linear;
+}
+
+/* None - No animation */
+.animate-none {
+  /* Static, no animation */
+}
+
+/* ==========================================================================
+   Loop (Continuous) Animations
+   ========================================================================== */
+
+/* Scale Loop */
+.animate-scale-loop {
+  animation: scale-loop 1.5s var(--ease-soft) infinite;
+}
+
+/* Rotate Loop */
+.animate-rotate-loop {
+  animation: rotate-loop 2s var(--ease-soft) infinite;
+}
+
+/* Translate Loop */
+@keyframes translate-loop {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(var(--motion-translate-x), var(--motion-translate-y));
+  }
+}
+
+.animate-translate-loop {
+  animation: translate-loop 1s var(--ease-snappy) infinite;
+}
+
+/* Shake Loop */
+.animate-shake-loop {
+  animation: shake 0.4s ease-in-out infinite;
+}
+
+/* Pulse Loop */
+.animate-pulse-loop {
+  animation: pulse 0.6s ease-in-out infinite;
+}
+
+/* Bounce Loop */
+.animate-bounce-loop {
+  animation: bounce 0.4s var(--ease-snappy) infinite;
+}
+
+/* Draw Loop */
+.animate-draw-loop {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.animate-draw-loop path,
+.animate-draw-loop line,
+.animate-draw-loop polyline,
+.animate-draw-loop circle,
+.animate-draw-loop rect,
+.animate-draw-loop ellipse {
+  stroke-dasharray: var(--path-length, 100);
+  animation: draw-loop 2s linear infinite;
+}
+
+/* Spin Loop - Continuous rotation */
+.animate-spin-loop {
+  animation: spin 0.8s linear infinite;
+}
+
+/* ==========================================================================
+   Click-Triggered Animations (One-shot)
+   ========================================================================== */
+
+.animate-scale-click.animating {
+  animation: scale-in var(--motion-duration-bouncy) var(--ease-bouncy) forwards;
+}
+
+.animate-rotate-click.animating {
+  animation: rotate-in var(--motion-duration-soft) var(--ease-soft) forwards;
+}
+
+.animate-translate-click.animating {
+  animation: translate-in var(--motion-duration-snappy) var(--ease-snappy) forwards;
+}
+
+.animate-shake-click.animating {
+  animation: shake 0.4s ease-in-out forwards;
+}
+
+.animate-pulse-click.animating {
+  animation: pulse 0.6s ease-in-out forwards;
+}
+
+.animate-bounce-click.animating {
+  animation: bounce 0.4s var(--ease-snappy) forwards;
+}
+
+.animate-draw-click.animating {
+  animation: draw-container 0.5s var(--ease-smooth) forwards;
+}
+
+.animate-draw-click.animating path,
+.animate-draw-click.animating line,
+.animate-draw-click.animating polyline,
+.animate-draw-click.animating circle,
+.animate-draw-click.animating rect,
+.animate-draw-click.animating ellipse {
+  animation: draw-in 0.5s var(--ease-smooth) forwards;
+}
+
+.animate-spin-click.animating {
+  animation: spin 0.8s linear forwards;
+}
+
+/* ==========================================================================
+   Mount Animations (Play once on load)
+   ========================================================================== */
+
+.animate-scale-mount {
+  animation: scale-in var(--motion-duration-bouncy) var(--ease-bouncy) forwards;
+}
+
+.animate-rotate-mount {
+  animation: rotate-in var(--motion-duration-soft) var(--ease-soft) forwards;
+}
+
+.animate-translate-mount {
+  animation: translate-in var(--motion-duration-snappy) var(--ease-snappy) forwards;
+}
+
+.animate-shake-mount {
+  animation: shake 0.4s ease-in-out forwards;
+}
+
+.animate-pulse-mount {
+  animation: pulse 0.6s ease-in-out forwards;
+}
+
+.animate-bounce-mount {
+  animation: bounce 0.4s var(--ease-snappy) forwards;
+}
+
+.animate-draw-mount {
+  animation: draw-container 0.5s var(--ease-smooth) forwards;
+}
+
+.animate-draw-mount path,
+.animate-draw-mount line,
+.animate-draw-mount polyline,
+.animate-draw-mount circle,
+.animate-draw-mount rect,
+.animate-draw-mount ellipse {
+  animation: draw-in 0.5s var(--ease-smooth) forwards;
+}
+
+.animate-spin-mount {
+  animation: spin 0.8s linear forwards;
+}
+
+/* ==========================================================================
+   Accessibility: Reduced Motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations */
+  .animation-preview,
+  .animate-scale,
+  .animate-rotate,
+  .animate-translate,
+  .animate-shake,
+  .animate-pulse,
+  .animate-bounce,
+  .animate-draw,
+  .animate-spin,
+  .animate-scale-loop,
+  .animate-rotate-loop,
+  .animate-translate-loop,
+  .animate-shake-loop,
+  .animate-pulse-loop,
+  .animate-bounce-loop,
+  .animate-draw-loop,
+  .animate-spin-loop,
+  .animate-scale-click,
+  .animate-rotate-click,
+  .animate-translate-click,
+  .animate-shake-click,
+  .animate-pulse-click,
+  .animate-bounce-click,
+  .animate-draw-click,
+  .animate-spin-click,
+  .animate-scale-mount,
+  .animate-rotate-mount,
+  .animate-translate-mount,
+  .animate-shake-mount,
+  .animate-pulse-mount,
+  .animate-bounce-mount,
+  .animate-draw-mount,
+  .animate-spin-mount {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Ensure draw animations show full paths */
+  .animate-draw path,
+  .animate-draw line,
+  .animate-draw polyline,
+  .animate-draw circle,
+  .animate-draw rect,
+  .animate-draw ellipse,
+  .animate-draw-loop path,
+  .animate-draw-loop line,
+  .animate-draw-loop polyline,
+  .animate-draw-loop circle,
+  .animate-draw-loop rect,
+  .animate-draw-loop ellipse {
+    stroke-dashoffset: 0 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Pause animation */
+.animation-paused {
+  animation-play-state: paused !important;
+}
+
+/* Force animation restart */
+.animation-restart {
+  animation: none;
+}
+
+/* Hide until animation starts */
+.animation-hidden {
+  opacity: 0;
+}
+
+/* Animation complete state */
+.animation-complete {
+  animation-fill-mode: forwards;
+}

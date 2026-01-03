@@ -1,0 +1,133 @@
+/**
+ * CodePreview styles
+ * Syntax highlighting with VSCode-compatible dark theme colors
+ */
+
+.code-preview {
+  background-color: var(--vscode-editor-background);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Header with label and copy button */
+.code-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: var(--vscode-sideBarSectionHeader-background);
+  border-bottom: 1px solid var(--vscode-input-border);
+}
+
+.code-preview-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--vscode-descriptionForeground);
+}
+
+.code-preview-copy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background: transparent;
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 4px;
+  color: var(--vscode-descriptionForeground);
+  font-size: 11px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.code-preview-copy:hover {
+  background-color: var(--vscode-list-hoverBackground);
+  color: var(--vscode-editor-foreground);
+  border-color: var(--vscode-focusBorder);
+}
+
+.code-preview-copy:focus-visible {
+  outline: 2px solid var(--vscode-focusBorder);
+  outline-offset: 1px;
+}
+
+/* Code content area */
+.code-preview-content {
+  margin: 0;
+  padding: 12px 16px;
+  font-family: var(--vscode-editor-font-family, 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--vscode-editor-foreground);
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.code-preview-content code {
+  font-family: inherit;
+}
+
+/* Syntax highlighting tokens */
+
+/* Keywords: import, from, export, const, etc. */
+.code-keyword {
+  color: #c586c0; /* VSCode purple/pink for keywords */
+}
+
+/* Component names */
+.code-component {
+  color: #4ec9b0; /* VSCode teal/cyan for types/components */
+}
+
+/* Property names in JSX */
+.code-prop {
+  color: #9cdcfe; /* VSCode light blue for properties */
+}
+
+/* String values */
+.code-string {
+  color: #ce9178; /* VSCode orange/salmon for strings */
+}
+
+/* Numeric and boolean values in braces */
+.code-value {
+  color: #b5cea8; /* VSCode light green for numbers */
+}
+
+/* Punctuation: brackets, braces, etc. */
+.code-punctuation {
+  color: var(--vscode-editor-foreground);
+  opacity: 0.8;
+}
+
+/* Comments (if needed in future) */
+.code-comment {
+  color: #6a9955; /* VSCode green for comments */
+  font-style: italic;
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  .code-keyword {
+    color: #ff79c6;
+  }
+
+  .code-component {
+    color: #50fa7b;
+  }
+
+  .code-prop {
+    color: #8be9fd;
+  }
+
+  .code-string {
+    color: #f1fa8c;
+  }
+
+  .code-value {
+    color: #bd93f9;
+  }
+}

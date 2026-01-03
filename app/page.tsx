@@ -35,17 +35,17 @@ export default function HomePage() {
     }
   ]
 
-  const codeExample = `import { Heart, Loader, Star } from 'motion-icons'
+  const codeExample = `import { Heart, Loader, Star } from 'lively-icons'
 
-// 9 motion types × 4 trigger modes
-<Heart motionType="pulse" />
-<Star motionType="scale" trigger="hover" />
-<Loader motionType="spin" trigger="loop" />
+// 9 lively types × 4 trigger modes
+<Heart lively="pulse" />
+<Star lively="scale" trigger="hover" />
+<Loader lively="spin" trigger="loop" />
 
 // Trigger modes:
 // hover (default), loop, mount, inView
 
-// Motion types:
+// Lively types:
 // scale, rotate, translate, shake
 // pulse, bounce, draw, spin, none`
 
@@ -59,7 +59,7 @@ export default function HomePage() {
               <Star size={18} className="text-void" />
             </div>
             <span className="font-display font-bold text-lg text-bone">
-              MotionIcons
+              LivelyIcons
             </span>
           </Link>
 
@@ -261,7 +261,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Features */}
             <div className="min-w-0">
-              <span className="tag mb-4 inline-block">Why MotionIcons</span>
+              <span className="tag mb-4 inline-block">Why LivelyIcons</span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone mb-6">
                 Built for modern React
               </h2>
@@ -357,7 +357,7 @@ export default function HomePage() {
               >
                 <div className="aspect-square bg-graphite border border-electric/30 flex items-center justify-center mb-3 cursor-pointer">
                   <div className="text-electric">
-                    <item.icon size={28} motionType={item.type} trigger="loop" />
+                    <item.icon size={28} lively={item.type} trigger="loop" />
                   </div>
                 </div>
                 <span className="text-xs text-silver uppercase tracking-wider">
@@ -410,7 +410,7 @@ export default function HomePage() {
                 <Star size={14} className="text-void" />
               </div>
               <span className="text-sm text-silver">
-                MotionIcons
+                LivelyIcons
               </span>
             </div>
 

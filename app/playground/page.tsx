@@ -17,7 +17,7 @@ const iconEntries = Object.entries(Icons)
   .filter(([name]) => name !== 'default' && typeof Icons[name as keyof typeof Icons] === 'function')
   .map(([name, component]) => ({
     name,
-    component: component as React.ComponentType<{ size?: number; strokeWidth?: number; motionType?: MotionType; trigger?: TriggerType; className?: string }>
+    component: component as React.ComponentType<{ size?: number; strokeWidth?: number; lively?: MotionType; trigger?: TriggerType; className?: string }>
   }))
 
 const animationTypes: MotionType[] = ['scale', 'rotate', 'translate', 'shake', 'pulse', 'bounce', 'draw', 'spin', 'none']
@@ -28,7 +28,7 @@ function generateCode(
   iconName: string,
   size: number,
   strokeWidth: number,
-  motionType: MotionType,
+  lively: MotionType,
   trigger: TriggerType,
   format: ExportFormat,
   color: string
@@ -37,12 +37,12 @@ function generateCode(
 
   switch (format) {
     case 'react':
-      return `import { ${iconName} } from 'motion-icons'
+      return `import { ${iconName} } from 'lively-icons'
 
 <${iconName}
   size={${size}}
   strokeWidth={${strokeWidth}}
-  motionType="${motionType}"
+  lively="${lively}"
   trigger="${trigger}"${colorProp}
 />`
     case 'vue':
@@ -50,13 +50,13 @@ function generateCode(
   <${iconName}
     :size="${size}"
     :stroke-width="${strokeWidth}"
-    motion-type="${motionType}"
+    lively="${lively}"
     trigger="${trigger}"${color !== '#c4c4cc' ? `\n    style="color: ${color}"` : ''}
   />
 </template>
 
 <script setup>
-import { ${iconName} } from 'motion-icons/vue'
+import { ${iconName} } from 'lively-icons/vue'
 </script>`
     case 'svg':
       return `<svg
@@ -97,7 +97,7 @@ export default function PlaygroundPage() {
   // Customization options
   const [iconSize, setIconSize] = useState(64)
   const [strokeWidth, setStrokeWidth] = useState(2)
-  const [motionType, setMotionType] = useState<MotionType>('scale')
+  const [lively, setMotionType] = useState<MotionType>('scale')
   const [trigger, setTrigger] = useState<TriggerType>('hover')
   const [iconColor, setIconColor] = useState('#c4c4cc')
 
@@ -122,8 +122,8 @@ export default function PlaygroundPage() {
 
   // Generate code
   const generatedCode = useMemo(() => {
-    return generateCode(selectedIcon, iconSize, strokeWidth, motionType, trigger, exportFormat, iconColor)
-  }, [selectedIcon, iconSize, strokeWidth, motionType, trigger, exportFormat, iconColor])
+    return generateCode(selectedIcon, iconSize, strokeWidth, lively, trigger, exportFormat, iconColor)
+  }, [selectedIcon, iconSize, strokeWidth, lively, trigger, exportFormat, iconColor])
 
   // Copy to clipboard
   const copyCode = useCallback(() => {
@@ -166,7 +166,7 @@ export default function PlaygroundPage() {
               <Icons.Star size={18} className="text-void" />
             </div>
             <span className="font-display font-bold text-lg text-bone">
-              MotionIcons
+              LivelyIcons
             </span>
           </Link>
 
@@ -293,7 +293,7 @@ export default function PlaygroundPage() {
                         <SelectedIconComponent
                           size={iconSize}
                           strokeWidth={strokeWidth}
-                          motionType={motionType}
+                          lively={lively}
                           trigger={trigger}
                         />
                       </div>
@@ -470,9 +470,9 @@ export default function PlaygroundPage() {
 
                   <div className="h-px bg-graphite" />
 
-                  {/* Motion Type */}
+                  {/* Lively Type */}
                   <div className="space-y-3">
-                    <label className="text-sm text-ghost block">Motion Type</label>
+                    <label className="text-sm text-ghost block">Lively</label>
                     <div className="grid grid-cols-3 gap-2">
                       {animationTypes.map(type => {
                         const typeInfo = motionTypeList.find(t => t.type === type)
@@ -481,7 +481,7 @@ export default function PlaygroundPage() {
                             key={type}
                             onClick={() => setMotionType(type)}
                             className={`px-3 py-2 text-xs uppercase tracking-wider transition-all ${
-                              motionType === type
+                              lively === type
                                 ? 'bg-electric text-void'
                                 : 'bg-graphite text-silver hover:text-ghost'
                             }`}

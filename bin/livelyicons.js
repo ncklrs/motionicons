@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * MotionIcons CLI
+ * LivelyIcons CLI
  *
- * A command-line tool for exploring and using MotionIcons
+ * A command-line tool for exploring and using LivelyIcons
  *
  * Commands:
  *   search <query>  - Fuzzy search icons by name
@@ -209,7 +209,7 @@ function formatIcon(kebabName, icon, showDetails = false) {
   output += ` ${colors.dim}(${kebabName})${colors.reset}`;
 
   if (showDetails) {
-    output += `\n    ${colors.dim}Import: ${colors.reset}import { ${icon.name} } from 'motionicon'`;
+    output += `\n    ${colors.dim}Import: ${colors.reset}import { ${icon.name} } from 'livelyicons'`;
   }
 
   return output;
@@ -221,7 +221,7 @@ function formatIcon(kebabName, icon, showDetails = false) {
 function cmdSearch(query) {
   if (!query) {
     console.log(`${colors.red}Error: Please provide a search query${colors.reset}`);
-    console.log(`Usage: motionicons search <query>`);
+    console.log(`Usage: livelyicons search <query>`);
     process.exit(1);
   }
 
@@ -255,7 +255,7 @@ function cmdList(options = {}) {
   const iconNames = Object.keys(iconRegistry).sort();
   const total = iconNames.length;
 
-  console.log(`\n${colors.bold}MotionIcons Library - ${total} icons${colors.reset}\n`);
+  console.log(`\n${colors.bold}LivelyIcons Library - ${total} icons${colors.reset}\n`);
 
   if (options.compact) {
     // Compact view - 4 columns
@@ -285,7 +285,7 @@ function cmdList(options = {}) {
   }
 
   console.log(`${colors.dim}Total: ${total} icons${colors.reset}\n`);
-  console.log(`${colors.dim}Tip: Use 'motionicons search <query>' to find specific icons${colors.reset}\n`);
+  console.log(`${colors.dim}Tip: Use 'livelyicons search <query>' to find specific icons${colors.reset}\n`);
 }
 
 /**
@@ -367,7 +367,7 @@ function categorizeIcons(iconNames) {
 function cmdCopy(iconName) {
   if (!iconName) {
     console.log(`${colors.red}Error: Please provide an icon name${colors.reset}`);
-    console.log(`Usage: motionicons copy <icon-name>`);
+    console.log(`Usage: livelyicons copy <icon-name>`);
     process.exit(1);
   }
 
@@ -396,7 +396,7 @@ function cmdCopy(iconName) {
     process.exit(1);
   }
 
-  const importCode = `import { ${icon.name} } from 'motionicon'`;
+  const importCode = `import { ${icon.name} } from 'livelyicons'`;
 
   if (copyToClipboard(importCode)) {
     console.log(`\n${colors.green}Copied to clipboard:${colors.reset}`);
@@ -413,7 +413,7 @@ function cmdCopy(iconName) {
 function cmdInfo(iconName) {
   if (!iconName) {
     console.log(`${colors.red}Error: Please provide an icon name${colors.reset}`);
-    console.log(`Usage: motionicons info <icon-name>`);
+    console.log(`Usage: livelyicons info <icon-name>`);
     process.exit(1);
   }
 
@@ -449,14 +449,14 @@ function cmdInfo(iconName) {
   console.log(`${colors.dim}File:${colors.reset}      src/${icon.file}`);
   console.log();
   console.log(`${colors.bold}Import:${colors.reset}`);
-  console.log(`  ${colors.cyan}import { ${icon.name} } from 'motionicon'${colors.reset}`);
+  console.log(`  ${colors.cyan}import { ${icon.name} } from 'livelyicons'${colors.reset}`);
   console.log();
   console.log(`${colors.bold}Usage:${colors.reset}`);
   console.log(`  ${colors.dim}// Basic usage${colors.reset}`);
   console.log(`  ${colors.cyan}<${icon.name} />${colors.reset}`);
   console.log();
   console.log(`  ${colors.dim}// With props${colors.reset}`);
-  console.log(`  ${colors.cyan}<${icon.name} size={24} motionType="scale" trigger="hover" />${colors.reset}`);
+  console.log(`  ${colors.cyan}<${icon.name} size={24} lively="scale" trigger="hover" />${colors.reset}`);
   console.log();
   console.log(`  ${colors.dim}// Accessible with label${colors.reset}`);
   console.log(`  ${colors.cyan}<${icon.name} aria-label="${icon.name.replace(/([A-Z])/g, ' $1').trim()}" />${colors.reset}`);
@@ -466,7 +466,7 @@ function cmdInfo(iconName) {
   console.log(`  ${colors.dim}strokeWidth?:${colors.reset} number (default: 2)`);
   console.log(`  ${colors.dim}className?:${colors.reset}   string`);
   console.log(`  ${colors.dim}animated?:${colors.reset}    boolean`);
-  console.log(`  ${colors.dim}motionType?:${colors.reset}  'scale' | 'rotate' | 'translate' | 'shake' | 'pulse' | 'bounce' | 'draw' | 'spin' | 'none'`);
+  console.log(`  ${colors.dim}lively?:${colors.reset}  'scale' | 'rotate' | 'translate' | 'shake' | 'pulse' | 'bounce' | 'draw' | 'spin' | 'none'`);
   console.log(`  ${colors.dim}trigger?:${colors.reset}     'hover' | 'loop' | 'mount' | 'inView'`);
   console.log(`  ${colors.dim}aria-label?:${colors.reset}  string`);
   console.log();
@@ -477,11 +477,11 @@ function cmdInfo(iconName) {
  */
 function showHelp() {
   console.log(`
-${colors.bold}${colors.cyan}MotionIcons CLI${colors.reset}
-${colors.dim}A command-line tool for exploring and using MotionIcons${colors.reset}
+${colors.bold}${colors.cyan}LivelyIcons CLI${colors.reset}
+${colors.dim}A command-line tool for exploring and using LivelyIcons${colors.reset}
 
 ${colors.bold}USAGE${colors.reset}
-  motionicons <command> [options]
+  livelyicons <command> [options]
 
 ${colors.bold}COMMANDS${colors.reset}
   ${colors.cyan}search${colors.reset} <query>    Fuzzy search icons by name
@@ -492,21 +492,21 @@ ${colors.bold}COMMANDS${colors.reset}
 
 ${colors.bold}EXAMPLES${colors.reset}
   ${colors.dim}# Search for arrow icons${colors.reset}
-  motionicons search arrow
+  livelyicons search arrow
 
   ${colors.dim}# Copy Heart icon import to clipboard${colors.reset}
-  motionicons copy heart
+  livelyicons copy heart
 
   ${colors.dim}# Get info about Settings icon${colors.reset}
-  motionicons info settings
+  livelyicons info settings
 
   ${colors.dim}# List all icons compactly${colors.reset}
-  motionicons list --compact
+  livelyicons list --compact
 
 ${colors.bold}TIPS${colors.reset}
   - Icon names can be in kebab-case (arrow-right) or PascalCase (ArrowRight)
   - Search is fuzzy, so partial matches work (e.g., "arr" finds "arrow")
-  - Use with npx: npx motionicons search heart
+  - Use with npx: npx livelyicons search heart
 `);
 }
 
@@ -516,9 +516,9 @@ ${colors.bold}TIPS${colors.reset}
 function showVersion() {
   try {
     const pkg = require(path.join(__dirname, '..', 'package.json'));
-    console.log(`motionicons v${pkg.version}`);
+    console.log(`livelyicons v${pkg.version}`);
   } catch {
-    console.log('motionicons v1.0.0');
+    console.log('livelyicons v1.0.0');
   }
 }
 

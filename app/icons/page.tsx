@@ -17,25 +17,25 @@ const iconEntries = Object.entries(Icons)
   .filter(([name]) => name !== 'default' && typeof Icons[name as keyof typeof Icons] === 'function')
   .map(([name, component]) => ({
     name,
-    component: component as React.ComponentType<{ size?: number; strokeWidth?: number; motionType?: MotionType; trigger?: TriggerType; className?: string }>
+    component: component as React.ComponentType<{ size?: number; strokeWidth?: number; lively?: MotionType; trigger?: TriggerType; className?: string }>
   }))
 
 const animationTypes: MotionType[] = ['scale', 'rotate', 'translate', 'shake', 'pulse', 'bounce', 'draw', 'spin', 'none']
 
 // Generate code for different formats
-function generateCode(iconName: string, size: number, strokeWidth: number, motionType: MotionType, format: ExportFormat): string {
+function generateCode(iconName: string, size: number, strokeWidth: number, lively: MotionType, format: ExportFormat): string {
   switch (format) {
     case 'react':
-      return `import { ${iconName} } from 'motion-icons'
+      return `import { ${iconName} } from 'lively-icons'
 
-<${iconName} size={${size}} strokeWidth={${strokeWidth}} motionType="${motionType}" />`
+<${iconName} size={${size}} strokeWidth={${strokeWidth}} lively="${lively}" />`
     case 'vue':
       return `<template>
-  <${iconName} :size="${size}" :stroke-width="${strokeWidth}" motion-type="${motionType}" />
+  <${iconName} :size="${size}" :stroke-width="${strokeWidth}" lively="${lively}" />
 </template>
 
 <script setup>
-import { ${iconName} } from 'motion-icons/vue'
+import { ${iconName} } from 'lively-icons/vue'
 </script>`
     case 'svg':
       return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round">
@@ -125,7 +125,7 @@ export default function IconsPage() {
               <Icons.Star size={18} className="text-void" />
             </div>
             <span className="font-display font-bold text-lg text-bone">
-              MotionIcons
+              LivelyIcons
             </span>
           </Link>
 
@@ -324,9 +324,9 @@ export default function IconsPage() {
                 </div>
               </div>
 
-              {/* Bottom row: Motion Type selector */}
+              {/* Bottom row: Lively Type selector */}
               <div className="flex items-center gap-3">
-                <span className="text-xs text-silver uppercase tracking-wider">Motion Type:</span>
+                <span className="text-xs text-silver uppercase tracking-wider">Lively:</span>
                 <div className="flex flex-wrap gap-2">
                   {animationTypes.map(type => {
                     const typeInfo = motionTypeList.find(t => t.type === type)
@@ -417,7 +417,7 @@ export default function IconsPage() {
                               <IconComponent
                                 size={iconSize}
                                 strokeWidth={strokeWidth}
-                                motionType={selectedMotionType}
+                                lively={selectedMotionType}
                               />
                             </div>
                           </div>
@@ -520,7 +520,7 @@ export default function IconsPage() {
                     Use the dropdown for other formats or download the raw SVG file.
                   </p>
                   <code className="code-block px-4 py-2 text-sm inline-block">
-                    {`<Heart size={24} motionType="${selectedMotionType}" />`}
+                    {`<Heart size={24} lively="${selectedMotionType}" />`}
                   </code>
                 </div>
               </div>

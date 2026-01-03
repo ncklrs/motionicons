@@ -9,12 +9,12 @@ export const Heart = ({
   strokeWidth = 2,
   className,
   animated,
-  motionType = 'scale',
+  lively = 'scale',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
-  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, motionType, trigger)
-  const isDraw = motionType === 'draw'
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger)
+  const isDraw = lively === 'draw'
 
   // Use CSS for hover draw (better browser support), Motion for loop/mount/inView
   const useCssDraw = isDraw && trigger === 'hover'

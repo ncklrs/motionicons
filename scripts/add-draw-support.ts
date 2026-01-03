@@ -2,7 +2,7 @@
  * Script to add draw animation support to all icon components
  *
  * This script updates each icon to:
- * 1. Add `isDraw` variable based on motionType
+ * 1. Add `isDraw` variable based on lively
  * 2. Add `draw-animation` class to SVG when isDraw is true
  * 3. Add `draw-path` class and pathLength={1} to all stroke elements
  */
@@ -45,7 +45,7 @@ async function processIcon(filePath: string): Promise<boolean> {
     // Add isDraw after the hook
     updated = updated.replace(
       hookPattern,
-      `const { $1 } = useIconAnimation($2)\n  const isDraw = motionType === 'draw'`
+      `const { $1 } = useIconAnimation($2)\n  const isDraw = lively === 'draw'`
     );
   }
 

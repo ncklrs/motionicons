@@ -86,7 +86,7 @@ export interface IconProps {
    * The type of motion/animation to apply
    * @default 'scale'
    */
-  motionType?: MotionType;
+  lively?: MotionType;
 
   /**
    * When to trigger the animation
@@ -109,7 +109,7 @@ export interface IconProps {
 
   /**
    * Custom motion preset for user-defined animations
-   * When provided, overrides motionType
+   * When provided, overrides lively
    */
   motionPreset?: CustomMotionPresetConfig;
 

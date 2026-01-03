@@ -1,12 +1,12 @@
 {
-  "name": "motionicon",
+  "name": "livelyicons",
   "version": "1.0.1",
-  "description": "A comprehensive library of animated icons powered by Motion for React",
+  "description": "A comprehensive library of animated icons powered by Lively for React",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "bin": {
-    "motionicons": "./bin/motionicons.js"
+    "livelyicons": "./bin/livelyicons.js"
   },
   "exports": {
     ".": {

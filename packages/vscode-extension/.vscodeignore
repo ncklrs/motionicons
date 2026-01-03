@@ -1,0 +1,36 @@
+# Source files
+src/**
+webview/src/**
+webview/node_modules/**
+scripts/**
+
+# Config files
+.gitignore
+.eslintrc*
+.prettierrc*
+tsconfig.json
+webview/tsconfig.json
+webview/tsconfig.node.json
+webview/vite.config.ts
+
+# Development files
+*.map
+*.ts
+!*.d.ts
+
+# Package manager files
+node_modules/**
+webview/node_modules/**
+package-lock.json
+webview/package-lock.json
+
+# Test files
+**/*.test.ts
+**/*.spec.ts
+__tests__/**
+
+# Other
+.vscode/**
+.github/**
+*.md
+!README.md

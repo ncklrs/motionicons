@@ -36,28 +36,28 @@ export default function DocsPage() {
     </div>
   )
 
-  const installCode = `pnpm add motion-icons
+  const installCode = `pnpm add livelyicons
 # or
-npm install motion-icons
+npm install livelyicons
 # or
-yarn add motion-icons`
+yarn add livelyicons`
 
   const cliCode = `# Search for icons by name (fuzzy matching)
-npx motionicons search arrow
+npx livelyicons search arrow
 
 # List all available icons
-npx motionicons list
+npx livelyicons list
 
 # Copy import statement to clipboard
-npx motionicons copy heart
+npx livelyicons copy heart
 
 # Get detailed info about an icon
-npx motionicons info settings
+npx livelyicons info settings
 
 # Compact list view
-npx motionicons list --compact`
+npx livelyicons list --compact`
 
-  const basicUsageCode = `import { Heart, Loader, Star } from 'motion-icons'
+  const basicUsageCode = `import { Heart, Loader, Star } from 'livelyicons'
 
 function App() {
   return (
@@ -65,25 +65,25 @@ function App() {
       {/* Default: scale animation on hover */}
       <Heart size={24} />
 
-      {/* Custom motion type */}
-      <Star motionType="rotate" />
+      {/* Custom lively type */}
+      <Star lively="rotate" />
 
       {/* Continuous loop animation */}
-      <Loader motionType="spin" trigger="loop" />
+      <Loader lively="spin" trigger="loop" />
     </div>
   )
 }`
 
-  const motionTypesCode = `// 9 motion types available
-<Star motionType="scale" />      // Grow/shrink (default)
-<Settings motionType="rotate" /> // Spin rotation
-<ArrowRight motionType="translate" /> // Slide movement
-<Bell motionType="shake" />      // Shake/wobble
-<Heart motionType="pulse" />     // Heartbeat pulse
-<Check motionType="bounce" />    // Spring bounce
-<Eye motionType="draw" />        // SVG path draw
-<Loader motionType="spin" />     // Continuous spin
-<Menu motionType="none" />       // No animation`
+  const livelysCode = `// 9 lively types available
+<Star lively="scale" />      // Grow/shrink (default)
+<Settings lively="rotate" /> // Spin rotation
+<ArrowRight lively="translate" /> // Slide movement
+<Bell lively="shake" />      // Shake/wobble
+<Heart lively="pulse" />     // Heartbeat pulse
+<Check lively="bounce" />    // Spring bounce
+<Eye lively="draw" />        // SVG path draw
+<Loader lively="spin" />     // Continuous spin
+<Menu lively="none" />       // No animation`
 
   const triggerModesCode = `// 4 trigger modes
 <Heart trigger="hover" />   // On hover (default)
@@ -91,7 +91,7 @@ function App() {
 <Heart trigger="mount" />   // Once on mount
 <Heart trigger="inView" />  // When scrolled into view`
 
-  const providerCode = `import { IconProvider } from 'motion-icons'
+  const providerCode = `import { IconProvider } from 'livelyicons'
 
 // Disable all animations globally
 <IconProvider config={{ animated: false }}>
@@ -119,11 +119,11 @@ import { Heart, Star, Settings } from 'lucide-react'
 <Star className="text-yellow-500" />
 <Settings onClick={handleClick} />
 
-// After: MotionIcons (drop-in replacement + animations)
-import { Heart, Star, Settings } from 'motion-icons'
+// After: LivelyIcons (drop-in replacement + animations)
+import { Heart, Star, Settings } from 'livelyicons'
 
 <Heart size={24} strokeWidth={2} />                    // Works exactly the same
-<Star className="text-yellow-500" motionType="rotate" /> // Now with animation!
+<Star className="text-yellow-500" lively="rotate" /> // Now with animation!
 <Settings onClick={handleClick} trigger="hover" />     // Interactive feedback`
 
   const migrateHeroiconsCode = `// Before: Heroicons
@@ -132,11 +132,11 @@ import { HeartIcon, StarIcon } from '@heroicons/react/24/outline'
 <HeartIcon className="h-6 w-6" />
 <StarIcon className="h-6 w-6 text-yellow-500" />
 
-// After: MotionIcons
-import { Heart, Star } from 'motion-icons'
+// After: LivelyIcons
+import { Heart, Star } from 'livelyicons'
 
 <Heart size={24} />                               // size prop instead of classes
-<Star size={24} className="text-yellow-500" motionType="pulse" />`
+<Star size={24} className="text-yellow-500" lively="pulse" />`
 
   const migrateReactIconsCode = `// Before: React Icons
 import { FaHeart, FaStar } from 'react-icons/fa'
@@ -146,12 +146,12 @@ import { FiSettings } from 'react-icons/fi'
 <FaStar color="gold" />
 <FiSettings />
 
-// After: MotionIcons
-import { Heart, Star, Settings } from 'motion-icons'
+// After: LivelyIcons
+import { Heart, Star, Settings } from 'livelyicons'
 
-<Heart size={24} motionType="pulse" />           // Built-in animations
+<Heart size={24} lively="pulse" />           // Built-in animations
 <Star className="text-yellow-500" />              // Use className for colors
-<Settings motionType="rotate" trigger="hover" /> // Interactive rotation`
+<Settings lively="rotate" trigger="hover" /> // Interactive rotation`
 
   const migrateFeatherCode = `// Before: Feather Icons
 import { Heart, Star, Settings } from 'react-feather'
@@ -159,18 +159,18 @@ import { Heart, Star, Settings } from 'react-feather'
 <Heart size={24} strokeWidth={2} />
 <Star color="currentColor" />
 
-// After: MotionIcons (nearly identical API)
-import { Heart, Star, Settings } from 'motion-icons'
+// After: LivelyIcons (nearly identical API)
+import { Heart, Star, Settings } from 'livelyicons'
 
 <Heart size={24} strokeWidth={2} />              // Same props work!
-<Star className="text-current" motionType="scale" /> // className for color`
+<Star className="text-current" lively="scale" /> // className for color`
 
   // Framework code examples
   const nextAppRouterCode = `// app/layout.tsx - Next.js App Router
 // Icons work in both Server and Client Components
 
 // Server Component (default) - static icons only
-import { Star, Check } from 'motion-icons'
+import { Star, Check } from 'livelyicons'
 
 export default function Layout({ children }) {
   return (
@@ -190,18 +190,18 @@ export default function Layout({ children }) {
 // Client Component - for animations
 'use client'
 
-import { Heart } from 'motion-icons'
+import { Heart } from 'livelyicons'
 
 export function LikeButton() {
   return (
     <button>
-      <Heart motionType="pulse" trigger="hover" />
+      <Heart lively="pulse" trigger="hover" />
     </button>
   )
 }`
 
   const nextPagesRouterCode = `// pages/_app.tsx - Next.js Pages Router
-import { IconProvider } from 'motion-icons'
+import { IconProvider } from 'livelyicons'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -213,20 +213,20 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 
 // pages/index.tsx
-import { Heart, Star, Loader } from 'motion-icons'
+import { Heart, Star, Loader } from 'livelyicons'
 
 export default function Home() {
   return (
     <div>
-      <Heart motionType="pulse" trigger="hover" />
-      <Star motionType="rotate" />
-      <Loader motionType="spin" trigger="loop" />
+      <Heart lively="pulse" trigger="hover" />
+      <Star lively="rotate" />
+      <Loader lively="spin" trigger="loop" />
     </div>
   )
 }`
 
   const remixCode = `// app/root.tsx - Remix
-import { IconProvider } from 'motion-icons'
+import { IconProvider } from 'livelyicons'
 
 export default function App() {
   return (
@@ -246,13 +246,13 @@ export default function App() {
 }
 
 // app/routes/_index.tsx
-import { Heart, Star } from 'motion-icons'
+import { Heart, Star } from 'livelyicons'
 
 export default function Index() {
   return (
     <div>
-      <Heart motionType="pulse" />
-      <Star motionType="scale" trigger="hover" />
+      <Heart lively="pulse" />
+      <Star lively="scale" trigger="hover" />
     </div>
   )
 }`
@@ -263,16 +263,16 @@ export default function Index() {
 ---
 
 // AnimatedIcon.tsx (React component)
-import { Heart } from 'motion-icons'
+import { Heart } from 'livelyicons'
 
 export function AnimatedHeart() {
-  return <Heart motionType="pulse" trigger="hover" />
+  return <Heart lively="pulse" trigger="hover" />
 }
 
 // src/pages/index.astro
 ---
 import { AnimatedHeart } from '../components/AnimatedIcon'
-import { Star } from 'motion-icons'
+import { Star } from 'livelyicons'
 ---
 
 <html>
@@ -288,7 +288,7 @@ import { Star } from 'motion-icons'
   const viteCode = `// main.tsx - Vite + React
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { IconProvider } from 'motion-icons'
+import { IconProvider } from 'livelyicons'
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -300,15 +300,15 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 // App.tsx
-import { Heart, Star, Settings, Loader } from 'motion-icons'
+import { Heart, Star, Settings, Loader } from 'livelyicons'
 
 function App() {
   return (
     <div>
-      <Heart motionType="pulse" trigger="hover" />
-      <Star motionType="scale" />
-      <Settings motionType="rotate" trigger="hover" />
-      <Loader motionType="spin" trigger="loop" />
+      <Heart lively="pulse" trigger="hover" />
+      <Star lively="scale" />
+      <Settings lively="rotate" trigger="hover" />
+      <Loader lively="spin" trigger="loop" />
     </div>
   )
 }`
@@ -316,15 +316,15 @@ function App() {
   // Performance code examples
   const bundleOptimizationCode = `// Individual imports (recommended)
 // Only bundles the icons you use
-import { Heart, Star, Check } from 'motion-icons'
+import { Heart, Star, Check } from 'livelyicons'
 
 // Namespace import (larger bundle)
 // Bundles entire icon library - avoid in production
-import * as Icons from 'motion-icons'
+import * as Icons from 'livelyicons'
 
 // Dynamic imports for code splitting
 const LazyHeart = lazy(() =>
-  import('motion-icons').then(mod => ({ default: mod.Heart }))
+  import('livelyicons').then(mod => ({ default: mod.Heart }))
 )`
 
   const staticVsAnimatedCode = `// Use static icons for:
@@ -339,14 +339,14 @@ const LazyHeart = lazy(() =>
 // - Interactive elements
 // - Status indicators
 // - Empty states
-<Heart motionType="pulse" trigger="hover" />
-<Loader motionType="spin" trigger="loop" />`
+<Heart lively="pulse" trigger="hover" />
+<Loader lively="spin" trigger="loop" />`
 
-  const reducedMotionCode = `// MotionIcons respects prefers-reduced-motion automatically
+  const reducedMotionCode = `// LivelyIcons respects prefers-reduced-motion automatically
 // No additional code needed!
 
 // For manual control:
-import { IconProvider } from 'motion-icons'
+import { IconProvider } from 'livelyicons'
 
 function App() {
   // Disable animations for all icons
@@ -366,13 +366,13 @@ import { lazy, Suspense } from 'react'
 
 // Create lazy icon components
 const LazySettingsIcon = lazy(() =>
-  import('motion-icons').then(mod => ({ default: mod.Settings }))
+  import('livelyicons').then(mod => ({ default: mod.Settings }))
 )
 
 function SettingsPanel() {
   return (
     <Suspense fallback={<div className="w-6 h-6 bg-gray-200 animate-pulse" />}>
-      <LazySettingsIcon motionType="rotate" />
+      <LazySettingsIcon lively="rotate" />
     </Suspense>
   )
 }
@@ -395,7 +395,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
     { id: "performance", label: "Performance" },
   ]
 
-  const motionTypes = [
+  const livelys = [
     { name: 'Scale', type: 'scale' as const, icon: Star, desc: 'Grow and shrink' },
     { name: 'Rotate', type: 'rotate' as const, icon: Settings, desc: 'Spin rotation' },
     { name: 'Translate', type: 'translate' as const, icon: ArrowRight, desc: 'Slide movement' },
@@ -424,7 +424,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               <Star size={18} className="text-void" />
             </div>
             <span className="font-display font-bold text-lg text-bone">
-              MotionIcons
+              LivelyIcons
             </span>
           </Link>
 
@@ -552,13 +552,13 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               Installation
             </h2>
             <p className="text-silver mb-6">
-              Install MotionIcons using your package manager of choice:
+              Install LivelyIcons using your package manager of choice:
             </p>
             <CodeBlock code={installCode} section="install" />
             <div className="mt-6 bg-carbon border border-graphite p-4">
               <h4 className="font-display font-semibold text-bone mb-2">Peer Dependencies</h4>
               <p className="text-sm text-silver">
-                MotionIcons requires <code className="text-electric">react &gt;= 18.0.0</code> and <code className="text-electric">motion &gt;= 11.0.0</code>
+                LivelyIcons requires <code className="text-electric">react &gt;= 18.0.0</code> and <code className="text-electric">motion &gt;= 11.0.0</code>
               </p>
             </div>
           </section>
@@ -621,7 +621,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               Basic Usage
             </h2>
             <p className="text-silver mb-6">
-              Import icons individually and use them as React components. Every icon supports <code className="text-electric">motionType</code> and <code className="text-electric">trigger</code> props.
+              Import icons individually and use them as React components. Every icon supports <code className="text-electric">lively</code> and <code className="text-electric">trigger</code> props.
             </p>
             <CodeBlock code={basicUsageCode} section="usage" />
 
@@ -639,7 +639,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                   <span>2</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-electric w-28">motionType</span>
+                  <span className="text-electric w-28">lively</span>
                   <span className="text-steel">—</span>
                   <span>"scale"</span>
                 </li>
@@ -661,16 +661,16 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               Motion Types
             </h2>
             <p className="text-silver mb-6">
-              Choose from 9 distinct animation styles using the <code className="text-electric">motionType</code> prop:
+              Choose from 9 distinct animation styles using the <code className="text-electric">lively</code> prop:
             </p>
 
             {/* Interactive Demo Grid */}
             <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-3 mb-8">
-              {motionTypes.map((item) => (
+              {livelys.map((item) => (
                 <div key={item.name} className="group text-center">
                   <div className="aspect-square bg-carbon border border-graphite hover:border-electric/50 flex items-center justify-center cursor-pointer transition-colors">
                     <div className="text-electric">
-                      <item.icon size={24} motionType={item.type} />
+                      <item.icon size={24} lively={item.type} />
                     </div>
                   </div>
                   <span className="text-xs text-silver mt-2 block">{item.name}</span>
@@ -679,7 +679,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
             </div>
             <p className="text-xs text-steel mb-6 text-center">Hover over icons to see each animation</p>
 
-            <CodeBlock code={motionTypesCode} section="motionTypes" />
+            <CodeBlock code={livelysCode} section="livelys" />
 
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
               <div className="bg-carbon border border-graphite p-4">
@@ -720,7 +720,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                   <div className="h-16 flex items-center justify-center border border-graphite/50 mb-3">
                     <Heart
                       size={28}
-                      motionType="pulse"
+                      lively="pulse"
                       trigger={mode.name as 'hover' | 'loop' | 'mount' | 'inView'}
                       className="text-electric"
                     />
@@ -742,7 +742,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               Animation Control
             </h2>
             <p className="text-silver mb-6">
-              MotionIcons provides three layers of animation control:
+              LivelyIcons provides three layers of animation control:
             </p>
 
             <div className="space-y-4 mb-8">
@@ -831,8 +831,8 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                     <td className="py-3 px-4 hidden sm:table-cell text-silver">SVG stroke width</td>
                   </tr>
                   <tr className="border-b border-graphite/50">
-                    <td className="py-3 px-4 text-electric">motionType</td>
-                    <td className="py-3 px-4 text-xs">MotionType</td>
+                    <td className="py-3 px-4 text-electric">lively</td>
+                    <td className="py-3 px-4 text-xs">LivelyType</td>
                     <td className="py-3 px-4">"scale"</td>
                     <td className="py-3 px-4 hidden sm:table-cell text-silver">Animation style</td>
                   </tr>
@@ -864,7 +864,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               </table>
             </div>
 
-            <h3 className="font-display font-semibold text-bone mb-4 mt-10">MotionType</h3>
+            <h3 className="font-display font-semibold text-bone mb-4 mt-10">LivelyType</h3>
             <div className="bg-carbon border border-graphite p-4">
               <code className="text-sm text-ghost">
                 "scale" | "rotate" | "translate" | "shake" | "pulse" | "bounce" | "draw" | "spin" | "none"
@@ -923,7 +923,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               Migration Guide
             </h2>
             <p className="text-silver mb-6">
-              Migrating from another icon library? MotionIcons is designed to be a drop-in replacement with minimal changes required.
+              Migrating from another icon library? LivelyIcons is designed to be a drop-in replacement with minimal changes required.
             </p>
 
             {/* Feature Comparison */}
@@ -934,7 +934,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                   <thead>
                     <tr className="border-b border-graphite">
                       <th className="text-left py-3 px-4 text-silver font-medium">Feature</th>
-                      <th className="text-center py-3 px-4 text-silver font-medium">MotionIcons</th>
+                      <th className="text-center py-3 px-4 text-silver font-medium">LivelyIcons</th>
                       <th className="text-center py-3 px-4 text-silver font-medium">Lucide</th>
                       <th className="text-center py-3 px-4 text-silver font-medium">Heroicons</th>
                       <th className="text-center py-3 px-4 text-silver font-medium hidden sm:table-cell">React Icons</th>
@@ -995,7 +995,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                 Near-identical API
               </h3>
               <p className="text-sm text-silver mb-4">
-                MotionIcons shares the same API as Lucide React. Change your imports and enjoy animations.
+                LivelyIcons shares the same API as Lucide React. Change your imports and enjoy animations.
               </p>
               <CodeBlock code={migrateLucideCode} section="migrate-lucide" />
             </div>
@@ -1041,7 +1041,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               <ul className="space-y-2 text-sm text-silver">
                 <li className="flex items-start gap-3">
                   <Check size={16} className="text-electric mt-0.5 shrink-0" />
-                  <span>Update import statements to use <code className="text-electric">motion-icons</code></span>
+                  <span>Update import statements to use <code className="text-electric">livelyicons</code></span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={16} className="text-electric mt-0.5 shrink-0" />
@@ -1053,7 +1053,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={16} className="text-electric mt-0.5 shrink-0" />
-                  <span>Add <code className="text-electric">motionType</code> and <code className="text-electric">trigger</code> for animations</span>
+                  <span>Add <code className="text-electric">lively</code> and <code className="text-electric">trigger</code> for animations</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={16} className="text-electric mt-0.5 shrink-0" />
@@ -1072,7 +1072,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
               Framework Examples
             </h2>
             <p className="text-silver mb-6">
-              MotionIcons works with any React framework. Here are setup patterns for popular choices.
+              LivelyIcons works with any React framework. Here are setup patterns for popular choices.
             </p>
 
             {/* Next.js App Router */}
@@ -1219,7 +1219,7 @@ const DashboardIcons = dynamic(() => import('./DashboardIcons'))`
                 </div>
                 <div className="bg-carbon border border-graphite p-4">
                   <h4 className="text-sm font-semibold text-bone mb-3 flex items-center gap-2">
-                    <Heart size={16} motionType="pulse" className="text-electric" />
+                    <Heart size={16} lively="pulse" className="text-electric" />
                     Animated Icons
                   </h4>
                   <ul className="space-y-1 text-xs text-silver">

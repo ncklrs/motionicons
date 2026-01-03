@@ -41,13 +41,13 @@ function App() {
   return (
     <div>
       {/* Scale animation on hover (default) */}
-      <Heart size={24} motionType="scale" />
+      <Heart size={24} lively="scale" />
 
       {/* Continuous rotation */}
-      <Star size={32} motionType="rotate" trigger="loop" />
+      <Star size={32} lively="rotate" trigger="loop" />
 
       {/* Draw animation on hover */}
-      <Bell size={24} motionType="draw" />
+      <Bell size={24} lively="draw" />
     </div>
   )
 }
@@ -85,7 +85,7 @@ interface IconProps {
   size?: number              // Icon size in pixels (default: 24)
   strokeWidth?: number       // Stroke width (default: 2)
   className?: string         // Additional CSS classes
-  motionType?: MotionType    // Animation type
+  lively?: MotionType    // Animation type
   trigger?: TriggerType      // When to trigger animation
   animated?: boolean         // Enable/disable animations
   'aria-label'?: string      // Accessibility label

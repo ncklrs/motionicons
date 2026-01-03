@@ -9,12 +9,12 @@ export const Library = ({
   strokeWidth = 2,
   className,
   animated,
-  motionType = 'scale',
+  lively = 'scale',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
-  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, motionType, trigger)
-  const isDraw = motionType === 'draw'
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger)
+  const isDraw = lively === 'draw'
 
   return (
     <motion.svg

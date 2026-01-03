@@ -1,0 +1,218 @@
+/**
+ * CustomizationPanel styles
+ * Uses VSCode CSS variables for theme compatibility
+ */
+
+.customization-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Control row */
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.control-label {
+  width: 60px;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--vscode-editor-foreground);
+  font-weight: 500;
+}
+
+/* Slider group */
+.control-slider-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-slider {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--vscode-input-background);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.control-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--vscode-button-background);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.control-slider::-webkit-slider-thumb:hover {
+  background: var(--vscode-button-hoverBackground);
+  transform: scale(1.1);
+}
+
+.control-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--vscode-button-background);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.control-slider::-moz-range-thumb:hover {
+  background: var(--vscode-button-hoverBackground);
+  transform: scale(1.1);
+}
+
+.control-slider:focus-visible {
+  outline: 2px solid var(--vscode-focusBorder);
+  outline-offset: 2px;
+}
+
+.control-value {
+  min-width: 40px;
+  font-size: 12px;
+  color: var(--vscode-descriptionForeground);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Select dropdown */
+.control-select {
+  flex: 1;
+  padding: 6px 10px;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 4px;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.control-select:hover {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-select:focus {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-select:focus-visible {
+  outline: 2px solid var(--vscode-focusBorder);
+  outline-offset: 1px;
+}
+
+/* Hint text */
+.control-hint {
+  display: block;
+  font-size: 11px;
+  color: var(--vscode-descriptionForeground);
+  margin-left: 72px;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+/* Toggle switch */
+.control-toggle-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--vscode-input-background);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 10px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--vscode-descriptionForeground);
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: var(--vscode-button-background);
+  border-color: var(--vscode-button-background);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(16px);
+  background-color: var(--vscode-button-foreground);
+}
+
+.toggle-switch input:focus-visible + .toggle-slider {
+  outline: 2px solid var(--vscode-focusBorder);
+  outline-offset: 2px;
+}
+
+.toggle-label {
+  font-size: 12px;
+  color: var(--vscode-descriptionForeground);
+}
+
+/* Input field (for number/text inputs) */
+.control-input {
+  flex: 1;
+  padding: 6px 10px;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 4px;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.control-input:hover {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-input:focus {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-input:focus-visible {
+  outline: 2px solid var(--vscode-focusBorder);
+  outline-offset: 1px;
+}

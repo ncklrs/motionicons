@@ -1,0 +1,191 @@
+/**
+ * App-specific styles for the integrated MotionIcon Picker
+ * Imports from base styles and adds layout-specific rules
+ */
+
+@import './styles/index.css';
+
+/* ===== App Layout ===== */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.app-container.has-detail-panel {
+  /* Adjust main content when detail panel is open */
+}
+
+/* ===== App Header ===== */
+
+.app-header {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vscode-sideBar-background);
+}
+
+/* ===== App Main Content ===== */
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  /* Make room for detail panel when open */
+  transition: margin-right 0.25s ease;
+}
+
+.has-detail-panel .app-main {
+  margin-right: 300px;
+}
+
+/* ===== Status Bar ===== */
+
+.status-bar {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  font-size: 11px;
+  color: var(--vscode-descriptionForeground);
+  background-color: var(--vscode-sideBarSectionHeader-background);
+  border-bottom: 1px solid var(--vscode-input-border);
+}
+
+/* ===== Detail Panel Overlay (for mobile) ===== */
+
+@media (max-width: 600px) {
+  .has-detail-panel .app-main {
+    margin-right: 0;
+  }
+
+  .detail-panel {
+    width: 100% !important;
+    left: 0;
+  }
+
+  .detail-panel.open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+}
+
+/* ===== Responsive Adjustments ===== */
+
+@media (max-width: 400px) {
+  .app-header {
+    padding: 0;
+  }
+
+  .search-bar {
+    padding: 8px;
+  }
+
+  .filter-panel-content.expanded {
+    padding: 8px;
+  }
+
+  .filter-dropdowns {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* ===== Focus Management ===== */
+
+/* Skip to main content link (for accessibility) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  z-index: 1000;
+}
+
+/* ===== Transitions ===== */
+
+/* Smooth transitions for panel open/close */
+.detail-panel {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.detail-panel:not(.open) {
+  pointer-events: none;
+}
+
+/* ===== Loading States ===== */
+
+.app-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--vscode-input-border);
+  border-top-color: var(--vscode-focusBorder);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.app-loading-text {
+  color: var(--vscode-descriptionForeground);
+  font-size: 12px;
+}
+
+/* ===== High Contrast Mode Support ===== */
+
+@media (prefers-contrast: high) {
+  .icon-card {
+    border-width: 2px;
+  }
+
+  .icon-card:hover,
+  .icon-card.selected {
+    border-width: 2px;
+  }
+
+  .filter-pill.active {
+    border: 2px solid var(--vscode-button-foreground);
+  }
+}
+
+/* ===== Reduced Motion Support ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -13,9 +13,9 @@
  * function App() {
  *   return (
  *     <div>
- *       <Heart motionType="pulse" trigger="hover" />
- *       <Settings motionType="rotate" />
- *       <Bell motionType="shake" />
+ *       <Heart lively="pulse" trigger="hover" />
+ *       <Settings lively="rotate" />
+ *       <Bell lively="shake" />
  *     </div>
  *   );
  * }

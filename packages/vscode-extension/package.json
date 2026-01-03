@@ -1,0 +1,41 @@
+{
+  "name": "motionicon-picker",
+  "displayName": "MotionIcons Picker",
+  "description": "Browse, preview, and insert animated icons from the MotionIcons library",
+  "version": "1.0.0",
+  "publisher": "motionicon",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Snippets", "Other"],
+  "keywords": ["icons", "animated", "motion", "react", "svg"],
+  "activationEvents": ["onCommand:motionicon.openPicker"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "motionicon.openPicker",
+      "title": "MotionIcons: Open Icon Picker"
+    }],
+    "keybindings": [{
+      "command": "motionicon.openPicker",
+      "key": "cmd+shift+i",
+      "mac": "cmd+shift+i",
+      "win": "ctrl+shift+i",
+      "linux": "ctrl+shift+i",
+      "when": "editorTextFocus"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "npm run build:extension && npm run build:webview",
+    "build:extension": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "build:webview": "cd webview && npm run build",
+    "watch": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --watch",
+    "extract-icons": "npx tsx scripts/extract-svg-data.ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
