@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "school",
+  "type": "registry:ui",
+  "title": "School",
+  "description": "Animated School icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/school.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst School = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"scale\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        <motion.path d=\"M14 22v-4a2 2 0 1 0-4 0v4\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"m18 10 4 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V12l4-2\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M18 5v17\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"m4 6 8-4 8 4\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M6 5v17\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.circle cx=\"12\" cy=\"9\" r=\"2\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      </motion.svg>\n    );\n  }\n);\n\nSchool.displayName = \"School\";\n\nexport { School };\n",
+      "type": "registry:ui",
+      "target": "components/icons/school.tsx"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "speed-dial",
+  "type": "registry:ui",
+  "title": "SpeedDial",
+  "description": "Animated SpeedDial icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/speed-dial.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst SpeedDial = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"scale\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        <motion.path d=\"M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M12 12l3-5\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M5.5 17h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M5 12h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M7 7h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M12 5h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M17 7h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M19 12h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M18.5 17h.01\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      </motion.svg>\n    );\n  }\n);\n\nSpeedDial.displayName = \"SpeedDial\";\n\nexport { SpeedDial };\n",
+      "type": "registry:ui",
+      "target": "components/icons/speed-dial.tsx"
+    }
+  ]
+}

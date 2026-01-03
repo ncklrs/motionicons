@@ -57,11 +57,13 @@ export type TriggerType = 'hover' | 'loop' | 'mount' | 'inView';
  * Code generation options for inserting icons
  */
 export interface CodeGenerationOptions {
-  iconId: string;
+  iconId?: string;
   iconName: string;
   /** Default motion type for the icon (from icon metadata) */
   defaultMotionType?: MotionType;
-  lively: MotionType;
+  /** Motion type (alias for lively) */
+  motionType?: MotionType;
+  lively?: MotionType;
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -69,8 +71,8 @@ export interface CodeGenerationOptions {
   trigger?: TriggerType;
   /** Whether icon should be animated (undefined = use default true) */
   animated?: boolean;
-  includeImport: boolean;
-  importStyle: 'named' | 'default' | 'namespace';
+  includeImport?: boolean;
+  importStyle?: 'named' | 'default' | 'namespace';
 }
 
 /**

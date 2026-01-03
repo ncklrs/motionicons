@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "corner-down-left",
+  "type": "registry:ui",
+  "title": "CornerDownLeft",
+  "description": "Animated CornerDownLeft icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/corner-down-left.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst CornerDownLeft = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"scale\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        <motion.polyline points=\"9 10 4 15 9 20\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M20 4v7a4 4 0 0 1-4 4H4\" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      </motion.svg>\n    );\n  }\n);\n\nCornerDownLeft.displayName = \"CornerDownLeft\";\n\nexport { CornerDownLeft };\n",
+      "type": "registry:ui",
+      "target": "components/icons/corner-down-left.tsx"
+    }
+  ]
+}

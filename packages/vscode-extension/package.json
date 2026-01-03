@@ -1,26 +1,33 @@
 {
-  "name": "motionicon-picker",
-  "displayName": "MotionIcons Picker",
-  "description": "Browse, preview, and insert animated icons from the MotionIcons library",
+  "name": "livelyicons-picker",
+  "displayName": "LivelyIcons Picker",
+  "description": "Browse, preview, and insert animated icons from the LivelyIcons library",
   "version": "1.0.0",
-  "publisher": "motionicon",
+  "publisher": "livelyicons",
+  "icon": "icon.png",
   "engines": { "vscode": "^1.74.0" },
   "categories": ["Snippets", "Other"],
-  "keywords": ["icons", "animated", "motion", "react", "svg"],
-  "activationEvents": ["onCommand:motionicon.openPicker"],
+  "keywords": ["icons", "animated", "motion", "react", "svg", "lively", "livelyicons"],
+  "activationEvents": ["onView:livelyicons.iconPicker"],
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [{
+        "id": "livelyicons",
+        "title": "LivelyIcons",
+        "icon": "icon.svg"
+      }]
+    },
+    "views": {
+      "livelyicons": [{
+        "type": "webview",
+        "id": "livelyicons.iconPicker",
+        "name": "Icon Picker"
+      }]
+    },
     "commands": [{
-      "command": "motionicon.openPicker",
-      "title": "MotionIcons: Open Icon Picker"
-    }],
-    "keybindings": [{
-      "command": "motionicon.openPicker",
-      "key": "cmd+shift+i",
-      "mac": "cmd+shift+i",
-      "win": "ctrl+shift+i",
-      "linux": "ctrl+shift+i",
-      "when": "editorTextFocus"
+      "command": "livelyicons.insertIcon",
+      "title": "LivelyIcons: Insert Selected Icon"
     }]
   },
   "scripts": {

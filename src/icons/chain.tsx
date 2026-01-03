@@ -1,0 +1,41 @@
+"use client"
+
+import { motion } from "motion/react"
+import { useIconAnimation } from "../hooks/useIconAnimation"
+import type { IconProps } from "../lib/types"
+
+export const Chain = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = 'scale',
+  trigger = 'hover',
+  'aria-label': ariaLabel
+}: IconProps) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger)
+  const isDraw = lively === 'draw'
+
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${className || ''} ${isDraw ? 'draw-animation' : ''}`.trim()}
+      {...(!isDraw ? animationProps : drawWrapperProps)}
+      role={ariaLabel ? "img" : undefined}
+      aria-label={ariaLabel}
+      aria-hidden={ariaLabel ? undefined : true}
+    >
+      <motion.rect x="5" y="2" width="6" height="10" rx="3" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="13" y="12" width="6" height="10" rx="3" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M8 12v2a3 3 0 0 0 3 3h2" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M16 12v-2a3 3 0 0 0-3-3h-2" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+    </motion.svg>
+  )
+}

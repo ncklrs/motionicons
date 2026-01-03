@@ -9,7 +9,7 @@ export const MapPin = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'bounce',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

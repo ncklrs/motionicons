@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "code-block",
+  "type": "registry:ui",
+  "title": "CodeBlock",
+  "description": "Animated CodeBlock icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/code-block.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst CodeBlock = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"scale\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        <motion.path d=\"M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6Z\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M8 9H16\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M8 12H13\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M8 15H16\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      </motion.svg>\n    );\n  }\n);\n\nCodeBlock.displayName = \"CodeBlock\";\n\nexport { CodeBlock };\n",
+      "type": "registry:ui",
+      "target": "components/icons/code-block.tsx"
+    }
+  ]
+}

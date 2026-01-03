@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rabbit",
+  "type": "registry:ui",
+  "title": "Rabbit",
+  "description": "Animated Rabbit icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/rabbit.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst Rabbit = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"bounce\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        <motion.path d=\"M8 8C8 8 7 3 5 2C4 4 4 7 5 9M16 8C16 8 17 3 19 2C20 4 20 7 19 9\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M12 21C16.4183 21 20 17.4183 20 13C20 8.58172 16.4183 5 12 5C7.58172 5 4 8.58172 4 13C4 17.4183 7.58172 21 12 21Z\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M9 12V13M15 12V13\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      <motion.path d=\"M10 16C11 17 13 17 14 16M12 14V16\" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>\n      </motion.svg>\n    );\n  }\n);\n\nRabbit.displayName = \"Rabbit\";\n\nexport { Rabbit };\n",
+      "type": "registry:ui",
+      "target": "components/icons/rabbit.tsx"
+    }
+  ]
+}

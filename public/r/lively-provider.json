@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lively-provider",
+  "type": "registry:lib",
+  "title": "LivelyProvider",
+  "description": "Context provider for LivelyIcons configuration. Wrap your app to set global icon defaults.",
+  "dependencies": [],
+  "registryDependencies": [
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "lib/lively-provider.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport type { LivelyIconConfig } from \"@/lib/lively-types\";\n\n/**\n * Default icon configuration\n */\nconst DEFAULT_CONFIG: LivelyIconConfig = {\n  animated: true,\n  defaultSize: 24,\n  defaultStrokeWidth: 2,\n};\n\n/**\n * Lively icon context\n */\nconst LivelyContext = React.createContext<LivelyIconConfig | undefined>(\n  undefined\n);\n\n/**\n * Props for LivelyProvider component\n */\nexport interface LivelyProviderProps {\n  children: React.ReactNode;\n  config?: Partial<LivelyIconConfig>;\n}\n\n/**\n * Provider component for Lively icon configuration\n *\n * Wrap your app or component tree with this provider to set global icon defaults.\n *\n * @example\n * ```tsx\n * <LivelyProvider config={{ animated: false, defaultSize: 32 }}>\n *   <App />\n * </LivelyProvider>\n * ```\n */\nexport function LivelyProvider({\n  children,\n  config,\n}: LivelyProviderProps): React.JSX.Element {\n  const mergedConfig: LivelyIconConfig = {\n    ...DEFAULT_CONFIG,\n    ...config,\n  };\n\n  return (\n    <LivelyContext.Provider value={mergedConfig}>\n      {children}\n    </LivelyContext.Provider>\n  );\n}\n\n/**\n * Hook to access Lively icon context configuration\n *\n * Returns the current icon configuration from context, or default config if not in a provider.\n */\nexport function useLivelyContext(): LivelyIconConfig {\n  const context = React.useContext(LivelyContext);\n  return context ?? DEFAULT_CONFIG;\n}\n",
+      "type": "registry:lib",
+      "target": "lib/lively-provider.tsx"
+    }
+  ]
+}

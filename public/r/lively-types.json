@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lively-types",
+  "type": "registry:lib",
+  "title": "LivelyIcons Types",
+  "description": "TypeScript type definitions for LivelyIcons components.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "lib/lively-types.ts",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\n/**\n * Available motion/animation types for icons\n */\nexport type LivelyMotionType =\n  | \"scale\" // Grow/shrink on hover\n  | \"rotate\" // Spin on hover\n  | \"translate\" // Move/slide on hover\n  | \"shake\" // Shake/wobble on hover\n  | \"pulse\" // Pulse/heartbeat effect\n  | \"bounce\" // Bouncy spring effect\n  | \"draw\" // SVG path drawing effect\n  | \"spin\" // Continuous rotation\n  | \"none\"; // No animation\n\n/**\n * Animation trigger modes\n */\nexport type LivelyTriggerType =\n  | \"hover\" // Animate on hover (default)\n  | \"loop\" // Continuous looping animation\n  | \"mount\" // Animate once on mount\n  | \"inView\"; // Animate when scrolled into view\n\n/**\n * Props for LivelyIcon components\n * Compatible with shadcn/ui patterns\n */\nexport interface LivelyIconProps extends React.SVGProps<SVGSVGElement> {\n  /**\n   * Size of the icon in pixels or CSS value\n   * Uses CSS variable --lively-icon-size if not specified\n   * @default 24\n   */\n  size?: number | string;\n\n  /**\n   * Stroke width for SVG paths\n   * Uses CSS variable --lively-stroke-width if not specified\n   * @default 2\n   */\n  strokeWidth?: number | string;\n\n  /**\n   * Whether the icon should be animated\n   * Overrides context and system preferences\n   */\n  animated?: boolean;\n\n  /**\n   * The type of motion/animation to apply\n   * @default varies per icon\n   */\n  lively?: LivelyMotionType;\n\n  /**\n   * When to trigger the animation\n   * @default 'hover'\n   */\n  trigger?: LivelyTriggerType;\n}\n\n/**\n * Configuration for LivelyIcon provider\n */\nexport interface LivelyIconConfig {\n  /**\n   * Global animation toggle\n   * @default true\n   */\n  animated: boolean;\n\n  /**\n   * Default size for all icons in pixels\n   * @default 24\n   */\n  defaultSize: number;\n\n  /**\n   * Default stroke width for all icons\n   * @default 2\n   */\n  defaultStrokeWidth: number;\n}\n\n/**\n * Motion preset interface for animations\n */\nexport interface LivelyMotionPreset {\n  variants: {\n    initial: Record<string, unknown>;\n    hover: Record<string, unknown>;\n  };\n  transition: Record<string, unknown>;\n}\n",
+      "type": "registry:lib",
+      "target": "lib/lively-types.ts"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lively-essentials",
+  "type": "registry:ui",
+  "title": "LivelyIcons Essentials",
+  "description": "Essential LivelyIcons bundle including provider, hook, and popular icons.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types",
+    "ab-test",
+    "accessibility",
+    "achievement",
+    "acorn",
+    "activity",
+    "aggregate",
+    "airbnb",
+    "airplay",
+    "airport",
+    "alarm-clock",
+    "alert-circle-2",
+    "alert-circle",
+    "alert-octagon",
+    "alert-triangle",
+    "alias",
+    "amazon",
+    "ambulance-2",
+    "ambulance",
+    "analytics",
+    "anchor-2"
+  ],
+  "files": []
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "repost",
+  "type": "registry:ui",
+  "title": "Repost",
+  "description": "Animated Repost icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/repost.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst Repost = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"rotate\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        <motion.path\n        d=\"m17 2 4 4-4 4\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      <motion.path\n        d=\"M3 11v-1a4 4 0 0 1 4-4h14\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      <motion.path\n        d=\"m7 22-4-4 4-4\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      <motion.path\n        d=\"M21 13v1a4 4 0 0 1-4 4H3\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      </motion.svg>\n    );\n  }\n);\n\nRepost.displayName = \"Repost\";\n\nexport { Repost };\n",
+      "type": "registry:ui",
+      "target": "components/icons/repost.tsx"
+    }
+  ]
+}

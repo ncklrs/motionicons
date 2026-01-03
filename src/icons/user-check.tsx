@@ -9,7 +9,7 @@ export const UserCheck = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'draw',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

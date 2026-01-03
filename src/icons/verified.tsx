@@ -9,7 +9,7 @@ export const Verified = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'draw',
+  lively = 'pulse',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

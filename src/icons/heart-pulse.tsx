@@ -9,7 +9,7 @@ export const HeartPulse = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'pulse',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

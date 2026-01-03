@@ -1,0 +1,304 @@
+{
+  "timestamp": "2026-01-03T20:27:03.953Z",
+  "packageVersion": "1.0.1",
+  "packageName": "livelyicons",
+  "totalIconCount": 1318,
+  "scenarios": [
+    {
+      "name": "1 icon",
+      "imports": [
+        "Heart"
+      ],
+      "bundleSize": {
+        "raw": 5630,
+        "gzip": 1818
+      },
+      "percentOfFull": 2
+    },
+    {
+      "name": "5 icons",
+      "imports": [
+        "Heart",
+        "Star",
+        "Bell",
+        "Check",
+        "X"
+      ],
+      "bundleSize": {
+        "raw": 8351,
+        "gzip": 2094
+      },
+      "percentOfFull": 2.3
+    },
+    {
+      "name": "10 icons",
+      "imports": [
+        "Heart",
+        "Star",
+        "Bell",
+        "Check",
+        "X",
+        "ArrowRight",
+        "Home",
+        "Settings",
+        "User",
+        "Search"
+      ],
+      "bundleSize": {
+        "raw": 12017,
+        "gzip": 2359
+      },
+      "percentOfFull": 2.59
+    },
+    {
+      "name": "25 icons",
+      "imports": [
+        "Heart",
+        "Star",
+        "Bell",
+        "Check",
+        "X",
+        "ArrowRight",
+        "Home",
+        "Settings",
+        "User",
+        "Search",
+        "Mail",
+        "Phone",
+        "Camera",
+        "Lock",
+        "Eye",
+        "Download",
+        "Upload",
+        "Edit",
+        "Trash",
+        "Plus",
+        "Minus",
+        "Menu",
+        "Clock",
+        "Calendar",
+        "Map"
+      ],
+      "bundleSize": {
+        "raw": 23708,
+        "gzip": 3211
+      },
+      "percentOfFull": 3.53
+    },
+    {
+      "name": "50 icons",
+      "imports": [
+        "Heart",
+        "Star",
+        "Bell",
+        "Check",
+        "X",
+        "ArrowRight",
+        "Home",
+        "Settings",
+        "User",
+        "Search",
+        "Mail",
+        "Phone",
+        "Camera",
+        "Lock",
+        "Eye",
+        "Download",
+        "Upload",
+        "Edit",
+        "Trash",
+        "Plus",
+        "Minus",
+        "Menu",
+        "Clock",
+        "Calendar",
+        "Map",
+        "Bookmark",
+        "Share",
+        "Copy",
+        "Filter",
+        "Grid",
+        "List",
+        "Video",
+        "Music",
+        "Mic",
+        "Volume",
+        "Sun",
+        "Moon",
+        "Cloud",
+        "Zap",
+        "Activity",
+        "AlertCircle",
+        "Archive",
+        "Award",
+        "Battery",
+        "Book",
+        "Calculator",
+        "Coffee"
+      ],
+      "bundleSize": {
+        "raw": 41688,
+        "gzip": 4406
+      },
+      "percentOfFull": 4.84
+    },
+    {
+      "name": "100 icons",
+      "imports": [
+        "Accessibility",
+        "Activity",
+        "Airplay",
+        "AlarmClock",
+        "AlertCircle2",
+        "AlertCircle",
+        "AlertOctagon",
+        "AlertTriangle",
+        "Ambulance",
+        "Analytics",
+        "Anchor",
+        "Angry",
+        "Annoyed",
+        "Apartment",
+        "Api",
+        "Apple",
+        "Approved",
+        "Archive2",
+        "Archive",
+        "AreaChart",
+        "ArrowDownCircle",
+        "ArrowDownLeft",
+        "ArrowDownRight",
+        "ArrowDown",
+        "ArrowLeftCircle",
+        "ArrowLeft",
+        "ArrowRightCircle",
+        "ArrowRight",
+        "ArrowUpCircle",
+        "ArrowUpLeft",
+        "ArrowUpRight",
+        "ArrowUp",
+        "ArrowsCollapse",
+        "ArrowsExpand",
+        "AtSign",
+        "Atom2",
+        "AudioDescription",
+        "AudioLines",
+        "Award",
+        "Axe",
+        "Baby",
+        "Backpack",
+        "Badge2",
+        "BadgeAlert",
+        "BadgeCheck2",
+        "BadgeCheck",
+        "BadgeDollar",
+        "BadgeHelp",
+        "BadgeInfo",
+        "BadgeMinus",
+        "BadgePercent",
+        "BadgePlus",
+        "BadgeX",
+        "Ban",
+        "Banana",
+        "Bandage",
+        "Bank",
+        "Banknote",
+        "BarChart2",
+        "BarChartHorizontal",
+        "BarChart",
+        "Barcode",
+        "Barometer",
+        "Baseball",
+        "Basket",
+        "Basketball",
+        "Bathtub",
+        "BatteryCharging",
+        "BatteryEmpty",
+        "BatteryHalf",
+        "BatteryLow",
+        "BatteryQuarter",
+        "BatteryThreeQuarters",
+        "Battery",
+        "Beaker2",
+        "Bear",
+        "Bed",
+        "Bee",
+        "Beer",
+        "BellOff",
+        "BellRing",
+        "Bell",
+        "Bicycle",
+        "Bike",
+        "Biohazard2",
+        "Binder",
+        "Blender",
+        "Bird",
+        "Bitcoin",
+        "Block",
+        "Bluetooth",
+        "Boat",
+        "Bold",
+        "Bone",
+        "BookClosed",
+        "BookMarked",
+        "BookOpen",
+        "Book",
+        "Bookmark",
+        "Bot"
+      ],
+      "bundleSize": {
+        "raw": 91959,
+        "gzip": 7384
+      },
+      "percentOfFull": 8.11
+    },
+    {
+      "name": "Full import (*)",
+      "imports": [
+        "*"
+      ],
+      "bundleSize": {
+        "raw": 1200760,
+        "gzip": 91027
+      },
+      "percentOfFull": 100
+    }
+  ],
+  "staticScenarios": [
+    {
+      "name": "1 static icon",
+      "imports": [
+        "StaticHeart"
+      ],
+      "bundleSize": {
+        "raw": 9494,
+        "gzip": 2450
+      }
+    },
+    {
+      "name": "5 static icons",
+      "imports": [
+        "StaticHeart",
+        "StaticStar",
+        "StaticBell",
+        "StaticCheck",
+        "StaticX"
+      ],
+      "bundleSize": {
+        "raw": 9556,
+        "gzip": 2472
+      }
+    }
+  ],
+  "metadata": {
+    "bundler": "esbuild",
+    "target": "es2020",
+    "format": "esm",
+    "minified": true,
+    "external": [
+      "react",
+      "react-dom",
+      "motion"
+    ]
+  }
+}

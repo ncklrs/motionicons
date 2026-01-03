@@ -20,15 +20,18 @@ export class IconPickerPanel {
   private readonly _extensionUri: vscode.Uri;
   private readonly _context: vscode.ExtensionContext;
   private _disposables: vscode.Disposable[] = [];
+  private _lastActiveEditor: vscode.TextEditor | undefined;
 
   private constructor(
     panel: vscode.WebviewPanel,
     extensionUri: vscode.Uri,
-    context: vscode.ExtensionContext
+    context: vscode.ExtensionContext,
+    lastActiveEditor?: vscode.TextEditor
   ) {
     this._panel = panel;
     this._extensionUri = extensionUri;
     this._context = context;
+    this._lastActiveEditor = lastActiveEditor;
 
     // Set the webview's initial html content
     this._update();
@@ -62,12 +65,13 @@ export class IconPickerPanel {
     extensionUri: vscode.Uri,
     context: vscode.ExtensionContext
   ): void {
-    const column = vscode.window.activeTextEditor
-      ? vscode.window.activeTextEditor.viewColumn
-      : undefined;
+    // Capture the active editor BEFORE opening the panel
+    const activeEditor = vscode.window.activeTextEditor;
+    const column = activeEditor?.viewColumn;
 
-    // If we already have a panel, show it
+    // If we already have a panel, show it and update the stored editor
     if (IconPickerPanel.currentPanel) {
+      IconPickerPanel.currentPanel._lastActiveEditor = activeEditor;
       IconPickerPanel.currentPanel._panel.reveal(column);
       return;
     }
@@ -90,7 +94,8 @@ export class IconPickerPanel {
     IconPickerPanel.currentPanel = new IconPickerPanel(
       panel,
       extensionUri,
-      context
+      context,
+      activeEditor
     );
   }
 
@@ -521,9 +526,21 @@ export class IconPickerPanel {
       `src="${assetsUri.toString()}/`
     );
 
-    // Add CSP meta tag
-    const nonce = this._getNonce();
-    const csp = this._getContentSecurityPolicy(nonce);
+    // Remove existing CSP meta tag (we'll add our own)
+    html = html.replace(
+      /<meta\s+http-equiv="Content-Security-Policy"[^>]*>/gi,
+      ''
+    );
+
+    // Add proper CSP meta tag for VSCode webview
+    const csp = [
+      `default-src 'none'`,
+      `style-src ${webview.cspSource} 'unsafe-inline'`,
+      `script-src ${webview.cspSource} 'unsafe-inline'`,
+      `img-src ${webview.cspSource} data: https:`,
+      `font-src ${webview.cspSource}`,
+      `connect-src ${webview.cspSource}`,
+    ].join('; ');
 
     html = html.replace(
       '<head>',

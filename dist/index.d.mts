@@ -64,7 +64,7 @@ interface IconProps {
      * The type of motion/animation to apply
      * @default 'scale'
      */
-    motionType?: MotionType;
+    lively?: MotionType;
     /**
      * When to trigger the animation
      * - 'hover': Animate on hover (default)
@@ -84,7 +84,7 @@ interface IconProps {
     animationMode?: AnimationMode;
     /**
      * Custom motion preset for user-defined animations
-     * When provided, overrides motionType
+     * When provided, overrides lively
      */
     motionPreset?: CustomMotionPresetConfig;
     /**
@@ -269,7 +269,7 @@ interface UseIconAnimationReturn {
      */
     transition: TransitionConfig | undefined;
     /**
-     * Pre-built variants from the motion preset (based on motionType)
+     * Pre-built variants from the motion preset (based on lively)
      */
     presetVariants: AnimationVariants | undefined;
     /**
@@ -300,7 +300,7 @@ interface UseIconAnimationReturn {
  * 3. System prefers-reduced-motion preference
  *
  * @param animated - Optional override from component props
- * @param motionType - Optional motion type to use preset variants
+ * @param lively - Optional motion type to use preset variants
  * @returns Animation state and helper functions
  *
  * @example
@@ -318,7 +318,7 @@ interface UseIconAnimationReturn {
  * // Using preset motion type
  * const { isAnimated, presetVariants, presetTransition } = useIconAnimation(
  *   props.animated,
- *   props.motionType
+ *   props.lively
  * );
  *
  * return (
@@ -330,7 +330,7 @@ interface UseIconAnimationReturn {
  * );
  * ```
  */
-declare function useIconAnimation(animated?: boolean, motionType?: MotionType, trigger?: TriggerType): UseIconAnimationReturn;
+declare function useIconAnimation(animated?: boolean, lively?: MotionType, trigger?: TriggerType): UseIconAnimationReturn;
 
 /**
  * Return type for useIconConfig hook
@@ -400,13 +400,13 @@ declare function useIconConfig(props: IconProps): UseIconConfigReturn;
  * }
  * ```
  */
-type IconName = 'Accessibility' | 'Activity' | 'Airplay' | 'AlertCircle' | 'AlertOctagon' | 'AlertTriangle' | 'Anchor' | 'Apple' | 'Archive' | 'AreaChart' | 'ArrowDown' | 'ArrowDownLeft' | 'ArrowDownRight' | 'ArrowLeft' | 'ArrowRight' | 'ArrowUp' | 'ArrowUpLeft' | 'ArrowUpRight' | 'AtSign' | 'Award' | 'Baby' | 'Backpack' | 'BadgeCheck' | 'Ban' | 'Banana' | 'Bandage' | 'BarChart' | 'BarChart2' | 'Barcode' | 'Battery' | 'BatteryCharging' | 'BatteryLow' | 'Beer' | 'Bell' | 'Bike' | 'Bluetooth' | 'Bone' | 'Book' | 'BookMarked' | 'BookOpen' | 'Bookmark' | 'Brain' | 'Brush' | 'Building' | 'Building2' | 'Bus' | 'Calculator' | 'Calendar' | 'Camera' | 'Car' | 'CarFront' | 'Carrot' | 'Cast' | 'Castle' | 'Check' | 'CheckCircle' | 'ChefHat' | 'Cherry' | 'ChevronDown' | 'ChevronUp' | 'ChevronsDown' | 'ChevronsLeft' | 'ChevronsRight' | 'ChevronsUp' | 'Church' | 'Circle' | 'Clipboard' | 'ClipboardCheck' | 'ClipboardCopy' | 'ClipboardList' | 'Clock' | 'Cloud' | 'CloudDrizzle' | 'CloudLightning' | 'CloudRain' | 'CloudSnow' | 'CloudSun' | 'Code' | 'Code2' | 'Coffee' | 'Columns' | 'Command' | 'Compass' | 'Contact' | 'Contact2' | 'Cookie' | 'Copy' | 'CornerDownLeft' | 'CornerDownRight' | 'CornerUpLeft' | 'CornerUpRight' | 'Cpu' | 'CreditCard' | 'Crosshair' | 'Crown' | 'Cup' | 'Database' | 'Dice1' | 'Dice2' | 'Dice3' | 'Dice4' | 'Dice5' | 'Dice6' | 'Dna' | 'DollarSign' | 'Download' | 'Droplet' | 'Dumbbell' | 'Ear' | 'Edit' | 'Eraser' | 'Eye' | 'Eye2' | 'EyeOff' | 'Factory' | 'FastForward' | 'File' | 'FileCheck' | 'FileMinus' | 'FilePlus' | 'FileText' | 'FileX' | 'Files' | 'Film' | 'Filter' | 'Fingerprint' | 'Flame' | 'Folder' | 'FolderMinus' | 'FolderOpen' | 'FolderPlus' | 'Footprints' | 'Frown' | 'Fuel' | 'Gamepad2' | 'Gauge' | 'Gift' | 'Glasses' | 'Globe' | 'GraduationCap' | 'Grape' | 'Grid' | 'Hammer' | 'Hand' | 'HardDrive' | 'Hash' | 'Headphones' | 'Heart' | 'HeartPulse' | 'HelpCircle' | 'Highlighter' | 'Home' | 'Hospital' | 'IceCream' | 'Inbox' | 'Info' | 'Joystick' | 'Kanban' | 'Key' | 'KeyRound' | 'Keyboard' | 'Lamp' | 'LampDesk' | 'Landmark' | 'Laptop' | 'Layout' | 'LayoutGrid' | 'LayoutList' | 'Leaf' | 'Library' | 'Lightbulb' | 'LightbulbOff' | 'LineChart' | 'Link' | 'List' | 'Loader' | 'Lock' | 'LockOpen' | 'Mail' | 'Map' | 'MapPin' | 'Martini' | 'Maximize' | 'Maximize2' | 'Medal' | 'Meh' | 'Menu' | 'MessageCircle' | 'MessageSquare' | 'Mic' | 'MicOff' | 'Microscope' | 'Milestone' | 'Minimize' | 'Minimize2' | 'Minus' | 'Monitor' | 'Moon' | 'MoreHorizontal' | 'Mountain' | 'MountainSnow' | 'Mouse' | 'MoveHorizontal' | 'Music' | 'Navigation' | 'Navigation2' | 'Notebook' | 'NotebookPen' | 'Package' | 'Palette' | 'PanelLeft' | 'PanelRight' | 'Paperclip' | 'Parking' | 'Pause' | 'Pen' | 'PenTool' | 'Pencil' | 'Percent' | 'Phone' | 'PhoneCall' | 'PhoneIncoming' | 'PhoneMissed' | 'PhoneOff' | 'PhoneOutgoing' | 'PieChart' | 'Pill' | 'Pizza' | 'Plane' | 'PlaneLanding' | 'PlaneTakeoff' | 'Play' | 'Plus' | 'Presentation' | 'Printer' | 'Puzzle' | 'QrCode' | 'Radio' | 'Receipt' | 'Refresh' | 'Repeat' | 'Rewind' | 'Rocket' | 'Router' | 'Rows' | 'Rss' | 'Ruler' | 'Sailboat' | 'Sandwich' | 'Save' | 'Scan' | 'ScanLine' | 'School' | 'Screwdriver' | 'SdCard' | 'Search' | 'Send' | 'Send2' | 'Server' | 'Settings' | 'Share' | 'Shield' | 'ShieldAlert' | 'ShieldCheck' | 'ShieldOff' | 'Ship' | 'ShoppingBag' | 'ShoppingCart' | 'Shuffle' | 'Sidebar' | 'Signal' | 'SignalHigh' | 'SignalLow' | 'SignalZero' | 'SkipBack' | 'SkipForward' | 'Smartphone' | 'Smile' | 'Snowflake' | 'Speaker' | 'Square' | 'Star' | 'Stethoscope' | 'Store' | 'Sun' | 'Sunrise' | 'Sunset' | 'Sword' | 'Swords' | 'Syringe' | 'Table' | 'Table2' | 'Tablet' | 'Tag' | 'Tag2' | 'Tags' | 'Target' | 'Tent' | 'Terminal' | 'TestTube' | 'TestTubes' | 'Thermometer' | 'Thermometer2' | 'ThumbsDown' | 'ThumbsUp' | 'TrafficCone' | 'Train' | 'Trash' | 'Tree' | 'TrendingDown' | 'TrendingUp' | 'Triangle' | 'Trophy' | 'Truck' | 'Tv' | 'Umbrella' | 'Unlock' | 'Upload' | 'UsbDrive' | 'User' | 'UserCheck' | 'UserCog' | 'UserMinus' | 'UserPlus' | 'UserX' | 'Users' | 'Utensils' | 'UtensilsCrossed' | 'Video' | 'Video2' | 'VideoOff' | 'Voicemail' | 'Volume' | 'VolumeOff' | 'Wallet' | 'Wand' | 'Wand2' | 'Warehouse' | 'Watch' | 'Waves' | 'Webcam' | 'Wheelchair' | 'Wifi' | 'WifiOff' | 'Wind' | 'Wine' | 'Wrench' | 'X' | 'XCircle' | 'Zap';
+type IconName = 'Accessibility' | 'Activity' | 'Airplay' | 'AlarmClock' | 'AlertCircle' | 'AlertCircle2' | 'AlertOctagon' | 'AlertTriangle' | 'Alias' | 'Ambulance' | 'Analytics' | 'Anchor' | 'Anchor2' | 'Angry' | 'Annoyed' | 'Apartment' | 'Api' | 'Apple' | 'Approved' | 'Archive' | 'Archive2' | 'AreaChart' | 'Armor' | 'ArrowDown' | 'ArrowDownCircle' | 'ArrowDownCircle2' | 'ArrowDownLeft' | 'ArrowDownRight' | 'ArrowDownSquare' | 'ArrowLeft' | 'ArrowLeftCircle' | 'ArrowLeftCircle2' | 'ArrowLeftSquare' | 'ArrowRight' | 'ArrowRightCircle' | 'ArrowRightCircle2' | 'ArrowRightSquare' | 'ArrowUp' | 'ArrowUpCircle' | 'ArrowUpCircle2' | 'ArrowUpLeft' | 'ArrowUpRight' | 'ArrowUpSquare' | 'ArrowsCollapse' | 'ArrowsExpand' | 'ArrowsMaximize2' | 'ArrowsMinimize2' | 'AtSign' | 'Atom2' | 'AudioDescription' | 'AudioLines' | 'Award' | 'Axe' | 'Baby' | 'Backlink' | 'Backpack' | 'Badge2' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeCheck2' | 'BadgeDollar' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePercent' | 'BadgePlus' | 'BadgeX' | 'Ban' | 'Banana' | 'Bandage' | 'Bank' | 'Banknote' | 'BarChart' | 'BarChart2' | 'BarChartHorizontal' | 'Barcode' | 'Barometer' | 'Baseball' | 'Basket' | 'Basketball' | 'Bathtub' | 'Battery' | 'BatteryCharging' | 'BatteryEmpty' | 'BatteryHalf' | 'BatteryLow' | 'BatteryQuarter' | 'BatteryThreeQuarters' | 'Beaker2' | 'Bear' | 'Bed' | 'Bee' | 'Beer' | 'Bell' | 'BellOff' | 'BellRing' | 'Bicycle' | 'Bike' | 'Binder' | 'Biohazard2' | 'Bird' | 'Bitcoin' | 'Blender' | 'Block' | 'Bluetooth' | 'Boat' | 'Bold' | 'Bone' | 'Book' | 'BookClosed' | 'BookMarked' | 'BookOpen' | 'Bookmark' | 'Bot' | 'Bowling' | 'Braille' | 'Brain' | 'BrainCircuit' | 'BrainCog' | 'Branch' | 'Briefcase2' | 'BriefcaseMedical' | 'Brightness' | 'Broadcast' | 'Brush' | 'Bug' | 'Building' | 'Building2' | 'Bus' | 'BusinessCard' | 'Butterfly' | 'Cable' | 'Cactus' | 'Cake' | 'Calculator' | 'Calendar' | 'CalendarCheck' | 'CalendarDays' | 'CalendarMinus' | 'CalendarPlus' | 'CalendarX' | 'Caliper' | 'Camera' | 'CameraMovie' | 'Candle' | 'Cap' | 'Car' | 'CarFront' | 'Carpet' | 'Carrot' | 'Cast' | 'Castle' | 'Cat' | 'Certificate' | 'Chain' | 'ChainBroken' | 'Chair' | 'Check' | 'CheckCircle' | 'CheckCircle2' | 'CheckSquare' | 'Checkbox' | 'CheckboxChecked' | 'ChefHat' | 'Cherry' | 'ChevronDown' | 'ChevronUp' | 'ChevronsDown' | 'ChevronsLeft' | 'ChevronsRight' | 'ChevronsUp' | 'Chimney' | 'ChipAi' | 'Chopsticks' | 'Church' | 'Cinema' | 'Circle' | 'Citation' | 'Clipboard' | 'Clipboard2' | 'ClipboardCheck' | 'ClipboardCheck2' | 'ClipboardCopy' | 'ClipboardCopy2' | 'ClipboardData' | 'ClipboardEdit' | 'ClipboardHeart' | 'ClipboardList' | 'ClipboardList2' | 'ClipboardMinus' | 'ClipboardPaste2' | 'ClipboardPlus' | 'ClipboardSearch' | 'ClipboardSignature' | 'ClipboardText' | 'ClipboardX2' | 'Clock' | 'ClosedCaption' | 'ClosedCaptions' | 'Cloud' | 'CloudDrizzle' | 'CloudFog' | 'CloudLightning' | 'CloudRain' | 'CloudSnow' | 'CloudSun' | 'Coat' | 'Code' | 'CodeBlock' | 'CodeSquare' | 'Code2' | 'Coffee' | 'Coins' | 'Columns' | 'Command' | 'Compass' | 'Compass2' | 'Complete' | 'Confused' | 'Contact' | 'Contact2' | 'Container' | 'Contract' | 'Contrast' | 'Cookie' | 'Cool' | 'Copier' | 'Copy' | 'CornerDownLeft' | 'CornerDownLeft2' | 'CornerDownRight' | 'CornerDownRight2' | 'CornerUpLeft' | 'CornerUpLeft2' | 'CornerUpRight' | 'CornerUpRight2' | 'Cpu' | 'CreditCard' | 'Cross' | 'Crosshair' | 'Crosshair2' | 'Crown' | 'Cry' | 'Css' | 'Cup' | 'Cursor' | 'CursorClick' | 'CursorText' | 'Curtain' | 'Cycling' | 'Database' | 'Database2' | 'DatabaseBackup' | 'DatabaseZap' | 'DeepLink' | 'Deer' | 'Defend' | 'Desk' | 'Desktop' | 'Dial' | 'Diamond' | 'Dice1' | 'Dice2' | 'Dice3' | 'Dice4' | 'Dice5' | 'Dice6' | 'Dimension' | 'Directions' | 'Disc' | 'Disc2' | 'Disc3' | 'Divide2' | 'Dna' | 'Dna2' | 'DocumentPrinter' | 'Dog' | 'DollarSign' | 'Door' | 'DoorClosed' | 'DoorOpen' | 'Download' | 'Dress' | 'Drill' | 'Droplet' | 'Dumbbell' | 'Ear' | 'EarHearing' | 'EarOff' | 'Edit' | 'Electron' | 'Elephant' | 'Envelope2' | 'Equalizer' | 'Equals' | 'Eraser' | 'Exposure' | 'ExternalLink' | 'ExternalLink2' | 'Eye' | 'Eye2' | 'EyeOff' | 'FaceId' | 'Factory' | 'FastForward' | 'Faucet' | 'Fax' | 'Fence' | 'File' | 'FileArchive' | 'FileAudio' | 'FileCheck' | 'FileCode' | 'FileImage' | 'FileMinus' | 'FilePlus' | 'FileText' | 'FileVideo' | 'FileX' | 'Files' | 'Film' | 'Film2' | 'FilmSlate' | 'Filter' | 'Fingerprint' | 'FireTruck' | 'Firewall' | 'FirstAid' | 'Fish' | 'Fist' | 'Flame' | 'Flashlight' | 'FlashlightOff' | 'Flask2' | 'FlaskRound' | 'Flower' | 'Flower2' | 'FocusRing' | 'Folder' | 'FolderMinus' | 'FolderOpen' | 'FolderPlus' | 'Follow' | 'Football' | 'Footprints' | 'Fork' | 'Fortress' | 'Fox' | 'Fraction' | 'Frown' | 'Fuel' | 'Function' | 'Future' | 'Gamepad' | 'Gamepad2' | 'Garage' | 'GardenHose' | 'Gate' | 'Gauge' | 'Generator' | 'Gift' | 'GitBranch' | 'GitCommit' | 'GitFork' | 'GitMerge' | 'GitPullRequest' | 'Glasses' | 'Globe' | 'Globe2' | 'Glue' | 'Golf' | 'Grab' | 'GrabCursor' | 'Grabbing' | 'GraduationCap' | 'Grape' | 'GreaterThan' | 'Grid' | 'Grid2x2' | 'Grid3x3' | 'Guard' | 'Hail' | 'Hammer' | 'Hand' | 'HandMetal' | 'HandWave' | 'Handshake' | 'Happy' | 'HardDrive' | 'HardDrive2' | 'Hash' | 'Hashtag' | 'Hat' | 'Heading1' | 'Heading2' | 'Heading3' | 'Headphones' | 'Heart' | 'HeartPulse' | 'HeartShape' | 'Helicopter' | 'HelpCircle' | 'HelpCursor' | 'Hexagon' | 'Highlighter' | 'History' | 'Hockey' | 'Home' | 'Hoodie' | 'Horse' | 'Hospital' | 'Hotel' | 'Hourglass' | 'House2' | 'HouseCheck' | 'HouseCog' | 'HouseHeart' | 'HousePlus' | 'HouseX' | 'Html' | 'Humidity' | 'Hyperlink' | 'IceCream' | 'IdCard' | 'Inbox' | 'Incomplete' | 'Indent' | 'Infinity' | 'Info' | 'InfoCircle' | 'Ink' | 'InternalLink' | 'Invoice' | 'Italic' | 'Jacket' | 'JavascriptIcon' | 'Joystick' | 'Json' | 'Kanban' | 'Kettle' | 'Key' | 'KeyRound' | 'KeySquare' | 'Keyboard' | 'KeyboardNav' | 'Knife2' | 'Knob' | 'Ladder' | 'Ladle' | 'Lamp' | 'LampCeiling' | 'LampDesk' | 'LampFloor' | 'LampWall' | 'Landmark' | 'Lantern' | 'Laptop' | 'Laugh' | 'Layout' | 'LayoutGrid' | 'LayoutList' | 'Leaf' | 'Leaf2' | 'LessThan' | 'Level' | 'Library' | 'Lightbulb' | 'LightbulbOff' | 'Lighthouse' | 'LineChart' | 'Link' | 'Link2Off' | 'Lion' | 'List' | 'Live' | 'Lively' | 'Loader' | 'Loading' | 'Locate' | 'LocateFixed' | 'Lock' | 'LockKeyhole' | 'LockOpen' | 'Love' | 'Luggage' | 'Lungs' | 'Magnet' | 'Mail' | 'MailCheck' | 'MailOpen' | 'MailPlus' | 'Mailbox' | 'Map' | 'MapPin' | 'MapPinned' | 'Markdown' | 'Marker' | 'Martini' | 'Maximize' | 'Maximize2' | 'Medal' | 'Meeting' | 'Meh' | 'Memory' | 'Mention' | 'Menu' | 'MenuDots' | 'MenuDotsHorizontal' | 'MenuGrid' | 'MessageAi' | 'MessageCircle' | 'MessageSquare' | 'MessagesSquare' | 'Mic' | 'MicOff' | 'Microscope' | 'Microscope2' | 'Microwave' | 'Milestone' | 'Minimize' | 'Minimize2' | 'Minus' | 'Minus2' | 'MinusCircle' | 'MinusSquare' | 'Molecule' | 'Monitor' | 'Moon' | 'MoreHorizontal' | 'Motorcycle' | 'Mountain' | 'MountainSnow' | 'Mouse' | 'MoveCursor' | 'MoveHorizontal' | 'Multiply' | 'Music' | 'Music2' | 'Music3' | 'Music4' | 'NameBadge' | 'Navigation' | 'Navigation2' | 'Neon' | 'NeuralNetwork' | 'NotAllowed' | 'NotEqual' | 'Notebook' | 'NotebookPen' | 'Nucleus' | 'Octagon' | 'Odometer' | 'Office' | 'Ok' | 'Outdent' | 'Outlet' | 'Oval' | 'Package' | 'PageSetup' | 'Paintbrush' | 'Palette' | 'Palm' | 'Pan' | 'PanelBottom' | 'PanelLeft' | 'PanelRight' | 'PanelTop' | 'Pants' | 'PaperFeed' | 'Paperclip' | 'Paperclip2' | 'Parallelogram' | 'Parking' | 'Passport' | 'Pause' | 'PauseCircle' | 'Peace' | 'Pen' | 'Pen2' | 'PenLine' | 'PenTool' | 'Pencil' | 'Pencil2' | 'PencilLine' | 'Pending' | 'Pentagon' | 'Percent' | 'PercentBadge' | 'Percentage' | 'Permalink' | 'PetriDish' | 'Phone' | 'PhoneCall' | 'PhoneIncoming' | 'PhoneMissed' | 'PhoneOff' | 'PhoneOutgoing' | 'Pi' | 'PictureFrame' | 'PieChart' | 'PiggyBank' | 'Pill' | 'Pinch' | 'PineTree' | 'Pizza' | 'Plane' | 'PlaneLanding' | 'PlaneTakeoff' | 'Plant2' | 'Plate' | 'Play' | 'PlayCircle' | 'Playlist' | 'Pliers' | 'Plug2' | 'Plus' | 'Plus2' | 'PlusCircle' | 'PlusSquare' | 'Podcast' | 'PointDown' | 'PointLeft' | 'PointRight' | 'PointUp' | 'Pointer2' | 'PoliceCar' | 'Portfolio' | 'Pot' | 'Potion' | 'PowerOff' | 'Presentation' | 'Presentation2' | 'PrintPreview' | 'PrintQueue' | 'Printer' | 'Printer2' | 'PrinterCheck' | 'PrinterX' | 'Progress' | 'Projector' | 'Protection' | 'Protractor' | 'Puzzle' | 'PuzzlePiece' | 'QrCode' | 'Queue' | 'Quote' | 'Rabbit' | 'Radiation' | 'Radio' | 'RadioButton' | 'RadioChecked' | 'Rainbow' | 'Rake' | 'Ram' | 'Receipt' | 'Receipt2' | 'Record' | 'Rectangle' | 'ReducedMotion' | 'Reference' | 'Refresh' | 'Refrigerator' | 'Regex' | 'Rejected' | 'Repeat' | 'ResizeDiagonal' | 'ResizeHorizontal' | 'ResizeVertical' | 'Rewind' | 'Robot' | 'Rocket' | 'Roller' | 'Rose' | 'Route' | 'Router' | 'Rows' | 'Rss' | 'RubberStamp' | 'Ruler' | 'Ruler2' | 'RulerSquare' | 'Running' | 'Sad' | 'Sailboat' | 'Sandwich' | 'Save' | 'Saw' | 'Scale2' | 'Scan' | 'Scan2' | 'ScanFace' | 'ScanLine' | 'Scanner' | 'Scanner2' | 'Schedule' | 'School' | 'Scissors2' | 'Scooter' | 'Screen' | 'ScreenReader' | 'Screwdriver' | 'SdCard' | 'Search' | 'SearchMinus' | 'SearchPlus' | 'Seedling' | 'Send' | 'Send2' | 'Server' | 'Server2' | 'ServerCog' | 'ServerCrash' | 'ServerOff' | 'Settings' | 'Share' | 'Shield' | 'Shield2' | 'ShieldAlert' | 'ShieldAlert2' | 'ShieldCheck' | 'ShieldDollar' | 'ShieldLock' | 'ShieldMinus2' | 'ShieldOff' | 'ShieldOff2' | 'ShieldPlus' | 'ShieldPlus2' | 'ShieldUnlock' | 'ShieldUser' | 'ShieldX' | 'Ship' | 'Shirt' | 'ShoppingBag' | 'ShoppingCart' | 'Shortcut' | 'Shorts' | 'Shovel' | 'Shuffle' | 'Sidebar' | 'SidebarClose' | 'SidebarOpen' | 'Sigma' | 'SignLanguage' | 'Signal' | 'SignalHigh' | 'SignalLow' | 'SignalZero' | 'Signpost' | 'Sink' | 'Skiing' | 'SkipBack' | 'SkipForward' | 'Sleep' | 'Slider' | 'SliderHorizontal' | 'SliderVertical' | 'Smartphone' | 'Smile' | 'Snippet' | 'Snowflake' | 'Soccer' | 'Sofa' | 'Sparkles' | 'Spatula' | 'Speaker' | 'Speaker2' | 'Speaker3' | 'SpeedDial' | 'Speedometer' | 'Spoon2' | 'Spotlight' | 'Sprout' | 'Sqrt' | 'Square' | 'Ssd' | 'Stamp' | 'Stapler' | 'Star' | 'Statistics' | 'Stethoscope' | 'StopCircle' | 'Stopwatch' | 'Storage' | 'Store' | 'Stream' | 'Strikethrough' | 'Studio' | 'Subscript' | 'Subtitle' | 'Sun' | 'Sunglasses' | 'Sunrise' | 'Sunset' | 'Superscript' | 'SurgeProtector' | 'Surprised' | 'Sweater' | 'Swimming' | 'SwitchOff' | 'SwitchOn' | 'Sword' | 'Swords' | 'Syringe' | 'Table' | 'Table2' | 'Tablet' | 'Tag' | 'Tag2' | 'Tags' | 'Tape' | 'TapeMeasure' | 'Target' | 'Team' | 'TemperatureDial' | 'Tennis' | 'Tent' | 'Terminal' | 'Terminal2' | 'TerminalSquare' | 'TestTube' | 'TestTube2' | 'TestTubes' | 'Text' | 'TextCursor' | 'TextSize' | 'Thermometer' | 'Thermometer2' | 'ThermometerMedical' | 'ThumbsDown' | 'ThumbsUp' | 'Ticket' | 'Tie' | 'Timeline' | 'Timer' | 'Toaster' | 'Toggle' | 'ToggleLeft' | 'ToggleRight' | 'Toilet' | 'Toner' | 'Toolbox' | 'Torch' | 'Tornado' | 'Tower' | 'TrafficCone' | 'Train' | 'Trapezoid' | 'Trash' | 'Tree' | 'Tree2' | 'TreePalm' | 'TreePine' | 'TrendingDown' | 'TrendingUp' | 'Triangle' | 'Trophy' | 'Truck' | 'Tshirt' | 'Tulip' | 'Turtle' | 'Tv' | 'TwoFactor' | 'TypescriptIcon' | 'Ufo' | 'Umbrella' | 'Underline' | 'Unfollow' | 'Unlock' | 'Unverified' | 'Upload' | 'Ups' | 'UsbDrive' | 'User' | 'UserCheck' | 'UserCircle' | 'UserCog' | 'UserMinus' | 'UserPlus' | 'UserX' | 'Users' | 'Utensils' | 'UtensilsCrossed' | 'Vault' | 'Verified' | 'Video' | 'Video2' | 'VideoOff' | 'Vinyl' | 'VoiceControl' | 'Voicemail' | 'Volleyball' | 'Volume' | 'Volume1' | 'Volume2' | 'VolumeDial' | 'VolumeOff' | 'VolumeX' | 'WaitCursor' | 'Wallet' | 'WalletCards' | 'Wand' | 'Wand2' | 'WandSparkles' | 'Warehouse' | 'Watch' | 'WatchAccessory' | 'WateringCan' | 'Waveform' | 'Waves' | 'Waypoints' | 'Webcam' | 'Webhook' | 'Weight' | 'Wheelchair' | 'Whisk' | 'Wifi' | 'WifiOff' | 'Wind' | 'Window' | 'Window2' | 'Wine' | 'Wink' | 'Wolf' | 'Wrench' | 'X' | 'XCircle' | 'XCircle2' | 'XSquare' | 'Xml' | 'Zap';
 /**
  * Union type of all available icon names (kebab-case)
  *
  * Useful for configuration objects or CLI tools
  */
-type IconNameKebab = 'accessibility' | 'activity' | 'airplay' | 'alert-circle' | 'alert-octagon' | 'alert-triangle' | 'anchor' | 'apple' | 'archive' | 'area-chart' | 'arrow-down' | 'arrow-down-left' | 'arrow-down-right' | 'arrow-left' | 'arrow-right' | 'arrow-up' | 'arrow-up-left' | 'arrow-up-right' | 'at-sign' | 'award' | 'baby' | 'backpack' | 'badge-check' | 'ban' | 'banana' | 'bandage' | 'bar-chart' | 'bar-chart-2' | 'barcode' | 'battery' | 'battery-charging' | 'battery-low' | 'beer' | 'bell' | 'bike' | 'bluetooth' | 'bone' | 'book' | 'book-marked' | 'book-open' | 'bookmark' | 'brain' | 'brush' | 'building' | 'building2' | 'bus' | 'calculator' | 'calendar' | 'camera' | 'car' | 'car-front' | 'carrot' | 'cast' | 'castle' | 'check' | 'check-circle' | 'chef-hat' | 'cherry' | 'chevron-down' | 'chevron-up' | 'chevrons-down' | 'chevrons-left' | 'chevrons-right' | 'chevrons-up' | 'church' | 'circle' | 'clipboard' | 'clipboard-check' | 'clipboard-copy' | 'clipboard-list' | 'clock' | 'cloud' | 'cloud-drizzle' | 'cloud-lightning' | 'cloud-rain' | 'cloud-snow' | 'cloud-sun' | 'code' | 'code2' | 'coffee' | 'columns' | 'command' | 'compass' | 'contact' | 'contact2' | 'cookie' | 'copy' | 'corner-down-left' | 'corner-down-right' | 'corner-up-left' | 'corner-up-right' | 'cpu' | 'credit-card' | 'crosshair' | 'crown' | 'cup' | 'database' | 'dice-1' | 'dice-2' | 'dice-3' | 'dice-4' | 'dice-5' | 'dice-6' | 'dna' | 'dollar-sign' | 'download' | 'droplet' | 'dumbbell' | 'ear' | 'edit' | 'eraser' | 'eye' | 'eye-2' | 'eye-off' | 'factory' | 'fast-forward' | 'file' | 'file-check' | 'file-minus' | 'file-plus' | 'file-text' | 'file-x' | 'files' | 'film' | 'filter' | 'fingerprint' | 'flame' | 'folder' | 'folder-minus' | 'folder-open' | 'folder-plus' | 'footprints' | 'frown' | 'fuel' | 'gamepad-2' | 'gauge' | 'gift' | 'glasses' | 'globe' | 'graduation-cap' | 'grape' | 'grid' | 'hammer' | 'hand' | 'hard-drive' | 'hash' | 'headphones' | 'heart' | 'heart-pulse' | 'help-circle' | 'highlighter' | 'home' | 'hospital' | 'ice-cream' | 'inbox' | 'info' | 'joystick' | 'kanban' | 'key' | 'key-round' | 'keyboard' | 'lamp' | 'lamp-desk' | 'landmark' | 'laptop' | 'layout' | 'layout-grid' | 'layout-list' | 'leaf' | 'library' | 'lightbulb' | 'lightbulb-off' | 'line-chart' | 'link' | 'list' | 'loader' | 'lock' | 'lock-open' | 'mail' | 'map' | 'map-pin' | 'martini' | 'maximize' | 'maximize-2' | 'medal' | 'meh' | 'menu' | 'message-circle' | 'message-square' | 'mic' | 'mic-off' | 'microscope' | 'milestone' | 'minimize' | 'minimize-2' | 'minus' | 'monitor' | 'moon' | 'more-horizontal' | 'mountain' | 'mountain-snow' | 'mouse' | 'move-horizontal' | 'music' | 'navigation' | 'navigation-2' | 'notebook' | 'notebook-pen' | 'package' | 'palette' | 'panel-left' | 'panel-right' | 'paperclip' | 'parking' | 'pause' | 'pen' | 'pen-tool' | 'pencil' | 'percent' | 'phone' | 'phone-call' | 'phone-incoming' | 'phone-missed' | 'phone-off' | 'phone-outgoing' | 'pie-chart' | 'pill' | 'pizza' | 'plane' | 'plane-landing' | 'plane-takeoff' | 'play' | 'plus' | 'presentation' | 'printer' | 'puzzle' | 'qr-code' | 'radio' | 'receipt' | 'refresh' | 'repeat' | 'rewind' | 'rocket' | 'router' | 'rows' | 'rss' | 'ruler' | 'sailboat' | 'sandwich' | 'save' | 'scan' | 'scan-line' | 'school' | 'screwdriver' | 'sd-card' | 'search' | 'send' | 'send-2' | 'server' | 'settings' | 'share' | 'shield' | 'shield-alert' | 'shield-check' | 'shield-off' | 'ship' | 'shopping-bag' | 'shopping-cart' | 'shuffle' | 'sidebar' | 'signal' | 'signal-high' | 'signal-low' | 'signal-zero' | 'skip-back' | 'skip-forward' | 'smartphone' | 'smile' | 'snowflake' | 'speaker' | 'square' | 'star' | 'stethoscope' | 'store' | 'sun' | 'sunrise' | 'sunset' | 'sword' | 'swords' | 'syringe' | 'table' | 'table-2' | 'tablet' | 'tag' | 'tag2' | 'tags' | 'target' | 'tent' | 'terminal' | 'test-tube' | 'test-tubes' | 'thermometer' | 'thermometer-2' | 'thumbs-down' | 'thumbs-up' | 'traffic-cone' | 'train' | 'trash' | 'tree' | 'trending-down' | 'trending-up' | 'triangle' | 'trophy' | 'truck' | 'tv' | 'umbrella' | 'unlock' | 'upload' | 'usb-drive' | 'user' | 'user-check' | 'user-cog' | 'user-minus' | 'user-plus' | 'user-x' | 'users' | 'utensils' | 'utensils-crossed' | 'video' | 'video-2' | 'video-off' | 'voicemail' | 'volume' | 'volume-off' | 'wallet' | 'wand' | 'wand-2' | 'warehouse' | 'watch' | 'waves' | 'webcam' | 'wheelchair' | 'wifi' | 'wifi-off' | 'wind' | 'wine' | 'wrench' | 'x' | 'x-circle' | 'zap';
+type IconNameKebab = 'accessibility' | 'activity' | 'airplay' | 'alarm-clock' | 'alert-circle' | 'alert-circle-2' | 'alert-octagon' | 'alert-triangle' | 'alias' | 'ambulance' | 'analytics' | 'anchor' | 'anchor-2' | 'angry' | 'annoyed' | 'apartment' | 'api' | 'apple' | 'approved' | 'archive' | 'archive-2' | 'area-chart' | 'armor' | 'arrow-down' | 'arrow-down-circle' | 'arrow-down-circle-2' | 'arrow-down-left' | 'arrow-down-right' | 'arrow-down-square' | 'arrow-left' | 'arrow-left-circle' | 'arrow-left-circle-2' | 'arrow-left-square' | 'arrow-right' | 'arrow-right-circle' | 'arrow-right-circle-2' | 'arrow-right-square' | 'arrow-up' | 'arrow-up-circle' | 'arrow-up-circle-2' | 'arrow-up-left' | 'arrow-up-right' | 'arrow-up-square' | 'arrows-collapse' | 'arrows-expand' | 'arrows-maximize-2' | 'arrows-minimize-2' | 'at-sign' | 'atom-2' | 'audio-description' | 'audio-lines' | 'award' | 'axe' | 'baby' | 'backlink' | 'backpack' | 'badge-2' | 'badge-alert' | 'badge-check' | 'badge-check-2' | 'badge-dollar' | 'badge-help' | 'badge-info' | 'badge-minus' | 'badge-percent' | 'badge-plus' | 'badge-x' | 'ban' | 'banana' | 'bandage' | 'bank' | 'banknote' | 'bar-chart' | 'bar-chart-2' | 'bar-chart-horizontal' | 'barcode' | 'barometer' | 'baseball' | 'basket' | 'basketball' | 'bathtub' | 'battery' | 'battery-charging' | 'battery-empty' | 'battery-half' | 'battery-low' | 'battery-quarter' | 'battery-three-quarters' | 'beaker-2' | 'bear' | 'bed' | 'bee' | 'beer' | 'bell' | 'bell-off' | 'bell-ring' | 'bicycle' | 'bike' | 'binder' | 'biohazard-2' | 'bird' | 'bitcoin' | 'blender' | 'block' | 'bluetooth' | 'boat' | 'bold' | 'bone' | 'book' | 'book-closed' | 'book-marked' | 'book-open' | 'bookmark' | 'bot' | 'bowling' | 'braille' | 'brain' | 'brain-circuit' | 'brain-cog' | 'branch' | 'briefcase-2' | 'briefcase-medical' | 'brightness' | 'broadcast' | 'brush' | 'bug' | 'building' | 'building2' | 'bus' | 'business-card' | 'butterfly' | 'cable' | 'cactus' | 'cake' | 'calculator' | 'calendar' | 'calendar-check' | 'calendar-days' | 'calendar-minus' | 'calendar-plus' | 'calendar-x' | 'caliper' | 'camera' | 'camera-movie' | 'candle' | 'cap' | 'car' | 'car-front' | 'carpet' | 'carrot' | 'cast' | 'castle' | 'cat' | 'certificate' | 'chain' | 'chain-broken' | 'chair' | 'check' | 'check-circle' | 'check-circle-2' | 'check-square' | 'checkbox' | 'checkbox-checked' | 'chef-hat' | 'cherry' | 'chevron-down' | 'chevron-up' | 'chevrons-down' | 'chevrons-left' | 'chevrons-right' | 'chevrons-up' | 'chimney' | 'chip-ai' | 'chopsticks' | 'church' | 'cinema' | 'circle' | 'citation' | 'clipboard' | 'clipboard-2' | 'clipboard-check' | 'clipboard-check-2' | 'clipboard-copy' | 'clipboard-copy-2' | 'clipboard-data' | 'clipboard-edit' | 'clipboard-heart' | 'clipboard-list' | 'clipboard-list-2' | 'clipboard-minus' | 'clipboard-paste-2' | 'clipboard-plus' | 'clipboard-search' | 'clipboard-signature' | 'clipboard-text' | 'clipboard-x-2' | 'clock' | 'closed-caption' | 'closed-captions' | 'cloud' | 'cloud-drizzle' | 'cloud-fog' | 'cloud-lightning' | 'cloud-rain' | 'cloud-snow' | 'cloud-sun' | 'coat' | 'code' | 'code-block' | 'code-square' | 'code2' | 'coffee' | 'coins' | 'columns' | 'command' | 'compass' | 'compass-2' | 'complete' | 'confused' | 'contact' | 'contact2' | 'container' | 'contract' | 'contrast' | 'cookie' | 'cool' | 'copier' | 'copy' | 'corner-down-left' | 'corner-down-left-2' | 'corner-down-right' | 'corner-down-right-2' | 'corner-up-left' | 'corner-up-left-2' | 'corner-up-right' | 'corner-up-right-2' | 'cpu' | 'credit-card' | 'cross' | 'crosshair' | 'crosshair-2' | 'crown' | 'cry' | 'css' | 'cup' | 'cursor' | 'cursor-click' | 'cursor-text' | 'curtain' | 'cycling' | 'database' | 'database-2' | 'database-backup' | 'database-zap' | 'deep-link' | 'deer' | 'defend' | 'desk' | 'desktop' | 'dial' | 'diamond' | 'dice-1' | 'dice-2' | 'dice-3' | 'dice-4' | 'dice-5' | 'dice-6' | 'dimension' | 'directions' | 'disc' | 'disc-2' | 'disc-3' | 'divide-2' | 'dna' | 'dna-2' | 'document-printer' | 'dog' | 'dollar-sign' | 'door' | 'door-closed' | 'door-open' | 'download' | 'dress' | 'drill' | 'droplet' | 'dumbbell' | 'ear' | 'ear-hearing' | 'ear-off' | 'edit' | 'electron' | 'elephant' | 'envelope-2' | 'equalizer' | 'equals' | 'eraser' | 'exposure' | 'external-link' | 'external-link-2' | 'eye' | 'eye-2' | 'eye-off' | 'face-id' | 'factory' | 'fast-forward' | 'faucet' | 'fax' | 'fence' | 'file' | 'file-archive' | 'file-audio' | 'file-check' | 'file-code' | 'file-image' | 'file-minus' | 'file-plus' | 'file-text' | 'file-video' | 'file-x' | 'files' | 'film' | 'film-2' | 'film-slate' | 'filter' | 'fingerprint' | 'fire-truck' | 'firewall' | 'first-aid' | 'fish' | 'fist' | 'flame' | 'flashlight' | 'flashlight-off' | 'flask-2' | 'flask-round' | 'flower' | 'flower-2' | 'focus-ring' | 'folder' | 'folder-minus' | 'folder-open' | 'folder-plus' | 'follow' | 'football' | 'footprints' | 'fork' | 'fortress' | 'fox' | 'fraction' | 'frown' | 'fuel' | 'function' | 'future' | 'gamepad' | 'gamepad-2' | 'garage' | 'garden-hose' | 'gate' | 'gauge' | 'generator' | 'gift' | 'git-branch' | 'git-commit' | 'git-fork' | 'git-merge' | 'git-pull-request' | 'glasses' | 'globe' | 'globe-2' | 'glue' | 'golf' | 'grab' | 'grab-cursor' | 'grabbing' | 'graduation-cap' | 'grape' | 'greater-than' | 'grid' | 'grid-2x2' | 'grid-3x3' | 'guard' | 'hail' | 'hammer' | 'hand' | 'hand-metal' | 'hand-wave' | 'handshake' | 'happy' | 'hard-drive' | 'hard-drive-2' | 'hash' | 'hashtag' | 'hat' | 'heading-1' | 'heading-2' | 'heading-3' | 'headphones' | 'heart' | 'heart-pulse' | 'heart-shape' | 'helicopter' | 'help-circle' | 'help-cursor' | 'hexagon' | 'highlighter' | 'history' | 'hockey' | 'home' | 'hoodie' | 'horse' | 'hospital' | 'hotel' | 'hourglass' | 'house-2' | 'house-check' | 'house-cog' | 'house-heart' | 'house-plus' | 'house-x' | 'html' | 'humidity' | 'hyperlink' | 'ice-cream' | 'id-card' | 'inbox' | 'incomplete' | 'indent' | 'infinity' | 'info' | 'info-circle' | 'ink' | 'internal-link' | 'invoice' | 'italic' | 'jacket' | 'javascript-icon' | 'joystick' | 'json' | 'kanban' | 'kettle' | 'key' | 'key-round' | 'key-square' | 'keyboard' | 'keyboard-nav' | 'knife-2' | 'knob' | 'ladder' | 'ladle' | 'lamp' | 'lamp-ceiling' | 'lamp-desk' | 'lamp-floor' | 'lamp-wall' | 'landmark' | 'lantern' | 'laptop' | 'laugh' | 'layout' | 'layout-grid' | 'layout-list' | 'leaf' | 'leaf-2' | 'less-than' | 'level' | 'library' | 'lightbulb' | 'lightbulb-off' | 'lighthouse' | 'line-chart' | 'link' | 'link-2-off' | 'lion' | 'list' | 'live' | 'loader' | 'loading' | 'locate' | 'locate-fixed' | 'lock' | 'lock-keyhole' | 'lock-open' | 'love' | 'luggage' | 'lungs' | 'magnet' | 'mail' | 'mail-check' | 'mail-open' | 'mail-plus' | 'mailbox' | 'map' | 'map-pin' | 'map-pinned' | 'markdown' | 'marker' | 'martini' | 'maximize' | 'maximize-2' | 'medal' | 'meeting' | 'meh' | 'memory' | 'mention' | 'menu' | 'menu-dots' | 'menu-dots-horizontal' | 'menu-grid' | 'message-ai' | 'message-circle' | 'message-square' | 'messages-square' | 'mic' | 'mic-off' | 'microscope' | 'microscope-2' | 'microwave' | 'milestone' | 'minimize' | 'minimize-2' | 'minus' | 'minus-2' | 'minus-circle' | 'minus-square' | 'molecule' | 'monitor' | 'moon' | 'more-horizontal' | 'motorcycle' | 'mountain' | 'mountain-snow' | 'mouse' | 'move-cursor' | 'move-horizontal' | 'multiply' | 'music' | 'music-2' | 'music-3' | 'music-4' | 'name-badge' | 'navigation' | 'navigation-2' | 'neon' | 'neural-network' | 'not-allowed' | 'not-equal' | 'notebook' | 'notebook-pen' | 'nucleus' | 'octagon' | 'odometer' | 'office' | 'ok' | 'outdent' | 'outlet' | 'oval' | 'package' | 'page-setup' | 'paintbrush' | 'palette' | 'palm' | 'pan' | 'panel-bottom' | 'panel-left' | 'panel-right' | 'panel-top' | 'pants' | 'paper-feed' | 'paperclip' | 'paperclip-2' | 'parallelogram' | 'parking' | 'passport' | 'pause' | 'pause-circle' | 'peace' | 'pen' | 'pen-2' | 'pen-line' | 'pen-tool' | 'pencil' | 'pencil-2' | 'pencil-line' | 'pending' | 'pentagon' | 'percent' | 'percent-badge' | 'percentage' | 'permalink' | 'petri-dish' | 'phone' | 'phone-call' | 'phone-incoming' | 'phone-missed' | 'phone-off' | 'phone-outgoing' | 'pi' | 'picture-frame' | 'pie-chart' | 'piggy-bank' | 'pill' | 'pinch' | 'pine-tree' | 'pizza' | 'plane' | 'plane-landing' | 'plane-takeoff' | 'plant-2' | 'plate' | 'play' | 'play-circle' | 'playlist' | 'pliers' | 'plug-2' | 'plus' | 'plus-2' | 'plus-circle' | 'plus-square' | 'podcast' | 'point-down' | 'point-left' | 'point-right' | 'point-up' | 'pointer-2' | 'police-car' | 'portfolio' | 'pot' | 'potion' | 'power-off' | 'presentation' | 'presentation-2' | 'print-preview' | 'print-queue' | 'printer' | 'printer-2' | 'printer-check' | 'printer-x' | 'progress' | 'projector' | 'protection' | 'protractor' | 'puzzle' | 'puzzle-piece' | 'qr-code' | 'queue' | 'quote' | 'rabbit' | 'radiation' | 'radio' | 'radio-button' | 'radio-checked' | 'rainbow' | 'rake' | 'ram' | 'receipt' | 'receipt-2' | 'record' | 'rectangle' | 'reduced-motion' | 'reference' | 'refresh' | 'refrigerator' | 'regex' | 'rejected' | 'repeat' | 'resize-diagonal' | 'resize-horizontal' | 'resize-vertical' | 'rewind' | 'robot' | 'rocket' | 'roller' | 'rose' | 'route' | 'router' | 'rows' | 'rss' | 'rubber-stamp' | 'ruler' | 'ruler-2' | 'ruler-square' | 'running' | 'sad' | 'sailboat' | 'sandwich' | 'save' | 'saw' | 'scale-2' | 'scan' | 'scan-2' | 'scan-face' | 'scan-line' | 'scanner' | 'scanner-2' | 'schedule' | 'school' | 'scissors-2' | 'scooter' | 'screen' | 'screen-reader' | 'screwdriver' | 'sd-card' | 'search' | 'search-minus' | 'search-plus' | 'seedling' | 'send' | 'send-2' | 'server' | 'server-2' | 'server-cog' | 'server-crash' | 'server-off' | 'settings' | 'share' | 'shield' | 'shield-2' | 'shield-alert' | 'shield-alert-2' | 'shield-check' | 'shield-dollar' | 'shield-lock' | 'shield-minus-2' | 'shield-off' | 'shield-off-2' | 'shield-plus' | 'shield-plus-2' | 'shield-unlock' | 'shield-user' | 'shield-x' | 'ship' | 'shirt' | 'shopping-bag' | 'shopping-cart' | 'shortcut' | 'shorts' | 'shovel' | 'shuffle' | 'sidebar' | 'sidebar-close' | 'sidebar-open' | 'sigma' | 'sign-language' | 'signal' | 'signal-high' | 'signal-low' | 'signal-zero' | 'signpost' | 'sink' | 'skiing' | 'skip-back' | 'skip-forward' | 'sleep' | 'slider' | 'slider-horizontal' | 'slider-vertical' | 'smartphone' | 'smile' | 'snippet' | 'snowflake' | 'soccer' | 'sofa' | 'sparkles' | 'spatula' | 'speaker' | 'speaker-2' | 'speaker-3' | 'speed-dial' | 'speedometer' | 'spoon-2' | 'spotlight' | 'sprout' | 'sqrt' | 'square' | 'ssd' | 'stamp' | 'stapler' | 'star' | 'statistics' | 'stethoscope' | 'stop-circle' | 'stopwatch' | 'storage' | 'store' | 'stream' | 'strikethrough' | 'studio' | 'subscript' | 'subtitle' | 'sun' | 'sunglasses' | 'sunrise' | 'sunset' | 'superscript' | 'surge-protector' | 'surprised' | 'sweater' | 'swimming' | 'switch-off' | 'switch-on' | 'sword' | 'swords' | 'syringe' | 'table' | 'table-2' | 'tablet' | 'tag' | 'tag2' | 'tags' | 'tape' | 'tape-measure' | 'target' | 'team' | 'temperature-dial' | 'tennis' | 'tent' | 'terminal' | 'terminal-2' | 'terminal-square' | 'test-tube' | 'test-tube-2' | 'test-tubes' | 'text' | 'text-cursor' | 'text-size' | 'thermometer' | 'thermometer-2' | 'thermometer-medical' | 'thumbs-down' | 'thumbs-up' | 'ticket' | 'tie' | 'timeline' | 'timer' | 'toaster' | 'toggle' | 'toggle-left' | 'toggle-right' | 'toilet' | 'toner' | 'toolbox' | 'torch' | 'tornado' | 'tower' | 'traffic-cone' | 'train' | 'trapezoid' | 'trash' | 'tree' | 'tree-2' | 'tree-palm' | 'tree-pine' | 'trending-down' | 'trending-up' | 'triangle' | 'trophy' | 'truck' | 'tshirt' | 'tulip' | 'turtle' | 'tv' | 'two-factor' | 'typescript-icon' | 'ufo' | 'umbrella' | 'underline' | 'unfollow' | 'unlock' | 'unverified' | 'upload' | 'ups' | 'usb-drive' | 'user' | 'user-check' | 'user-circle' | 'user-cog' | 'user-minus' | 'user-plus' | 'user-x' | 'users' | 'utensils' | 'utensils-crossed' | 'vault' | 'verified' | 'video' | 'video-2' | 'video-off' | 'vinyl' | 'voice-control' | 'voicemail' | 'volleyball' | 'volume' | 'volume-1' | 'volume-2' | 'volume-dial' | 'volume-off' | 'volume-x' | 'wait-cursor' | 'wallet' | 'wallet-cards' | 'wand' | 'wand-2' | 'wand-sparkles' | 'warehouse' | 'watch' | 'watch-accessory' | 'watering-can' | 'waveform' | 'waves' | 'waypoints' | 'webcam' | 'webhook' | 'weight' | 'wheelchair' | 'whisk' | 'wifi' | 'wifi-off' | 'wind' | 'window' | 'window-2' | 'wine' | 'wink' | 'wolf' | 'wrench' | 'x' | 'x-circle' | 'x-circle-2' | 'x-square' | 'xml' | 'zap';
 /**
  * Array of all icon names (PascalCase)
  *
@@ -418,15 +418,15 @@ type IconNameKebab = 'accessibility' | 'activity' | 'airplay' | 'alert-circle' |
  * ICON_NAMES.forEach(name => console.log(name));
  * ```
  */
-declare const ICON_NAMES: readonly ["Accessibility", "Activity", "Airplay", "AlertCircle", "AlertOctagon", "AlertTriangle", "Anchor", "Apple", "Archive", "AreaChart", "ArrowDown", "ArrowDownLeft", "ArrowDownRight", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowUpLeft", "ArrowUpRight", "AtSign", "Award", "Baby", "Backpack", "BadgeCheck", "Ban", "Banana", "Bandage", "BarChart", "BarChart2", "Barcode", "Battery", "BatteryCharging", "BatteryLow", "Beer", "Bell", "Bike", "Bluetooth", "Bone", "Book", "BookMarked", "BookOpen", "Bookmark", "Brain", "Brush", "Building", "Building2", "Bus", "Calculator", "Calendar", "Camera", "Car", "CarFront", "Carrot", "Cast", "Castle", "Check", "CheckCircle", "ChefHat", "Cherry", "ChevronDown", "ChevronUp", "ChevronsDown", "ChevronsLeft", "ChevronsRight", "ChevronsUp", "Church", "Circle", "Clipboard", "ClipboardCheck", "ClipboardCopy", "ClipboardList", "Clock", "Cloud", "CloudDrizzle", "CloudLightning", "CloudRain", "CloudSnow", "CloudSun", "Code", "Code2", "Coffee", "Columns", "Command", "Compass", "Contact", "Contact2", "Cookie", "Copy", "CornerDownLeft", "CornerDownRight", "CornerUpLeft", "CornerUpRight", "Cpu", "CreditCard", "Crosshair", "Crown", "Cup", "Database", "Dice1", "Dice2", "Dice3", "Dice4", "Dice5", "Dice6", "Dna", "DollarSign", "Download", "Droplet", "Dumbbell", "Ear", "Edit", "Eraser", "Eye", "Eye2", "EyeOff", "Factory", "FastForward", "File", "FileCheck", "FileMinus", "FilePlus", "FileText", "FileX", "Files", "Film", "Filter", "Fingerprint", "Flame", "Folder", "FolderMinus", "FolderOpen", "FolderPlus", "Footprints", "Frown", "Fuel", "Gamepad2", "Gauge", "Gift", "Glasses", "Globe", "GraduationCap", "Grape", "Grid", "Hammer", "Hand", "HardDrive", "Hash", "Headphones", "Heart", "HeartPulse", "HelpCircle", "Highlighter", "Home", "Hospital", "IceCream", "Inbox", "Info", "Joystick", "Kanban", "Key", "KeyRound", "Keyboard", "Lamp", "LampDesk", "Landmark", "Laptop", "Layout", "LayoutGrid", "LayoutList", "Leaf", "Library", "Lightbulb", "LightbulbOff", "LineChart", "Link", "List", "Loader", "Lock", "LockOpen", "Mail", "Map", "MapPin", "Martini", "Maximize", "Maximize2", "Medal", "Meh", "Menu", "MessageCircle", "MessageSquare", "Mic", "MicOff", "Microscope", "Milestone", "Minimize", "Minimize2", "Minus", "Monitor", "Moon", "MoreHorizontal", "Mountain", "MountainSnow", "Mouse", "MoveHorizontal", "Music", "Navigation", "Navigation2", "Notebook", "NotebookPen", "Package", "Palette", "PanelLeft", "PanelRight", "Paperclip", "Parking", "Pause", "Pen", "PenTool", "Pencil", "Percent", "Phone", "PhoneCall", "PhoneIncoming", "PhoneMissed", "PhoneOff", "PhoneOutgoing", "PieChart", "Pill", "Pizza", "Plane", "PlaneLanding", "PlaneTakeoff", "Play", "Plus", "Presentation", "Printer", "Puzzle", "QrCode", "Radio", "Receipt", "Refresh", "Repeat", "Rewind", "Rocket", "Router", "Rows", "Rss", "Ruler", "Sailboat", "Sandwich", "Save", "Scan", "ScanLine", "School", "Screwdriver", "SdCard", "Search", "Send", "Send2", "Server", "Settings", "Share", "Shield", "ShieldAlert", "ShieldCheck", "ShieldOff", "Ship", "ShoppingBag", "ShoppingCart", "Shuffle", "Sidebar", "Signal", "SignalHigh", "SignalLow", "SignalZero", "SkipBack", "SkipForward", "Smartphone", "Smile", "Snowflake", "Speaker", "Square", "Star", "Stethoscope", "Store", "Sun", "Sunrise", "Sunset", "Sword", "Swords", "Syringe", "Table", "Table2", "Tablet", "Tag", "Tag2", "Tags", "Target", "Tent", "Terminal", "TestTube", "TestTubes", "Thermometer", "Thermometer2", "ThumbsDown", "ThumbsUp", "TrafficCone", "Train", "Trash", "Tree", "TrendingDown", "TrendingUp", "Triangle", "Trophy", "Truck", "Tv", "Umbrella", "Unlock", "Upload", "UsbDrive", "User", "UserCheck", "UserCog", "UserMinus", "UserPlus", "UserX", "Users", "Utensils", "UtensilsCrossed", "Video", "Video2", "VideoOff", "Voicemail", "Volume", "VolumeOff", "Wallet", "Wand", "Wand2", "Warehouse", "Watch", "Waves", "Webcam", "Wheelchair", "Wifi", "WifiOff", "Wind", "Wine", "Wrench", "X", "XCircle", "Zap"];
+declare const ICON_NAMES: readonly ["Accessibility", "Activity", "Airplay", "AlarmClock", "AlertCircle", "AlertCircle2", "AlertOctagon", "AlertTriangle", "Alias", "Ambulance", "Analytics", "Anchor", "Anchor2", "Angry", "Annoyed", "Apartment", "Api", "Apple", "Approved", "Archive", "Archive2", "AreaChart", "Armor", "ArrowDown", "ArrowDownCircle", "ArrowDownCircle2", "ArrowDownLeft", "ArrowDownRight", "ArrowDownSquare", "ArrowLeft", "ArrowLeftCircle", "ArrowLeftCircle2", "ArrowLeftSquare", "ArrowRight", "ArrowRightCircle", "ArrowRightCircle2", "ArrowRightSquare", "ArrowUp", "ArrowUpCircle", "ArrowUpCircle2", "ArrowUpLeft", "ArrowUpRight", "ArrowUpSquare", "ArrowsCollapse", "ArrowsExpand", "ArrowsMaximize2", "ArrowsMinimize2", "AtSign", "Atom2", "AudioDescription", "AudioLines", "Award", "Axe", "Baby", "Backlink", "Backpack", "Badge2", "BadgeAlert", "BadgeCheck", "BadgeCheck2", "BadgeDollar", "BadgeHelp", "BadgeInfo", "BadgeMinus", "BadgePercent", "BadgePlus", "BadgeX", "Ban", "Banana", "Bandage", "Bank", "Banknote", "BarChart", "BarChart2", "BarChartHorizontal", "Barcode", "Barometer", "Baseball", "Basket", "Basketball", "Bathtub", "Battery", "BatteryCharging", "BatteryEmpty", "BatteryHalf", "BatteryLow", "BatteryQuarter", "BatteryThreeQuarters", "Beaker2", "Bear", "Bed", "Bee", "Beer", "Bell", "BellOff", "BellRing", "Bicycle", "Bike", "Binder", "Biohazard2", "Bird", "Bitcoin", "Blender", "Block", "Bluetooth", "Boat", "Bold", "Bone", "Book", "BookClosed", "BookMarked", "BookOpen", "Bookmark", "Bot", "Bowling", "Braille", "Brain", "BrainCircuit", "BrainCog", "Branch", "Briefcase2", "BriefcaseMedical", "Brightness", "Broadcast", "Brush", "Bug", "Building", "Building2", "Bus", "BusinessCard", "Butterfly", "Cable", "Cactus", "Cake", "Calculator", "Calendar", "CalendarCheck", "CalendarDays", "CalendarMinus", "CalendarPlus", "CalendarX", "Caliper", "Camera", "CameraMovie", "Candle", "Cap", "Car", "CarFront", "Carpet", "Carrot", "Cast", "Castle", "Cat", "Certificate", "Chain", "ChainBroken", "Chair", "Check", "CheckCircle", "CheckCircle2", "CheckSquare", "Checkbox", "CheckboxChecked", "ChefHat", "Cherry", "ChevronDown", "ChevronUp", "ChevronsDown", "ChevronsLeft", "ChevronsRight", "ChevronsUp", "Chimney", "ChipAi", "Chopsticks", "Church", "Cinema", "Circle", "Citation", "Clipboard", "Clipboard2", "ClipboardCheck", "ClipboardCheck2", "ClipboardCopy", "ClipboardCopy2", "ClipboardData", "ClipboardEdit", "ClipboardHeart", "ClipboardList", "ClipboardList2", "ClipboardMinus", "ClipboardPaste2", "ClipboardPlus", "ClipboardSearch", "ClipboardSignature", "ClipboardText", "ClipboardX2", "Clock", "ClosedCaption", "ClosedCaptions", "Cloud", "CloudDrizzle", "CloudFog", "CloudLightning", "CloudRain", "CloudSnow", "CloudSun", "Coat", "Code", "CodeBlock", "CodeSquare", "Code2", "Coffee", "Coins", "Columns", "Command", "Compass", "Compass2", "Complete", "Confused", "Contact", "Contact2", "Container", "Contract", "Contrast", "Cookie", "Cool", "Copier", "Copy", "CornerDownLeft", "CornerDownLeft2", "CornerDownRight", "CornerDownRight2", "CornerUpLeft", "CornerUpLeft2", "CornerUpRight", "CornerUpRight2", "Cpu", "CreditCard", "Cross", "Crosshair", "Crosshair2", "Crown", "Cry", "Css", "Cup", "Cursor", "CursorClick", "CursorText", "Curtain", "Cycling", "Database", "Database2", "DatabaseBackup", "DatabaseZap", "DeepLink", "Deer", "Defend", "Desk", "Desktop", "Dial", "Diamond", "Dice1", "Dice2", "Dice3", "Dice4", "Dice5", "Dice6", "Dimension", "Directions", "Disc", "Disc2", "Disc3", "Divide2", "Dna", "Dna2", "DocumentPrinter", "Dog", "DollarSign", "Door", "DoorClosed", "DoorOpen", "Download", "Dress", "Drill", "Droplet", "Dumbbell", "Ear", "EarHearing", "EarOff", "Edit", "Electron", "Elephant", "Envelope2", "Equalizer", "Equals", "Eraser", "Exposure", "ExternalLink", "ExternalLink2", "Eye", "Eye2", "EyeOff", "FaceId", "Factory", "FastForward", "Faucet", "Fax", "Fence", "File", "FileArchive", "FileAudio", "FileCheck", "FileCode", "FileImage", "FileMinus", "FilePlus", "FileText", "FileVideo", "FileX", "Files", "Film", "Film2", "FilmSlate", "Filter", "Fingerprint", "FireTruck", "Firewall", "FirstAid", "Fish", "Fist", "Flame", "Flashlight", "FlashlightOff", "Flask2", "FlaskRound", "Flower", "Flower2", "FocusRing", "Folder", "FolderMinus", "FolderOpen", "FolderPlus", "Follow", "Football", "Footprints", "Fork", "Fortress", "Fox", "Fraction", "Frown", "Fuel", "Function", "Future", "Gamepad", "Gamepad2", "Garage", "GardenHose", "Gate", "Gauge", "Generator", "Gift", "GitBranch", "GitCommit", "GitFork", "GitMerge", "GitPullRequest", "Glasses", "Globe", "Globe2", "Glue", "Golf", "Grab", "GrabCursor", "Grabbing", "GraduationCap", "Grape", "GreaterThan", "Grid", "Grid2x2", "Grid3x3", "Guard", "Hail", "Hammer", "Hand", "HandMetal", "HandWave", "Handshake", "Happy", "HardDrive", "HardDrive2", "Hash", "Hashtag", "Hat", "Heading1", "Heading2", "Heading3", "Headphones", "Heart", "HeartPulse", "HeartShape", "Helicopter", "HelpCircle", "HelpCursor", "Hexagon", "Highlighter", "History", "Hockey", "Home", "Hoodie", "Horse", "Hospital", "Hotel", "Hourglass", "House2", "HouseCheck", "HouseCog", "HouseHeart", "HousePlus", "HouseX", "Html", "Humidity", "Hyperlink", "IceCream", "IdCard", "Inbox", "Incomplete", "Indent", "Infinity", "Info", "InfoCircle", "Ink", "InternalLink", "Invoice", "Italic", "Jacket", "JavascriptIcon", "Joystick", "Json", "Kanban", "Kettle", "Key", "KeyRound", "KeySquare", "Keyboard", "KeyboardNav", "Knife2", "Knob", "Ladder", "Ladle", "Lamp", "LampCeiling", "LampDesk", "LampFloor", "LampWall", "Landmark", "Lantern", "Laptop", "Laugh", "Layout", "LayoutGrid", "LayoutList", "Leaf", "Leaf2", "LessThan", "Level", "Library", "Lightbulb", "LightbulbOff", "Lighthouse", "LineChart", "Link", "Link2Off", "Lion", "List", "Live", "Lively", "Loader", "Loading", "Locate", "LocateFixed", "Lock", "LockKeyhole", "LockOpen", "Love", "Luggage", "Lungs", "Magnet", "Mail", "MailCheck", "MailOpen", "MailPlus", "Mailbox", "Map", "MapPin", "MapPinned", "Markdown", "Marker", "Martini", "Maximize", "Maximize2", "Medal", "Meeting", "Meh", "Memory", "Mention", "Menu", "MenuDots", "MenuDotsHorizontal", "MenuGrid", "MessageAi", "MessageCircle", "MessageSquare", "MessagesSquare", "Mic", "MicOff", "Microscope", "Microscope2", "Microwave", "Milestone", "Minimize", "Minimize2", "Minus", "Minus2", "MinusCircle", "MinusSquare", "Molecule", "Monitor", "Moon", "MoreHorizontal", "Motorcycle", "Mountain", "MountainSnow", "Mouse", "MoveCursor", "MoveHorizontal", "Multiply", "Music", "Music2", "Music3", "Music4", "NameBadge", "Navigation", "Navigation2", "Neon", "NeuralNetwork", "NotAllowed", "NotEqual", "Notebook", "NotebookPen", "Nucleus", "Octagon", "Odometer", "Office", "Ok", "Outdent", "Outlet", "Oval", "Package", "PageSetup", "Paintbrush", "Palette", "Palm", "Pan", "PanelBottom", "PanelLeft", "PanelRight", "PanelTop", "Pants", "PaperFeed", "Paperclip", "Paperclip2", "Parallelogram", "Parking", "Passport", "Pause", "PauseCircle", "Peace", "Pen", "Pen2", "PenLine", "PenTool", "Pencil", "Pencil2", "PencilLine", "Pending", "Pentagon", "Percent", "PercentBadge", "Percentage", "Permalink", "PetriDish", "Phone", "PhoneCall", "PhoneIncoming", "PhoneMissed", "PhoneOff", "PhoneOutgoing", "Pi", "PictureFrame", "PieChart", "PiggyBank", "Pill", "Pinch", "PineTree", "Pizza", "Plane", "PlaneLanding", "PlaneTakeoff", "Plant2", "Plate", "Play", "PlayCircle", "Playlist", "Pliers", "Plug2", "Plus", "Plus2", "PlusCircle", "PlusSquare", "Podcast", "PointDown", "PointLeft", "PointRight", "PointUp", "Pointer2", "PoliceCar", "Portfolio", "Pot", "Potion", "PowerOff", "Presentation", "Presentation2", "PrintPreview", "PrintQueue", "Printer", "Printer2", "PrinterCheck", "PrinterX", "Progress", "Projector", "Protection", "Protractor", "Puzzle", "PuzzlePiece", "QrCode", "Queue", "Quote", "Rabbit", "Radiation", "Radio", "RadioButton", "RadioChecked", "Rainbow", "Rake", "Ram", "Receipt", "Receipt2", "Record", "Rectangle", "ReducedMotion", "Reference", "Refresh", "Refrigerator", "Regex", "Rejected", "Repeat", "ResizeDiagonal", "ResizeHorizontal", "ResizeVertical", "Rewind", "Robot", "Rocket", "Roller", "Rose", "Route", "Router", "Rows", "Rss", "RubberStamp", "Ruler", "Ruler2", "RulerSquare", "Running", "Sad", "Sailboat", "Sandwich", "Save", "Saw", "Scale2", "Scan", "Scan2", "ScanFace", "ScanLine", "Scanner", "Scanner2", "Schedule", "School", "Scissors2", "Scooter", "Screen", "ScreenReader", "Screwdriver", "SdCard", "Search", "SearchMinus", "SearchPlus", "Seedling", "Send", "Send2", "Server", "Server2", "ServerCog", "ServerCrash", "ServerOff", "Settings", "Share", "Shield", "Shield2", "ShieldAlert", "ShieldAlert2", "ShieldCheck", "ShieldDollar", "ShieldLock", "ShieldMinus2", "ShieldOff", "ShieldOff2", "ShieldPlus", "ShieldPlus2", "ShieldUnlock", "ShieldUser", "ShieldX", "Ship", "Shirt", "ShoppingBag", "ShoppingCart", "Shortcut", "Shorts", "Shovel", "Shuffle", "Sidebar", "SidebarClose", "SidebarOpen", "Sigma", "SignLanguage", "Signal", "SignalHigh", "SignalLow", "SignalZero", "Signpost", "Sink", "Skiing", "SkipBack", "SkipForward", "Sleep", "Slider", "SliderHorizontal", "SliderVertical", "Smartphone", "Smile", "Snippet", "Snowflake", "Soccer", "Sofa", "Sparkles", "Spatula", "Speaker", "Speaker2", "Speaker3", "SpeedDial", "Speedometer", "Spoon2", "Spotlight", "Sprout", "Sqrt", "Square", "Ssd", "Stamp", "Stapler", "Star", "Statistics", "Stethoscope", "StopCircle", "Stopwatch", "Storage", "Store", "Stream", "Strikethrough", "Studio", "Subscript", "Subtitle", "Sun", "Sunglasses", "Sunrise", "Sunset", "Superscript", "SurgeProtector", "Surprised", "Sweater", "Swimming", "SwitchOff", "SwitchOn", "Sword", "Swords", "Syringe", "Table", "Table2", "Tablet", "Tag", "Tag2", "Tags", "Tape", "TapeMeasure", "Target", "Team", "TemperatureDial", "Tennis", "Tent", "Terminal", "Terminal2", "TerminalSquare", "TestTube", "TestTube2", "TestTubes", "Text", "TextCursor", "TextSize", "Thermometer", "Thermometer2", "ThermometerMedical", "ThumbsDown", "ThumbsUp", "Ticket", "Tie", "Timeline", "Timer", "Toaster", "Toggle", "ToggleLeft", "ToggleRight", "Toilet", "Toner", "Toolbox", "Torch", "Tornado", "Tower", "TrafficCone", "Train", "Trapezoid", "Trash", "Tree", "Tree2", "TreePalm", "TreePine", "TrendingDown", "TrendingUp", "Triangle", "Trophy", "Truck", "Tshirt", "Tulip", "Turtle", "Tv", "TwoFactor", "TypescriptIcon", "Ufo", "Umbrella", "Underline", "Unfollow", "Unlock", "Unverified", "Upload", "Ups", "UsbDrive", "User", "UserCheck", "UserCircle", "UserCog", "UserMinus", "UserPlus", "UserX", "Users", "Utensils", "UtensilsCrossed", "Vault", "Verified", "Video", "Video2", "VideoOff", "Vinyl", "VoiceControl", "Voicemail", "Volleyball", "Volume", "Volume1", "Volume2", "VolumeDial", "VolumeOff", "VolumeX", "WaitCursor", "Wallet", "WalletCards", "Wand", "Wand2", "WandSparkles", "Warehouse", "Watch", "WatchAccessory", "WateringCan", "Waveform", "Waves", "Waypoints", "Webcam", "Webhook", "Weight", "Wheelchair", "Whisk", "Wifi", "WifiOff", "Wind", "Window", "Window2", "Wine", "Wink", "Wolf", "Wrench", "X", "XCircle", "XCircle2", "XSquare", "Xml", "Zap"];
 /**
  * Array of all icon names (kebab-case)
  */
-declare const ICON_NAMES_KEBAB: readonly ["accessibility", "activity", "airplay", "alert-circle", "alert-octagon", "alert-triangle", "anchor", "apple", "archive", "area-chart", "arrow-down", "arrow-down-left", "arrow-down-right", "arrow-left", "arrow-right", "arrow-up", "arrow-up-left", "arrow-up-right", "at-sign", "award", "baby", "backpack", "badge-check", "ban", "banana", "bandage", "bar-chart", "bar-chart-2", "barcode", "battery", "battery-charging", "battery-low", "beer", "bell", "bike", "bluetooth", "bone", "book", "book-marked", "book-open", "bookmark", "brain", "brush", "building", "building2", "bus", "calculator", "calendar", "camera", "car", "car-front", "carrot", "cast", "castle", "check", "check-circle", "chef-hat", "cherry", "chevron-down", "chevron-up", "chevrons-down", "chevrons-left", "chevrons-right", "chevrons-up", "church", "circle", "clipboard", "clipboard-check", "clipboard-copy", "clipboard-list", "clock", "cloud", "cloud-drizzle", "cloud-lightning", "cloud-rain", "cloud-snow", "cloud-sun", "code", "code2", "coffee", "columns", "command", "compass", "contact", "contact2", "cookie", "copy", "corner-down-left", "corner-down-right", "corner-up-left", "corner-up-right", "cpu", "credit-card", "crosshair", "crown", "cup", "database", "dice-1", "dice-2", "dice-3", "dice-4", "dice-5", "dice-6", "dna", "dollar-sign", "download", "droplet", "dumbbell", "ear", "edit", "eraser", "eye", "eye-2", "eye-off", "factory", "fast-forward", "file", "file-check", "file-minus", "file-plus", "file-text", "file-x", "files", "film", "filter", "fingerprint", "flame", "folder", "folder-minus", "folder-open", "folder-plus", "footprints", "frown", "fuel", "gamepad-2", "gauge", "gift", "glasses", "globe", "graduation-cap", "grape", "grid", "hammer", "hand", "hard-drive", "hash", "headphones", "heart", "heart-pulse", "help-circle", "highlighter", "home", "hospital", "ice-cream", "inbox", "info", "joystick", "kanban", "key", "key-round", "keyboard", "lamp", "lamp-desk", "landmark", "laptop", "layout", "layout-grid", "layout-list", "leaf", "library", "lightbulb", "lightbulb-off", "line-chart", "link", "list", "loader", "lock", "lock-open", "mail", "map", "map-pin", "martini", "maximize", "maximize-2", "medal", "meh", "menu", "message-circle", "message-square", "mic", "mic-off", "microscope", "milestone", "minimize", "minimize-2", "minus", "monitor", "moon", "more-horizontal", "mountain", "mountain-snow", "mouse", "move-horizontal", "music", "navigation", "navigation-2", "notebook", "notebook-pen", "package", "palette", "panel-left", "panel-right", "paperclip", "parking", "pause", "pen", "pen-tool", "pencil", "percent", "phone", "phone-call", "phone-incoming", "phone-missed", "phone-off", "phone-outgoing", "pie-chart", "pill", "pizza", "plane", "plane-landing", "plane-takeoff", "play", "plus", "presentation", "printer", "puzzle", "qr-code", "radio", "receipt", "refresh", "repeat", "rewind", "rocket", "router", "rows", "rss", "ruler", "sailboat", "sandwich", "save", "scan", "scan-line", "school", "screwdriver", "sd-card", "search", "send", "send-2", "server", "settings", "share", "shield", "shield-alert", "shield-check", "shield-off", "ship", "shopping-bag", "shopping-cart", "shuffle", "sidebar", "signal", "signal-high", "signal-low", "signal-zero", "skip-back", "skip-forward", "smartphone", "smile", "snowflake", "speaker", "square", "star", "stethoscope", "store", "sun", "sunrise", "sunset", "sword", "swords", "syringe", "table", "table-2", "tablet", "tag", "tag2", "tags", "target", "tent", "terminal", "test-tube", "test-tubes", "thermometer", "thermometer-2", "thumbs-down", "thumbs-up", "traffic-cone", "train", "trash", "tree", "trending-down", "trending-up", "triangle", "trophy", "truck", "tv", "umbrella", "unlock", "upload", "usb-drive", "user", "user-check", "user-cog", "user-minus", "user-plus", "user-x", "users", "utensils", "utensils-crossed", "video", "video-2", "video-off", "voicemail", "volume", "volume-off", "wallet", "wand", "wand-2", "warehouse", "watch", "waves", "webcam", "wheelchair", "wifi", "wifi-off", "wind", "wine", "wrench", "x", "x-circle", "zap"];
+declare const ICON_NAMES_KEBAB: readonly ["accessibility", "activity", "airplay", "alarm-clock", "alert-circle", "alert-circle-2", "alert-octagon", "alert-triangle", "alias", "ambulance", "analytics", "anchor", "anchor-2", "angry", "annoyed", "apartment", "api", "apple", "approved", "archive", "archive-2", "area-chart", "armor", "arrow-down", "arrow-down-circle", "arrow-down-circle-2", "arrow-down-left", "arrow-down-right", "arrow-down-square", "arrow-left", "arrow-left-circle", "arrow-left-circle-2", "arrow-left-square", "arrow-right", "arrow-right-circle", "arrow-right-circle-2", "arrow-right-square", "arrow-up", "arrow-up-circle", "arrow-up-circle-2", "arrow-up-left", "arrow-up-right", "arrow-up-square", "arrows-collapse", "arrows-expand", "arrows-maximize-2", "arrows-minimize-2", "at-sign", "atom-2", "audio-description", "audio-lines", "award", "axe", "baby", "backlink", "backpack", "badge-2", "badge-alert", "badge-check", "badge-check-2", "badge-dollar", "badge-help", "badge-info", "badge-minus", "badge-percent", "badge-plus", "badge-x", "ban", "banana", "bandage", "bank", "banknote", "bar-chart", "bar-chart-2", "bar-chart-horizontal", "barcode", "barometer", "baseball", "basket", "basketball", "bathtub", "battery", "battery-charging", "battery-empty", "battery-half", "battery-low", "battery-quarter", "battery-three-quarters", "beaker-2", "bear", "bed", "bee", "beer", "bell", "bell-off", "bell-ring", "bicycle", "bike", "binder", "biohazard-2", "bird", "bitcoin", "blender", "block", "bluetooth", "boat", "bold", "bone", "book", "book-closed", "book-marked", "book-open", "bookmark", "bot", "bowling", "braille", "brain", "brain-circuit", "brain-cog", "branch", "briefcase-2", "briefcase-medical", "brightness", "broadcast", "brush", "bug", "building", "building2", "bus", "business-card", "butterfly", "cable", "cactus", "cake", "calculator", "calendar", "calendar-check", "calendar-days", "calendar-minus", "calendar-plus", "calendar-x", "caliper", "camera", "camera-movie", "candle", "cap", "car", "car-front", "carpet", "carrot", "cast", "castle", "cat", "certificate", "chain", "chain-broken", "chair", "check", "check-circle", "check-circle-2", "check-square", "checkbox", "checkbox-checked", "chef-hat", "cherry", "chevron-down", "chevron-up", "chevrons-down", "chevrons-left", "chevrons-right", "chevrons-up", "chimney", "chip-ai", "chopsticks", "church", "cinema", "circle", "citation", "clipboard", "clipboard-2", "clipboard-check", "clipboard-check-2", "clipboard-copy", "clipboard-copy-2", "clipboard-data", "clipboard-edit", "clipboard-heart", "clipboard-list", "clipboard-list-2", "clipboard-minus", "clipboard-paste-2", "clipboard-plus", "clipboard-search", "clipboard-signature", "clipboard-text", "clipboard-x-2", "clock", "closed-caption", "closed-captions", "cloud", "cloud-drizzle", "cloud-fog", "cloud-lightning", "cloud-rain", "cloud-snow", "cloud-sun", "coat", "code", "code-block", "code-square", "code2", "coffee", "coins", "columns", "command", "compass", "compass-2", "complete", "confused", "contact", "contact2", "container", "contract", "contrast", "cookie", "cool", "copier", "copy", "corner-down-left", "corner-down-left-2", "corner-down-right", "corner-down-right-2", "corner-up-left", "corner-up-left-2", "corner-up-right", "corner-up-right-2", "cpu", "credit-card", "cross", "crosshair", "crosshair-2", "crown", "cry", "css", "cup", "cursor", "cursor-click", "cursor-text", "curtain", "cycling", "database", "database-2", "database-backup", "database-zap", "deep-link", "deer", "defend", "desk", "desktop", "dial", "diamond", "dice-1", "dice-2", "dice-3", "dice-4", "dice-5", "dice-6", "dimension", "directions", "disc", "disc-2", "disc-3", "divide-2", "dna", "dna-2", "document-printer", "dog", "dollar-sign", "door", "door-closed", "door-open", "download", "dress", "drill", "droplet", "dumbbell", "ear", "ear-hearing", "ear-off", "edit", "electron", "elephant", "envelope-2", "equalizer", "equals", "eraser", "exposure", "external-link", "external-link-2", "eye", "eye-2", "eye-off", "face-id", "factory", "fast-forward", "faucet", "fax", "fence", "file", "file-archive", "file-audio", "file-check", "file-code", "file-image", "file-minus", "file-plus", "file-text", "file-video", "file-x", "files", "film", "film-2", "film-slate", "filter", "fingerprint", "fire-truck", "firewall", "first-aid", "fish", "fist", "flame", "flashlight", "flashlight-off", "flask-2", "flask-round", "flower", "flower-2", "focus-ring", "folder", "folder-minus", "folder-open", "folder-plus", "follow", "football", "footprints", "fork", "fortress", "fox", "fraction", "frown", "fuel", "function", "future", "gamepad", "gamepad-2", "garage", "garden-hose", "gate", "gauge", "generator", "gift", "git-branch", "git-commit", "git-fork", "git-merge", "git-pull-request", "glasses", "globe", "globe-2", "glue", "golf", "grab", "grab-cursor", "grabbing", "graduation-cap", "grape", "greater-than", "grid", "grid-2x2", "grid-3x3", "guard", "hail", "hammer", "hand", "hand-metal", "hand-wave", "handshake", "happy", "hard-drive", "hard-drive-2", "hash", "hashtag", "hat", "heading-1", "heading-2", "heading-3", "headphones", "heart", "heart-pulse", "heart-shape", "helicopter", "help-circle", "help-cursor", "hexagon", "highlighter", "history", "hockey", "home", "hoodie", "horse", "hospital", "hotel", "hourglass", "house-2", "house-check", "house-cog", "house-heart", "house-plus", "house-x", "html", "humidity", "hyperlink", "ice-cream", "id-card", "inbox", "incomplete", "indent", "infinity", "info", "info-circle", "ink", "internal-link", "invoice", "italic", "jacket", "javascript-icon", "joystick", "json", "kanban", "kettle", "key", "key-round", "key-square", "keyboard", "keyboard-nav", "knife-2", "knob", "ladder", "ladle", "lamp", "lamp-ceiling", "lamp-desk", "lamp-floor", "lamp-wall", "landmark", "lantern", "laptop", "laugh", "layout", "layout-grid", "layout-list", "leaf", "leaf-2", "less-than", "level", "library", "lightbulb", "lightbulb-off", "lighthouse", "line-chart", "link", "link-2-off", "lion", "list", "live", "loader", "loading", "locate", "locate-fixed", "lock", "lock-keyhole", "lock-open", "love", "luggage", "lungs", "magnet", "mail", "mail-check", "mail-open", "mail-plus", "mailbox", "map", "map-pin", "map-pinned", "markdown", "marker", "martini", "maximize", "maximize-2", "medal", "meeting", "meh", "memory", "mention", "menu", "menu-dots", "menu-dots-horizontal", "menu-grid", "message-ai", "message-circle", "message-square", "messages-square", "mic", "mic-off", "microscope", "microscope-2", "microwave", "milestone", "minimize", "minimize-2", "minus", "minus-2", "minus-circle", "minus-square", "molecule", "monitor", "moon", "more-horizontal", "motorcycle", "mountain", "mountain-snow", "mouse", "move-cursor", "move-horizontal", "multiply", "music", "music-2", "music-3", "music-4", "name-badge", "navigation", "navigation-2", "neon", "neural-network", "not-allowed", "not-equal", "notebook", "notebook-pen", "nucleus", "octagon", "odometer", "office", "ok", "outdent", "outlet", "oval", "package", "page-setup", "paintbrush", "palette", "palm", "pan", "panel-bottom", "panel-left", "panel-right", "panel-top", "pants", "paper-feed", "paperclip", "paperclip-2", "parallelogram", "parking", "passport", "pause", "pause-circle", "peace", "pen", "pen-2", "pen-line", "pen-tool", "pencil", "pencil-2", "pencil-line", "pending", "pentagon", "percent", "percent-badge", "percentage", "permalink", "petri-dish", "phone", "phone-call", "phone-incoming", "phone-missed", "phone-off", "phone-outgoing", "pi", "picture-frame", "pie-chart", "piggy-bank", "pill", "pinch", "pine-tree", "pizza", "plane", "plane-landing", "plane-takeoff", "plant-2", "plate", "play", "play-circle", "playlist", "pliers", "plug-2", "plus", "plus-2", "plus-circle", "plus-square", "podcast", "point-down", "point-left", "point-right", "point-up", "pointer-2", "police-car", "portfolio", "pot", "potion", "power-off", "presentation", "presentation-2", "print-preview", "print-queue", "printer", "printer-2", "printer-check", "printer-x", "progress", "projector", "protection", "protractor", "puzzle", "puzzle-piece", "qr-code", "queue", "quote", "rabbit", "radiation", "radio", "radio-button", "radio-checked", "rainbow", "rake", "ram", "receipt", "receipt-2", "record", "rectangle", "reduced-motion", "reference", "refresh", "refrigerator", "regex", "rejected", "repeat", "resize-diagonal", "resize-horizontal", "resize-vertical", "rewind", "robot", "rocket", "roller", "rose", "route", "router", "rows", "rss", "rubber-stamp", "ruler", "ruler-2", "ruler-square", "running", "sad", "sailboat", "sandwich", "save", "saw", "scale-2", "scan", "scan-2", "scan-face", "scan-line", "scanner", "scanner-2", "schedule", "school", "scissors-2", "scooter", "screen", "screen-reader", "screwdriver", "sd-card", "search", "search-minus", "search-plus", "seedling", "send", "send-2", "server", "server-2", "server-cog", "server-crash", "server-off", "settings", "share", "shield", "shield-2", "shield-alert", "shield-alert-2", "shield-check", "shield-dollar", "shield-lock", "shield-minus-2", "shield-off", "shield-off-2", "shield-plus", "shield-plus-2", "shield-unlock", "shield-user", "shield-x", "ship", "shirt", "shopping-bag", "shopping-cart", "shortcut", "shorts", "shovel", "shuffle", "sidebar", "sidebar-close", "sidebar-open", "sigma", "sign-language", "signal", "signal-high", "signal-low", "signal-zero", "signpost", "sink", "skiing", "skip-back", "skip-forward", "sleep", "slider", "slider-horizontal", "slider-vertical", "smartphone", "smile", "snippet", "snowflake", "soccer", "sofa", "sparkles", "spatula", "speaker", "speaker-2", "speaker-3", "speed-dial", "speedometer", "spoon-2", "spotlight", "sprout", "sqrt", "square", "ssd", "stamp", "stapler", "star", "statistics", "stethoscope", "stop-circle", "stopwatch", "storage", "store", "stream", "strikethrough", "studio", "subscript", "subtitle", "sun", "sunglasses", "sunrise", "sunset", "superscript", "surge-protector", "surprised", "sweater", "swimming", "switch-off", "switch-on", "sword", "swords", "syringe", "table", "table-2", "tablet", "tag", "tag2", "tags", "tape", "tape-measure", "target", "team", "temperature-dial", "tennis", "tent", "terminal", "terminal-2", "terminal-square", "test-tube", "test-tube-2", "test-tubes", "text", "text-cursor", "text-size", "thermometer", "thermometer-2", "thermometer-medical", "thumbs-down", "thumbs-up", "ticket", "tie", "timeline", "timer", "toaster", "toggle", "toggle-left", "toggle-right", "toilet", "toner", "toolbox", "torch", "tornado", "tower", "traffic-cone", "train", "trapezoid", "trash", "tree", "tree-2", "tree-palm", "tree-pine", "trending-down", "trending-up", "triangle", "trophy", "truck", "tshirt", "tulip", "turtle", "tv", "two-factor", "typescript-icon", "ufo", "umbrella", "underline", "unfollow", "unlock", "unverified", "upload", "ups", "usb-drive", "user", "user-check", "user-circle", "user-cog", "user-minus", "user-plus", "user-x", "users", "utensils", "utensils-crossed", "vault", "verified", "video", "video-2", "video-off", "vinyl", "voice-control", "voicemail", "volleyball", "volume", "volume-1", "volume-2", "volume-dial", "volume-off", "volume-x", "wait-cursor", "wallet", "wallet-cards", "wand", "wand-2", "wand-sparkles", "warehouse", "watch", "watch-accessory", "watering-can", "waveform", "waves", "waypoints", "webcam", "webhook", "weight", "wheelchair", "whisk", "wifi", "wifi-off", "wind", "window", "window-2", "wine", "wink", "wolf", "wrench", "x", "x-circle", "x-circle-2", "x-square", "xml", "zap"];
 /**
  * Total number of icons in the library
  */
-declare const ICON_COUNT: 350;
+declare const ICON_COUNT: 930;
 /**
  * Mapping from kebab-case to PascalCase names
  */
@@ -880,704 +880,2484 @@ declare function isDefined<T>(value: T | null | undefined): value is T;
  */
 declare function withDefault<T>(value: T | undefined, fallback: T): T;
 
-declare const Accessibility: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Accessibility: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const AlertCircle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Activity: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Airplay: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AlarmClock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Award: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AlertCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Baby: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AlertCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bell: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AlertOctagon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Calendar: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AlertTriangle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Check: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Ambulance: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CheckCircle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Analytics: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChevronDown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Anchor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChevronUp: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Angry: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Clock: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Annoyed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Contact: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Apartment: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Contact2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Api: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Copy: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Apple: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Crown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Approved: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Download: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Archive2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Edit: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Archive: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Eye: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AreaChart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const EyeOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowDownCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Frown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowDownLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Heart: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowDownRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const HelpCircle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowDown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Home: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowLeftCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Inbox: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Info: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowRightCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Loader: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Lock: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowUpCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Mail: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowUpLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Meh: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowUpRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Menu: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MessageCircle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowsCollapse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Minus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ArrowsExpand: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Phone: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AtSign: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Plus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Atom2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Refresh: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AudioDescription: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Save: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const AudioLines: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Search: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Award: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Send: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Axe: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Settings: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Baby: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Share: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Backpack: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Smile: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Badge2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Star: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeAlert: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ThumbsDown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeCheck2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ThumbsUp: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Trash: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeDollar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Upload: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeHelp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const User: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeInfo: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UserCheck: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UserCog: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgePercent: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UserMinus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgePlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UserPlus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BadgeX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UserX: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Ban: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Users: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Banana: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const X: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bandage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const XCircle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bank: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Cloud: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Banknote: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const File: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BarChart2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Filter: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BarChartHorizontal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Folder: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BarChart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Grid: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Barcode: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const List: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Barometer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MoreHorizontal: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Baseball: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bookmark: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Basket: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Link: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Basketball: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MapPin: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bathtub: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Moon: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BatteryCharging: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sun: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BatteryEmpty: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tag: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BatteryHalf: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Zap: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BatteryLow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Play: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BatteryQuarter: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Pause: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BatteryThreeQuarters: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Volume: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Battery: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const VolumeOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Beaker2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Mic: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bear: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MicOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Camera: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bee: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Airplay: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Beer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Cast: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BellOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FastForward: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BellRing: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Film: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bell: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Headphones: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bicycle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Music: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bike: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Radio: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Biohazard2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Repeat: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Binder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Rewind: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Blender: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Shuffle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bird: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const SkipBack: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bitcoin: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const SkipForward: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Block: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Speaker: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bluetooth: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tv: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Boat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Video: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bold: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Code: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bone: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Code2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BookClosed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Terminal: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BookMarked: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Command: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BookOpen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Database: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Book: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Server: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bookmark: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const HardDrive: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bot: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Cpu: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bowling: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wrench: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Braille: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Hammer: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Branch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Screwdriver: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BrainCircuit: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Palette: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BrainCog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Brush: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Brain: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Pen: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Briefcase2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Pencil: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BriefcaseMedical: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CloudRain: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Brightness: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CloudSnow: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Broadcast: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CloudLightning: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Brush: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CloudDrizzle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bug: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CloudSun: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Building: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sunrise: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Building2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sunset: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Bus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wind: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const BusinessCard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Thermometer: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Butterfly: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Droplet: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cable: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Umbrella: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cactus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Snowflake: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cake: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Flame: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Calculator: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Leaf: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CalendarCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tree: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CalendarDays: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowUp: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CalendarMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowDown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CalendarPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowUpRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CalendarX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowUpLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Calendar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowDownRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Caliper: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ArrowDownLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CameraMovie: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChevronsUp: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Camera: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChevronsDown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Candle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChevronsLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChevronsRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CarFront: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CornerUpLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Car: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CornerUpRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Carpet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CornerDownLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Carrot: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CornerDownRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cast: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MoveHorizontal: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Castle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Layout: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const LayoutGrid: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Certificate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const LayoutList: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Chair: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sidebar: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CheckCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PanelLeft: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CheckCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PanelRight: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CheckSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Maximize: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Check: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Minimize: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CheckboxChecked: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Maximize2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Checkbox: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Minimize2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChefHat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Columns: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cherry: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Rows: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Chopsticks: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Square: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChevronDown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Circle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChevronUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Triangle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChevronsDown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const AtSign: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChevronsLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Hash: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChevronsRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MessageSquare: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChevronsUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Send2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Chimney: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PhoneCall: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ChipAi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PhoneOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Church: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PhoneIncoming: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cinema: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PhoneOutgoing: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Circle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PhoneMissed: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Clipboard2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Voicemail: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardCheck2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Video2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const VideoOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardCopy2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Rss: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardCopy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wifi: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardData: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const WifiOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardEdit: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Unlock: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardHeart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Shield: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardList2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ShieldCheck: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardList: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ShieldOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Key: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardPaste2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Fingerprint: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Scan: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardSearch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ScanLine: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardSignature: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const AlertTriangle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardText: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const AlertOctagon: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClipboardX2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Ban: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Clipboard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ShieldAlert: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Clock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const LockOpen: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClosedCaption: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const KeyRound: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ClosedCaptions: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BadgeCheck: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CloudDrizzle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ShoppingCart: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CloudFog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ShoppingBag: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CloudLightning: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CreditCard: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CloudRain: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const DollarSign: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CloudSnow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Percent: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CloudSun: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Receipt: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cloud: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wallet: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Coat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Gift: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CodeBlock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Package: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CodeSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Truck: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Code: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Store: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Code2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Barcode: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Coffee: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const QrCode: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Coins: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tag2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Columns: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tags: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Command: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FileText: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Compass2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FilePlus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Compass: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FileMinus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Complete: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FileCheck: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Confused: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FileX: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Contact: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Files: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Contact2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FolderPlus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Container: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FolderMinus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Contract: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const FolderOpen: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Contrast: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Archive: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cookie: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Clipboard: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cool: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ClipboardCheck: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Copy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ClipboardList: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CornerDownLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ClipboardCopy: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CornerDownRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Paperclip: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CornerUpLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Activity: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CornerUpRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const AreaChart: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cpu: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BarChart: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CreditCard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BarChart2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cross: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Gauge: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Crosshair2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Kanban: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Crosshair: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const LineChart: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Crown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PieChart: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cry: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Presentation: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Css: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Signal: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cup: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const SignalHigh: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CursorClick: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const SignalLow: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const CursorText: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const SignalZero: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cursor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Table: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Curtain: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Table2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Cycling: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const TrendingDown: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Database2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const TrendingUp: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const DatabaseBackup: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Laptop: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const DatabaseZap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Monitor: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Database: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tablet: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Deer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Watch: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Desk: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Printer: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Desktop: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Mouse: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dial: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Keyboard: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Diamond: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Smartphone: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dice1: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Gamepad2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dice2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Webcam: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dice3: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Router: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dice4: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UsbDrive: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dice5: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const SdCard: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dice6: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Battery: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dimension: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BatteryCharging: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Directions: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BatteryLow: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Divide2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bluetooth: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Disc2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const HeartPulse: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Disc3: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Stethoscope: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Disc: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Pill: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dna2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Syringe: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dna: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bandage: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Thermometer2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const DollarSign: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Microscope: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const DoorClosed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const TestTube: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const DoorOpen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const TestTubes: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Door: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dna: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Download: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bone: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dress: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Brain: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Drill: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Ear: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Droplet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Eye2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Dumbbell: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Hand: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const EarHearing: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Footprints: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const EarOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wheelchair: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Ear: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const GraduationCap: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Edit: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Book: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Electron: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BookOpen: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Elephant: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const BookMarked: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Envelope2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Library: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Equalizer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Notebook: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Equals: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const NotebookPen: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Eraser: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Ruler: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Exposure: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PenTool: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const ExternalLink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Highlighter: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Eye2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Eraser: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const EyeOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Calculator: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Eye: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Backpack: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FaceId: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Lightbulb: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Factory: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const LightbulbOff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FastForward: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Lamp: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Faucet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const LampDesk: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileArchive: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Glasses: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileAudio: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Building: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Building2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileCode: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Factory: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileImage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Landmark: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Castle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FilePlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Church: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileText: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Hospital: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileVideo: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const School: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FileX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Warehouse: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const File: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Tent: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Files: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Mountain: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fence: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const MountainSnow: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Film2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Waves: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FilmSlate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Anchor: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Film: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Compass: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Filter: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Map: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fingerprint: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Globe: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FireTruck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Trophy: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Firewall: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Medal: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FirstAid: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Target: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fish: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Crosshair: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fist: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dice1: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Flame: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dice2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FlashlightOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dice3: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Flashlight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dice4: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Flask2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dice5: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FlaskRound: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dice6: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Flower2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Puzzle: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Flower: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Joystick: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FocusRing: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Swords: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FolderMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sword: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FolderOpen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wand: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const FolderPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wand2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Folder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Dumbbell: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Follow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Coffee: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Football: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Cup: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fork: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Wine: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Footprints: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Beer: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fox: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Martini: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fraction: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Pizza: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Frown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Apple: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Fuel: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Cherry: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Function: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Grape: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Future: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Banana: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Gamepad2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Carrot: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Gamepad: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sandwich: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Garage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Utensils: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Gate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const UtensilsCrossed: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GardenHose: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const ChefHat: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Gauge: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Cookie: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Generator: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const IceCream: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Gift: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Car: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GitBranch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const CarFront: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GitCommit: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bus: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GitFork: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Train: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GitMerge: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Plane: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GitPullRequest: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PlaneTakeoff: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Glasses: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const PlaneLanding: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Globe2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Ship: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Globe: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Sailboat: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Glue: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Bike: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Golf: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Rocket: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GrabCursor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Fuel: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Grab: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Parking: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Grabbing: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const TrafficCone: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GraduationCap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Navigation: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Grape: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Navigation2: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const GreaterThan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-declare const Milestone: ({ size, strokeWidth, className, animated, motionType, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+declare const Grid2x2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
 
-export { Accessibility, Activity, Airplay, AlertCircle, AlertOctagon, AlertTriangle, Anchor, type AnimationMode, type AnimationName, type AnimationPreset, type AnimationVariants, Apple, Archive, AreaChart, ArrowDown, ArrowDownLeft, ArrowDownRight, ArrowLeft, ArrowRight, ArrowUp, ArrowUpLeft, ArrowUpRight, AtSign, Award, Baby, Backpack, BadgeCheck, Ban, Banana, Bandage, BarChart, BarChart2, Barcode, Battery, BatteryCharging, BatteryLow, Beer, Bell, Bike, Bluetooth, Bone, Book, BookMarked, BookOpen, Bookmark, Brain, Brush, Building, Building2, Bus, Calculator, Calendar, Camera, Car, CarFront, Carrot, Cast, Castle, Check, CheckCircle, ChefHat, Cherry, ChevronDown, ChevronUp, ChevronsDown, ChevronsLeft, ChevronsRight, ChevronsUp, Church, Circle, Clipboard, ClipboardCheck, ClipboardCopy, ClipboardList, Clock, Cloud, CloudDrizzle, CloudLightning, CloudRain, CloudSnow, CloudSun, Code, Code2, Coffee, Columns, Command, Compass, Contact, Contact2, Cookie, Copy, CornerDownLeft, CornerDownRight, CornerUpLeft, CornerUpRight, Cpu, CreditCard, Crosshair, Crown, Cup, type CustomMotionPreset, type CustomMotionPresetConfig, type CustomMotionPresetOptions, type CustomPresetName, Database, Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Dna, DollarSign, Download, Droplet, Dumbbell, Ear, Edit, Eraser, Eye, Eye2, EyeOff, Factory, FastForward, File, FileCheck, FileMinus, FilePlus, FileText, FileX, Files, Film, Filter, Fingerprint, Flame, Folder, FolderMinus, FolderOpen, FolderPlus, Footprints, Frown, Fuel, Gamepad2, Gauge, Gift, Glasses, Globe, GraduationCap, Grape, Grid, Hammer, Hand, HardDrive, Hash, Headphones, Heart, HeartPulse, HelpCircle, Highlighter, Home, Hospital, ICON_COUNT, ICON_NAMES, ICON_NAMES_KEBAB, ICON_NAME_MAP, IceCream, type IconConfig, type IconName, type IconNameKebab, type IconProps, IconProvider, type IconProviderProps, Inbox, Info, Joystick, Kanban, Key, KeyRound, Keyboard, Lamp, LampDesk, Landmark, Laptop, Layout, LayoutGrid, LayoutList, LazyMotionIcon, type LazyMotionIconProps, LazyMotionPathElement, type LazyMotionPathProps, Leaf, Library, Lightbulb, LightbulbOff, LineChart, Link, List, Loader, Lock, LockOpen, Mail, Map, MapPin, Martini, Maximize, Maximize2, Medal, Meh, Menu, MessageCircle, MessageSquare, Mic, MicOff, Microscope, Milestone, Minimize, Minimize2, Minus, Monitor, Moon, MoreHorizontal, type MotionPreset, type MotionType, Mountain, MountainSnow, Mouse, MoveHorizontal, Music, Navigation, Navigation2, Notebook, NotebookPen, Package, Palette, PanelLeft, PanelRight, Paperclip, Parking, Pause, Pen, PenTool, Pencil, Percent, Phone, PhoneCall, PhoneIncoming, PhoneMissed, PhoneOff, PhoneOutgoing, PieChart, Pill, Pizza, Plane, PlaneLanding, PlaneTakeoff, Play, Plus, Presentation, Printer, Puzzle, QrCode, Radio, Receipt, Refresh, Repeat, Rewind, Rocket, Router, Rows, Rss, Ruler, Sailboat, Sandwich, Save, Scan, ScanLine, School, Screwdriver, SdCard, Search, Send, Send2, Server, Settings, Share, Shield, ShieldAlert, ShieldCheck, ShieldOff, Ship, ShoppingBag, ShoppingCart, Shuffle, Sidebar, Signal, SignalHigh, SignalLow, SignalZero, SkipBack, SkipForward, Smartphone, Smile, Snowflake, Speaker, Square, Star, Stethoscope, Store, Sun, Sunrise, Sunset, Sword, Swords, Syringe, Table, Table2, Tablet, Tag, Tag2, Tags, Target, Tent, Terminal, TestTube, TestTubes, Thermometer, Thermometer2, ThumbsDown, ThumbsUp, TrafficCone, Train, type TransitionConfig, Trash, Tree, TrendingDown, TrendingUp, Triangle, type TriggerType, Trophy, Truck, Tv, Umbrella, Unlock, Upload, UsbDrive, type UseIconAnimationReturn, type UseIconConfigReturn, User, UserCheck, UserCog, UserMinus, UserPlus, UserX, Users, Utensils, UtensilsCrossed, Video, Video2, VideoOff, Voicemail, Volume, VolumeOff, Wallet, Wand, Wand2, Warehouse, Watch, Waves, Webcam, Wheelchair, Wifi, WifiOff, Wind, Wine, Wrench, X, XCircle, Zap, animations, bounce, cn, composeMotionPresets, customPresets, defineMotionPreset, draw, easeSmooth, extendMotionPreset, fade, getMotionPreset, isDefined, isIconName, isIconNameKebab, isMotionLoaded, mergeConfig, motionPresets, motionTypeList, pop, preloadMotion, pulse, rotate, shake, spin, stagger, translate, useIconAnimation, useIconConfig, useIconContext, withDefault };
+declare const Grid3x3: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Grid: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hail: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hammer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HandMetal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HandWave: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hand: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Handshake: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Happy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HardDrive2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HardDrive: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hash: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hashtag: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Heading1: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Heading2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Heading3: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Headphones: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HeartPulse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HeartShape: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Heart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Helicopter: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HelpCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HelpCursor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hexagon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Highlighter: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const History: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hockey: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Home: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hoodie: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Horse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hospital: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hotel: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const House2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HouseCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HouseCog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HouseHeart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HousePlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HouseX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hourglass: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Html: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Humidity: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const IceCream: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const IdCard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Inbox: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Incomplete: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Indent: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Infinity: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const InfoCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Info: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Invoice: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Italic: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Jacket: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const JavascriptIcon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Joystick: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Json: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Kanban: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const KeyRound: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const KeySquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Key: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const KeyboardNav: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Keyboard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Kettle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Knife2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Knob: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ladder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ladle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LampCeiling: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LampDesk: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LampFloor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LampWall: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lamp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Landmark: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lantern: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Laptop: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Laugh: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LayoutGrid: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LayoutList: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Layout: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Leaf2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Leaf: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LessThan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Level: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Library: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LightbulbOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lightbulb: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lighthouse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LineChart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Link: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lion: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const List: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Live: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lively: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Loader: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Loading: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LocateFixed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Locate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LockKeyhole: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LockOpen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Love: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Luggage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lungs: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Magnet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mailbox: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MailCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MailOpen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MailPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mail: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MapPin: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MapPinned: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Map: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Marker: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Markdown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Martini: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Maximize2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Maximize: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Medal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Meeting: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Meh: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Memory: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mention: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MenuDotsHorizontal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MenuDots: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MenuGrid: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Menu: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MessageAi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MessageCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MessageSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MessagesSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MicOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mic: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Microwave: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Microscope2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Microscope: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Milestone: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Minimize2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Minimize: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MinusCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MinusSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Minus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Minus2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Molecule: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Monitor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Moon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MoreHorizontal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Motorcycle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MountainSnow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mountain: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mouse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MoveCursor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MoveHorizontal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Music2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Music3: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Music4: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Music: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Multiply: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const NameBadge: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Navigation2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Navigation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Neon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const NeuralNetwork: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const NotAllowed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const NotEqual: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const NotebookPen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Notebook: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Nucleus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Octagon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Odometer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Office: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ok: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Outdent: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Outlet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Oval: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Package: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Paintbrush: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Palette: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Palm: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PanelBottom: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PanelLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PanelRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PanelTop: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pants: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Paperclip: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Paperclip2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Parallelogram: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Parking: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Passport: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PauseCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pause: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Peace: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PenTool: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pen2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PenLine: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pencil: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pencil2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PencilLine: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pending: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pentagon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PercentBadge: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Percent: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Percentage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PetriDish: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PhoneCall: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PhoneIncoming: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PhoneMissed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PhoneOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PhoneOutgoing: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Phone: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PictureFrame: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PieChart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PiggyBank: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pill: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pinch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PineTree: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pizza: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Plant2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PlaneLanding: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PlaneTakeoff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Plane: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Plate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PlayCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Play: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Playlist: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pliers: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Plug2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PlusCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PlusSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Plus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Plus2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Podcast: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PointDown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PointLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PointRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PointUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pointer2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PoliceCar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Portfolio: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pot: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Potion: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PowerOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Presentation2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Presentation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Printer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Progress: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Projector: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Protractor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PuzzlePiece: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Puzzle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const QrCode: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Queue: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Quote: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rabbit: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Radiation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const RadioButton: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const RadioChecked: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Radio: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rainbow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rake: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ram: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Receipt2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Receipt: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Record$1: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rectangle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ReducedMotion: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Refresh: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Refrigerator: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Regex: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rejected: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Repeat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ResizeDiagonal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ResizeHorizontal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ResizeVertical: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rewind: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Robot: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rocket: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Roller: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rose: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Route: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Router: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rows: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rss: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const RubberStamp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ruler2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const RulerSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ruler: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Running: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sad: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sailboat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sandwich: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Save: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Saw: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scale2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ScanFace: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ScanLine: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scanner: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scissors2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Schedule: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const School: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scooter: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ScreenReader: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Screen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Screwdriver: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SdCard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Seedling: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SearchMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SearchPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Search: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Send2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Send: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Server2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ServerCog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ServerCrash: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ServerOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Server: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Settings: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Share: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldAlert: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shield: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ship: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shirt: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShoppingBag: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShoppingCart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shorts: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shovel: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shuffle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SidebarClose: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SidebarOpen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sidebar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SignLanguage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SignalHigh: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SignalLow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SignalZero: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Signal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sigma: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Signpost: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Skiing: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SkipBack: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SkipForward: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sleep: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SliderHorizontal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SliderVertical: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Slider: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Smartphone: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Smile: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Snippet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Snowflake: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Soccer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sofa: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sparkles: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Spatula: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Speaker2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Speaker3: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Speaker: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SpeedDial: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Speedometer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Spotlight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Spoon2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sprout: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sqrt: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Square: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ssd: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stamp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Star: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stapler: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Statistics: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stethoscope: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const StopCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stopwatch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Storage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Store: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stream: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Strikethrough: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Studio: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Subscript: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Subtitle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sun: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sunglasses: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sunrise: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sunset: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Superscript: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SurgeProtector: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Surprised: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sweater: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Swimming: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SwitchOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SwitchOn: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sword: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Swords: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Syringe: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Table2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Table: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tablet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tag: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tag2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tags: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tape: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TapeMeasure: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Target: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Team: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TemperatureDial: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tennis: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tent: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Terminal2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TerminalSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Terminal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TestTube2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TestTube: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TestTubes: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TextCursor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TextSize: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Text: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Thermometer2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ThermometerMedical: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Thermometer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ThumbsDown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ThumbsUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ticket: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tie: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Timeline: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Timer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ToggleLeft: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ToggleRight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Toggle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Toaster: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Toilet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Toolbox: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Torch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tornado: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tower: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TrafficCone: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Train: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Trapezoid: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Trash: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tree2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TreePalm: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TreePine: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tree: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TrendingDown: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TrendingUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Triangle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Trophy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Truck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tshirt: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tulip: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Turtle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tv: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TwoFactor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TypescriptIcon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ufo: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Umbrella: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Underline: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Unfollow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Unlock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Unverified: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Upload: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ups: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UsbDrive: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UserCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UserCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UserCog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UserMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UserPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UserX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const User: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Users: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const UtensilsCrossed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Utensils: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Vault: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Verified: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Video2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const VideoOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Video: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Vinyl: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const VoiceControl: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Voicemail: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Volleyball: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Volume1: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Volume2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const VolumeDial: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const VolumeOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const VolumeX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Volume: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const WaitCursor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const WalletCards: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wallet: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wand2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const WandSparkles: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wand: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const WateringCan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Warehouse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const WatchAccessory: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Watch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Waveform: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Waves: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Waypoints: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Webcam: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Webhook: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Weight: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Whisk: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wheelchair: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const WifiOff: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wifi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wind: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Window2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Window: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wine: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wolf: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wrench: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const XCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const XCircle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const XSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const X: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Xml: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Zap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Alias: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Anchor2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Backlink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Chain: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ChainBroken: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Citation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const DeepLink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ExternalLink2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hyperlink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const InternalLink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Link2Off: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Permalink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Reference: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shortcut: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Armor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Defend: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Fortress: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Guard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Protection: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shield2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldAlert2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldDollar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldLock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldMinus2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldOff2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldPlus2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldUnlock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShieldUser: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Copier: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const DocumentPrinter: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Fax: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ink: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PageSetup: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PaperFeed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PrintPreview: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PrintQueue: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Printer2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PrinterCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PrinterX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scan2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Scanner2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Toner: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowDownCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowDownSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowLeftCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowLeftSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowRightCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowRightSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowUpCircle2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowUpSquare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowsMaximize2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ArrowsMinimize2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CornerDownLeft2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CornerDownRight2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CornerUpLeft2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CornerUpRight2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Competitive: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Contract2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Deal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Dividend: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Feedback: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Growth: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Handshake2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Investment2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Kpi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Loss: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Market: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Milestone2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Partnership: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pitch: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Profit: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rating: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Research: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Review2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Revenue: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Roadmap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Roi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shareholder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sign: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stakeholder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stamp2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Startup: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Strategy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Survey: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Target2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Testimonial: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Barcode2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CartCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CartMinus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CartPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CartX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Compare: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Coupon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Discount: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const FreeShipping: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const InStock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Inventory: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const OutOfStock: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pickup: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PriceTag: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PriceTagPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const QrScan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ReceiptCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ReceiptX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Refund: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Reorder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Return: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shipping: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShippingFast: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShoppingBagPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const StoreFront: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wishlist: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ambulance2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Bacteria: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Bandage2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const BloodDrop: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const BloodPressure: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const BodyScan: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Capsule: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Crutches: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const DnaHelix: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Emergency: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Heartbeat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Immunity: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LabResults: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MedicalBag: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const MedicalCross: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Oxygen: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pill2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pills: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Prescription: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pulse: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Recovery: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Stethoscope2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Syringe2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Temperature: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Vaccine: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Virus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Vitals: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Walker: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Wheelchair2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Xray: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Airport: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Baggage: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const BaggageClaim: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Beach: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const BoardingPass: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Camping: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CarryOn: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CheckIn: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CheckOut: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Concierge: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Cruise: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CustomsIcon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const FlightTicket: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hiking: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HotelBed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HotelKey: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Immigration: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Passport2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pool: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Reservation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const RoadTrip: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const RoomService: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Runway: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Safari: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Spa: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TerminalGate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Visa: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Acorn: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Boulder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Cave: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Coral: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Crystal: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Desert: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Fern: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Forest: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Fossil: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Geyser: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Island: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ivy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Jungle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lake: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Moss: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mushroom: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Ocean: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pebbles: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pinecone: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const River: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Seaweed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shell: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Starfish: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Volcano: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Waterfall: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Bacon: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Bread: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Burger: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Candy: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Chicken: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Chocolate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Croissant: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Cupcake: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Donut: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Egg2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hotdog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const IceCream2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lollipop: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Noodles: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Popsicle: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Rice: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Salad: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Shrimp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Soup: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Steak: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sushi: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Taco: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Block2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Comment: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CommentCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CommentPlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const CommentX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Dislike: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Feed: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Follow2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hashtag2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Influencer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Like: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LikeFilled: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LiveStream: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Mention2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Poll: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Post: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Reaction: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Report: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Repost: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Save2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const SavePlus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Share2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ShareForward: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Story: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TagPerson: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Timeline2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Trending: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Unfollow2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Verified2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Viral: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Assigned: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Automation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Backlog: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Blocker: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Deadline: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Delegated: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Dependency: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Distraction: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const DueDate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Duplicate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Estimate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Focus: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const InProgress: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const KanbanBoard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const OnHold: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Overdue: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pomodoro: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Priority: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PriorityHigh: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PriorityLow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Recurring: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Reminder: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sprint: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Subtask: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Task: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TaskCheck: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TaskList: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Template: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const TimeTracking: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Workflow: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const AbTest: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Aggregate: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Attribution: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Benchmark: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Churn: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Cohort: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Correlation: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Dashboard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const DataPoint: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const DonutChart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Downtrend: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Experiment: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Flat: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Forecast: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Funnel: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const FunnelChart: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Heatmap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Hypothesis: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Metric: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Outlier: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PieChart2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Regression: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Retention: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ScatterPlot: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Segment: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Sparkline: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Treemap: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Uptrend: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Variance: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Widget: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Achievement: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Arcade: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Boss: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ButtonA: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ButtonB: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ButtonX: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ButtonY: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Coin: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Console: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Controller: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ControllerWireless: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Coop: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Crafting: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Dpad: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Handheld: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HealthBar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const HighScore: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Inventory2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Joystick2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Leaderboard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const LevelUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Loot: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const ManaBar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Multiplayer: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const PowerUp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Pvp: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Quest: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Respawn: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Trigger: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const XpBar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Assignment: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Attendance: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Backpack2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Bookshelf: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Certificate2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Chalkboard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Classroom: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Course: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Curriculum: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Desk2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Dictionary: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Diploma: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Exam: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Grade: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Homework: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Lecture: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Library2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Medal2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Notebook2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const NotebookPen2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Quiz: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Schedule2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Seminar: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const StudentId: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Textbook: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Trophy2: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Tutor: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const University: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+declare const Whiteboard: ({ size, strokeWidth, className, animated, lively, trigger, "aria-label": ariaLabel }: IconProps) => react.JSX.Element;
+
+export { AbTest, Accessibility, Achievement, Acorn, Activity, Aggregate, Airplay, Airport, AlarmClock, AlertCircle, AlertCircle2, AlertOctagon, AlertTriangle, Alias, Ambulance, Ambulance2, Analytics, Anchor, Anchor2, Angry, type AnimationMode, type AnimationName, type AnimationPreset, type AnimationVariants, Annoyed, Apartment, Api, Apple, Approved, Arcade, Archive, Archive2, AreaChart, Armor, ArrowDown, ArrowDownCircle, ArrowDownCircle2, ArrowDownLeft, ArrowDownRight, ArrowDownSquare, ArrowLeft, ArrowLeftCircle, ArrowLeftCircle2, ArrowLeftSquare, ArrowRight, ArrowRightCircle, ArrowRightCircle2, ArrowRightSquare, ArrowUp, ArrowUpCircle, ArrowUpCircle2, ArrowUpLeft, ArrowUpRight, ArrowUpSquare, ArrowsCollapse, ArrowsExpand, ArrowsMaximize2, ArrowsMinimize2, Assigned, Assignment, AtSign, Atom2, Attendance, Attribution, AudioDescription, AudioLines, Automation, Award, Axe, Baby, Backlink, Backlog, Backpack, Backpack2, Bacon, Bacteria, Badge2, BadgeAlert, BadgeCheck, BadgeCheck2, BadgeDollar, BadgeHelp, BadgeInfo, BadgeMinus, BadgePercent, BadgePlus, BadgeX, Baggage, BaggageClaim, Ban, Banana, Bandage, Bandage2, Bank, Banknote, BarChart, BarChart2, BarChartHorizontal, Barcode, Barcode2, Barometer, Baseball, Basket, Basketball, Bathtub, Battery, BatteryCharging, BatteryEmpty, BatteryHalf, BatteryLow, BatteryQuarter, BatteryThreeQuarters, Beach, Beaker2, Bear, Bed, Bee, Beer, Bell, BellOff, BellRing, Benchmark, Bicycle, Bike, Binder, Biohazard2, Bird, Bitcoin, Blender, Block, Block2, Blocker, BloodDrop, BloodPressure, Bluetooth, BoardingPass, Boat, BodyScan, Bold, Bone, Book, BookClosed, BookMarked, BookOpen, Bookmark, Bookshelf, Boss, Bot, Boulder, Bowling, Braille, Brain, BrainCircuit, BrainCog, Branch, Bread, Briefcase2, BriefcaseMedical, Brightness, Broadcast, Brush, Bug, Building, Building2, Burger, Bus, BusinessCard, Butterfly, ButtonA, ButtonB, ButtonX, ButtonY, Cable, Cactus, Cake, Calculator, Calendar, CalendarCheck, CalendarDays, CalendarMinus, CalendarPlus, CalendarX, Caliper, Camera, CameraMovie, Camping, Candle, Candy, Cap, Capsule, Car, CarFront, Carpet, Carrot, CarryOn, CartCheck, CartMinus, CartPlus, CartX, Cast, Castle, Cat, Cave, Certificate, Certificate2, Chain, ChainBroken, Chair, Chalkboard, Check, CheckCircle, CheckCircle2, CheckIn, CheckOut, CheckSquare, Checkbox, CheckboxChecked, ChefHat, Cherry, ChevronDown, ChevronUp, ChevronsDown, ChevronsLeft, ChevronsRight, ChevronsUp, Chicken, Chimney, ChipAi, Chocolate, Chopsticks, Church, Churn, Cinema, Circle, Citation, Classroom, Clipboard, Clipboard2, ClipboardCheck, ClipboardCheck2, ClipboardCopy, ClipboardCopy2, ClipboardData, ClipboardEdit, ClipboardHeart, ClipboardList, ClipboardList2, ClipboardMinus, ClipboardPaste2, ClipboardPlus, ClipboardSearch, ClipboardSignature, ClipboardText, ClipboardX2, Clock, ClosedCaption, ClosedCaptions, Cloud, CloudDrizzle, CloudFog, CloudLightning, CloudRain, CloudSnow, CloudSun, Coat, Code, Code2, CodeBlock, CodeSquare, Coffee, Cohort, Coin, Coins, Columns, Command, Comment, CommentCheck, CommentPlus, CommentX, Compare, Compass, Compass2, Competitive, Complete, Concierge, Confused, Console, Contact, Contact2, Container, Contract, Contract2, Contrast, Controller, ControllerWireless, Cookie, Cool, Coop, Copier, Copy, Coral, CornerDownLeft, CornerDownLeft2, CornerDownRight, CornerDownRight2, CornerUpLeft, CornerUpLeft2, CornerUpRight, CornerUpRight2, Correlation, Coupon, Course, Cpu, Crafting, CreditCard, Croissant, Cross, Crosshair, Crosshair2, Crown, Cruise, Crutches, Cry, Crystal, Css, Cup, Cupcake, Curriculum, Cursor, CursorClick, CursorText, Curtain, type CustomMotionPreset, type CustomMotionPresetConfig, type CustomMotionPresetOptions, type CustomPresetName, CustomsIcon, Cycling, Dashboard, DataPoint, Database, Database2, DatabaseBackup, DatabaseZap, Deadline, Deal, DeepLink, Deer, Defend, Delegated, Dependency, Desert, Desk, Desk2, Desktop, Dial, Diamond, Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Dictionary, Dimension, Diploma, Directions, Disc, Disc2, Disc3, Discount, Dislike, Distraction, Divide2, Dividend, Dna, Dna2, DnaHelix, DocumentPrinter, Dog, DollarSign, Donut, DonutChart, Door, DoorClosed, DoorOpen, Download, Downtrend, Dpad, Dress, Drill, Droplet, DueDate, Dumbbell, Duplicate, Ear, EarHearing, EarOff, Edit, Egg2, Electron, Elephant, Emergency, Envelope2, Equalizer, Equals, Eraser, Estimate, Exam, Experiment, Exposure, ExternalLink, ExternalLink2, Eye, Eye2, EyeOff, FaceId, Factory, FastForward, Faucet, Fax, Feed, Feedback, Fence, Fern, File, FileArchive, FileAudio, FileCheck, FileCode, FileImage, FileMinus, FilePlus, FileText, FileVideo, FileX, Files, Film, Film2, FilmSlate, Filter, Fingerprint, FireTruck, Firewall, FirstAid, Fish, Fist, Flame, Flashlight, FlashlightOff, Flask2, FlaskRound, Flat, FlightTicket, Flower, Flower2, Focus, FocusRing, Folder, FolderMinus, FolderOpen, FolderPlus, Follow, Follow2, Football, Footprints, Forecast, Forest, Fork, Fortress, Fossil, Fox, Fraction, FreeShipping, Frown, Fuel, Function, Funnel, FunnelChart, Future, Gamepad, Gamepad2, Garage, GardenHose, Gate, Gauge, Generator, Geyser, Gift, GitBranch, GitCommit, GitFork, GitMerge, GitPullRequest, Glasses, Globe, Globe2, Glue, Golf, Grab, GrabCursor, Grabbing, Grade, GraduationCap, Grape, GreaterThan, Grid, Grid2x2, Grid3x3, Growth, Guard, Hail, Hammer, Hand, HandMetal, HandWave, Handheld, Handshake, Handshake2, Happy, HardDrive, HardDrive2, Hash, Hashtag, Hashtag2, Hat, Heading1, Heading2, Heading3, Headphones, HealthBar, Heart, HeartPulse, HeartShape, Heartbeat, Heatmap, Helicopter, HelpCircle, HelpCursor, Hexagon, HighScore, Highlighter, Hiking, History, Hockey, Home, Homework, Hoodie, Horse, Hospital, Hotdog, Hotel, HotelBed, HotelKey, Hourglass, House2, HouseCheck, HouseCog, HouseHeart, HousePlus, HouseX, Html, Humidity, Hyperlink, Hypothesis, ICON_COUNT, ICON_NAMES, ICON_NAMES_KEBAB, ICON_NAME_MAP, IceCream, IceCream2, type IconConfig, type IconName, type IconNameKebab, type IconProps, IconProvider, type IconProviderProps, IdCard, Immigration, Immunity, InProgress, InStock, Inbox, Incomplete, Indent, Infinity, Influencer, Info, InfoCircle, Ink, InternalLink, Inventory, Inventory2, Investment2, Invoice, Island, Italic, Ivy, Jacket, JavascriptIcon, Joystick, Joystick2, Json, Jungle, Kanban, KanbanBoard, Kettle, Key, KeyRound, KeySquare, Keyboard, KeyboardNav, Knife2, Knob, Kpi, LabResults, Ladder, Ladle, Lake, Lamp, LampCeiling, LampDesk, LampFloor, LampWall, Landmark, Lantern, Laptop, Laugh, Layout, LayoutGrid, LayoutList, LazyMotionIcon, type LazyMotionIconProps, LazyMotionPathElement, type LazyMotionPathProps, Leaderboard, Leaf, Leaf2, Lecture, LessThan, Level, LevelUp, Library, Library2, Lightbulb, LightbulbOff, Lighthouse, Like, LikeFilled, LineChart, Link, Link2Off, Lion, List, Live, LiveStream, Lively, Loader, Loading, Locate, LocateFixed, Lock, LockKeyhole, LockOpen, Lollipop, Loot, Loss, Love, Luggage, Lungs, Magnet, Mail, MailCheck, MailOpen, MailPlus, Mailbox, ManaBar, Map, MapPin, MapPinned, Markdown, Marker, Market, Martini, Maximize, Maximize2, Medal, Medal2, MedicalBag, MedicalCross, Meeting, Meh, Memory, Mention, Mention2, Menu, MenuDots, MenuDotsHorizontal, MenuGrid, MessageAi, MessageCircle, MessageSquare, MessagesSquare, Metric, Mic, MicOff, Microscope, Microscope2, Microwave, Milestone, Milestone2, Minimize, Minimize2, Minus, Minus2, MinusCircle, MinusSquare, Molecule, Monitor, Moon, MoreHorizontal, Moss, type MotionPreset, type MotionType, Motorcycle, Mountain, MountainSnow, Mouse, MoveCursor, MoveHorizontal, Multiplayer, Multiply, Mushroom, Music, Music2, Music3, Music4, NameBadge, Navigation, Navigation2, Neon, NeuralNetwork, Noodles, NotAllowed, NotEqual, Notebook, Notebook2, NotebookPen, NotebookPen2, Nucleus, Ocean, Octagon, Odometer, Office, Ok, OnHold, OutOfStock, Outdent, Outlet, Outlier, Oval, Overdue, Oxygen, Package, PageSetup, Paintbrush, Palette, Palm, Pan, PanelBottom, PanelLeft, PanelRight, PanelTop, Pants, PaperFeed, Paperclip, Paperclip2, Parallelogram, Parking, Partnership, Passport, Passport2, Pause, PauseCircle, Peace, Pebbles, Pen, Pen2, PenLine, PenTool, Pencil, Pencil2, PencilLine, Pending, Pentagon, Percent, PercentBadge, Percentage, Permalink, PetriDish, Phone, PhoneCall, PhoneIncoming, PhoneMissed, PhoneOff, PhoneOutgoing, Pi, Pickup, PictureFrame, PieChart, PieChart2, PiggyBank, Pill, Pill2, Pills, Pinch, PineTree, Pinecone, Pitch, Pizza, Plane, PlaneLanding, PlaneTakeoff, Plant2, Plate, Play, PlayCircle, Playlist, Pliers, Plug2, Plus, Plus2, PlusCircle, PlusSquare, Podcast, PointDown, PointLeft, PointRight, PointUp, Pointer2, PoliceCar, Poll, Pomodoro, Pool, Popsicle, Portfolio, Post, Pot, Potion, PowerOff, PowerUp, Prescription, Presentation, Presentation2, PriceTag, PriceTagPlus, PrintPreview, PrintQueue, Printer, Printer2, PrinterCheck, PrinterX, Priority, PriorityHigh, PriorityLow, Profit, Progress, Projector, Protection, Protractor, Pulse, Puzzle, PuzzlePiece, Pvp, QrCode, QrScan, Quest, Queue, Quiz, Quote, Rabbit, Radiation, Radio, RadioButton, RadioChecked, Rainbow, Rake, Ram, Rating, Reaction, Receipt, Receipt2, ReceiptCheck, ReceiptX, Record$1 as Record, Recovery, Rectangle, Recurring, ReducedMotion, Reference, Refresh, Refrigerator, Refund, Regex, Regression, Rejected, Reminder, Reorder, Repeat, Report, Repost, Research, Reservation, ResizeDiagonal, ResizeHorizontal, ResizeVertical, Respawn, Retention, Return, Revenue, Review2, Rewind, Rice, River, RoadTrip, Roadmap, Robot, Rocket, Roi, Roller, RoomService, Rose, Route, Router, Rows, Rss, RubberStamp, Ruler, Ruler2, RulerSquare, Running, Runway, Sad, Safari, Sailboat, Salad, Sandwich, Save, Save2, SavePlus, Saw, Scale2, Scan, Scan2, ScanFace, ScanLine, Scanner, Scanner2, ScatterPlot, Schedule, Schedule2, School, Scissors2, Scooter, Screen, ScreenReader, Screwdriver, SdCard, Search, SearchMinus, SearchPlus, Seaweed, Seedling, Segment, Seminar, Send, Send2, Server, Server2, ServerCog, ServerCrash, ServerOff, Settings, Share, Share2, ShareForward, Shareholder, Shell, Shield, Shield2, ShieldAlert, ShieldAlert2, ShieldCheck, ShieldDollar, ShieldLock, ShieldMinus2, ShieldOff, ShieldOff2, ShieldPlus, ShieldPlus2, ShieldUnlock, ShieldUser, ShieldX, Ship, Shipping, ShippingFast, Shirt, ShoppingBag, ShoppingBagPlus, ShoppingCart, Shortcut, Shorts, Shovel, Shrimp, Shuffle, Sidebar, SidebarClose, SidebarOpen, Sigma, Sign, SignLanguage, Signal, SignalHigh, SignalLow, SignalZero, Signpost, Sink, Skiing, SkipBack, SkipForward, Sleep, Slider, SliderHorizontal, SliderVertical, Smartphone, Smile, Snippet, Snowflake, Soccer, Sofa, Soup, Spa, Sparkles, Sparkline, Spatula, Speaker, Speaker2, Speaker3, SpeedDial, Speedometer, Spoon2, Spotlight, Sprint, Sprout, Sqrt, Square, Ssd, Stakeholder, Stamp, Stamp2, Stapler, Star, Starfish, Startup, Statistics, Steak, Stethoscope, Stethoscope2, StopCircle, Stopwatch, Storage, Store, StoreFront, Story, Strategy, Stream, Strikethrough, StudentId, Studio, Subscript, Subtask, Subtitle, Sun, Sunglasses, Sunrise, Sunset, Superscript, SurgeProtector, Surprised, Survey, Sushi, Sweater, Swimming, SwitchOff, SwitchOn, Sword, Swords, Syringe, Syringe2, Table, Table2, Tablet, Taco, Tag, Tag2, TagPerson, Tags, Tape, TapeMeasure, Target, Target2, Task, TaskCheck, TaskList, Team, Temperature, TemperatureDial, Template, Tennis, Tent, Terminal, Terminal2, TerminalGate, TerminalSquare, TestTube, TestTube2, TestTubes, Testimonial, Text, TextCursor, TextSize, Textbook, Thermometer, Thermometer2, ThermometerMedical, ThumbsDown, ThumbsUp, Ticket, Tie, TimeTracking, Timeline, Timeline2, Timer, Toaster, Toggle, ToggleLeft, ToggleRight, Toilet, Toner, Toolbox, Torch, Tornado, Tower, TrafficCone, Train, type TransitionConfig, Trapezoid, Trash, Tree, Tree2, TreePalm, TreePine, Treemap, Trending, TrendingDown, TrendingUp, Triangle, Trigger, type TriggerType, Trophy, Trophy2, Truck, Tshirt, Tulip, Turtle, Tutor, Tv, TwoFactor, TypescriptIcon, Ufo, Umbrella, Underline, Unfollow, Unfollow2, University, Unlock, Unverified, Upload, Ups, Uptrend, UsbDrive, type UseIconAnimationReturn, type UseIconConfigReturn, User, UserCheck, UserCircle, UserCog, UserMinus, UserPlus, UserX, Users, Utensils, UtensilsCrossed, Vaccine, Variance, Vault, Verified, Verified2, Video, Video2, VideoOff, Vinyl, Viral, Virus, Visa, Vitals, VoiceControl, Voicemail, Volcano, Volleyball, Volume, Volume1, Volume2, VolumeDial, VolumeOff, VolumeX, WaitCursor, Walker, Wallet, WalletCards, Wand, Wand2, WandSparkles, Warehouse, Watch, WatchAccessory, Waterfall, WateringCan, Waveform, Waves, Waypoints, Webcam, Webhook, Weight, Wheelchair, Wheelchair2, Whisk, Whiteboard, Widget, Wifi, WifiOff, Wind, Window, Window2, Wine, Wink, Wishlist, Wolf, Workflow, Wrench, X, XCircle, XCircle2, XSquare, Xml, XpBar, Xray, Zap, animations, bounce, cn, composeMotionPresets, customPresets, defineMotionPreset, draw, easeSmooth, extendMotionPreset, fade, getMotionPreset, isDefined, isIconName, isIconNameKebab, isMotionLoaded, mergeConfig, motionPresets, motionTypeList, pop, preloadMotion, pulse, rotate, shake, spin, stagger, translate, useIconAnimation, useIconConfig, useIconContext, withDefault };

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lively",
+  "type": "registry:ui",
+  "title": "Lively",
+  "description": "Animated Lively icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/lively.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst Lively = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"scale\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        {/* Main vine stem - curved growth shape */}\n      <motion.path\n        d=\"M7 18 C7 13, 7 10, 10 7 C12 5, 14 5, 17 6\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      {/* Tendril curl */}\n      <motion.path\n        d=\"M17 6 C18 4, 20 4, 20 6\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      {/* Primary leaf */}\n      <motion.path\n        d=\"M13 8 C15 5, 19 6, 18 10 C17 12, 14 11, 13 8\"\n        fill=\"currentColor\"\n        stroke=\"none\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      {/* Secondary leaf */}\n      <motion.path\n        d=\"M9 13 C7 11, 8 9, 11 10 C12 11, 11 13, 9 13\"\n        fill=\"currentColor\"\n        stroke=\"none\"\n        opacity={0.8}\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      {/* Growth bud */}\n      <motion.circle\n        cx=\"7\"\n        cy=\"18\"\n        r=\"1.5\"\n        fill=\"currentColor\"\n        stroke=\"none\"\n        pathLength={1}\n        className={useCssDraw ? 'draw-path' : ''}\n        {...(useMotionDraw ? pathAnimationProps : {})}\n      />\n      </motion.svg>\n    );\n  }\n);\n\nLively.displayName = \"Lively\";\n\nexport { Lively };\n",
+      "type": "registry:ui",
+      "target": "components/icons/lively.tsx"
+    }
+  ]
+}

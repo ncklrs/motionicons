@@ -216,3 +216,72 @@
   outline: 2px solid var(--vscode-focusBorder);
   outline-offset: 1px;
 }
+
+/* Color picker */
+.control-color-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-color {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+}
+
+.control-color::-webkit-color-swatch-wrapper {
+  padding: 2px;
+}
+
+.control-color::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+.control-color:hover {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-color-text {
+  flex: 1;
+  padding: 6px 10px;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: var(--vscode-editor-font-family), monospace;
+  outline: none;
+}
+
+.control-color-text:hover {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-color-text:focus {
+  border-color: var(--vscode-focusBorder);
+}
+
+.control-color-text::placeholder {
+  color: var(--vscode-input-placeholderForeground);
+}
+
+.control-color-clear {
+  padding: 4px 8px;
+  background: var(--vscode-button-secondaryBackground);
+  color: var(--vscode-button-secondaryForeground);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.control-color-clear:hover {
+  background: var(--vscode-button-secondaryHoverBackground);
+}

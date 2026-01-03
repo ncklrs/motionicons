@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stripe",
+  "type": "registry:ui",
+  "title": "Stripe",
+  "description": "Animated Stripe icon from LivelyIcons",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "lively-provider",
+    "use-lively-animation",
+    "lively-types"
+  ],
+  "files": [
+    {
+      "path": "icons/stripe.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\nimport { useLivelyAnimation } from \"@/hooks/use-lively-animation\";\nimport type { LivelyIconProps } from \"@/lib/lively-types\";\n\nconst Stripe = React.forwardRef<SVGSVGElement, LivelyIconProps>(\n  (\n    {\n      size,\n      strokeWidth,\n      className,\n      animated,\n      lively = \"scale\",\n      trigger = \"hover\",\n      \"aria-label\": ariaLabel,\n      ...props\n    },\n    ref\n  ) => {\n    const { animationProps, pathAnimationProps, drawWrapperProps } =\n      useLivelyAnimation(animated, lively, trigger);\n    const isDraw = lively === \"draw\";\n\n    const iconSize = size ?? \"var(--lively-icon-size, 24)\";\n    const iconStrokeWidth = strokeWidth ?? \"var(--lively-stroke-width, 2)\";\n\n    return (\n      <motion.svg\n        ref={ref}\n        width={iconSize}\n        height={iconSize}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth={iconStrokeWidth}\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className={cn(\"lively-icon\", isDraw && \"draw-animation\", className)}\n        {...(!isDraw ? animationProps : drawWrapperProps)}\n        role={ariaLabel ? \"img\" : undefined}\n        aria-label={ariaLabel}\n        aria-hidden={ariaLabel ? undefined : true}\n        {...props}\n      >\n        {/* Stripe S shape with slant */}\n      <motion.path\n        d=\"M16 8 Q12 8 12 11 Q12 13 16 13 Q20 13 20 16 Q20 19 16 19\"\n        {...(isDraw ? pathAnimationProps : {})}\n        pathLength={1}\n        className={isDraw ? 'draw-path' : ''}\n      />\n      {/* Diagonal stripe lines */}\n      <motion.path\n        d=\"M6 5 L8 7 M8 9 L10 11 M10 13 L12 15\"\n        {...(isDraw ? pathAnimationProps : {})}\n        pathLength={1}\n        className={isDraw ? 'draw-path' : ''}\n      />\n      <motion.path\n        d=\"M3 10 L5 12 M5 14 L7 16 M7 18 L9 20\"\n        {...(isDraw ? pathAnimationProps : {})}\n        pathLength={1}\n        className={isDraw ? 'draw-path' : ''}\n      />\n      </motion.svg>\n    );\n  }\n);\n\nStripe.displayName = \"Stripe\";\n\nexport { Stripe };\n",
+      "type": "registry:ui",
+      "target": "components/icons/stripe.tsx"
+    }
+  ]
+}

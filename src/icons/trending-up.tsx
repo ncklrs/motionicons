@@ -9,7 +9,7 @@ export const TrendingUp = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'draw',
+  lively = 'translate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

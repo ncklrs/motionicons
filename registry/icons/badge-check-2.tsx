@@ -1,0 +1,58 @@
+"use client";
+
+import * as React from "react";
+import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
+import { useLivelyAnimation } from "@/hooks/use-lively-animation";
+import type { LivelyIconProps } from "@/lib/lively-types";
+
+const BadgeCheck2 = React.forwardRef<SVGSVGElement, LivelyIconProps>(
+  (
+    {
+      size,
+      strokeWidth,
+      className,
+      animated,
+      lively = "scale",
+      trigger = "hover",
+      "aria-label": ariaLabel,
+      ...props
+    },
+    ref
+  ) => {
+    const { animationProps, pathAnimationProps, drawWrapperProps } =
+      useLivelyAnimation(animated, lively, trigger);
+    const isDraw = lively === "draw";
+
+    const iconSize = size ?? "var(--lively-icon-size, 24)";
+    const iconStrokeWidth = strokeWidth ?? "var(--lively-stroke-width, 2)";
+
+    return (
+      <motion.svg
+        ref={ref}
+        width={iconSize}
+        height={iconSize}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={iconStrokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={cn("lively-icon", isDraw && "draw-animation", className)}
+        {...(!isDraw ? animationProps : drawWrapperProps)}
+        role={ariaLabel ? "img" : undefined}
+        aria-label={ariaLabel}
+        aria-hidden={ariaLabel ? undefined : true}
+        {...props}
+      >
+        <motion.path d="M12 2L14.5 6.5L19.5 7.5L16 11.5L17 17L12 14.5L7 17L8 11.5L4.5 7.5L9.5 6.5L12 2Z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="m9 10 2 2 4-4" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M8 17v5l4-2 4 2v-5" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      </motion.svg>
+    );
+  }
+);
+
+BadgeCheck2.displayName = "BadgeCheck2";
+
+export { BadgeCheck2 };

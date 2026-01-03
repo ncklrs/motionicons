@@ -9,7 +9,7 @@ export const UserX = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'shake',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

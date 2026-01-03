@@ -1,0 +1,40 @@
+"use client"
+
+import { motion } from "motion/react"
+import { useIconAnimation } from "../hooks/useIconAnimation"
+import type { IconProps } from "../lib/types"
+
+export const CursorText = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = 'scale',
+  trigger = 'hover',
+  'aria-label': ariaLabel
+}: IconProps) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger)
+  const isDraw = lively === 'draw'
+
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${className || ''} ${isDraw ? 'draw-animation' : ''}`.trim()}
+      {...(!isDraw ? animationProps : drawWrapperProps)}
+      role={ariaLabel ? "img" : undefined}
+      aria-label={ariaLabel}
+      aria-hidden={ariaLabel ? undefined : true}
+    >
+      <motion.path d="M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M7 22h1a4 4 0 0 0 4-4v-1" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M7 2h1a4 4 0 0 1 4 4v1" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+    </motion.svg>
+  )
+}

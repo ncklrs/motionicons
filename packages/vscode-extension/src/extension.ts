@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { IconPickerPanel } from './IconPickerPanel';
+import { IconPickerViewProvider } from './IconPickerViewProvider';
 
 /**
  * Called when the extension is activated
@@ -7,27 +7,15 @@ import { IconPickerPanel } from './IconPickerPanel';
 export function activate(context: vscode.ExtensionContext): void {
   console.log('MotionIcons Picker extension is now active');
 
-  // Register the open picker command
-  const openPickerCommand = vscode.commands.registerCommand(
-    'motionicon.openPicker',
-    () => {
-      IconPickerPanel.createOrShow(context.extensionUri, context);
-    }
+  // Register the sidebar webview provider
+  const provider = new IconPickerViewProvider(context.extensionUri, context);
+
+  context.subscriptions.push(
+    vscode.window.registerWebviewViewProvider(
+      IconPickerViewProvider.viewType,
+      provider
+    )
   );
-
-  context.subscriptions.push(openPickerCommand);
-
-  // Register view serializer for webview persistence
-  if (vscode.window.registerWebviewPanelSerializer) {
-    vscode.window.registerWebviewPanelSerializer(IconPickerPanel.viewType, {
-      async deserializeWebviewPanel(
-        webviewPanel: vscode.WebviewPanel,
-        _state: unknown
-      ) {
-        IconPickerPanel.revive(webviewPanel, context.extensionUri, context);
-      },
-    });
-  }
 }
 
 /**

@@ -23,59 +23,166 @@ export type IconName =
   | 'Accessibility'
   | 'Activity'
   | 'Airplay'
+  | 'AlarmClock'
   | 'AlertCircle'
+  | 'AlertCircle2'
   | 'AlertOctagon'
   | 'AlertTriangle'
+  | 'Alias'
+  | 'Ambulance'
+  | 'Analytics'
   | 'Anchor'
+  | 'Anchor2'
+  | 'Angry'
+  | 'Annoyed'
+  | 'Apartment'
+  | 'Api'
   | 'Apple'
+  | 'Approved'
   | 'Archive'
+  | 'Archive2'
   | 'AreaChart'
+  | 'Armor'
   | 'ArrowDown'
+  | 'ArrowDownCircle'
+  | 'ArrowDownCircle2'
   | 'ArrowDownLeft'
   | 'ArrowDownRight'
+  | 'ArrowDownSquare'
   | 'ArrowLeft'
+  | 'ArrowLeftCircle'
+  | 'ArrowLeftCircle2'
+  | 'ArrowLeftSquare'
   | 'ArrowRight'
+  | 'ArrowRightCircle'
+  | 'ArrowRightCircle2'
+  | 'ArrowRightSquare'
   | 'ArrowUp'
+  | 'ArrowUpCircle'
+  | 'ArrowUpCircle2'
   | 'ArrowUpLeft'
   | 'ArrowUpRight'
+  | 'ArrowUpSquare'
+  | 'ArrowsCollapse'
+  | 'ArrowsExpand'
+  | 'ArrowsMaximize2'
+  | 'ArrowsMinimize2'
   | 'AtSign'
+  | 'Atom2'
+  | 'AudioDescription'
+  | 'AudioLines'
   | 'Award'
+  | 'Axe'
   | 'Baby'
+  | 'Backlink'
   | 'Backpack'
+  | 'Badge2'
+  | 'BadgeAlert'
   | 'BadgeCheck'
+  | 'BadgeCheck2'
+  | 'BadgeDollar'
+  | 'BadgeHelp'
+  | 'BadgeInfo'
+  | 'BadgeMinus'
+  | 'BadgePercent'
+  | 'BadgePlus'
+  | 'BadgeX'
   | 'Ban'
   | 'Banana'
   | 'Bandage'
+  | 'Bank'
+  | 'Banknote'
   | 'BarChart'
   | 'BarChart2'
+  | 'BarChartHorizontal'
   | 'Barcode'
+  | 'Barometer'
+  | 'Baseball'
+  | 'Basket'
+  | 'Basketball'
+  | 'Bathtub'
   | 'Battery'
   | 'BatteryCharging'
+  | 'BatteryEmpty'
+  | 'BatteryHalf'
   | 'BatteryLow'
+  | 'BatteryQuarter'
+  | 'BatteryThreeQuarters'
+  | 'Beaker2'
+  | 'Bear'
+  | 'Bed'
+  | 'Bee'
   | 'Beer'
   | 'Bell'
+  | 'BellOff'
+  | 'BellRing'
+  | 'Bicycle'
   | 'Bike'
+  | 'Binder'
+  | 'Biohazard2'
+  | 'Bird'
+  | 'Bitcoin'
+  | 'Blender'
+  | 'Block'
   | 'Bluetooth'
+  | 'Boat'
+  | 'Bold'
   | 'Bone'
   | 'Book'
+  | 'BookClosed'
   | 'BookMarked'
   | 'BookOpen'
   | 'Bookmark'
+  | 'Bot'
+  | 'Bowling'
+  | 'Braille'
   | 'Brain'
+  | 'BrainCircuit'
+  | 'BrainCog'
+  | 'Branch'
+  | 'Briefcase2'
+  | 'BriefcaseMedical'
+  | 'Brightness'
+  | 'Broadcast'
   | 'Brush'
+  | 'Bug'
   | 'Building'
   | 'Building2'
   | 'Bus'
+  | 'BusinessCard'
+  | 'Butterfly'
+  | 'Cable'
+  | 'Cactus'
+  | 'Cake'
   | 'Calculator'
   | 'Calendar'
+  | 'CalendarCheck'
+  | 'CalendarDays'
+  | 'CalendarMinus'
+  | 'CalendarPlus'
+  | 'CalendarX'
+  | 'Caliper'
   | 'Camera'
+  | 'CameraMovie'
+  | 'Candle'
+  | 'Cap'
   | 'Car'
   | 'CarFront'
+  | 'Carpet'
   | 'Carrot'
   | 'Cast'
   | 'Castle'
+  | 'Cat'
+  | 'Certificate'
+  | 'Chain'
+  | 'ChainBroken'
+  | 'Chair'
   | 'Check'
   | 'CheckCircle'
+  | 'CheckCircle2'
+  | 'CheckSquare'
+  | 'Checkbox'
+  | 'CheckboxChecked'
   | 'ChefHat'
   | 'Cherry'
   | 'ChevronDown'
@@ -84,229 +191,636 @@ export type IconName =
   | 'ChevronsLeft'
   | 'ChevronsRight'
   | 'ChevronsUp'
+  | 'Chimney'
+  | 'ChipAi'
+  | 'Chopsticks'
   | 'Church'
+  | 'Cinema'
   | 'Circle'
+  | 'Citation'
   | 'Clipboard'
+  | 'Clipboard2'
   | 'ClipboardCheck'
+  | 'ClipboardCheck2'
   | 'ClipboardCopy'
+  | 'ClipboardCopy2'
+  | 'ClipboardData'
+  | 'ClipboardEdit'
+  | 'ClipboardHeart'
   | 'ClipboardList'
+  | 'ClipboardList2'
+  | 'ClipboardMinus'
+  | 'ClipboardPaste2'
+  | 'ClipboardPlus'
+  | 'ClipboardSearch'
+  | 'ClipboardSignature'
+  | 'ClipboardText'
+  | 'ClipboardX2'
   | 'Clock'
+  | 'ClosedCaption'
+  | 'ClosedCaptions'
   | 'Cloud'
   | 'CloudDrizzle'
+  | 'CloudFog'
   | 'CloudLightning'
   | 'CloudRain'
   | 'CloudSnow'
   | 'CloudSun'
+  | 'Coat'
   | 'Code'
+  | 'CodeBlock'
+  | 'CodeSquare'
   | 'Code2'
   | 'Coffee'
+  | 'Coins'
   | 'Columns'
   | 'Command'
   | 'Compass'
+  | 'Compass2'
+  | 'Complete'
+  | 'Confused'
   | 'Contact'
   | 'Contact2'
+  | 'Container'
+  | 'Contract'
+  | 'Contrast'
   | 'Cookie'
+  | 'Cool'
+  | 'Copier'
   | 'Copy'
   | 'CornerDownLeft'
+  | 'CornerDownLeft2'
   | 'CornerDownRight'
+  | 'CornerDownRight2'
   | 'CornerUpLeft'
+  | 'CornerUpLeft2'
   | 'CornerUpRight'
+  | 'CornerUpRight2'
   | 'Cpu'
   | 'CreditCard'
+  | 'Cross'
   | 'Crosshair'
+  | 'Crosshair2'
   | 'Crown'
+  | 'Cry'
+  | 'Css'
   | 'Cup'
+  | 'Cursor'
+  | 'CursorClick'
+  | 'CursorText'
+  | 'Curtain'
+  | 'Cycling'
   | 'Database'
+  | 'Database2'
+  | 'DatabaseBackup'
+  | 'DatabaseZap'
+  | 'DeepLink'
+  | 'Deer'
+  | 'Defend'
+  | 'Desk'
+  | 'Desktop'
+  | 'Dial'
+  | 'Diamond'
   | 'Dice1'
   | 'Dice2'
   | 'Dice3'
   | 'Dice4'
   | 'Dice5'
   | 'Dice6'
+  | 'Dimension'
+  | 'Directions'
+  | 'Disc'
+  | 'Disc2'
+  | 'Disc3'
+  | 'Divide2'
   | 'Dna'
+  | 'Dna2'
+  | 'DocumentPrinter'
+  | 'Dog'
   | 'DollarSign'
+  | 'Door'
+  | 'DoorClosed'
+  | 'DoorOpen'
   | 'Download'
+  | 'Dress'
+  | 'Drill'
   | 'Droplet'
   | 'Dumbbell'
   | 'Ear'
+  | 'EarHearing'
+  | 'EarOff'
   | 'Edit'
+  | 'Electron'
+  | 'Elephant'
+  | 'Envelope2'
+  | 'Equalizer'
+  | 'Equals'
   | 'Eraser'
+  | 'Exposure'
+  | 'ExternalLink'
+  | 'ExternalLink2'
   | 'Eye'
   | 'Eye2'
   | 'EyeOff'
+  | 'FaceId'
   | 'Factory'
   | 'FastForward'
+  | 'Faucet'
+  | 'Fax'
+  | 'Fence'
   | 'File'
+  | 'FileArchive'
+  | 'FileAudio'
   | 'FileCheck'
+  | 'FileCode'
+  | 'FileImage'
   | 'FileMinus'
   | 'FilePlus'
   | 'FileText'
+  | 'FileVideo'
   | 'FileX'
   | 'Files'
   | 'Film'
+  | 'Film2'
+  | 'FilmSlate'
   | 'Filter'
   | 'Fingerprint'
+  | 'FireTruck'
+  | 'Firewall'
+  | 'FirstAid'
+  | 'Fish'
+  | 'Fist'
   | 'Flame'
+  | 'Flashlight'
+  | 'FlashlightOff'
+  | 'Flask2'
+  | 'FlaskRound'
+  | 'Flower'
+  | 'Flower2'
+  | 'FocusRing'
   | 'Folder'
   | 'FolderMinus'
   | 'FolderOpen'
   | 'FolderPlus'
+  | 'Follow'
+  | 'Football'
   | 'Footprints'
+  | 'Fork'
+  | 'Fortress'
+  | 'Fox'
+  | 'Fraction'
   | 'Frown'
   | 'Fuel'
+  | 'Function'
+  | 'Future'
+  | 'Gamepad'
   | 'Gamepad2'
+  | 'Garage'
+  | 'GardenHose'
+  | 'Gate'
   | 'Gauge'
+  | 'Generator'
   | 'Gift'
+  | 'GitBranch'
+  | 'GitCommit'
+  | 'GitFork'
+  | 'GitMerge'
+  | 'GitPullRequest'
   | 'Glasses'
   | 'Globe'
+  | 'Globe2'
+  | 'Glue'
+  | 'Golf'
+  | 'Grab'
+  | 'GrabCursor'
+  | 'Grabbing'
   | 'GraduationCap'
   | 'Grape'
+  | 'GreaterThan'
   | 'Grid'
+  | 'Grid2x2'
+  | 'Grid3x3'
+  | 'Guard'
+  | 'Hail'
   | 'Hammer'
   | 'Hand'
+  | 'HandMetal'
+  | 'HandWave'
+  | 'Handshake'
+  | 'Happy'
   | 'HardDrive'
+  | 'HardDrive2'
   | 'Hash'
+  | 'Hashtag'
+  | 'Hat'
+  | 'Heading1'
+  | 'Heading2'
+  | 'Heading3'
   | 'Headphones'
   | 'Heart'
   | 'HeartPulse'
+  | 'HeartShape'
+  | 'Helicopter'
   | 'HelpCircle'
+  | 'HelpCursor'
+  | 'Hexagon'
   | 'Highlighter'
+  | 'History'
+  | 'Hockey'
   | 'Home'
+  | 'Hoodie'
+  | 'Horse'
   | 'Hospital'
+  | 'Hotel'
+  | 'Hourglass'
+  | 'House2'
+  | 'HouseCheck'
+  | 'HouseCog'
+  | 'HouseHeart'
+  | 'HousePlus'
+  | 'HouseX'
+  | 'Html'
+  | 'Humidity'
+  | 'Hyperlink'
   | 'IceCream'
+  | 'IdCard'
   | 'Inbox'
+  | 'Incomplete'
+  | 'Indent'
+  | 'Infinity'
   | 'Info'
+  | 'InfoCircle'
+  | 'Ink'
+  | 'InternalLink'
+  | 'Invoice'
+  | 'Italic'
+  | 'Jacket'
+  | 'JavascriptIcon'
   | 'Joystick'
+  | 'Json'
   | 'Kanban'
+  | 'Kettle'
   | 'Key'
   | 'KeyRound'
+  | 'KeySquare'
   | 'Keyboard'
+  | 'KeyboardNav'
+  | 'Knife2'
+  | 'Knob'
+  | 'Ladder'
+  | 'Ladle'
   | 'Lamp'
+  | 'LampCeiling'
   | 'LampDesk'
+  | 'LampFloor'
+  | 'LampWall'
   | 'Landmark'
+  | 'Lantern'
   | 'Laptop'
+  | 'Laugh'
   | 'Layout'
   | 'LayoutGrid'
   | 'LayoutList'
   | 'Leaf'
+  | 'Leaf2'
+  | 'LessThan'
+  | 'Level'
   | 'Library'
   | 'Lightbulb'
   | 'LightbulbOff'
+  | 'Lighthouse'
   | 'LineChart'
   | 'Link'
+  | 'Link2Off'
+  | 'Lion'
   | 'List'
+  | 'Live'
+  | 'Lively'
   | 'Loader'
+  | 'Loading'
+  | 'Locate'
+  | 'LocateFixed'
   | 'Lock'
+  | 'LockKeyhole'
   | 'LockOpen'
+  | 'Love'
+  | 'Luggage'
+  | 'Lungs'
+  | 'Magnet'
   | 'Mail'
+  | 'MailCheck'
+  | 'MailOpen'
+  | 'MailPlus'
+  | 'Mailbox'
   | 'Map'
   | 'MapPin'
+  | 'MapPinned'
+  | 'Markdown'
+  | 'Marker'
   | 'Martini'
   | 'Maximize'
   | 'Maximize2'
   | 'Medal'
+  | 'Meeting'
   | 'Meh'
+  | 'Memory'
+  | 'Mention'
   | 'Menu'
+  | 'MenuDots'
+  | 'MenuDotsHorizontal'
+  | 'MenuGrid'
+  | 'MessageAi'
   | 'MessageCircle'
   | 'MessageSquare'
+  | 'MessagesSquare'
   | 'Mic'
   | 'MicOff'
   | 'Microscope'
+  | 'Microscope2'
+  | 'Microwave'
   | 'Milestone'
   | 'Minimize'
   | 'Minimize2'
   | 'Minus'
+  | 'Minus2'
+  | 'MinusCircle'
+  | 'MinusSquare'
+  | 'Molecule'
   | 'Monitor'
   | 'Moon'
   | 'MoreHorizontal'
+  | 'Motorcycle'
   | 'Mountain'
   | 'MountainSnow'
   | 'Mouse'
+  | 'MoveCursor'
   | 'MoveHorizontal'
+  | 'Multiply'
   | 'Music'
+  | 'Music2'
+  | 'Music3'
+  | 'Music4'
+  | 'NameBadge'
   | 'Navigation'
   | 'Navigation2'
+  | 'Neon'
+  | 'NeuralNetwork'
+  | 'NotAllowed'
+  | 'NotEqual'
   | 'Notebook'
   | 'NotebookPen'
+  | 'Nucleus'
+  | 'Octagon'
+  | 'Odometer'
+  | 'Office'
+  | 'Ok'
+  | 'Outdent'
+  | 'Outlet'
+  | 'Oval'
   | 'Package'
+  | 'PageSetup'
+  | 'Paintbrush'
   | 'Palette'
+  | 'Palm'
+  | 'Pan'
+  | 'PanelBottom'
   | 'PanelLeft'
   | 'PanelRight'
+  | 'PanelTop'
+  | 'Pants'
+  | 'PaperFeed'
   | 'Paperclip'
+  | 'Paperclip2'
+  | 'Parallelogram'
   | 'Parking'
+  | 'Passport'
   | 'Pause'
+  | 'PauseCircle'
+  | 'Peace'
   | 'Pen'
+  | 'Pen2'
+  | 'PenLine'
   | 'PenTool'
   | 'Pencil'
+  | 'Pencil2'
+  | 'PencilLine'
+  | 'Pending'
+  | 'Pentagon'
   | 'Percent'
+  | 'PercentBadge'
+  | 'Percentage'
+  | 'Permalink'
+  | 'PetriDish'
   | 'Phone'
   | 'PhoneCall'
   | 'PhoneIncoming'
   | 'PhoneMissed'
   | 'PhoneOff'
   | 'PhoneOutgoing'
+  | 'Pi'
+  | 'PictureFrame'
   | 'PieChart'
+  | 'PiggyBank'
   | 'Pill'
+  | 'Pinch'
+  | 'PineTree'
   | 'Pizza'
   | 'Plane'
   | 'PlaneLanding'
   | 'PlaneTakeoff'
+  | 'Plant2'
+  | 'Plate'
   | 'Play'
+  | 'PlayCircle'
+  | 'Playlist'
+  | 'Pliers'
+  | 'Plug2'
   | 'Plus'
+  | 'Plus2'
+  | 'PlusCircle'
+  | 'PlusSquare'
+  | 'Podcast'
+  | 'PointDown'
+  | 'PointLeft'
+  | 'PointRight'
+  | 'PointUp'
+  | 'Pointer2'
+  | 'PoliceCar'
+  | 'Portfolio'
+  | 'Pot'
+  | 'Potion'
+  | 'PowerOff'
   | 'Presentation'
+  | 'Presentation2'
+  | 'PrintPreview'
+  | 'PrintQueue'
   | 'Printer'
+  | 'Printer2'
+  | 'PrinterCheck'
+  | 'PrinterX'
+  | 'Progress'
+  | 'Projector'
+  | 'Protection'
+  | 'Protractor'
   | 'Puzzle'
+  | 'PuzzlePiece'
   | 'QrCode'
+  | 'Queue'
+  | 'Quote'
+  | 'Rabbit'
+  | 'Radiation'
   | 'Radio'
+  | 'RadioButton'
+  | 'RadioChecked'
+  | 'Rainbow'
+  | 'Rake'
+  | 'Ram'
   | 'Receipt'
+  | 'Receipt2'
+  | 'Record'
+  | 'Rectangle'
+  | 'ReducedMotion'
+  | 'Reference'
   | 'Refresh'
+  | 'Refrigerator'
+  | 'Regex'
+  | 'Rejected'
   | 'Repeat'
+  | 'ResizeDiagonal'
+  | 'ResizeHorizontal'
+  | 'ResizeVertical'
   | 'Rewind'
+  | 'Robot'
   | 'Rocket'
+  | 'Roller'
+  | 'Rose'
+  | 'Route'
   | 'Router'
   | 'Rows'
   | 'Rss'
+  | 'RubberStamp'
   | 'Ruler'
+  | 'Ruler2'
+  | 'RulerSquare'
+  | 'Running'
+  | 'Sad'
   | 'Sailboat'
   | 'Sandwich'
   | 'Save'
+  | 'Saw'
+  | 'Scale2'
   | 'Scan'
+  | 'Scan2'
+  | 'ScanFace'
   | 'ScanLine'
+  | 'Scanner'
+  | 'Scanner2'
+  | 'Schedule'
   | 'School'
+  | 'Scissors2'
+  | 'Scooter'
+  | 'Screen'
+  | 'ScreenReader'
   | 'Screwdriver'
   | 'SdCard'
   | 'Search'
+  | 'SearchMinus'
+  | 'SearchPlus'
+  | 'Seedling'
   | 'Send'
   | 'Send2'
   | 'Server'
+  | 'Server2'
+  | 'ServerCog'
+  | 'ServerCrash'
+  | 'ServerOff'
   | 'Settings'
   | 'Share'
   | 'Shield'
+  | 'Shield2'
   | 'ShieldAlert'
+  | 'ShieldAlert2'
   | 'ShieldCheck'
+  | 'ShieldDollar'
+  | 'ShieldLock'
+  | 'ShieldMinus2'
   | 'ShieldOff'
+  | 'ShieldOff2'
+  | 'ShieldPlus'
+  | 'ShieldPlus2'
+  | 'ShieldUnlock'
+  | 'ShieldUser'
+  | 'ShieldX'
   | 'Ship'
+  | 'Shirt'
   | 'ShoppingBag'
   | 'ShoppingCart'
+  | 'Shortcut'
+  | 'Shorts'
+  | 'Shovel'
   | 'Shuffle'
   | 'Sidebar'
+  | 'SidebarClose'
+  | 'SidebarOpen'
+  | 'Sigma'
+  | 'SignLanguage'
   | 'Signal'
   | 'SignalHigh'
   | 'SignalLow'
   | 'SignalZero'
+  | 'Signpost'
+  | 'Sink'
+  | 'Skiing'
   | 'SkipBack'
   | 'SkipForward'
+  | 'Sleep'
+  | 'Slider'
+  | 'SliderHorizontal'
+  | 'SliderVertical'
   | 'Smartphone'
   | 'Smile'
+  | 'Snippet'
   | 'Snowflake'
+  | 'Soccer'
+  | 'Sofa'
+  | 'Sparkles'
+  | 'Spatula'
   | 'Speaker'
+  | 'Speaker2'
+  | 'Speaker3'
+  | 'SpeedDial'
+  | 'Speedometer'
+  | 'Spoon2'
+  | 'Spotlight'
+  | 'Sprout'
+  | 'Sqrt'
   | 'Square'
+  | 'Ssd'
+  | 'Stamp'
+  | 'Stapler'
   | 'Star'
+  | 'Statistics'
   | 'Stethoscope'
+  | 'StopCircle'
+  | 'Stopwatch'
+  | 'Storage'
   | 'Store'
+  | 'Stream'
+  | 'Strikethrough'
+  | 'Studio'
+  | 'Subscript'
+  | 'Subtitle'
   | 'Sun'
+  | 'Sunglasses'
   | 'Sunrise'
   | 'Sunset'
+  | 'Superscript'
+  | 'SurgeProtector'
+  | 'Surprised'
+  | 'Sweater'
+  | 'Swimming'
+  | 'SwitchOff'
+  | 'SwitchOn'
   | 'Sword'
   | 'Swords'
   | 'Syringe'
@@ -316,31 +830,72 @@ export type IconName =
   | 'Tag'
   | 'Tag2'
   | 'Tags'
+  | 'Tape'
+  | 'TapeMeasure'
   | 'Target'
+  | 'Team'
+  | 'TemperatureDial'
+  | 'Tennis'
   | 'Tent'
   | 'Terminal'
+  | 'Terminal2'
+  | 'TerminalSquare'
   | 'TestTube'
+  | 'TestTube2'
   | 'TestTubes'
+  | 'Text'
+  | 'TextCursor'
+  | 'TextSize'
   | 'Thermometer'
   | 'Thermometer2'
+  | 'ThermometerMedical'
   | 'ThumbsDown'
   | 'ThumbsUp'
+  | 'Ticket'
+  | 'Tie'
+  | 'Timeline'
+  | 'Timer'
+  | 'Toaster'
+  | 'Toggle'
+  | 'ToggleLeft'
+  | 'ToggleRight'
+  | 'Toilet'
+  | 'Toner'
+  | 'Toolbox'
+  | 'Torch'
+  | 'Tornado'
+  | 'Tower'
   | 'TrafficCone'
   | 'Train'
+  | 'Trapezoid'
   | 'Trash'
   | 'Tree'
+  | 'Tree2'
+  | 'TreePalm'
+  | 'TreePine'
   | 'TrendingDown'
   | 'TrendingUp'
   | 'Triangle'
   | 'Trophy'
   | 'Truck'
+  | 'Tshirt'
+  | 'Tulip'
+  | 'Turtle'
   | 'Tv'
+  | 'TwoFactor'
+  | 'TypescriptIcon'
+  | 'Ufo'
   | 'Umbrella'
+  | 'Underline'
+  | 'Unfollow'
   | 'Unlock'
+  | 'Unverified'
   | 'Upload'
+  | 'Ups'
   | 'UsbDrive'
   | 'User'
   | 'UserCheck'
+  | 'UserCircle'
   | 'UserCog'
   | 'UserMinus'
   | 'UserPlus'
@@ -348,27 +903,53 @@ export type IconName =
   | 'Users'
   | 'Utensils'
   | 'UtensilsCrossed'
+  | 'Vault'
+  | 'Verified'
   | 'Video'
   | 'Video2'
   | 'VideoOff'
+  | 'Vinyl'
+  | 'VoiceControl'
   | 'Voicemail'
+  | 'Volleyball'
   | 'Volume'
+  | 'Volume1'
+  | 'Volume2'
+  | 'VolumeDial'
   | 'VolumeOff'
+  | 'VolumeX'
+  | 'WaitCursor'
   | 'Wallet'
+  | 'WalletCards'
   | 'Wand'
   | 'Wand2'
+  | 'WandSparkles'
   | 'Warehouse'
   | 'Watch'
+  | 'WatchAccessory'
+  | 'WateringCan'
+  | 'Waveform'
   | 'Waves'
+  | 'Waypoints'
   | 'Webcam'
+  | 'Webhook'
+  | 'Weight'
   | 'Wheelchair'
+  | 'Whisk'
   | 'Wifi'
   | 'WifiOff'
   | 'Wind'
+  | 'Window'
+  | 'Window2'
   | 'Wine'
+  | 'Wink'
+  | 'Wolf'
   | 'Wrench'
   | 'X'
   | 'XCircle'
+  | 'XCircle2'
+  | 'XSquare'
+  | 'Xml'
   | 'Zap';
 
 /**
@@ -380,59 +961,166 @@ export type IconNameKebab =
   | 'accessibility'
   | 'activity'
   | 'airplay'
+  | 'alarm-clock'
   | 'alert-circle'
+  | 'alert-circle-2'
   | 'alert-octagon'
   | 'alert-triangle'
+  | 'alias'
+  | 'ambulance'
+  | 'analytics'
   | 'anchor'
+  | 'anchor-2'
+  | 'angry'
+  | 'annoyed'
+  | 'apartment'
+  | 'api'
   | 'apple'
+  | 'approved'
   | 'archive'
+  | 'archive-2'
   | 'area-chart'
+  | 'armor'
   | 'arrow-down'
+  | 'arrow-down-circle'
+  | 'arrow-down-circle-2'
   | 'arrow-down-left'
   | 'arrow-down-right'
+  | 'arrow-down-square'
   | 'arrow-left'
+  | 'arrow-left-circle'
+  | 'arrow-left-circle-2'
+  | 'arrow-left-square'
   | 'arrow-right'
+  | 'arrow-right-circle'
+  | 'arrow-right-circle-2'
+  | 'arrow-right-square'
   | 'arrow-up'
+  | 'arrow-up-circle'
+  | 'arrow-up-circle-2'
   | 'arrow-up-left'
   | 'arrow-up-right'
+  | 'arrow-up-square'
+  | 'arrows-collapse'
+  | 'arrows-expand'
+  | 'arrows-maximize-2'
+  | 'arrows-minimize-2'
   | 'at-sign'
+  | 'atom-2'
+  | 'audio-description'
+  | 'audio-lines'
   | 'award'
+  | 'axe'
   | 'baby'
+  | 'backlink'
   | 'backpack'
+  | 'badge-2'
+  | 'badge-alert'
   | 'badge-check'
+  | 'badge-check-2'
+  | 'badge-dollar'
+  | 'badge-help'
+  | 'badge-info'
+  | 'badge-minus'
+  | 'badge-percent'
+  | 'badge-plus'
+  | 'badge-x'
   | 'ban'
   | 'banana'
   | 'bandage'
+  | 'bank'
+  | 'banknote'
   | 'bar-chart'
   | 'bar-chart-2'
+  | 'bar-chart-horizontal'
   | 'barcode'
+  | 'barometer'
+  | 'baseball'
+  | 'basket'
+  | 'basketball'
+  | 'bathtub'
   | 'battery'
   | 'battery-charging'
+  | 'battery-empty'
+  | 'battery-half'
   | 'battery-low'
+  | 'battery-quarter'
+  | 'battery-three-quarters'
+  | 'beaker-2'
+  | 'bear'
+  | 'bed'
+  | 'bee'
   | 'beer'
   | 'bell'
+  | 'bell-off'
+  | 'bell-ring'
+  | 'bicycle'
   | 'bike'
+  | 'binder'
+  | 'biohazard-2'
+  | 'bird'
+  | 'bitcoin'
+  | 'blender'
+  | 'block'
   | 'bluetooth'
+  | 'boat'
+  | 'bold'
   | 'bone'
   | 'book'
+  | 'book-closed'
   | 'book-marked'
   | 'book-open'
   | 'bookmark'
+  | 'bot'
+  | 'bowling'
+  | 'braille'
   | 'brain'
+  | 'brain-circuit'
+  | 'brain-cog'
+  | 'branch'
+  | 'briefcase-2'
+  | 'briefcase-medical'
+  | 'brightness'
+  | 'broadcast'
   | 'brush'
+  | 'bug'
   | 'building'
   | 'building2'
   | 'bus'
+  | 'business-card'
+  | 'butterfly'
+  | 'cable'
+  | 'cactus'
+  | 'cake'
   | 'calculator'
   | 'calendar'
+  | 'calendar-check'
+  | 'calendar-days'
+  | 'calendar-minus'
+  | 'calendar-plus'
+  | 'calendar-x'
+  | 'caliper'
   | 'camera'
+  | 'camera-movie'
+  | 'candle'
+  | 'cap'
   | 'car'
   | 'car-front'
+  | 'carpet'
   | 'carrot'
   | 'cast'
   | 'castle'
+  | 'cat'
+  | 'certificate'
+  | 'chain'
+  | 'chain-broken'
+  | 'chair'
   | 'check'
   | 'check-circle'
+  | 'check-circle-2'
+  | 'check-square'
+  | 'checkbox'
+  | 'checkbox-checked'
   | 'chef-hat'
   | 'cherry'
   | 'chevron-down'
@@ -441,229 +1129,636 @@ export type IconNameKebab =
   | 'chevrons-left'
   | 'chevrons-right'
   | 'chevrons-up'
+  | 'chimney'
+  | 'chip-ai'
+  | 'chopsticks'
   | 'church'
+  | 'cinema'
   | 'circle'
+  | 'citation'
   | 'clipboard'
+  | 'clipboard-2'
   | 'clipboard-check'
+  | 'clipboard-check-2'
   | 'clipboard-copy'
+  | 'clipboard-copy-2'
+  | 'clipboard-data'
+  | 'clipboard-edit'
+  | 'clipboard-heart'
   | 'clipboard-list'
+  | 'clipboard-list-2'
+  | 'clipboard-minus'
+  | 'clipboard-paste-2'
+  | 'clipboard-plus'
+  | 'clipboard-search'
+  | 'clipboard-signature'
+  | 'clipboard-text'
+  | 'clipboard-x-2'
   | 'clock'
+  | 'closed-caption'
+  | 'closed-captions'
   | 'cloud'
   | 'cloud-drizzle'
+  | 'cloud-fog'
   | 'cloud-lightning'
   | 'cloud-rain'
   | 'cloud-snow'
   | 'cloud-sun'
+  | 'coat'
   | 'code'
+  | 'code-block'
+  | 'code-square'
   | 'code2'
   | 'coffee'
+  | 'coins'
   | 'columns'
   | 'command'
   | 'compass'
+  | 'compass-2'
+  | 'complete'
+  | 'confused'
   | 'contact'
   | 'contact2'
+  | 'container'
+  | 'contract'
+  | 'contrast'
   | 'cookie'
+  | 'cool'
+  | 'copier'
   | 'copy'
   | 'corner-down-left'
+  | 'corner-down-left-2'
   | 'corner-down-right'
+  | 'corner-down-right-2'
   | 'corner-up-left'
+  | 'corner-up-left-2'
   | 'corner-up-right'
+  | 'corner-up-right-2'
   | 'cpu'
   | 'credit-card'
+  | 'cross'
   | 'crosshair'
+  | 'crosshair-2'
   | 'crown'
+  | 'cry'
+  | 'css'
   | 'cup'
+  | 'cursor'
+  | 'cursor-click'
+  | 'cursor-text'
+  | 'curtain'
+  | 'cycling'
   | 'database'
+  | 'database-2'
+  | 'database-backup'
+  | 'database-zap'
+  | 'deep-link'
+  | 'deer'
+  | 'defend'
+  | 'desk'
+  | 'desktop'
+  | 'dial'
+  | 'diamond'
   | 'dice-1'
   | 'dice-2'
   | 'dice-3'
   | 'dice-4'
   | 'dice-5'
   | 'dice-6'
+  | 'dimension'
+  | 'directions'
+  | 'disc'
+  | 'disc-2'
+  | 'disc-3'
+  | 'divide-2'
   | 'dna'
+  | 'dna-2'
+  | 'document-printer'
+  | 'dog'
   | 'dollar-sign'
+  | 'door'
+  | 'door-closed'
+  | 'door-open'
   | 'download'
+  | 'dress'
+  | 'drill'
   | 'droplet'
   | 'dumbbell'
   | 'ear'
+  | 'ear-hearing'
+  | 'ear-off'
   | 'edit'
+  | 'electron'
+  | 'elephant'
+  | 'envelope-2'
+  | 'equalizer'
+  | 'equals'
   | 'eraser'
+  | 'exposure'
+  | 'external-link'
+  | 'external-link-2'
   | 'eye'
   | 'eye-2'
   | 'eye-off'
+  | 'face-id'
   | 'factory'
   | 'fast-forward'
+  | 'faucet'
+  | 'fax'
+  | 'fence'
   | 'file'
+  | 'file-archive'
+  | 'file-audio'
   | 'file-check'
+  | 'file-code'
+  | 'file-image'
   | 'file-minus'
   | 'file-plus'
   | 'file-text'
+  | 'file-video'
   | 'file-x'
   | 'files'
   | 'film'
+  | 'film-2'
+  | 'film-slate'
   | 'filter'
   | 'fingerprint'
+  | 'fire-truck'
+  | 'firewall'
+  | 'first-aid'
+  | 'fish'
+  | 'fist'
   | 'flame'
+  | 'flashlight'
+  | 'flashlight-off'
+  | 'flask-2'
+  | 'flask-round'
+  | 'flower'
+  | 'flower-2'
+  | 'focus-ring'
   | 'folder'
   | 'folder-minus'
   | 'folder-open'
   | 'folder-plus'
+  | 'follow'
+  | 'football'
   | 'footprints'
+  | 'fork'
+  | 'fortress'
+  | 'fox'
+  | 'fraction'
   | 'frown'
   | 'fuel'
+  | 'function'
+  | 'future'
+  | 'gamepad'
   | 'gamepad-2'
+  | 'garage'
+  | 'garden-hose'
+  | 'gate'
   | 'gauge'
+  | 'generator'
   | 'gift'
+  | 'git-branch'
+  | 'git-commit'
+  | 'git-fork'
+  | 'git-merge'
+  | 'git-pull-request'
   | 'glasses'
   | 'globe'
+  | 'globe-2'
+  | 'glue'
+  | 'golf'
+  | 'grab'
+  | 'grab-cursor'
+  | 'grabbing'
   | 'graduation-cap'
   | 'grape'
+  | 'greater-than'
   | 'grid'
+  | 'grid-2x2'
+  | 'grid-3x3'
+  | 'guard'
+  | 'hail'
   | 'hammer'
   | 'hand'
+  | 'hand-metal'
+  | 'hand-wave'
+  | 'handshake'
+  | 'happy'
   | 'hard-drive'
+  | 'hard-drive-2'
   | 'hash'
+  | 'hashtag'
+  | 'hat'
+  | 'heading-1'
+  | 'heading-2'
+  | 'heading-3'
   | 'headphones'
   | 'heart'
   | 'heart-pulse'
+  | 'heart-shape'
+  | 'helicopter'
   | 'help-circle'
+  | 'help-cursor'
+  | 'hexagon'
   | 'highlighter'
+  | 'history'
+  | 'hockey'
   | 'home'
+  | 'hoodie'
+  | 'horse'
   | 'hospital'
+  | 'hotel'
+  | 'hourglass'
+  | 'house-2'
+  | 'house-check'
+  | 'house-cog'
+  | 'house-heart'
+  | 'house-plus'
+  | 'house-x'
+  | 'html'
+  | 'humidity'
+  | 'hyperlink'
   | 'ice-cream'
+  | 'id-card'
   | 'inbox'
+  | 'incomplete'
+  | 'indent'
+  | 'infinity'
   | 'info'
+  | 'info-circle'
+  | 'ink'
+  | 'internal-link'
+  | 'invoice'
+  | 'italic'
+  | 'jacket'
+  | 'javascript-icon'
   | 'joystick'
+  | 'json'
   | 'kanban'
+  | 'kettle'
   | 'key'
   | 'key-round'
+  | 'key-square'
   | 'keyboard'
+  | 'keyboard-nav'
+  | 'knife-2'
+  | 'knob'
+  | 'ladder'
+  | 'ladle'
   | 'lamp'
+  | 'lamp-ceiling'
   | 'lamp-desk'
+  | 'lamp-floor'
+  | 'lamp-wall'
   | 'landmark'
+  | 'lantern'
   | 'laptop'
+  | 'laugh'
   | 'layout'
   | 'layout-grid'
   | 'layout-list'
   | 'leaf'
+  | 'leaf-2'
+  | 'less-than'
+  | 'level'
   | 'library'
   | 'lightbulb'
   | 'lightbulb-off'
+  | 'lighthouse'
   | 'line-chart'
   | 'link'
+  | 'link-2-off'
+  | 'lion'
   | 'list'
+  | 'live'
+  | 'lively'
   | 'loader'
+  | 'loading'
+  | 'locate'
+  | 'locate-fixed'
   | 'lock'
+  | 'lock-keyhole'
   | 'lock-open'
+  | 'love'
+  | 'luggage'
+  | 'lungs'
+  | 'magnet'
   | 'mail'
+  | 'mail-check'
+  | 'mail-open'
+  | 'mail-plus'
+  | 'mailbox'
   | 'map'
   | 'map-pin'
+  | 'map-pinned'
+  | 'markdown'
+  | 'marker'
   | 'martini'
   | 'maximize'
   | 'maximize-2'
   | 'medal'
+  | 'meeting'
   | 'meh'
+  | 'memory'
+  | 'mention'
   | 'menu'
+  | 'menu-dots'
+  | 'menu-dots-horizontal'
+  | 'menu-grid'
+  | 'message-ai'
   | 'message-circle'
   | 'message-square'
+  | 'messages-square'
   | 'mic'
   | 'mic-off'
   | 'microscope'
+  | 'microscope-2'
+  | 'microwave'
   | 'milestone'
   | 'minimize'
   | 'minimize-2'
   | 'minus'
+  | 'minus-2'
+  | 'minus-circle'
+  | 'minus-square'
+  | 'molecule'
   | 'monitor'
   | 'moon'
   | 'more-horizontal'
+  | 'motorcycle'
   | 'mountain'
   | 'mountain-snow'
   | 'mouse'
+  | 'move-cursor'
   | 'move-horizontal'
+  | 'multiply'
   | 'music'
+  | 'music-2'
+  | 'music-3'
+  | 'music-4'
+  | 'name-badge'
   | 'navigation'
   | 'navigation-2'
+  | 'neon'
+  | 'neural-network'
+  | 'not-allowed'
+  | 'not-equal'
   | 'notebook'
   | 'notebook-pen'
+  | 'nucleus'
+  | 'octagon'
+  | 'odometer'
+  | 'office'
+  | 'ok'
+  | 'outdent'
+  | 'outlet'
+  | 'oval'
   | 'package'
+  | 'page-setup'
+  | 'paintbrush'
   | 'palette'
+  | 'palm'
+  | 'pan'
+  | 'panel-bottom'
   | 'panel-left'
   | 'panel-right'
+  | 'panel-top'
+  | 'pants'
+  | 'paper-feed'
   | 'paperclip'
+  | 'paperclip-2'
+  | 'parallelogram'
   | 'parking'
+  | 'passport'
   | 'pause'
+  | 'pause-circle'
+  | 'peace'
   | 'pen'
+  | 'pen-2'
+  | 'pen-line'
   | 'pen-tool'
   | 'pencil'
+  | 'pencil-2'
+  | 'pencil-line'
+  | 'pending'
+  | 'pentagon'
   | 'percent'
+  | 'percent-badge'
+  | 'percentage'
+  | 'permalink'
+  | 'petri-dish'
   | 'phone'
   | 'phone-call'
   | 'phone-incoming'
   | 'phone-missed'
   | 'phone-off'
   | 'phone-outgoing'
+  | 'pi'
+  | 'picture-frame'
   | 'pie-chart'
+  | 'piggy-bank'
   | 'pill'
+  | 'pinch'
+  | 'pine-tree'
   | 'pizza'
   | 'plane'
   | 'plane-landing'
   | 'plane-takeoff'
+  | 'plant-2'
+  | 'plate'
   | 'play'
+  | 'play-circle'
+  | 'playlist'
+  | 'pliers'
+  | 'plug-2'
   | 'plus'
+  | 'plus-2'
+  | 'plus-circle'
+  | 'plus-square'
+  | 'podcast'
+  | 'point-down'
+  | 'point-left'
+  | 'point-right'
+  | 'point-up'
+  | 'pointer-2'
+  | 'police-car'
+  | 'portfolio'
+  | 'pot'
+  | 'potion'
+  | 'power-off'
   | 'presentation'
+  | 'presentation-2'
+  | 'print-preview'
+  | 'print-queue'
   | 'printer'
+  | 'printer-2'
+  | 'printer-check'
+  | 'printer-x'
+  | 'progress'
+  | 'projector'
+  | 'protection'
+  | 'protractor'
   | 'puzzle'
+  | 'puzzle-piece'
   | 'qr-code'
+  | 'queue'
+  | 'quote'
+  | 'rabbit'
+  | 'radiation'
   | 'radio'
+  | 'radio-button'
+  | 'radio-checked'
+  | 'rainbow'
+  | 'rake'
+  | 'ram'
   | 'receipt'
+  | 'receipt-2'
+  | 'record'
+  | 'rectangle'
+  | 'reduced-motion'
+  | 'reference'
   | 'refresh'
+  | 'refrigerator'
+  | 'regex'
+  | 'rejected'
   | 'repeat'
+  | 'resize-diagonal'
+  | 'resize-horizontal'
+  | 'resize-vertical'
   | 'rewind'
+  | 'robot'
   | 'rocket'
+  | 'roller'
+  | 'rose'
+  | 'route'
   | 'router'
   | 'rows'
   | 'rss'
+  | 'rubber-stamp'
   | 'ruler'
+  | 'ruler-2'
+  | 'ruler-square'
+  | 'running'
+  | 'sad'
   | 'sailboat'
   | 'sandwich'
   | 'save'
+  | 'saw'
+  | 'scale-2'
   | 'scan'
+  | 'scan-2'
+  | 'scan-face'
   | 'scan-line'
+  | 'scanner'
+  | 'scanner-2'
+  | 'schedule'
   | 'school'
+  | 'scissors-2'
+  | 'scooter'
+  | 'screen'
+  | 'screen-reader'
   | 'screwdriver'
   | 'sd-card'
   | 'search'
+  | 'search-minus'
+  | 'search-plus'
+  | 'seedling'
   | 'send'
   | 'send-2'
   | 'server'
+  | 'server-2'
+  | 'server-cog'
+  | 'server-crash'
+  | 'server-off'
   | 'settings'
   | 'share'
   | 'shield'
+  | 'shield-2'
   | 'shield-alert'
+  | 'shield-alert-2'
   | 'shield-check'
+  | 'shield-dollar'
+  | 'shield-lock'
+  | 'shield-minus-2'
   | 'shield-off'
+  | 'shield-off-2'
+  | 'shield-plus'
+  | 'shield-plus-2'
+  | 'shield-unlock'
+  | 'shield-user'
+  | 'shield-x'
   | 'ship'
+  | 'shirt'
   | 'shopping-bag'
   | 'shopping-cart'
+  | 'shortcut'
+  | 'shorts'
+  | 'shovel'
   | 'shuffle'
   | 'sidebar'
+  | 'sidebar-close'
+  | 'sidebar-open'
+  | 'sigma'
+  | 'sign-language'
   | 'signal'
   | 'signal-high'
   | 'signal-low'
   | 'signal-zero'
+  | 'signpost'
+  | 'sink'
+  | 'skiing'
   | 'skip-back'
   | 'skip-forward'
+  | 'sleep'
+  | 'slider'
+  | 'slider-horizontal'
+  | 'slider-vertical'
   | 'smartphone'
   | 'smile'
+  | 'snippet'
   | 'snowflake'
+  | 'soccer'
+  | 'sofa'
+  | 'sparkles'
+  | 'spatula'
   | 'speaker'
+  | 'speaker-2'
+  | 'speaker-3'
+  | 'speed-dial'
+  | 'speedometer'
+  | 'spoon-2'
+  | 'spotlight'
+  | 'sprout'
+  | 'sqrt'
   | 'square'
+  | 'ssd'
+  | 'stamp'
+  | 'stapler'
   | 'star'
+  | 'statistics'
   | 'stethoscope'
+  | 'stop-circle'
+  | 'stopwatch'
+  | 'storage'
   | 'store'
+  | 'stream'
+  | 'strikethrough'
+  | 'studio'
+  | 'subscript'
+  | 'subtitle'
   | 'sun'
+  | 'sunglasses'
   | 'sunrise'
   | 'sunset'
+  | 'superscript'
+  | 'surge-protector'
+  | 'surprised'
+  | 'sweater'
+  | 'swimming'
+  | 'switch-off'
+  | 'switch-on'
   | 'sword'
   | 'swords'
   | 'syringe'
@@ -673,31 +1768,72 @@ export type IconNameKebab =
   | 'tag'
   | 'tag2'
   | 'tags'
+  | 'tape'
+  | 'tape-measure'
   | 'target'
+  | 'team'
+  | 'temperature-dial'
+  | 'tennis'
   | 'tent'
   | 'terminal'
+  | 'terminal-2'
+  | 'terminal-square'
   | 'test-tube'
+  | 'test-tube-2'
   | 'test-tubes'
+  | 'text'
+  | 'text-cursor'
+  | 'text-size'
   | 'thermometer'
   | 'thermometer-2'
+  | 'thermometer-medical'
   | 'thumbs-down'
   | 'thumbs-up'
+  | 'ticket'
+  | 'tie'
+  | 'timeline'
+  | 'timer'
+  | 'toaster'
+  | 'toggle'
+  | 'toggle-left'
+  | 'toggle-right'
+  | 'toilet'
+  | 'toner'
+  | 'toolbox'
+  | 'torch'
+  | 'tornado'
+  | 'tower'
   | 'traffic-cone'
   | 'train'
+  | 'trapezoid'
   | 'trash'
   | 'tree'
+  | 'tree-2'
+  | 'tree-palm'
+  | 'tree-pine'
   | 'trending-down'
   | 'trending-up'
   | 'triangle'
   | 'trophy'
   | 'truck'
+  | 'tshirt'
+  | 'tulip'
+  | 'turtle'
   | 'tv'
+  | 'two-factor'
+  | 'typescript-icon'
+  | 'ufo'
   | 'umbrella'
+  | 'underline'
+  | 'unfollow'
   | 'unlock'
+  | 'unverified'
   | 'upload'
+  | 'ups'
   | 'usb-drive'
   | 'user'
   | 'user-check'
+  | 'user-circle'
   | 'user-cog'
   | 'user-minus'
   | 'user-plus'
@@ -705,27 +1841,53 @@ export type IconNameKebab =
   | 'users'
   | 'utensils'
   | 'utensils-crossed'
+  | 'vault'
+  | 'verified'
   | 'video'
   | 'video-2'
   | 'video-off'
+  | 'vinyl'
+  | 'voice-control'
   | 'voicemail'
+  | 'volleyball'
   | 'volume'
+  | 'volume-1'
+  | 'volume-2'
+  | 'volume-dial'
   | 'volume-off'
+  | 'volume-x'
+  | 'wait-cursor'
   | 'wallet'
+  | 'wallet-cards'
   | 'wand'
   | 'wand-2'
+  | 'wand-sparkles'
   | 'warehouse'
   | 'watch'
+  | 'watch-accessory'
+  | 'watering-can'
+  | 'waveform'
   | 'waves'
+  | 'waypoints'
   | 'webcam'
+  | 'webhook'
+  | 'weight'
   | 'wheelchair'
+  | 'whisk'
   | 'wifi'
   | 'wifi-off'
   | 'wind'
+  | 'window'
+  | 'window-2'
   | 'wine'
+  | 'wink'
+  | 'wolf'
   | 'wrench'
   | 'x'
   | 'x-circle'
+  | 'x-circle-2'
+  | 'x-square'
+  | 'xml'
   | 'zap';
 
 /**
@@ -743,59 +1905,166 @@ export const ICON_NAMES = [
   'Accessibility',
   'Activity',
   'Airplay',
+  'AlarmClock',
   'AlertCircle',
+  'AlertCircle2',
   'AlertOctagon',
   'AlertTriangle',
+  'Alias',
+  'Ambulance',
+  'Analytics',
   'Anchor',
+  'Anchor2',
+  'Angry',
+  'Annoyed',
+  'Apartment',
+  'Api',
   'Apple',
+  'Approved',
   'Archive',
+  'Archive2',
   'AreaChart',
+  'Armor',
   'ArrowDown',
+  'ArrowDownCircle',
+  'ArrowDownCircle2',
   'ArrowDownLeft',
   'ArrowDownRight',
+  'ArrowDownSquare',
   'ArrowLeft',
+  'ArrowLeftCircle',
+  'ArrowLeftCircle2',
+  'ArrowLeftSquare',
   'ArrowRight',
+  'ArrowRightCircle',
+  'ArrowRightCircle2',
+  'ArrowRightSquare',
   'ArrowUp',
+  'ArrowUpCircle',
+  'ArrowUpCircle2',
   'ArrowUpLeft',
   'ArrowUpRight',
+  'ArrowUpSquare',
+  'ArrowsCollapse',
+  'ArrowsExpand',
+  'ArrowsMaximize2',
+  'ArrowsMinimize2',
   'AtSign',
+  'Atom2',
+  'AudioDescription',
+  'AudioLines',
   'Award',
+  'Axe',
   'Baby',
+  'Backlink',
   'Backpack',
+  'Badge2',
+  'BadgeAlert',
   'BadgeCheck',
+  'BadgeCheck2',
+  'BadgeDollar',
+  'BadgeHelp',
+  'BadgeInfo',
+  'BadgeMinus',
+  'BadgePercent',
+  'BadgePlus',
+  'BadgeX',
   'Ban',
   'Banana',
   'Bandage',
+  'Bank',
+  'Banknote',
   'BarChart',
   'BarChart2',
+  'BarChartHorizontal',
   'Barcode',
+  'Barometer',
+  'Baseball',
+  'Basket',
+  'Basketball',
+  'Bathtub',
   'Battery',
   'BatteryCharging',
+  'BatteryEmpty',
+  'BatteryHalf',
   'BatteryLow',
+  'BatteryQuarter',
+  'BatteryThreeQuarters',
+  'Beaker2',
+  'Bear',
+  'Bed',
+  'Bee',
   'Beer',
   'Bell',
+  'BellOff',
+  'BellRing',
+  'Bicycle',
   'Bike',
+  'Binder',
+  'Biohazard2',
+  'Bird',
+  'Bitcoin',
+  'Blender',
+  'Block',
   'Bluetooth',
+  'Boat',
+  'Bold',
   'Bone',
   'Book',
+  'BookClosed',
   'BookMarked',
   'BookOpen',
   'Bookmark',
+  'Bot',
+  'Bowling',
+  'Braille',
   'Brain',
+  'BrainCircuit',
+  'BrainCog',
+  'Branch',
+  'Briefcase2',
+  'BriefcaseMedical',
+  'Brightness',
+  'Broadcast',
   'Brush',
+  'Bug',
   'Building',
   'Building2',
   'Bus',
+  'BusinessCard',
+  'Butterfly',
+  'Cable',
+  'Cactus',
+  'Cake',
   'Calculator',
   'Calendar',
+  'CalendarCheck',
+  'CalendarDays',
+  'CalendarMinus',
+  'CalendarPlus',
+  'CalendarX',
+  'Caliper',
   'Camera',
+  'CameraMovie',
+  'Candle',
+  'Cap',
   'Car',
   'CarFront',
+  'Carpet',
   'Carrot',
   'Cast',
   'Castle',
+  'Cat',
+  'Certificate',
+  'Chain',
+  'ChainBroken',
+  'Chair',
   'Check',
   'CheckCircle',
+  'CheckCircle2',
+  'CheckSquare',
+  'Checkbox',
+  'CheckboxChecked',
   'ChefHat',
   'Cherry',
   'ChevronDown',
@@ -804,229 +2073,636 @@ export const ICON_NAMES = [
   'ChevronsLeft',
   'ChevronsRight',
   'ChevronsUp',
+  'Chimney',
+  'ChipAi',
+  'Chopsticks',
   'Church',
+  'Cinema',
   'Circle',
+  'Citation',
   'Clipboard',
+  'Clipboard2',
   'ClipboardCheck',
+  'ClipboardCheck2',
   'ClipboardCopy',
+  'ClipboardCopy2',
+  'ClipboardData',
+  'ClipboardEdit',
+  'ClipboardHeart',
   'ClipboardList',
+  'ClipboardList2',
+  'ClipboardMinus',
+  'ClipboardPaste2',
+  'ClipboardPlus',
+  'ClipboardSearch',
+  'ClipboardSignature',
+  'ClipboardText',
+  'ClipboardX2',
   'Clock',
+  'ClosedCaption',
+  'ClosedCaptions',
   'Cloud',
   'CloudDrizzle',
+  'CloudFog',
   'CloudLightning',
   'CloudRain',
   'CloudSnow',
   'CloudSun',
+  'Coat',
   'Code',
+  'CodeBlock',
+  'CodeSquare',
   'Code2',
   'Coffee',
+  'Coins',
   'Columns',
   'Command',
   'Compass',
+  'Compass2',
+  'Complete',
+  'Confused',
   'Contact',
   'Contact2',
+  'Container',
+  'Contract',
+  'Contrast',
   'Cookie',
+  'Cool',
+  'Copier',
   'Copy',
   'CornerDownLeft',
+  'CornerDownLeft2',
   'CornerDownRight',
+  'CornerDownRight2',
   'CornerUpLeft',
+  'CornerUpLeft2',
   'CornerUpRight',
+  'CornerUpRight2',
   'Cpu',
   'CreditCard',
+  'Cross',
   'Crosshair',
+  'Crosshair2',
   'Crown',
+  'Cry',
+  'Css',
   'Cup',
+  'Cursor',
+  'CursorClick',
+  'CursorText',
+  'Curtain',
+  'Cycling',
   'Database',
+  'Database2',
+  'DatabaseBackup',
+  'DatabaseZap',
+  'DeepLink',
+  'Deer',
+  'Defend',
+  'Desk',
+  'Desktop',
+  'Dial',
+  'Diamond',
   'Dice1',
   'Dice2',
   'Dice3',
   'Dice4',
   'Dice5',
   'Dice6',
+  'Dimension',
+  'Directions',
+  'Disc',
+  'Disc2',
+  'Disc3',
+  'Divide2',
   'Dna',
+  'Dna2',
+  'DocumentPrinter',
+  'Dog',
   'DollarSign',
+  'Door',
+  'DoorClosed',
+  'DoorOpen',
   'Download',
+  'Dress',
+  'Drill',
   'Droplet',
   'Dumbbell',
   'Ear',
+  'EarHearing',
+  'EarOff',
   'Edit',
+  'Electron',
+  'Elephant',
+  'Envelope2',
+  'Equalizer',
+  'Equals',
   'Eraser',
+  'Exposure',
+  'ExternalLink',
+  'ExternalLink2',
   'Eye',
   'Eye2',
   'EyeOff',
+  'FaceId',
   'Factory',
   'FastForward',
+  'Faucet',
+  'Fax',
+  'Fence',
   'File',
+  'FileArchive',
+  'FileAudio',
   'FileCheck',
+  'FileCode',
+  'FileImage',
   'FileMinus',
   'FilePlus',
   'FileText',
+  'FileVideo',
   'FileX',
   'Files',
   'Film',
+  'Film2',
+  'FilmSlate',
   'Filter',
   'Fingerprint',
+  'FireTruck',
+  'Firewall',
+  'FirstAid',
+  'Fish',
+  'Fist',
   'Flame',
+  'Flashlight',
+  'FlashlightOff',
+  'Flask2',
+  'FlaskRound',
+  'Flower',
+  'Flower2',
+  'FocusRing',
   'Folder',
   'FolderMinus',
   'FolderOpen',
   'FolderPlus',
+  'Follow',
+  'Football',
   'Footprints',
+  'Fork',
+  'Fortress',
+  'Fox',
+  'Fraction',
   'Frown',
   'Fuel',
+  'Function',
+  'Future',
+  'Gamepad',
   'Gamepad2',
+  'Garage',
+  'GardenHose',
+  'Gate',
   'Gauge',
+  'Generator',
   'Gift',
+  'GitBranch',
+  'GitCommit',
+  'GitFork',
+  'GitMerge',
+  'GitPullRequest',
   'Glasses',
   'Globe',
+  'Globe2',
+  'Glue',
+  'Golf',
+  'Grab',
+  'GrabCursor',
+  'Grabbing',
   'GraduationCap',
   'Grape',
+  'GreaterThan',
   'Grid',
+  'Grid2x2',
+  'Grid3x3',
+  'Guard',
+  'Hail',
   'Hammer',
   'Hand',
+  'HandMetal',
+  'HandWave',
+  'Handshake',
+  'Happy',
   'HardDrive',
+  'HardDrive2',
   'Hash',
+  'Hashtag',
+  'Hat',
+  'Heading1',
+  'Heading2',
+  'Heading3',
   'Headphones',
   'Heart',
   'HeartPulse',
+  'HeartShape',
+  'Helicopter',
   'HelpCircle',
+  'HelpCursor',
+  'Hexagon',
   'Highlighter',
+  'History',
+  'Hockey',
   'Home',
+  'Hoodie',
+  'Horse',
   'Hospital',
+  'Hotel',
+  'Hourglass',
+  'House2',
+  'HouseCheck',
+  'HouseCog',
+  'HouseHeart',
+  'HousePlus',
+  'HouseX',
+  'Html',
+  'Humidity',
+  'Hyperlink',
   'IceCream',
+  'IdCard',
   'Inbox',
+  'Incomplete',
+  'Indent',
+  'Infinity',
   'Info',
+  'InfoCircle',
+  'Ink',
+  'InternalLink',
+  'Invoice',
+  'Italic',
+  'Jacket',
+  'JavascriptIcon',
   'Joystick',
+  'Json',
   'Kanban',
+  'Kettle',
   'Key',
   'KeyRound',
+  'KeySquare',
   'Keyboard',
+  'KeyboardNav',
+  'Knife2',
+  'Knob',
+  'Ladder',
+  'Ladle',
   'Lamp',
+  'LampCeiling',
   'LampDesk',
+  'LampFloor',
+  'LampWall',
   'Landmark',
+  'Lantern',
   'Laptop',
+  'Laugh',
   'Layout',
   'LayoutGrid',
   'LayoutList',
   'Leaf',
+  'Leaf2',
+  'LessThan',
+  'Level',
   'Library',
   'Lightbulb',
   'LightbulbOff',
+  'Lighthouse',
   'LineChart',
   'Link',
+  'Link2Off',
+  'Lion',
   'List',
+  'Live',
+  'Lively',
   'Loader',
+  'Loading',
+  'Locate',
+  'LocateFixed',
   'Lock',
+  'LockKeyhole',
   'LockOpen',
+  'Love',
+  'Luggage',
+  'Lungs',
+  'Magnet',
   'Mail',
+  'MailCheck',
+  'MailOpen',
+  'MailPlus',
+  'Mailbox',
   'Map',
   'MapPin',
+  'MapPinned',
+  'Markdown',
+  'Marker',
   'Martini',
   'Maximize',
   'Maximize2',
   'Medal',
+  'Meeting',
   'Meh',
+  'Memory',
+  'Mention',
   'Menu',
+  'MenuDots',
+  'MenuDotsHorizontal',
+  'MenuGrid',
+  'MessageAi',
   'MessageCircle',
   'MessageSquare',
+  'MessagesSquare',
   'Mic',
   'MicOff',
   'Microscope',
+  'Microscope2',
+  'Microwave',
   'Milestone',
   'Minimize',
   'Minimize2',
   'Minus',
+  'Minus2',
+  'MinusCircle',
+  'MinusSquare',
+  'Molecule',
   'Monitor',
   'Moon',
   'MoreHorizontal',
+  'Motorcycle',
   'Mountain',
   'MountainSnow',
   'Mouse',
+  'MoveCursor',
   'MoveHorizontal',
+  'Multiply',
   'Music',
+  'Music2',
+  'Music3',
+  'Music4',
+  'NameBadge',
   'Navigation',
   'Navigation2',
+  'Neon',
+  'NeuralNetwork',
+  'NotAllowed',
+  'NotEqual',
   'Notebook',
   'NotebookPen',
+  'Nucleus',
+  'Octagon',
+  'Odometer',
+  'Office',
+  'Ok',
+  'Outdent',
+  'Outlet',
+  'Oval',
   'Package',
+  'PageSetup',
+  'Paintbrush',
   'Palette',
+  'Palm',
+  'Pan',
+  'PanelBottom',
   'PanelLeft',
   'PanelRight',
+  'PanelTop',
+  'Pants',
+  'PaperFeed',
   'Paperclip',
+  'Paperclip2',
+  'Parallelogram',
   'Parking',
+  'Passport',
   'Pause',
+  'PauseCircle',
+  'Peace',
   'Pen',
+  'Pen2',
+  'PenLine',
   'PenTool',
   'Pencil',
+  'Pencil2',
+  'PencilLine',
+  'Pending',
+  'Pentagon',
   'Percent',
+  'PercentBadge',
+  'Percentage',
+  'Permalink',
+  'PetriDish',
   'Phone',
   'PhoneCall',
   'PhoneIncoming',
   'PhoneMissed',
   'PhoneOff',
   'PhoneOutgoing',
+  'Pi',
+  'PictureFrame',
   'PieChart',
+  'PiggyBank',
   'Pill',
+  'Pinch',
+  'PineTree',
   'Pizza',
   'Plane',
   'PlaneLanding',
   'PlaneTakeoff',
+  'Plant2',
+  'Plate',
   'Play',
+  'PlayCircle',
+  'Playlist',
+  'Pliers',
+  'Plug2',
   'Plus',
+  'Plus2',
+  'PlusCircle',
+  'PlusSquare',
+  'Podcast',
+  'PointDown',
+  'PointLeft',
+  'PointRight',
+  'PointUp',
+  'Pointer2',
+  'PoliceCar',
+  'Portfolio',
+  'Pot',
+  'Potion',
+  'PowerOff',
   'Presentation',
+  'Presentation2',
+  'PrintPreview',
+  'PrintQueue',
   'Printer',
+  'Printer2',
+  'PrinterCheck',
+  'PrinterX',
+  'Progress',
+  'Projector',
+  'Protection',
+  'Protractor',
   'Puzzle',
+  'PuzzlePiece',
   'QrCode',
+  'Queue',
+  'Quote',
+  'Rabbit',
+  'Radiation',
   'Radio',
+  'RadioButton',
+  'RadioChecked',
+  'Rainbow',
+  'Rake',
+  'Ram',
   'Receipt',
+  'Receipt2',
+  'Record',
+  'Rectangle',
+  'ReducedMotion',
+  'Reference',
   'Refresh',
+  'Refrigerator',
+  'Regex',
+  'Rejected',
   'Repeat',
+  'ResizeDiagonal',
+  'ResizeHorizontal',
+  'ResizeVertical',
   'Rewind',
+  'Robot',
   'Rocket',
+  'Roller',
+  'Rose',
+  'Route',
   'Router',
   'Rows',
   'Rss',
+  'RubberStamp',
   'Ruler',
+  'Ruler2',
+  'RulerSquare',
+  'Running',
+  'Sad',
   'Sailboat',
   'Sandwich',
   'Save',
+  'Saw',
+  'Scale2',
   'Scan',
+  'Scan2',
+  'ScanFace',
   'ScanLine',
+  'Scanner',
+  'Scanner2',
+  'Schedule',
   'School',
+  'Scissors2',
+  'Scooter',
+  'Screen',
+  'ScreenReader',
   'Screwdriver',
   'SdCard',
   'Search',
+  'SearchMinus',
+  'SearchPlus',
+  'Seedling',
   'Send',
   'Send2',
   'Server',
+  'Server2',
+  'ServerCog',
+  'ServerCrash',
+  'ServerOff',
   'Settings',
   'Share',
   'Shield',
+  'Shield2',
   'ShieldAlert',
+  'ShieldAlert2',
   'ShieldCheck',
+  'ShieldDollar',
+  'ShieldLock',
+  'ShieldMinus2',
   'ShieldOff',
+  'ShieldOff2',
+  'ShieldPlus',
+  'ShieldPlus2',
+  'ShieldUnlock',
+  'ShieldUser',
+  'ShieldX',
   'Ship',
+  'Shirt',
   'ShoppingBag',
   'ShoppingCart',
+  'Shortcut',
+  'Shorts',
+  'Shovel',
   'Shuffle',
   'Sidebar',
+  'SidebarClose',
+  'SidebarOpen',
+  'Sigma',
+  'SignLanguage',
   'Signal',
   'SignalHigh',
   'SignalLow',
   'SignalZero',
+  'Signpost',
+  'Sink',
+  'Skiing',
   'SkipBack',
   'SkipForward',
+  'Sleep',
+  'Slider',
+  'SliderHorizontal',
+  'SliderVertical',
   'Smartphone',
   'Smile',
+  'Snippet',
   'Snowflake',
+  'Soccer',
+  'Sofa',
+  'Sparkles',
+  'Spatula',
   'Speaker',
+  'Speaker2',
+  'Speaker3',
+  'SpeedDial',
+  'Speedometer',
+  'Spoon2',
+  'Spotlight',
+  'Sprout',
+  'Sqrt',
   'Square',
+  'Ssd',
+  'Stamp',
+  'Stapler',
   'Star',
+  'Statistics',
   'Stethoscope',
+  'StopCircle',
+  'Stopwatch',
+  'Storage',
   'Store',
+  'Stream',
+  'Strikethrough',
+  'Studio',
+  'Subscript',
+  'Subtitle',
   'Sun',
+  'Sunglasses',
   'Sunrise',
   'Sunset',
+  'Superscript',
+  'SurgeProtector',
+  'Surprised',
+  'Sweater',
+  'Swimming',
+  'SwitchOff',
+  'SwitchOn',
   'Sword',
   'Swords',
   'Syringe',
@@ -1036,31 +2712,72 @@ export const ICON_NAMES = [
   'Tag',
   'Tag2',
   'Tags',
+  'Tape',
+  'TapeMeasure',
   'Target',
+  'Team',
+  'TemperatureDial',
+  'Tennis',
   'Tent',
   'Terminal',
+  'Terminal2',
+  'TerminalSquare',
   'TestTube',
+  'TestTube2',
   'TestTubes',
+  'Text',
+  'TextCursor',
+  'TextSize',
   'Thermometer',
   'Thermometer2',
+  'ThermometerMedical',
   'ThumbsDown',
   'ThumbsUp',
+  'Ticket',
+  'Tie',
+  'Timeline',
+  'Timer',
+  'Toaster',
+  'Toggle',
+  'ToggleLeft',
+  'ToggleRight',
+  'Toilet',
+  'Toner',
+  'Toolbox',
+  'Torch',
+  'Tornado',
+  'Tower',
   'TrafficCone',
   'Train',
+  'Trapezoid',
   'Trash',
   'Tree',
+  'Tree2',
+  'TreePalm',
+  'TreePine',
   'TrendingDown',
   'TrendingUp',
   'Triangle',
   'Trophy',
   'Truck',
+  'Tshirt',
+  'Tulip',
+  'Turtle',
   'Tv',
+  'TwoFactor',
+  'TypescriptIcon',
+  'Ufo',
   'Umbrella',
+  'Underline',
+  'Unfollow',
   'Unlock',
+  'Unverified',
   'Upload',
+  'Ups',
   'UsbDrive',
   'User',
   'UserCheck',
+  'UserCircle',
   'UserCog',
   'UserMinus',
   'UserPlus',
@@ -1068,27 +2785,53 @@ export const ICON_NAMES = [
   'Users',
   'Utensils',
   'UtensilsCrossed',
+  'Vault',
+  'Verified',
   'Video',
   'Video2',
   'VideoOff',
+  'Vinyl',
+  'VoiceControl',
   'Voicemail',
+  'Volleyball',
   'Volume',
+  'Volume1',
+  'Volume2',
+  'VolumeDial',
   'VolumeOff',
+  'VolumeX',
+  'WaitCursor',
   'Wallet',
+  'WalletCards',
   'Wand',
   'Wand2',
+  'WandSparkles',
   'Warehouse',
   'Watch',
+  'WatchAccessory',
+  'WateringCan',
+  'Waveform',
   'Waves',
+  'Waypoints',
   'Webcam',
+  'Webhook',
+  'Weight',
   'Wheelchair',
+  'Whisk',
   'Wifi',
   'WifiOff',
   'Wind',
+  'Window',
+  'Window2',
   'Wine',
+  'Wink',
+  'Wolf',
   'Wrench',
   'X',
   'XCircle',
+  'XCircle2',
+  'XSquare',
+  'Xml',
   'Zap',
 ] as const;
 
@@ -1099,59 +2842,166 @@ export const ICON_NAMES_KEBAB = [
   'accessibility',
   'activity',
   'airplay',
+  'alarm-clock',
   'alert-circle',
+  'alert-circle-2',
   'alert-octagon',
   'alert-triangle',
+  'alias',
+  'ambulance',
+  'analytics',
   'anchor',
+  'anchor-2',
+  'angry',
+  'annoyed',
+  'apartment',
+  'api',
   'apple',
+  'approved',
   'archive',
+  'archive-2',
   'area-chart',
+  'armor',
   'arrow-down',
+  'arrow-down-circle',
+  'arrow-down-circle-2',
   'arrow-down-left',
   'arrow-down-right',
+  'arrow-down-square',
   'arrow-left',
+  'arrow-left-circle',
+  'arrow-left-circle-2',
+  'arrow-left-square',
   'arrow-right',
+  'arrow-right-circle',
+  'arrow-right-circle-2',
+  'arrow-right-square',
   'arrow-up',
+  'arrow-up-circle',
+  'arrow-up-circle-2',
   'arrow-up-left',
   'arrow-up-right',
+  'arrow-up-square',
+  'arrows-collapse',
+  'arrows-expand',
+  'arrows-maximize-2',
+  'arrows-minimize-2',
   'at-sign',
+  'atom-2',
+  'audio-description',
+  'audio-lines',
   'award',
+  'axe',
   'baby',
+  'backlink',
   'backpack',
+  'badge-2',
+  'badge-alert',
   'badge-check',
+  'badge-check-2',
+  'badge-dollar',
+  'badge-help',
+  'badge-info',
+  'badge-minus',
+  'badge-percent',
+  'badge-plus',
+  'badge-x',
   'ban',
   'banana',
   'bandage',
+  'bank',
+  'banknote',
   'bar-chart',
   'bar-chart-2',
+  'bar-chart-horizontal',
   'barcode',
+  'barometer',
+  'baseball',
+  'basket',
+  'basketball',
+  'bathtub',
   'battery',
   'battery-charging',
+  'battery-empty',
+  'battery-half',
   'battery-low',
+  'battery-quarter',
+  'battery-three-quarters',
+  'beaker-2',
+  'bear',
+  'bed',
+  'bee',
   'beer',
   'bell',
+  'bell-off',
+  'bell-ring',
+  'bicycle',
   'bike',
+  'binder',
+  'biohazard-2',
+  'bird',
+  'bitcoin',
+  'blender',
+  'block',
   'bluetooth',
+  'boat',
+  'bold',
   'bone',
   'book',
+  'book-closed',
   'book-marked',
   'book-open',
   'bookmark',
+  'bot',
+  'bowling',
+  'braille',
   'brain',
+  'brain-circuit',
+  'brain-cog',
+  'branch',
+  'briefcase-2',
+  'briefcase-medical',
+  'brightness',
+  'broadcast',
   'brush',
+  'bug',
   'building',
   'building2',
   'bus',
+  'business-card',
+  'butterfly',
+  'cable',
+  'cactus',
+  'cake',
   'calculator',
   'calendar',
+  'calendar-check',
+  'calendar-days',
+  'calendar-minus',
+  'calendar-plus',
+  'calendar-x',
+  'caliper',
   'camera',
+  'camera-movie',
+  'candle',
+  'cap',
   'car',
   'car-front',
+  'carpet',
   'carrot',
   'cast',
   'castle',
+  'cat',
+  'certificate',
+  'chain',
+  'chain-broken',
+  'chair',
   'check',
   'check-circle',
+  'check-circle-2',
+  'check-square',
+  'checkbox',
+  'checkbox-checked',
   'chef-hat',
   'cherry',
   'chevron-down',
@@ -1160,229 +3010,636 @@ export const ICON_NAMES_KEBAB = [
   'chevrons-left',
   'chevrons-right',
   'chevrons-up',
+  'chimney',
+  'chip-ai',
+  'chopsticks',
   'church',
+  'cinema',
   'circle',
+  'citation',
   'clipboard',
+  'clipboard-2',
   'clipboard-check',
+  'clipboard-check-2',
   'clipboard-copy',
+  'clipboard-copy-2',
+  'clipboard-data',
+  'clipboard-edit',
+  'clipboard-heart',
   'clipboard-list',
+  'clipboard-list-2',
+  'clipboard-minus',
+  'clipboard-paste-2',
+  'clipboard-plus',
+  'clipboard-search',
+  'clipboard-signature',
+  'clipboard-text',
+  'clipboard-x-2',
   'clock',
+  'closed-caption',
+  'closed-captions',
   'cloud',
   'cloud-drizzle',
+  'cloud-fog',
   'cloud-lightning',
   'cloud-rain',
   'cloud-snow',
   'cloud-sun',
+  'coat',
   'code',
+  'code-block',
+  'code-square',
   'code2',
   'coffee',
+  'coins',
   'columns',
   'command',
   'compass',
+  'compass-2',
+  'complete',
+  'confused',
   'contact',
   'contact2',
+  'container',
+  'contract',
+  'contrast',
   'cookie',
+  'cool',
+  'copier',
   'copy',
   'corner-down-left',
+  'corner-down-left-2',
   'corner-down-right',
+  'corner-down-right-2',
   'corner-up-left',
+  'corner-up-left-2',
   'corner-up-right',
+  'corner-up-right-2',
   'cpu',
   'credit-card',
+  'cross',
   'crosshair',
+  'crosshair-2',
   'crown',
+  'cry',
+  'css',
   'cup',
+  'cursor',
+  'cursor-click',
+  'cursor-text',
+  'curtain',
+  'cycling',
   'database',
+  'database-2',
+  'database-backup',
+  'database-zap',
+  'deep-link',
+  'deer',
+  'defend',
+  'desk',
+  'desktop',
+  'dial',
+  'diamond',
   'dice-1',
   'dice-2',
   'dice-3',
   'dice-4',
   'dice-5',
   'dice-6',
+  'dimension',
+  'directions',
+  'disc',
+  'disc-2',
+  'disc-3',
+  'divide-2',
   'dna',
+  'dna-2',
+  'document-printer',
+  'dog',
   'dollar-sign',
+  'door',
+  'door-closed',
+  'door-open',
   'download',
+  'dress',
+  'drill',
   'droplet',
   'dumbbell',
   'ear',
+  'ear-hearing',
+  'ear-off',
   'edit',
+  'electron',
+  'elephant',
+  'envelope-2',
+  'equalizer',
+  'equals',
   'eraser',
+  'exposure',
+  'external-link',
+  'external-link-2',
   'eye',
   'eye-2',
   'eye-off',
+  'face-id',
   'factory',
   'fast-forward',
+  'faucet',
+  'fax',
+  'fence',
   'file',
+  'file-archive',
+  'file-audio',
   'file-check',
+  'file-code',
+  'file-image',
   'file-minus',
   'file-plus',
   'file-text',
+  'file-video',
   'file-x',
   'files',
   'film',
+  'film-2',
+  'film-slate',
   'filter',
   'fingerprint',
+  'fire-truck',
+  'firewall',
+  'first-aid',
+  'fish',
+  'fist',
   'flame',
+  'flashlight',
+  'flashlight-off',
+  'flask-2',
+  'flask-round',
+  'flower',
+  'flower-2',
+  'focus-ring',
   'folder',
   'folder-minus',
   'folder-open',
   'folder-plus',
+  'follow',
+  'football',
   'footprints',
+  'fork',
+  'fortress',
+  'fox',
+  'fraction',
   'frown',
   'fuel',
+  'function',
+  'future',
+  'gamepad',
   'gamepad-2',
+  'garage',
+  'garden-hose',
+  'gate',
   'gauge',
+  'generator',
   'gift',
+  'git-branch',
+  'git-commit',
+  'git-fork',
+  'git-merge',
+  'git-pull-request',
   'glasses',
   'globe',
+  'globe-2',
+  'glue',
+  'golf',
+  'grab',
+  'grab-cursor',
+  'grabbing',
   'graduation-cap',
   'grape',
+  'greater-than',
   'grid',
+  'grid-2x2',
+  'grid-3x3',
+  'guard',
+  'hail',
   'hammer',
   'hand',
+  'hand-metal',
+  'hand-wave',
+  'handshake',
+  'happy',
   'hard-drive',
+  'hard-drive-2',
   'hash',
+  'hashtag',
+  'hat',
+  'heading-1',
+  'heading-2',
+  'heading-3',
   'headphones',
   'heart',
   'heart-pulse',
+  'heart-shape',
+  'helicopter',
   'help-circle',
+  'help-cursor',
+  'hexagon',
   'highlighter',
+  'history',
+  'hockey',
   'home',
+  'hoodie',
+  'horse',
   'hospital',
+  'hotel',
+  'hourglass',
+  'house-2',
+  'house-check',
+  'house-cog',
+  'house-heart',
+  'house-plus',
+  'house-x',
+  'html',
+  'humidity',
+  'hyperlink',
   'ice-cream',
+  'id-card',
   'inbox',
+  'incomplete',
+  'indent',
+  'infinity',
   'info',
+  'info-circle',
+  'ink',
+  'internal-link',
+  'invoice',
+  'italic',
+  'jacket',
+  'javascript-icon',
   'joystick',
+  'json',
   'kanban',
+  'kettle',
   'key',
   'key-round',
+  'key-square',
   'keyboard',
+  'keyboard-nav',
+  'knife-2',
+  'knob',
+  'ladder',
+  'ladle',
   'lamp',
+  'lamp-ceiling',
   'lamp-desk',
+  'lamp-floor',
+  'lamp-wall',
   'landmark',
+  'lantern',
   'laptop',
+  'laugh',
   'layout',
   'layout-grid',
   'layout-list',
   'leaf',
+  'leaf-2',
+  'less-than',
+  'level',
   'library',
   'lightbulb',
   'lightbulb-off',
+  'lighthouse',
   'line-chart',
   'link',
+  'link-2-off',
+  'lion',
   'list',
+  'live',
+  'lively',
   'loader',
+  'loading',
+  'locate',
+  'locate-fixed',
   'lock',
+  'lock-keyhole',
   'lock-open',
+  'love',
+  'luggage',
+  'lungs',
+  'magnet',
   'mail',
+  'mail-check',
+  'mail-open',
+  'mail-plus',
+  'mailbox',
   'map',
   'map-pin',
+  'map-pinned',
+  'markdown',
+  'marker',
   'martini',
   'maximize',
   'maximize-2',
   'medal',
+  'meeting',
   'meh',
+  'memory',
+  'mention',
   'menu',
+  'menu-dots',
+  'menu-dots-horizontal',
+  'menu-grid',
+  'message-ai',
   'message-circle',
   'message-square',
+  'messages-square',
   'mic',
   'mic-off',
   'microscope',
+  'microscope-2',
+  'microwave',
   'milestone',
   'minimize',
   'minimize-2',
   'minus',
+  'minus-2',
+  'minus-circle',
+  'minus-square',
+  'molecule',
   'monitor',
   'moon',
   'more-horizontal',
+  'motorcycle',
   'mountain',
   'mountain-snow',
   'mouse',
+  'move-cursor',
   'move-horizontal',
+  'multiply',
   'music',
+  'music-2',
+  'music-3',
+  'music-4',
+  'name-badge',
   'navigation',
   'navigation-2',
+  'neon',
+  'neural-network',
+  'not-allowed',
+  'not-equal',
   'notebook',
   'notebook-pen',
+  'nucleus',
+  'octagon',
+  'odometer',
+  'office',
+  'ok',
+  'outdent',
+  'outlet',
+  'oval',
   'package',
+  'page-setup',
+  'paintbrush',
   'palette',
+  'palm',
+  'pan',
+  'panel-bottom',
   'panel-left',
   'panel-right',
+  'panel-top',
+  'pants',
+  'paper-feed',
   'paperclip',
+  'paperclip-2',
+  'parallelogram',
   'parking',
+  'passport',
   'pause',
+  'pause-circle',
+  'peace',
   'pen',
+  'pen-2',
+  'pen-line',
   'pen-tool',
   'pencil',
+  'pencil-2',
+  'pencil-line',
+  'pending',
+  'pentagon',
   'percent',
+  'percent-badge',
+  'percentage',
+  'permalink',
+  'petri-dish',
   'phone',
   'phone-call',
   'phone-incoming',
   'phone-missed',
   'phone-off',
   'phone-outgoing',
+  'pi',
+  'picture-frame',
   'pie-chart',
+  'piggy-bank',
   'pill',
+  'pinch',
+  'pine-tree',
   'pizza',
   'plane',
   'plane-landing',
   'plane-takeoff',
+  'plant-2',
+  'plate',
   'play',
+  'play-circle',
+  'playlist',
+  'pliers',
+  'plug-2',
   'plus',
+  'plus-2',
+  'plus-circle',
+  'plus-square',
+  'podcast',
+  'point-down',
+  'point-left',
+  'point-right',
+  'point-up',
+  'pointer-2',
+  'police-car',
+  'portfolio',
+  'pot',
+  'potion',
+  'power-off',
   'presentation',
+  'presentation-2',
+  'print-preview',
+  'print-queue',
   'printer',
+  'printer-2',
+  'printer-check',
+  'printer-x',
+  'progress',
+  'projector',
+  'protection',
+  'protractor',
   'puzzle',
+  'puzzle-piece',
   'qr-code',
+  'queue',
+  'quote',
+  'rabbit',
+  'radiation',
   'radio',
+  'radio-button',
+  'radio-checked',
+  'rainbow',
+  'rake',
+  'ram',
   'receipt',
+  'receipt-2',
+  'record',
+  'rectangle',
+  'reduced-motion',
+  'reference',
   'refresh',
+  'refrigerator',
+  'regex',
+  'rejected',
   'repeat',
+  'resize-diagonal',
+  'resize-horizontal',
+  'resize-vertical',
   'rewind',
+  'robot',
   'rocket',
+  'roller',
+  'rose',
+  'route',
   'router',
   'rows',
   'rss',
+  'rubber-stamp',
   'ruler',
+  'ruler-2',
+  'ruler-square',
+  'running',
+  'sad',
   'sailboat',
   'sandwich',
   'save',
+  'saw',
+  'scale-2',
   'scan',
+  'scan-2',
+  'scan-face',
   'scan-line',
+  'scanner',
+  'scanner-2',
+  'schedule',
   'school',
+  'scissors-2',
+  'scooter',
+  'screen',
+  'screen-reader',
   'screwdriver',
   'sd-card',
   'search',
+  'search-minus',
+  'search-plus',
+  'seedling',
   'send',
   'send-2',
   'server',
+  'server-2',
+  'server-cog',
+  'server-crash',
+  'server-off',
   'settings',
   'share',
   'shield',
+  'shield-2',
   'shield-alert',
+  'shield-alert-2',
   'shield-check',
+  'shield-dollar',
+  'shield-lock',
+  'shield-minus-2',
   'shield-off',
+  'shield-off-2',
+  'shield-plus',
+  'shield-plus-2',
+  'shield-unlock',
+  'shield-user',
+  'shield-x',
   'ship',
+  'shirt',
   'shopping-bag',
   'shopping-cart',
+  'shortcut',
+  'shorts',
+  'shovel',
   'shuffle',
   'sidebar',
+  'sidebar-close',
+  'sidebar-open',
+  'sigma',
+  'sign-language',
   'signal',
   'signal-high',
   'signal-low',
   'signal-zero',
+  'signpost',
+  'sink',
+  'skiing',
   'skip-back',
   'skip-forward',
+  'sleep',
+  'slider',
+  'slider-horizontal',
+  'slider-vertical',
   'smartphone',
   'smile',
+  'snippet',
   'snowflake',
+  'soccer',
+  'sofa',
+  'sparkles',
+  'spatula',
   'speaker',
+  'speaker-2',
+  'speaker-3',
+  'speed-dial',
+  'speedometer',
+  'spoon-2',
+  'spotlight',
+  'sprout',
+  'sqrt',
   'square',
+  'ssd',
+  'stamp',
+  'stapler',
   'star',
+  'statistics',
   'stethoscope',
+  'stop-circle',
+  'stopwatch',
+  'storage',
   'store',
+  'stream',
+  'strikethrough',
+  'studio',
+  'subscript',
+  'subtitle',
   'sun',
+  'sunglasses',
   'sunrise',
   'sunset',
+  'superscript',
+  'surge-protector',
+  'surprised',
+  'sweater',
+  'swimming',
+  'switch-off',
+  'switch-on',
   'sword',
   'swords',
   'syringe',
@@ -1392,31 +3649,72 @@ export const ICON_NAMES_KEBAB = [
   'tag',
   'tag2',
   'tags',
+  'tape',
+  'tape-measure',
   'target',
+  'team',
+  'temperature-dial',
+  'tennis',
   'tent',
   'terminal',
+  'terminal-2',
+  'terminal-square',
   'test-tube',
+  'test-tube-2',
   'test-tubes',
+  'text',
+  'text-cursor',
+  'text-size',
   'thermometer',
   'thermometer-2',
+  'thermometer-medical',
   'thumbs-down',
   'thumbs-up',
+  'ticket',
+  'tie',
+  'timeline',
+  'timer',
+  'toaster',
+  'toggle',
+  'toggle-left',
+  'toggle-right',
+  'toilet',
+  'toner',
+  'toolbox',
+  'torch',
+  'tornado',
+  'tower',
   'traffic-cone',
   'train',
+  'trapezoid',
   'trash',
   'tree',
+  'tree-2',
+  'tree-palm',
+  'tree-pine',
   'trending-down',
   'trending-up',
   'triangle',
   'trophy',
   'truck',
+  'tshirt',
+  'tulip',
+  'turtle',
   'tv',
+  'two-factor',
+  'typescript-icon',
+  'ufo',
   'umbrella',
+  'underline',
+  'unfollow',
   'unlock',
+  'unverified',
   'upload',
+  'ups',
   'usb-drive',
   'user',
   'user-check',
+  'user-circle',
   'user-cog',
   'user-minus',
   'user-plus',
@@ -1424,34 +3722,60 @@ export const ICON_NAMES_KEBAB = [
   'users',
   'utensils',
   'utensils-crossed',
+  'vault',
+  'verified',
   'video',
   'video-2',
   'video-off',
+  'vinyl',
+  'voice-control',
   'voicemail',
+  'volleyball',
   'volume',
+  'volume-1',
+  'volume-2',
+  'volume-dial',
   'volume-off',
+  'volume-x',
+  'wait-cursor',
   'wallet',
+  'wallet-cards',
   'wand',
   'wand-2',
+  'wand-sparkles',
   'warehouse',
   'watch',
+  'watch-accessory',
+  'watering-can',
+  'waveform',
   'waves',
+  'waypoints',
   'webcam',
+  'webhook',
+  'weight',
   'wheelchair',
+  'whisk',
   'wifi',
   'wifi-off',
   'wind',
+  'window',
+  'window-2',
   'wine',
+  'wink',
+  'wolf',
   'wrench',
   'x',
   'x-circle',
+  'x-circle-2',
+  'x-square',
+  'xml',
   'zap',
 ] as const;
 
 /**
  * Total number of icons in the library
  */
-export const ICON_COUNT = 350 as const;
+export const ICON_COUNT = 930 as const;
 
 /**
  * Mapping from kebab-case to PascalCase names
@@ -1460,59 +3784,166 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'accessibility': 'Accessibility',
   'activity': 'Activity',
   'airplay': 'Airplay',
+  'alarm-clock': 'AlarmClock',
   'alert-circle': 'AlertCircle',
+  'alert-circle-2': 'AlertCircle2',
   'alert-octagon': 'AlertOctagon',
   'alert-triangle': 'AlertTriangle',
+  'alias': 'Alias',
+  'ambulance': 'Ambulance',
+  'analytics': 'Analytics',
   'anchor': 'Anchor',
+  'anchor-2': 'Anchor2',
+  'angry': 'Angry',
+  'annoyed': 'Annoyed',
+  'apartment': 'Apartment',
+  'api': 'Api',
   'apple': 'Apple',
+  'approved': 'Approved',
   'archive': 'Archive',
+  'archive-2': 'Archive2',
   'area-chart': 'AreaChart',
+  'armor': 'Armor',
   'arrow-down': 'ArrowDown',
+  'arrow-down-circle': 'ArrowDownCircle',
+  'arrow-down-circle-2': 'ArrowDownCircle2',
   'arrow-down-left': 'ArrowDownLeft',
   'arrow-down-right': 'ArrowDownRight',
+  'arrow-down-square': 'ArrowDownSquare',
   'arrow-left': 'ArrowLeft',
+  'arrow-left-circle': 'ArrowLeftCircle',
+  'arrow-left-circle-2': 'ArrowLeftCircle2',
+  'arrow-left-square': 'ArrowLeftSquare',
   'arrow-right': 'ArrowRight',
+  'arrow-right-circle': 'ArrowRightCircle',
+  'arrow-right-circle-2': 'ArrowRightCircle2',
+  'arrow-right-square': 'ArrowRightSquare',
   'arrow-up': 'ArrowUp',
+  'arrow-up-circle': 'ArrowUpCircle',
+  'arrow-up-circle-2': 'ArrowUpCircle2',
   'arrow-up-left': 'ArrowUpLeft',
   'arrow-up-right': 'ArrowUpRight',
+  'arrow-up-square': 'ArrowUpSquare',
+  'arrows-collapse': 'ArrowsCollapse',
+  'arrows-expand': 'ArrowsExpand',
+  'arrows-maximize-2': 'ArrowsMaximize2',
+  'arrows-minimize-2': 'ArrowsMinimize2',
   'at-sign': 'AtSign',
+  'atom-2': 'Atom2',
+  'audio-description': 'AudioDescription',
+  'audio-lines': 'AudioLines',
   'award': 'Award',
+  'axe': 'Axe',
   'baby': 'Baby',
+  'backlink': 'Backlink',
   'backpack': 'Backpack',
+  'badge-2': 'Badge2',
+  'badge-alert': 'BadgeAlert',
   'badge-check': 'BadgeCheck',
+  'badge-check-2': 'BadgeCheck2',
+  'badge-dollar': 'BadgeDollar',
+  'badge-help': 'BadgeHelp',
+  'badge-info': 'BadgeInfo',
+  'badge-minus': 'BadgeMinus',
+  'badge-percent': 'BadgePercent',
+  'badge-plus': 'BadgePlus',
+  'badge-x': 'BadgeX',
   'ban': 'Ban',
   'banana': 'Banana',
   'bandage': 'Bandage',
+  'bank': 'Bank',
+  'banknote': 'Banknote',
   'bar-chart': 'BarChart',
   'bar-chart-2': 'BarChart2',
+  'bar-chart-horizontal': 'BarChartHorizontal',
   'barcode': 'Barcode',
+  'barometer': 'Barometer',
+  'baseball': 'Baseball',
+  'basket': 'Basket',
+  'basketball': 'Basketball',
+  'bathtub': 'Bathtub',
   'battery': 'Battery',
   'battery-charging': 'BatteryCharging',
+  'battery-empty': 'BatteryEmpty',
+  'battery-half': 'BatteryHalf',
   'battery-low': 'BatteryLow',
+  'battery-quarter': 'BatteryQuarter',
+  'battery-three-quarters': 'BatteryThreeQuarters',
+  'beaker-2': 'Beaker2',
+  'bear': 'Bear',
+  'bed': 'Bed',
+  'bee': 'Bee',
   'beer': 'Beer',
   'bell': 'Bell',
+  'bell-off': 'BellOff',
+  'bell-ring': 'BellRing',
+  'bicycle': 'Bicycle',
   'bike': 'Bike',
+  'binder': 'Binder',
+  'biohazard-2': 'Biohazard2',
+  'bird': 'Bird',
+  'bitcoin': 'Bitcoin',
+  'blender': 'Blender',
+  'block': 'Block',
   'bluetooth': 'Bluetooth',
+  'boat': 'Boat',
+  'bold': 'Bold',
   'bone': 'Bone',
   'book': 'Book',
+  'book-closed': 'BookClosed',
   'book-marked': 'BookMarked',
   'book-open': 'BookOpen',
   'bookmark': 'Bookmark',
+  'bot': 'Bot',
+  'bowling': 'Bowling',
+  'braille': 'Braille',
   'brain': 'Brain',
+  'brain-circuit': 'BrainCircuit',
+  'brain-cog': 'BrainCog',
+  'branch': 'Branch',
+  'briefcase-2': 'Briefcase2',
+  'briefcase-medical': 'BriefcaseMedical',
+  'brightness': 'Brightness',
+  'broadcast': 'Broadcast',
   'brush': 'Brush',
+  'bug': 'Bug',
   'building': 'Building',
   'building2': 'Building2',
   'bus': 'Bus',
+  'business-card': 'BusinessCard',
+  'butterfly': 'Butterfly',
+  'cable': 'Cable',
+  'cactus': 'Cactus',
+  'cake': 'Cake',
   'calculator': 'Calculator',
   'calendar': 'Calendar',
+  'calendar-check': 'CalendarCheck',
+  'calendar-days': 'CalendarDays',
+  'calendar-minus': 'CalendarMinus',
+  'calendar-plus': 'CalendarPlus',
+  'calendar-x': 'CalendarX',
+  'caliper': 'Caliper',
   'camera': 'Camera',
+  'camera-movie': 'CameraMovie',
+  'candle': 'Candle',
+  'cap': 'Cap',
   'car': 'Car',
   'car-front': 'CarFront',
+  'carpet': 'Carpet',
   'carrot': 'Carrot',
   'cast': 'Cast',
   'castle': 'Castle',
+  'cat': 'Cat',
+  'certificate': 'Certificate',
+  'chain': 'Chain',
+  'chain-broken': 'ChainBroken',
+  'chair': 'Chair',
   'check': 'Check',
   'check-circle': 'CheckCircle',
+  'check-circle-2': 'CheckCircle2',
+  'check-square': 'CheckSquare',
+  'checkbox': 'Checkbox',
+  'checkbox-checked': 'CheckboxChecked',
   'chef-hat': 'ChefHat',
   'cherry': 'Cherry',
   'chevron-down': 'ChevronDown',
@@ -1521,229 +3952,636 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'chevrons-left': 'ChevronsLeft',
   'chevrons-right': 'ChevronsRight',
   'chevrons-up': 'ChevronsUp',
+  'chimney': 'Chimney',
+  'chip-ai': 'ChipAi',
+  'chopsticks': 'Chopsticks',
   'church': 'Church',
+  'cinema': 'Cinema',
   'circle': 'Circle',
+  'citation': 'Citation',
   'clipboard': 'Clipboard',
+  'clipboard-2': 'Clipboard2',
   'clipboard-check': 'ClipboardCheck',
+  'clipboard-check-2': 'ClipboardCheck2',
   'clipboard-copy': 'ClipboardCopy',
+  'clipboard-copy-2': 'ClipboardCopy2',
+  'clipboard-data': 'ClipboardData',
+  'clipboard-edit': 'ClipboardEdit',
+  'clipboard-heart': 'ClipboardHeart',
   'clipboard-list': 'ClipboardList',
+  'clipboard-list-2': 'ClipboardList2',
+  'clipboard-minus': 'ClipboardMinus',
+  'clipboard-paste-2': 'ClipboardPaste2',
+  'clipboard-plus': 'ClipboardPlus',
+  'clipboard-search': 'ClipboardSearch',
+  'clipboard-signature': 'ClipboardSignature',
+  'clipboard-text': 'ClipboardText',
+  'clipboard-x-2': 'ClipboardX2',
   'clock': 'Clock',
+  'closed-caption': 'ClosedCaption',
+  'closed-captions': 'ClosedCaptions',
   'cloud': 'Cloud',
   'cloud-drizzle': 'CloudDrizzle',
+  'cloud-fog': 'CloudFog',
   'cloud-lightning': 'CloudLightning',
   'cloud-rain': 'CloudRain',
   'cloud-snow': 'CloudSnow',
   'cloud-sun': 'CloudSun',
+  'coat': 'Coat',
   'code': 'Code',
+  'code-block': 'CodeBlock',
+  'code-square': 'CodeSquare',
   'code2': 'Code2',
   'coffee': 'Coffee',
+  'coins': 'Coins',
   'columns': 'Columns',
   'command': 'Command',
   'compass': 'Compass',
+  'compass-2': 'Compass2',
+  'complete': 'Complete',
+  'confused': 'Confused',
   'contact': 'Contact',
   'contact2': 'Contact2',
+  'container': 'Container',
+  'contract': 'Contract',
+  'contrast': 'Contrast',
   'cookie': 'Cookie',
+  'cool': 'Cool',
+  'copier': 'Copier',
   'copy': 'Copy',
   'corner-down-left': 'CornerDownLeft',
+  'corner-down-left-2': 'CornerDownLeft2',
   'corner-down-right': 'CornerDownRight',
+  'corner-down-right-2': 'CornerDownRight2',
   'corner-up-left': 'CornerUpLeft',
+  'corner-up-left-2': 'CornerUpLeft2',
   'corner-up-right': 'CornerUpRight',
+  'corner-up-right-2': 'CornerUpRight2',
   'cpu': 'Cpu',
   'credit-card': 'CreditCard',
+  'cross': 'Cross',
   'crosshair': 'Crosshair',
+  'crosshair-2': 'Crosshair2',
   'crown': 'Crown',
+  'cry': 'Cry',
+  'css': 'Css',
   'cup': 'Cup',
+  'cursor': 'Cursor',
+  'cursor-click': 'CursorClick',
+  'cursor-text': 'CursorText',
+  'curtain': 'Curtain',
+  'cycling': 'Cycling',
   'database': 'Database',
+  'database-2': 'Database2',
+  'database-backup': 'DatabaseBackup',
+  'database-zap': 'DatabaseZap',
+  'deep-link': 'DeepLink',
+  'deer': 'Deer',
+  'defend': 'Defend',
+  'desk': 'Desk',
+  'desktop': 'Desktop',
+  'dial': 'Dial',
+  'diamond': 'Diamond',
   'dice-1': 'Dice1',
   'dice-2': 'Dice2',
   'dice-3': 'Dice3',
   'dice-4': 'Dice4',
   'dice-5': 'Dice5',
   'dice-6': 'Dice6',
+  'dimension': 'Dimension',
+  'directions': 'Directions',
+  'disc': 'Disc',
+  'disc-2': 'Disc2',
+  'disc-3': 'Disc3',
+  'divide-2': 'Divide2',
   'dna': 'Dna',
+  'dna-2': 'Dna2',
+  'document-printer': 'DocumentPrinter',
+  'dog': 'Dog',
   'dollar-sign': 'DollarSign',
+  'door': 'Door',
+  'door-closed': 'DoorClosed',
+  'door-open': 'DoorOpen',
   'download': 'Download',
+  'dress': 'Dress',
+  'drill': 'Drill',
   'droplet': 'Droplet',
   'dumbbell': 'Dumbbell',
   'ear': 'Ear',
+  'ear-hearing': 'EarHearing',
+  'ear-off': 'EarOff',
   'edit': 'Edit',
+  'electron': 'Electron',
+  'elephant': 'Elephant',
+  'envelope-2': 'Envelope2',
+  'equalizer': 'Equalizer',
+  'equals': 'Equals',
   'eraser': 'Eraser',
+  'exposure': 'Exposure',
+  'external-link': 'ExternalLink',
+  'external-link-2': 'ExternalLink2',
   'eye': 'Eye',
   'eye-2': 'Eye2',
   'eye-off': 'EyeOff',
+  'face-id': 'FaceId',
   'factory': 'Factory',
   'fast-forward': 'FastForward',
+  'faucet': 'Faucet',
+  'fax': 'Fax',
+  'fence': 'Fence',
   'file': 'File',
+  'file-archive': 'FileArchive',
+  'file-audio': 'FileAudio',
   'file-check': 'FileCheck',
+  'file-code': 'FileCode',
+  'file-image': 'FileImage',
   'file-minus': 'FileMinus',
   'file-plus': 'FilePlus',
   'file-text': 'FileText',
+  'file-video': 'FileVideo',
   'file-x': 'FileX',
   'files': 'Files',
   'film': 'Film',
+  'film-2': 'Film2',
+  'film-slate': 'FilmSlate',
   'filter': 'Filter',
   'fingerprint': 'Fingerprint',
+  'fire-truck': 'FireTruck',
+  'firewall': 'Firewall',
+  'first-aid': 'FirstAid',
+  'fish': 'Fish',
+  'fist': 'Fist',
   'flame': 'Flame',
+  'flashlight': 'Flashlight',
+  'flashlight-off': 'FlashlightOff',
+  'flask-2': 'Flask2',
+  'flask-round': 'FlaskRound',
+  'flower': 'Flower',
+  'flower-2': 'Flower2',
+  'focus-ring': 'FocusRing',
   'folder': 'Folder',
   'folder-minus': 'FolderMinus',
   'folder-open': 'FolderOpen',
   'folder-plus': 'FolderPlus',
+  'follow': 'Follow',
+  'football': 'Football',
   'footprints': 'Footprints',
+  'fork': 'Fork',
+  'fortress': 'Fortress',
+  'fox': 'Fox',
+  'fraction': 'Fraction',
   'frown': 'Frown',
   'fuel': 'Fuel',
+  'function': 'Function',
+  'future': 'Future',
+  'gamepad': 'Gamepad',
   'gamepad-2': 'Gamepad2',
+  'garage': 'Garage',
+  'garden-hose': 'GardenHose',
+  'gate': 'Gate',
   'gauge': 'Gauge',
+  'generator': 'Generator',
   'gift': 'Gift',
+  'git-branch': 'GitBranch',
+  'git-commit': 'GitCommit',
+  'git-fork': 'GitFork',
+  'git-merge': 'GitMerge',
+  'git-pull-request': 'GitPullRequest',
   'glasses': 'Glasses',
   'globe': 'Globe',
+  'globe-2': 'Globe2',
+  'glue': 'Glue',
+  'golf': 'Golf',
+  'grab': 'Grab',
+  'grab-cursor': 'GrabCursor',
+  'grabbing': 'Grabbing',
   'graduation-cap': 'GraduationCap',
   'grape': 'Grape',
+  'greater-than': 'GreaterThan',
   'grid': 'Grid',
+  'grid-2x2': 'Grid2x2',
+  'grid-3x3': 'Grid3x3',
+  'guard': 'Guard',
+  'hail': 'Hail',
   'hammer': 'Hammer',
   'hand': 'Hand',
+  'hand-metal': 'HandMetal',
+  'hand-wave': 'HandWave',
+  'handshake': 'Handshake',
+  'happy': 'Happy',
   'hard-drive': 'HardDrive',
+  'hard-drive-2': 'HardDrive2',
   'hash': 'Hash',
+  'hashtag': 'Hashtag',
+  'hat': 'Hat',
+  'heading-1': 'Heading1',
+  'heading-2': 'Heading2',
+  'heading-3': 'Heading3',
   'headphones': 'Headphones',
   'heart': 'Heart',
   'heart-pulse': 'HeartPulse',
+  'heart-shape': 'HeartShape',
+  'helicopter': 'Helicopter',
   'help-circle': 'HelpCircle',
+  'help-cursor': 'HelpCursor',
+  'hexagon': 'Hexagon',
   'highlighter': 'Highlighter',
+  'history': 'History',
+  'hockey': 'Hockey',
   'home': 'Home',
+  'hoodie': 'Hoodie',
+  'horse': 'Horse',
   'hospital': 'Hospital',
+  'hotel': 'Hotel',
+  'hourglass': 'Hourglass',
+  'house-2': 'House2',
+  'house-check': 'HouseCheck',
+  'house-cog': 'HouseCog',
+  'house-heart': 'HouseHeart',
+  'house-plus': 'HousePlus',
+  'house-x': 'HouseX',
+  'html': 'Html',
+  'humidity': 'Humidity',
+  'hyperlink': 'Hyperlink',
   'ice-cream': 'IceCream',
+  'id-card': 'IdCard',
   'inbox': 'Inbox',
+  'incomplete': 'Incomplete',
+  'indent': 'Indent',
+  'infinity': 'Infinity',
   'info': 'Info',
+  'info-circle': 'InfoCircle',
+  'ink': 'Ink',
+  'internal-link': 'InternalLink',
+  'invoice': 'Invoice',
+  'italic': 'Italic',
+  'jacket': 'Jacket',
+  'javascript-icon': 'JavascriptIcon',
   'joystick': 'Joystick',
+  'json': 'Json',
   'kanban': 'Kanban',
+  'kettle': 'Kettle',
   'key': 'Key',
   'key-round': 'KeyRound',
+  'key-square': 'KeySquare',
   'keyboard': 'Keyboard',
+  'keyboard-nav': 'KeyboardNav',
+  'knife-2': 'Knife2',
+  'knob': 'Knob',
+  'ladder': 'Ladder',
+  'ladle': 'Ladle',
   'lamp': 'Lamp',
+  'lamp-ceiling': 'LampCeiling',
   'lamp-desk': 'LampDesk',
+  'lamp-floor': 'LampFloor',
+  'lamp-wall': 'LampWall',
   'landmark': 'Landmark',
+  'lantern': 'Lantern',
   'laptop': 'Laptop',
+  'laugh': 'Laugh',
   'layout': 'Layout',
   'layout-grid': 'LayoutGrid',
   'layout-list': 'LayoutList',
   'leaf': 'Leaf',
+  'leaf-2': 'Leaf2',
+  'less-than': 'LessThan',
+  'level': 'Level',
   'library': 'Library',
   'lightbulb': 'Lightbulb',
   'lightbulb-off': 'LightbulbOff',
+  'lighthouse': 'Lighthouse',
   'line-chart': 'LineChart',
   'link': 'Link',
+  'link-2-off': 'Link2Off',
+  'lion': 'Lion',
   'list': 'List',
+  'live': 'Live',
+  'lively': 'Lively',
   'loader': 'Loader',
+  'loading': 'Loading',
+  'locate': 'Locate',
+  'locate-fixed': 'LocateFixed',
   'lock': 'Lock',
+  'lock-keyhole': 'LockKeyhole',
   'lock-open': 'LockOpen',
+  'love': 'Love',
+  'luggage': 'Luggage',
+  'lungs': 'Lungs',
+  'magnet': 'Magnet',
   'mail': 'Mail',
+  'mail-check': 'MailCheck',
+  'mail-open': 'MailOpen',
+  'mail-plus': 'MailPlus',
+  'mailbox': 'Mailbox',
   'map': 'Map',
   'map-pin': 'MapPin',
+  'map-pinned': 'MapPinned',
+  'markdown': 'Markdown',
+  'marker': 'Marker',
   'martini': 'Martini',
   'maximize': 'Maximize',
   'maximize-2': 'Maximize2',
   'medal': 'Medal',
+  'meeting': 'Meeting',
   'meh': 'Meh',
+  'memory': 'Memory',
+  'mention': 'Mention',
   'menu': 'Menu',
+  'menu-dots': 'MenuDots',
+  'menu-dots-horizontal': 'MenuDotsHorizontal',
+  'menu-grid': 'MenuGrid',
+  'message-ai': 'MessageAi',
   'message-circle': 'MessageCircle',
   'message-square': 'MessageSquare',
+  'messages-square': 'MessagesSquare',
   'mic': 'Mic',
   'mic-off': 'MicOff',
   'microscope': 'Microscope',
+  'microscope-2': 'Microscope2',
+  'microwave': 'Microwave',
   'milestone': 'Milestone',
   'minimize': 'Minimize',
   'minimize-2': 'Minimize2',
   'minus': 'Minus',
+  'minus-2': 'Minus2',
+  'minus-circle': 'MinusCircle',
+  'minus-square': 'MinusSquare',
+  'molecule': 'Molecule',
   'monitor': 'Monitor',
   'moon': 'Moon',
   'more-horizontal': 'MoreHorizontal',
+  'motorcycle': 'Motorcycle',
   'mountain': 'Mountain',
   'mountain-snow': 'MountainSnow',
   'mouse': 'Mouse',
+  'move-cursor': 'MoveCursor',
   'move-horizontal': 'MoveHorizontal',
+  'multiply': 'Multiply',
   'music': 'Music',
+  'music-2': 'Music2',
+  'music-3': 'Music3',
+  'music-4': 'Music4',
+  'name-badge': 'NameBadge',
   'navigation': 'Navigation',
   'navigation-2': 'Navigation2',
+  'neon': 'Neon',
+  'neural-network': 'NeuralNetwork',
+  'not-allowed': 'NotAllowed',
+  'not-equal': 'NotEqual',
   'notebook': 'Notebook',
   'notebook-pen': 'NotebookPen',
+  'nucleus': 'Nucleus',
+  'octagon': 'Octagon',
+  'odometer': 'Odometer',
+  'office': 'Office',
+  'ok': 'Ok',
+  'outdent': 'Outdent',
+  'outlet': 'Outlet',
+  'oval': 'Oval',
   'package': 'Package',
+  'page-setup': 'PageSetup',
+  'paintbrush': 'Paintbrush',
   'palette': 'Palette',
+  'palm': 'Palm',
+  'pan': 'Pan',
+  'panel-bottom': 'PanelBottom',
   'panel-left': 'PanelLeft',
   'panel-right': 'PanelRight',
+  'panel-top': 'PanelTop',
+  'pants': 'Pants',
+  'paper-feed': 'PaperFeed',
   'paperclip': 'Paperclip',
+  'paperclip-2': 'Paperclip2',
+  'parallelogram': 'Parallelogram',
   'parking': 'Parking',
+  'passport': 'Passport',
   'pause': 'Pause',
+  'pause-circle': 'PauseCircle',
+  'peace': 'Peace',
   'pen': 'Pen',
+  'pen-2': 'Pen2',
+  'pen-line': 'PenLine',
   'pen-tool': 'PenTool',
   'pencil': 'Pencil',
+  'pencil-2': 'Pencil2',
+  'pencil-line': 'PencilLine',
+  'pending': 'Pending',
+  'pentagon': 'Pentagon',
   'percent': 'Percent',
+  'percent-badge': 'PercentBadge',
+  'percentage': 'Percentage',
+  'permalink': 'Permalink',
+  'petri-dish': 'PetriDish',
   'phone': 'Phone',
   'phone-call': 'PhoneCall',
   'phone-incoming': 'PhoneIncoming',
   'phone-missed': 'PhoneMissed',
   'phone-off': 'PhoneOff',
   'phone-outgoing': 'PhoneOutgoing',
+  'pi': 'Pi',
+  'picture-frame': 'PictureFrame',
   'pie-chart': 'PieChart',
+  'piggy-bank': 'PiggyBank',
   'pill': 'Pill',
+  'pinch': 'Pinch',
+  'pine-tree': 'PineTree',
   'pizza': 'Pizza',
   'plane': 'Plane',
   'plane-landing': 'PlaneLanding',
   'plane-takeoff': 'PlaneTakeoff',
+  'plant-2': 'Plant2',
+  'plate': 'Plate',
   'play': 'Play',
+  'play-circle': 'PlayCircle',
+  'playlist': 'Playlist',
+  'pliers': 'Pliers',
+  'plug-2': 'Plug2',
   'plus': 'Plus',
+  'plus-2': 'Plus2',
+  'plus-circle': 'PlusCircle',
+  'plus-square': 'PlusSquare',
+  'podcast': 'Podcast',
+  'point-down': 'PointDown',
+  'point-left': 'PointLeft',
+  'point-right': 'PointRight',
+  'point-up': 'PointUp',
+  'pointer-2': 'Pointer2',
+  'police-car': 'PoliceCar',
+  'portfolio': 'Portfolio',
+  'pot': 'Pot',
+  'potion': 'Potion',
+  'power-off': 'PowerOff',
   'presentation': 'Presentation',
+  'presentation-2': 'Presentation2',
+  'print-preview': 'PrintPreview',
+  'print-queue': 'PrintQueue',
   'printer': 'Printer',
+  'printer-2': 'Printer2',
+  'printer-check': 'PrinterCheck',
+  'printer-x': 'PrinterX',
+  'progress': 'Progress',
+  'projector': 'Projector',
+  'protection': 'Protection',
+  'protractor': 'Protractor',
   'puzzle': 'Puzzle',
+  'puzzle-piece': 'PuzzlePiece',
   'qr-code': 'QrCode',
+  'queue': 'Queue',
+  'quote': 'Quote',
+  'rabbit': 'Rabbit',
+  'radiation': 'Radiation',
   'radio': 'Radio',
+  'radio-button': 'RadioButton',
+  'radio-checked': 'RadioChecked',
+  'rainbow': 'Rainbow',
+  'rake': 'Rake',
+  'ram': 'Ram',
   'receipt': 'Receipt',
+  'receipt-2': 'Receipt2',
+  'record': 'Record',
+  'rectangle': 'Rectangle',
+  'reduced-motion': 'ReducedMotion',
+  'reference': 'Reference',
   'refresh': 'Refresh',
+  'refrigerator': 'Refrigerator',
+  'regex': 'Regex',
+  'rejected': 'Rejected',
   'repeat': 'Repeat',
+  'resize-diagonal': 'ResizeDiagonal',
+  'resize-horizontal': 'ResizeHorizontal',
+  'resize-vertical': 'ResizeVertical',
   'rewind': 'Rewind',
+  'robot': 'Robot',
   'rocket': 'Rocket',
+  'roller': 'Roller',
+  'rose': 'Rose',
+  'route': 'Route',
   'router': 'Router',
   'rows': 'Rows',
   'rss': 'Rss',
+  'rubber-stamp': 'RubberStamp',
   'ruler': 'Ruler',
+  'ruler-2': 'Ruler2',
+  'ruler-square': 'RulerSquare',
+  'running': 'Running',
+  'sad': 'Sad',
   'sailboat': 'Sailboat',
   'sandwich': 'Sandwich',
   'save': 'Save',
+  'saw': 'Saw',
+  'scale-2': 'Scale2',
   'scan': 'Scan',
+  'scan-2': 'Scan2',
+  'scan-face': 'ScanFace',
   'scan-line': 'ScanLine',
+  'scanner': 'Scanner',
+  'scanner-2': 'Scanner2',
+  'schedule': 'Schedule',
   'school': 'School',
+  'scissors-2': 'Scissors2',
+  'scooter': 'Scooter',
+  'screen': 'Screen',
+  'screen-reader': 'ScreenReader',
   'screwdriver': 'Screwdriver',
   'sd-card': 'SdCard',
   'search': 'Search',
+  'search-minus': 'SearchMinus',
+  'search-plus': 'SearchPlus',
+  'seedling': 'Seedling',
   'send': 'Send',
   'send-2': 'Send2',
   'server': 'Server',
+  'server-2': 'Server2',
+  'server-cog': 'ServerCog',
+  'server-crash': 'ServerCrash',
+  'server-off': 'ServerOff',
   'settings': 'Settings',
   'share': 'Share',
   'shield': 'Shield',
+  'shield-2': 'Shield2',
   'shield-alert': 'ShieldAlert',
+  'shield-alert-2': 'ShieldAlert2',
   'shield-check': 'ShieldCheck',
+  'shield-dollar': 'ShieldDollar',
+  'shield-lock': 'ShieldLock',
+  'shield-minus-2': 'ShieldMinus2',
   'shield-off': 'ShieldOff',
+  'shield-off-2': 'ShieldOff2',
+  'shield-plus': 'ShieldPlus',
+  'shield-plus-2': 'ShieldPlus2',
+  'shield-unlock': 'ShieldUnlock',
+  'shield-user': 'ShieldUser',
+  'shield-x': 'ShieldX',
   'ship': 'Ship',
+  'shirt': 'Shirt',
   'shopping-bag': 'ShoppingBag',
   'shopping-cart': 'ShoppingCart',
+  'shortcut': 'Shortcut',
+  'shorts': 'Shorts',
+  'shovel': 'Shovel',
   'shuffle': 'Shuffle',
   'sidebar': 'Sidebar',
+  'sidebar-close': 'SidebarClose',
+  'sidebar-open': 'SidebarOpen',
+  'sigma': 'Sigma',
+  'sign-language': 'SignLanguage',
   'signal': 'Signal',
   'signal-high': 'SignalHigh',
   'signal-low': 'SignalLow',
   'signal-zero': 'SignalZero',
+  'signpost': 'Signpost',
+  'sink': 'Sink',
+  'skiing': 'Skiing',
   'skip-back': 'SkipBack',
   'skip-forward': 'SkipForward',
+  'sleep': 'Sleep',
+  'slider': 'Slider',
+  'slider-horizontal': 'SliderHorizontal',
+  'slider-vertical': 'SliderVertical',
   'smartphone': 'Smartphone',
   'smile': 'Smile',
+  'snippet': 'Snippet',
   'snowflake': 'Snowflake',
+  'soccer': 'Soccer',
+  'sofa': 'Sofa',
+  'sparkles': 'Sparkles',
+  'spatula': 'Spatula',
   'speaker': 'Speaker',
+  'speaker-2': 'Speaker2',
+  'speaker-3': 'Speaker3',
+  'speed-dial': 'SpeedDial',
+  'speedometer': 'Speedometer',
+  'spoon-2': 'Spoon2',
+  'spotlight': 'Spotlight',
+  'sprout': 'Sprout',
+  'sqrt': 'Sqrt',
   'square': 'Square',
+  'ssd': 'Ssd',
+  'stamp': 'Stamp',
+  'stapler': 'Stapler',
   'star': 'Star',
+  'statistics': 'Statistics',
   'stethoscope': 'Stethoscope',
+  'stop-circle': 'StopCircle',
+  'stopwatch': 'Stopwatch',
+  'storage': 'Storage',
   'store': 'Store',
+  'stream': 'Stream',
+  'strikethrough': 'Strikethrough',
+  'studio': 'Studio',
+  'subscript': 'Subscript',
+  'subtitle': 'Subtitle',
   'sun': 'Sun',
+  'sunglasses': 'Sunglasses',
   'sunrise': 'Sunrise',
   'sunset': 'Sunset',
+  'superscript': 'Superscript',
+  'surge-protector': 'SurgeProtector',
+  'surprised': 'Surprised',
+  'sweater': 'Sweater',
+  'swimming': 'Swimming',
+  'switch-off': 'SwitchOff',
+  'switch-on': 'SwitchOn',
   'sword': 'Sword',
   'swords': 'Swords',
   'syringe': 'Syringe',
@@ -1753,31 +4591,72 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'tag': 'Tag',
   'tag2': 'Tag2',
   'tags': 'Tags',
+  'tape': 'Tape',
+  'tape-measure': 'TapeMeasure',
   'target': 'Target',
+  'team': 'Team',
+  'temperature-dial': 'TemperatureDial',
+  'tennis': 'Tennis',
   'tent': 'Tent',
   'terminal': 'Terminal',
+  'terminal-2': 'Terminal2',
+  'terminal-square': 'TerminalSquare',
   'test-tube': 'TestTube',
+  'test-tube-2': 'TestTube2',
   'test-tubes': 'TestTubes',
+  'text': 'Text',
+  'text-cursor': 'TextCursor',
+  'text-size': 'TextSize',
   'thermometer': 'Thermometer',
   'thermometer-2': 'Thermometer2',
+  'thermometer-medical': 'ThermometerMedical',
   'thumbs-down': 'ThumbsDown',
   'thumbs-up': 'ThumbsUp',
+  'ticket': 'Ticket',
+  'tie': 'Tie',
+  'timeline': 'Timeline',
+  'timer': 'Timer',
+  'toaster': 'Toaster',
+  'toggle': 'Toggle',
+  'toggle-left': 'ToggleLeft',
+  'toggle-right': 'ToggleRight',
+  'toilet': 'Toilet',
+  'toner': 'Toner',
+  'toolbox': 'Toolbox',
+  'torch': 'Torch',
+  'tornado': 'Tornado',
+  'tower': 'Tower',
   'traffic-cone': 'TrafficCone',
   'train': 'Train',
+  'trapezoid': 'Trapezoid',
   'trash': 'Trash',
   'tree': 'Tree',
+  'tree-2': 'Tree2',
+  'tree-palm': 'TreePalm',
+  'tree-pine': 'TreePine',
   'trending-down': 'TrendingDown',
   'trending-up': 'TrendingUp',
   'triangle': 'Triangle',
   'trophy': 'Trophy',
   'truck': 'Truck',
+  'tshirt': 'Tshirt',
+  'tulip': 'Tulip',
+  'turtle': 'Turtle',
   'tv': 'Tv',
+  'two-factor': 'TwoFactor',
+  'typescript-icon': 'TypescriptIcon',
+  'ufo': 'Ufo',
   'umbrella': 'Umbrella',
+  'underline': 'Underline',
+  'unfollow': 'Unfollow',
   'unlock': 'Unlock',
+  'unverified': 'Unverified',
   'upload': 'Upload',
+  'ups': 'Ups',
   'usb-drive': 'UsbDrive',
   'user': 'User',
   'user-check': 'UserCheck',
+  'user-circle': 'UserCircle',
   'user-cog': 'UserCog',
   'user-minus': 'UserMinus',
   'user-plus': 'UserPlus',
@@ -1785,27 +4664,53 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'users': 'Users',
   'utensils': 'Utensils',
   'utensils-crossed': 'UtensilsCrossed',
+  'vault': 'Vault',
+  'verified': 'Verified',
   'video': 'Video',
   'video-2': 'Video2',
   'video-off': 'VideoOff',
+  'vinyl': 'Vinyl',
+  'voice-control': 'VoiceControl',
   'voicemail': 'Voicemail',
+  'volleyball': 'Volleyball',
   'volume': 'Volume',
+  'volume-1': 'Volume1',
+  'volume-2': 'Volume2',
+  'volume-dial': 'VolumeDial',
   'volume-off': 'VolumeOff',
+  'volume-x': 'VolumeX',
+  'wait-cursor': 'WaitCursor',
   'wallet': 'Wallet',
+  'wallet-cards': 'WalletCards',
   'wand': 'Wand',
   'wand-2': 'Wand2',
+  'wand-sparkles': 'WandSparkles',
   'warehouse': 'Warehouse',
   'watch': 'Watch',
+  'watch-accessory': 'WatchAccessory',
+  'watering-can': 'WateringCan',
+  'waveform': 'Waveform',
   'waves': 'Waves',
+  'waypoints': 'Waypoints',
   'webcam': 'Webcam',
+  'webhook': 'Webhook',
+  'weight': 'Weight',
   'wheelchair': 'Wheelchair',
+  'whisk': 'Whisk',
   'wifi': 'Wifi',
   'wifi-off': 'WifiOff',
   'wind': 'Wind',
+  'window': 'Window',
+  'window-2': 'Window2',
   'wine': 'Wine',
+  'wink': 'Wink',
+  'wolf': 'Wolf',
   'wrench': 'Wrench',
   'x': 'X',
   'x-circle': 'XCircle',
+  'x-circle-2': 'XCircle2',
+  'x-square': 'XSquare',
+  'xml': 'Xml',
   'zap': 'Zap',
 };
 

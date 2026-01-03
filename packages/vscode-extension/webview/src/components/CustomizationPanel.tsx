@@ -87,6 +87,17 @@ export function CustomizationPanel({
     [onChange]
   );
 
+  const handleColorChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      onChange({ color: e.target.value });
+    },
+    [onChange]
+  );
+
+  const handleColorClear = useCallback(() => {
+    onChange({ color: undefined });
+  }, [onChange]);
+
   return (
     <div className="customization-panel">
       {/* Size slider */}
@@ -132,6 +143,39 @@ export function CustomizationPanel({
             aria-valuenow={customization.strokeWidth || 2}
           />
           <span className="control-value">{customization.strokeWidth || 2}</span>
+        </div>
+      </div>
+
+      {/* Color picker */}
+      <div className="control-row">
+        <label className="control-label" htmlFor="color-picker">
+          Color
+        </label>
+        <div className="control-color-group">
+          <input
+            id="color-picker"
+            type="color"
+            className="control-color"
+            value={customization.color || '#ffffff'}
+            onChange={handleColorChange}
+          />
+          <input
+            type="text"
+            className="control-color-text"
+            value={customization.color || ''}
+            onChange={handleColorChange}
+            placeholder="currentColor"
+          />
+          {customization.color && (
+            <button
+              type="button"
+              className="control-color-clear"
+              onClick={handleColorClear}
+              aria-label="Clear color"
+            >
+              ✕
+            </button>
+          )}
         </div>
       </div>
 

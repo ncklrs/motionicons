@@ -5,6 +5,8 @@ export interface SearchBarProps {
   value: string;
   /** Change handler (called with debounced value) */
   onChange: (value: string) => void;
+  /** Total number of icons available */
+  iconCount?: number;
   /** Debounce delay in milliseconds */
   debounceMs?: number;
   /** Placeholder text */
@@ -18,9 +20,14 @@ export interface SearchBarProps {
 export const SearchBar = memo(function SearchBar({
   value,
   onChange,
+  iconCount,
   debounceMs = 300,
-  placeholder = 'Search 350+ icons...',
+  placeholder,
 }: SearchBarProps) {
+  const defaultPlaceholder = iconCount
+    ? `Search ${iconCount.toLocaleString()}+ icons...`
+    : 'Search icons...';
+  const finalPlaceholder = placeholder || defaultPlaceholder;
   const inputRef = useRef<HTMLInputElement>(null);
   const [localValue, setLocalValue] = useState(value);
   const debounceRef = useRef<ReturnType<typeof setTimeout>>();
@@ -117,7 +124,7 @@ export const SearchBar = memo(function SearchBar({
           className="search-bar-input"
           value={localValue}
           onChange={handleChange}
-          placeholder={placeholder}
+          placeholder={finalPlaceholder}
           aria-label="Search icons"
           autoComplete="off"
           autoCorrect="off"
