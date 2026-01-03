@@ -5,7 +5,7 @@
 <h1 align="center">LivelyIcons</h1>
 
 <p align="center">
-  A comprehensive library of <strong>350 animated SVG icons</strong> powered by <a href="https://motion.dev">Motion</a> for React.<br/>
+  A comprehensive library of <strong>1300+ animated SVG icons</strong> powered by <a href="https://motion.dev">Motion</a> for React.<br/>
   Beautiful, customizable icons with built-in animations that bring your UI to life.
 </p>
 
@@ -23,7 +23,7 @@
 
 ## Features
 
-- **350 Icons** — Comprehensive icon set covering UI, navigation, media, commerce, and more
+- **1300+ Icons** — Comprehensive icon set covering UI, navigation, media, commerce, and more
 - **9 Motion Types** — Scale, rotate, translate, shake, pulse, bounce, draw, spin, and none
 - **4 Trigger Modes** — Hover, loop, mount, and inView animations
 - **Fully Typed** — Complete TypeScript support with exported types
@@ -297,7 +297,7 @@ See the [full documentation](/docs#nextjs-app-router) for more patterns includin
 
 ## Available Icons
 
-LivelyIcons includes 350 icons across categories:
+LivelyIcons includes 1300+ icons across categories:
 
 - **Navigation** — Arrows, chevrons, menu, home
 - **Actions** — Check, close, edit, save, trash

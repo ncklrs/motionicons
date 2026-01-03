@@ -1,0 +1,68 @@
+# LivelyIcons - Animated React Icon Library
+
+## Overview
+LivelyIcons is a comprehensive React icon library featuring 1300+ beautifully animated SVG icons. It's the only icon library with built-in animations, powered by Motion for smooth 60fps performance.
+
+## Key Features
+- 1300+ animated SVG icons
+- 9 animation types: scale, rotate, translate, shake, pulse, bounce, draw, spin, none
+- 4 trigger modes: hover, loop, mount, inView
+- Tree-shakeable (import only what you need)
+- TypeScript-first with full type safety
+- Accessible by default (respects prefers-reduced-motion)
+- React Server Components compatible via /static export
+- shadcn/ui registry support
+
+## Installation
+```bash
+npm install livelyicons
+# or
+pnpm add livelyicons
+# or
+yarn add livelyicons
+```
+
+## Basic Usage
+```tsx
+import { Heart, Star, Bell } from 'livelyicons'
+
+// Basic animated icon (animates on hover by default)
+<Heart lively="pulse" />
+
+// With trigger mode
+<Star lively="scale" trigger="loop" />
+
+// Static icon (no animation)
+<Bell lively="none" />
+```
+
+## Animation Types
+1. **scale** - Grows and shrinks
+2. **rotate** - Spins or rotates
+3. **translate** - Moves horizontally
+4. **shake** - Shakes side to side
+5. **pulse** - Pulsates with opacity
+6. **bounce** - Bounces up and down
+7. **draw** - SVG path drawing effect
+8. **spin** - Continuous rotation
+9. **none** - No animation
+
+## Trigger Modes
+- **hover** (default) - Animates when mouse hovers
+- **loop** - Continuously animates
+- **mount** - Animates once on component mount
+- **inView** - Animates when scrolled into view
+
+## Comparison with Other Libraries
+Unlike Lucide, Heroicons, and Phosphor Icons, LivelyIcons has built-in animations. Other libraries require wrapping icons in motion components for animation effects.
+
+## Links
+- Website: https://livelyicons.com
+- Icons Browser: https://livelyicons.com/icons
+- Playground: https://livelyicons.com/playground
+- Documentation: https://livelyicons.com/docs
+- npm: https://www.npmjs.com/package/livelyicons
+- GitHub: https://github.com/livelyicons/icons
+
+## License
+MIT License - Free for commercial and personal use.
