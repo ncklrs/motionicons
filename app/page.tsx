@@ -143,7 +143,7 @@ export default function HomePage() {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-electric/10 rounded-full blur-[120px] animate-pulse-glow" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-plasma/10 rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -243,8 +243,8 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-32 relative">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-16 sm:py-32 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Features */}
             <div>
@@ -311,10 +311,10 @@ export default function HomePage() {
       </section>
 
       {/* Animation Types Section */}
-      <section className="py-32 bg-carbon relative overflow-hidden">
+      <section className="py-16 sm:py-32 bg-carbon relative overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-30" />
 
-        <div className="relative max-w-7xl mx-auto px-6">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <span className="tag mb-4 inline-block">Animation Types</span>
             <h2 className="font-display text-4xl font-bold text-bone">
@@ -357,10 +357,10 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 relative">
+      <section className="py-16 sm:py-32 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-carbon to-void" />
 
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -389,8 +389,8 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-graphite">
-        <div className="max-w-7xl mx-auto px-6">
+      <footer className="py-8 sm:py-12 border-t border-graphite">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 bg-electric rounded-sm flex items-center justify-center">

@@ -190,6 +190,21 @@ function App() {
                 >
                   Docs
                 </Link>
+
+                {/* Mobile section navigation */}
+                <div className="mt-4 pt-4 border-t border-graphite">
+                  <span className="text-xs text-steel uppercase tracking-wider mb-2 block">Sections</span>
+                  {sections.map(section => (
+                    <a
+                      key={section.id}
+                      href={`#${section.id}`}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block text-sm text-silver hover:text-electric transition-colors py-1.5"
+                    >
+                      {section.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             </motion.div>
           )}
@@ -213,7 +228,7 @@ function App() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 lg:ml-64 max-w-4xl mx-auto px-6 py-12">
+        <main className="flex-1 lg:ml-64 max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

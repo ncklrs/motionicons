@@ -114,7 +114,7 @@ export default function IconsPage() {
       <main className="pt-16">
         {/* Header */}
         <div className="border-b border-graphite">
-          <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -136,7 +136,7 @@ export default function IconsPage() {
 
         {/* Controls */}
         <div className="sticky top-16 z-40 bg-void/95 backdrop-blur-xl border-b border-graphite">
-          <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
             <div className="flex flex-col gap-4">
               {/* Top row: Search and size controls */}
               <div className="flex flex-col lg:flex-row gap-4 lg:items-center lg:justify-between">
@@ -169,7 +169,7 @@ export default function IconsPage() {
                   </div>
 
                   {/* Stroke Control */}
-                  <div className="flex items-center gap-3 pl-4 border-l border-graphite">
+                  <div className="flex items-center gap-3 sm:pl-4 sm:border-l sm:border-graphite">
                     <span className="text-xs text-silver uppercase tracking-wider">Stroke:</span>
                     <input
                       type="range"
@@ -214,7 +214,7 @@ export default function IconsPage() {
 
         {/* Icon Grid */}
         <IconProvider config={{ animated: true }}>
-          <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
             <AnimatePresence mode="popLayout">
               {filteredIcons.length > 0 ? (
                 <motion.div
@@ -295,9 +295,9 @@ export default function IconsPage() {
 
         {/* Usage hint */}
         <div className="border-t border-graphite">
-          <div className="max-w-7xl mx-auto px-6 py-12">
-            <div className="bg-carbon border border-graphite p-8">
-              <div className="flex items-start gap-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div className="bg-carbon border border-graphite p-4 sm:p-8">
+              <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
                 <div className="w-12 h-12 bg-graphite flex items-center justify-center text-electric shrink-0">
                   <Icons.Copy size={24} />
                 </div>
