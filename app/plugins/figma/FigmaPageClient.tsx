@@ -1,61 +1,105 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { motion } from "motion/react"
+import { useState } from "react";
+import Link from "next/link";
+import { motion } from "motion/react";
 import {
-  Palette, Search, Grid3x3, Download, Copy, Eye,
-  Heart, Star, Settings, Zap, ArrowRight, Check,
-  Sparkles, Package,
-  PenTool, MoveHorizontal, Refresh
-} from "../../../src/icons"
-import { Navigation } from "../../components/Navigation"
-import { LogoWithText } from "../../components/Logo"
+  Palette,
+  Search,
+  Grid3x3,
+  Download,
+  Copy,
+  Eye,
+  Heart,
+  Star,
+  Settings,
+  Zap,
+  ArrowRight,
+  Check,
+  Sparkles,
+  Package,
+  PenTool,
+  MoveHorizontal,
+  Refresh,
+} from "../../../src/icons";
+import { Navigation } from "../../components/Navigation";
+import { LogoWithText } from "../../components/Logo";
 
 const features = [
   {
     icon: Grid3x3,
     title: "1,319 Animated Icons",
-    description: "Massive library of beautifully designed icons organized into 36 categories. Find the perfect icon for any design."
+    description:
+      "Massive library of beautifully designed icons organized into 36 categories. Find the perfect icon for any design.",
   },
   {
     icon: Search,
     title: "Smart Search",
-    description: "Fuzzy search with synonyms and keywords. Type 'close' to find 'x', or 'mail' to find 'email'."
+    description:
+      "Fuzzy search with synonyms and keywords. Type 'close' to find 'x', or 'mail' to find 'email'.",
   },
   {
     icon: Palette,
     title: "Full Customization",
-    description: "Adjust size (16-64px), stroke width (0.5-4), and colors. See changes in real-time preview."
+    description:
+      "Adjust size (16-64px), stroke width (0.5-4), and colors. See changes in real-time preview.",
   },
   {
     icon: Package,
     title: "Editable Vectors",
-    description: "Icons insert as fully editable vector paths. Modify, combine, and customize in Figma."
+    description:
+      "Icons insert as fully editable vector paths. Modify, combine, and customize in Figma.",
   },
   {
     icon: Copy,
     title: "Multiple Export Formats",
-    description: "Export as SVG, React components, or Vue templates. Copy code with one click."
+    description:
+      "Export as SVG, React components, or Vue templates. Copy code with one click.",
   },
   {
     icon: Zap,
     title: "Lightning Fast",
-    description: "Plugin loads in under 1 second. Search responds in under 100ms. Zero network required."
-  }
-]
+    description:
+      "Plugin loads in under 1 second. Search responds in under 100ms. Zero network required.",
+  },
+];
 
 const categories = [
-  "Accessibility", "Analytics", "Animals", "Arrows", "Brands", "Buildings",
-  "Business", "Charts", "Communication", "Development", "Devices", "Education",
-  "Files", "Finance", "Food", "Gaming", "Health", "Media", "Nature", "Security",
-  "Shopping", "Social", "Sports", "Tools", "Transportation", "Travel", "UI", "Users", "Weather"
-]
+  "Accessibility",
+  "Analytics",
+  "Animals",
+  "Arrows",
+  "Brands",
+  "Buildings",
+  "Business",
+  "Charts",
+  "Communication",
+  "Development",
+  "Devices",
+  "Education",
+  "Files",
+  "Finance",
+  "Food",
+  "Gaming",
+  "Health",
+  "Media",
+  "Nature",
+  "Security",
+  "Shopping",
+  "Social",
+  "Sports",
+  "Tools",
+  "Transportation",
+  "Travel",
+  "UI",
+  "Users",
+  "Weather",
+];
 
-const sizePresets = ["16px", "24px", "32px", "48px", "64px"]
+const sizePresets = ["16px", "24px", "32px", "48px", "64px"];
 
 export default function FigmaPageClient() {
-  const [selectedSize, setSelectedSize] = useState("24px")
+  const [selectedSize, setSelectedSize] = useState("24px");
 
   return (
     <div className="min-h-screen bg-void">
@@ -78,7 +122,9 @@ export default function FigmaPageClient() {
               {/* Figma Badge */}
               <div className="inline-flex items-center gap-2 bg-[#a259ff]/20 border border-[#a259ff]/30 px-4 py-2 mb-8">
                 <PenTool size={18} className="text-[#a259ff]" />
-                <span className="text-sm text-[#a259ff] font-medium">Figma Plugin</span>
+                <span className="text-sm text-[#a259ff] font-medium">
+                  Figma Plugin - Coming Soon
+                </span>
               </div>
 
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-bone mb-6">
@@ -87,8 +133,8 @@ export default function FigmaPageClient() {
               </h1>
 
               <p className="text-lg sm:text-xl text-silver max-w-2xl mx-auto mb-10">
-                Browse, customize, and insert 1,319 animated icons directly into your designs.
-                Fully editable vectors with zero network required.
+                Browse, customize, and insert 1,319 animated icons directly into
+                your designs. Fully editable vectors with zero network required.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -97,7 +143,10 @@ export default function FigmaPageClient() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary flex items-center justify-center gap-2"
-                  style={{ background: 'linear-gradient(135deg, #a259ff 0%, #ff7262 100%)' }}
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #a259ff 0%, #ff7262 100%)",
+                  }}
                 >
                   <Download size={18} />
                   Install Plugin
@@ -128,7 +177,9 @@ export default function FigmaPageClient() {
                     <div className="w-6 h-6 bg-gradient-to-br from-leaf to-electric rounded flex items-center justify-center">
                       <Sparkles size={14} className="text-void" />
                     </div>
-                    <span className="text-sm text-white font-medium">LivelyIcons</span>
+                    <span className="text-sm text-white font-medium">
+                      LivelyIcons
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-xs text-[#999]">1,319 icons</span>
@@ -145,33 +196,59 @@ export default function FigmaPageClient() {
 
                   {/* Category Pills */}
                   <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
-                    {['All', 'UI', 'Arrows', 'Media', 'Communication'].map((cat, i) => (
-                      <button
-                        key={cat}
-                        className={`px-3 py-1 text-xs whitespace-nowrap transition-colors ${
-                          i === 0
-                            ? 'bg-[#a259ff] text-white'
-                            : 'bg-[#383838] text-[#999] hover:text-white'
-                        }`}
-                      >
-                        {cat}
-                      </button>
-                    ))}
+                    {["All", "UI", "Arrows", "Media", "Communication"].map(
+                      (cat, i) => (
+                        <button
+                          key={cat}
+                          className={`px-3 py-1 text-xs whitespace-nowrap transition-colors ${
+                            i === 0
+                              ? "bg-[#a259ff] text-white"
+                              : "bg-[#383838] text-[#999] hover:text-white"
+                          }`}
+                        >
+                          {cat}
+                        </button>
+                      )
+                    )}
                   </div>
 
                   {/* Icon Grid */}
                   <div className="grid grid-cols-8 gap-2 mb-4">
-                    {[Heart, Star, Settings, Eye, Search, Zap, Copy, Download, Grid3x3, Package, MoveHorizontal, Refresh, Sparkles, Palette, ArrowRight, Check].map((Icon, idx) => (
+                    {[
+                      Heart,
+                      Star,
+                      Settings,
+                      Eye,
+                      Search,
+                      Zap,
+                      Copy,
+                      Download,
+                      Grid3x3,
+                      Package,
+                      MoveHorizontal,
+                      Refresh,
+                      Sparkles,
+                      Palette,
+                      ArrowRight,
+                      Check,
+                    ].map((Icon, idx) => (
                       <motion.div
                         key={idx}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.4 + idx * 0.03 }}
                         className={`aspect-square bg-[#383838] border flex items-center justify-center cursor-pointer hover:border-[#a259ff] transition-colors ${
-                          idx === 0 ? 'border-[#a259ff] bg-[#a259ff]/10' : 'border-[#444]'
+                          idx === 0
+                            ? "border-[#a259ff] bg-[#a259ff]/10"
+                            : "border-[#444]"
                         }`}
                       >
-                        <Icon size={18} className={idx === 0 ? 'text-[#a259ff]' : 'text-[#ccc]'} />
+                        <Icon
+                          size={18}
+                          className={
+                            idx === 0 ? "text-[#a259ff]" : "text-[#ccc]"
+                          }
+                        />
                       </motion.div>
                     ))}
                   </div>
@@ -181,7 +258,9 @@ export default function FigmaPageClient() {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center gap-3">
                         <Heart size={24} className="text-[#a259ff]" />
-                        <span className="text-sm text-white font-medium">Heart</span>
+                        <span className="text-sm text-white font-medium">
+                          Heart
+                        </span>
                       </div>
                       <button className="px-3 py-1.5 bg-[#a259ff] text-white text-xs font-medium hover:bg-[#b366ff] transition-colors">
                         Insert
@@ -198,8 +277,8 @@ export default function FigmaPageClient() {
                             onClick={() => setSelectedSize(size)}
                             className={`px-2 py-1 text-xs transition-colors ${
                               selectedSize === size
-                                ? 'bg-[#a259ff] text-white'
-                                : 'bg-[#2c2c2c] text-[#999] hover:text-white'
+                                ? "bg-[#a259ff] text-white"
+                                : "bg-[#2c2c2c] text-[#999] hover:text-white"
                             }`}
                           >
                             {size}
@@ -211,7 +290,9 @@ export default function FigmaPageClient() {
                     {/* Stroke & Color */}
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <div className="text-xs text-[#666] mb-2">Stroke Width</div>
+                        <div className="text-xs text-[#666] mb-2">
+                          Stroke Width
+                        </div>
                         <div className="h-1 bg-[#2c2c2c] rounded-full">
                           <div className="h-full w-1/2 bg-[#a259ff] rounded-full" />
                         </div>
@@ -219,7 +300,13 @@ export default function FigmaPageClient() {
                       <div>
                         <div className="text-xs text-[#666] mb-2">Color</div>
                         <div className="flex gap-1">
-                          {['#fff', '#a259ff', '#ff7262', '#00d084', '#fcb900'].map((color) => (
+                          {[
+                            "#fff",
+                            "#a259ff",
+                            "#ff7262",
+                            "#00d084",
+                            "#fcb900",
+                          ].map((color) => (
                             <div
                               key={color}
                               className="w-5 h-5 rounded cursor-pointer border border-[#444]"
@@ -246,7 +333,12 @@ export default function FigmaPageClient() {
               transition={{ duration: 0.5 }}
               className="text-center mb-12"
             >
-              <span className="tag mb-4 inline-block" style={{ borderColor: '#a259ff33', color: '#a259ff' }}>Features</span>
+              <span
+                className="tag mb-4 inline-block"
+                style={{ borderColor: "#a259ff33", color: "#a259ff" }}
+              >
+                Features
+              </span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone">
                 Design faster with animated icons
               </h2>
@@ -265,7 +357,9 @@ export default function FigmaPageClient() {
                   <div className="w-12 h-12 bg-graphite border border-[#a259ff]/20 flex items-center justify-center mb-4 group-hover:border-[#a259ff]/40 transition-colors">
                     <feature.icon size={24} className="text-[#a259ff]" />
                   </div>
-                  <h3 className="font-display font-semibold text-bone mb-2">{feature.title}</h3>
+                  <h3 className="font-display font-semibold text-bone mb-2">
+                    {feature.title}
+                  </h3>
                   <p className="text-sm text-silver">{feature.description}</p>
                 </motion.div>
               ))}
@@ -288,8 +382,8 @@ export default function FigmaPageClient() {
                 Icons for every use case
               </h2>
               <p className="text-silver max-w-2xl mx-auto">
-                From UI elements to industry-specific icons, find exactly what you need
-                organized into thoughtfully curated categories.
+                From UI elements to industry-specific icons, find exactly what
+                you need organized into thoughtfully curated categories.
               </p>
             </motion.div>
 
@@ -320,23 +414,29 @@ export default function FigmaPageClient() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <span className="tag mb-4 inline-block" style={{ borderColor: '#a259ff33', color: '#a259ff' }}>Export Options</span>
+                <span
+                  className="tag mb-4 inline-block"
+                  style={{ borderColor: "#a259ff33", color: "#a259ff" }}
+                >
+                  Export Options
+                </span>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone mb-6">
                   From design to development
                 </h2>
                 <p className="text-silver mb-8">
-                  Insert icons directly to your Figma canvas as editable vectors,
-                  or export code for React, Vue, and raw SVG. Perfect for design systems.
+                  Insert icons directly to your Figma canvas as editable
+                  vectors, or export code for React, Vue, and raw SVG. Perfect
+                  for design systems.
                 </p>
 
                 <ul className="space-y-4">
                   {[
-                    'Insert as editable Figma vectors',
-                    'Export SVG with custom attributes',
-                    'Generate React component code',
-                    'Generate Vue template code',
-                    'One-click clipboard copy',
-                    'Works offline - no network needed'
+                    "Insert as editable Figma vectors",
+                    "Export SVG with custom attributes",
+                    "Generate React component code",
+                    "Generate Vue template code",
+                    "One-click clipboard copy",
+                    "Works offline - no network needed",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <Check size={18} className="text-[#a259ff] shrink-0" />
@@ -354,14 +454,27 @@ export default function FigmaPageClient() {
                 className="grid grid-cols-2 gap-4"
               >
                 {[
-                  { title: 'Figma Insert', desc: 'Editable vectors', icon: Package },
-                  { title: 'SVG Export', desc: 'Custom attributes', icon: Download },
-                  { title: 'React Code', desc: 'JSX components', icon: Copy },
-                  { title: 'Vue Code', desc: 'Template syntax', icon: Copy }
+                  {
+                    title: "Figma Insert",
+                    desc: "Editable vectors",
+                    icon: Package,
+                  },
+                  {
+                    title: "SVG Export",
+                    desc: "Custom attributes",
+                    icon: Download,
+                  },
+                  { title: "React Code", desc: "JSX components", icon: Copy },
+                  { title: "Vue Code", desc: "Template syntax", icon: Copy },
                 ].map((item) => (
-                  <div key={item.title} className="bg-void border border-graphite p-5 hover:border-[#a259ff]/30 transition-colors">
+                  <div
+                    key={item.title}
+                    className="bg-void border border-graphite p-5 hover:border-[#a259ff]/30 transition-colors"
+                  >
                     <item.icon size={24} className="text-[#a259ff] mb-3" />
-                    <h4 className="font-display font-semibold text-bone mb-1">{item.title}</h4>
+                    <h4 className="font-display font-semibold text-bone mb-1">
+                      {item.title}
+                    </h4>
                     <p className="text-xs text-silver">{item.desc}</p>
                   </div>
                 ))}
@@ -380,7 +493,9 @@ export default function FigmaPageClient() {
               transition={{ duration: 0.5 }}
               className="text-center mb-12"
             >
-              <span className="tag tag-electric mb-4 inline-block">Performance</span>
+              <span className="tag tag-electric mb-4 inline-block">
+                Performance
+              </span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone">
                 Built for speed
               </h2>
@@ -388,10 +503,10 @@ export default function FigmaPageClient() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { value: '<1s', label: 'Plugin Load Time' },
-                { value: '<100ms', label: 'Search Response' },
-                { value: '<50ms', label: 'Icon Insert' },
-                { value: '0 KB', label: 'Network Required' }
+                { value: "<1s", label: "Plugin Load Time" },
+                { value: "<100ms", label: "Search Response" },
+                { value: "<50ms", label: "Icon Insert" },
+                { value: "0 KB", label: "Network Required" },
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
@@ -401,7 +516,9 @@ export default function FigmaPageClient() {
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="bg-carbon border border-graphite p-6 text-center"
                 >
-                  <div className="text-3xl font-display font-bold text-electric mb-2">{stat.value}</div>
+                  <div className="text-3xl font-display font-bold text-electric mb-2">
+                    {stat.value}
+                  </div>
                   <div className="text-sm text-silver">{stat.label}</div>
                 </motion.div>
               ))}
@@ -424,8 +541,9 @@ export default function FigmaPageClient() {
                 Ready to enhance your designs?
               </h2>
               <p className="text-lg text-silver mb-10 max-w-2xl mx-auto">
-                Install the Figma plugin and start using 1,319 animated icons in your designs today.
-                It's free, works offline, and takes seconds to get started.
+                Install the Figma plugin and start using 1,319 animated icons in
+                your designs today. It's free, works offline, and takes seconds
+                to get started.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -434,12 +552,18 @@ export default function FigmaPageClient() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary flex items-center justify-center gap-2"
-                  style={{ background: 'linear-gradient(135deg, #a259ff 0%, #ff7262 100%)' }}
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #a259ff 0%, #ff7262 100%)",
+                  }}
                 >
                   <Download size={18} />
                   Install from Figma Community
                 </a>
-                <Link href="/plugins/vscode" className="btn-secondary flex items-center justify-center gap-2">
+                <Link
+                  href="/plugins/vscode"
+                  className="btn-secondary flex items-center justify-center gap-2"
+                >
                   Try VS Code Extension
                   <ArrowRight size={18} />
                 </Link>
@@ -456,12 +580,10 @@ export default function FigmaPageClient() {
             <Link href="/">
               <LogoWithText iconSize={24} />
             </Link>
-            <p className="text-sm text-silver">
-              Built with Motion for React
-            </p>
+            <p className="text-sm text-silver">Built with Motion for React</p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }

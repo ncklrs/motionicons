@@ -1,48 +1,67 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "motion/react"
+import Link from "next/link";
+import { motion } from "motion/react";
 import {
-  Code, Search, Palette, Zap, Copy, Download,
-  Heart, Star, Clock, Grid3x3, Settings, Eye,
-  ArrowRight, Check,
-  Sparkles, Monitor, Terminal
-} from "../../../src/icons"
-import { Navigation } from "../../components/Navigation"
-import { LogoWithText } from "../../components/Logo"
+  Code,
+  Search,
+  Palette,
+  Zap,
+  Copy,
+  Download,
+  Heart,
+  Star,
+  Clock,
+  Grid3x3,
+  Settings,
+  Eye,
+  ArrowRight,
+  Check,
+  Sparkles,
+  Monitor,
+  Terminal,
+} from "../../../src/icons";
+import { Navigation } from "../../components/Navigation";
+import { LogoWithText } from "../../components/Logo";
 
 const features = [
   {
     icon: Search,
     title: "Intelligent Search",
-    description: "Fuzzy search across 1,300+ icons. Find what you need instantly with keyword matching and synonyms."
+    description:
+      "Fuzzy search across 1,300+ icons. Find what you need instantly with keyword matching and synonyms.",
   },
   {
     icon: Grid3x3,
     title: "Visual Browser",
-    description: "Browse icons in a beautiful grid view. Filter by 36 categories to find the perfect icon."
+    description:
+      "Browse icons in a beautiful grid view. Filter by 36 categories to find the perfect icon.",
   },
   {
     icon: Palette,
     title: "Live Customization",
-    description: "Adjust size, stroke width, and color in real-time. Preview exactly what you'll get."
+    description:
+      "Adjust size, stroke width, and color in real-time. Preview exactly what you'll get.",
   },
   {
     icon: Sparkles,
     title: "Animation Preview",
-    description: "See animations in action before you insert. Choose from 9 motion types and 4 trigger modes."
+    description:
+      "See animations in action before you insert. Choose from 9 motion types and 4 trigger modes.",
   },
   {
     icon: Code,
     title: "Smart Code Generation",
-    description: "Generate React, Vue, or raw SVG code. Automatically includes all your customizations."
+    description:
+      "Generate React, Vue, or raw SVG code. Automatically includes all your customizations.",
   },
   {
     icon: Heart,
     title: "Favorites & History",
-    description: "Bookmark frequently used icons. Access your recent icons for faster workflow."
-  }
-]
+    description:
+      "Bookmark frequently used icons. Access your recent icons for faster workflow.",
+  },
+];
 
 const motionTypes = [
   { name: "Scale", description: "Grows and shrinks on interaction" },
@@ -53,8 +72,8 @@ const motionTypes = [
   { name: "Bounce", description: "Playful bouncing motion" },
   { name: "Draw", description: "SVG path drawing" },
   { name: "Spin", description: "Continuous rotation" },
-  { name: "None", description: "Static, no animation" }
-]
+  { name: "None", description: "Static, no animation" },
+];
 
 export default function VSCodePageClient() {
   return (
@@ -78,7 +97,9 @@ export default function VSCodePageClient() {
               {/* VS Code Badge */}
               <div className="inline-flex items-center gap-2 bg-[#007ACC]/20 border border-[#007ACC]/30 px-4 py-2 mb-8">
                 <Monitor size={18} className="text-[#007ACC]" />
-                <span className="text-sm text-[#007ACC] font-medium">VS Code Extension</span>
+                <span className="text-sm text-[#007ACC] font-medium">
+                  VS Code Extension - Coming Soon
+                </span>
               </div>
 
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-bone mb-6">
@@ -87,8 +108,9 @@ export default function VSCodePageClient() {
               </h1>
 
               <p className="text-lg sm:text-xl text-silver max-w-2xl mx-auto mb-10">
-                Browse, preview, and insert animated icons directly in your editor.
-                No context switching. Just beautiful, animated icons at your fingertips.
+                Browse, preview, and insert animated icons directly in your
+                editor. No context switching. Just beautiful, animated icons at
+                your fingertips.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -128,7 +150,9 @@ export default function VSCodePageClient() {
                     <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
                     <div className="w-3 h-3 rounded-full bg-[#27ca3f]" />
                   </div>
-                  <span className="ml-4 text-xs text-silver">LivelyIcons Picker - Visual Studio Code</span>
+                  <span className="ml-4 text-xs text-silver">
+                    LivelyIcons Picker - Visual Studio Code
+                  </span>
                 </div>
 
                 {/* Mock Extension Panel */}
@@ -138,17 +162,29 @@ export default function VSCodePageClient() {
                     <div className="flex items-center gap-2 mb-4">
                       <Search size={16} className="text-silver" />
                       <div className="flex-1 h-7 bg-[#3c3c3c] rounded px-2 flex items-center">
-                        <span className="text-xs text-steel">Search icons...</span>
+                        <span className="text-xs text-steel">
+                          Search icons...
+                        </span>
                       </div>
                     </div>
 
                     <div className="space-y-1 text-xs">
-                      <div className="text-silver/50 uppercase tracking-wider mb-2">Categories</div>
-                      {['All Icons', 'UI', 'Arrows', 'Media', 'Communication'].map((cat, i) => (
+                      <div className="text-silver/50 uppercase tracking-wider mb-2">
+                        Categories
+                      </div>
+                      {[
+                        "All Icons",
+                        "UI",
+                        "Arrows",
+                        "Media",
+                        "Communication",
+                      ].map((cat, i) => (
                         <div
                           key={cat}
                           className={`px-2 py-1.5 cursor-pointer transition-colors ${
-                            i === 0 ? 'bg-electric/20 text-electric' : 'text-silver hover:bg-graphite'
+                            i === 0
+                              ? "bg-electric/20 text-electric"
+                              : "text-silver hover:bg-graphite"
                           }`}
                         >
                           {cat}
@@ -160,17 +196,37 @@ export default function VSCodePageClient() {
                   {/* Main Panel */}
                   <div className="p-4">
                     <div className="grid grid-cols-6 gap-2 mb-6">
-                      {[Heart, Star, Settings, Eye, Code, Search, Zap, Copy, Download, Grid3x3, Clock, Terminal].map((Icon, i) => (
+                      {[
+                        Heart,
+                        Star,
+                        Settings,
+                        Eye,
+                        Code,
+                        Search,
+                        Zap,
+                        Copy,
+                        Download,
+                        Grid3x3,
+                        Clock,
+                        Terminal,
+                      ].map((Icon, i) => (
                         <motion.div
                           key={i}
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 0.4 + i * 0.05 }}
                           className={`aspect-square bg-graphite/50 border border-graphite flex items-center justify-center cursor-pointer hover:border-electric/50 transition-colors ${
-                            i === 0 ? 'border-electric bg-electric/10' : ''
+                            i === 0 ? "border-electric bg-electric/10" : ""
                           }`}
                         >
-                          <Icon size={20} className={i === 0 ? 'text-electric' : 'text-silver'} lively={i === 0 ? 'pulse' : 'none'} trigger={i === 0 ? 'loop' : 'hover'} />
+                          <Icon
+                            size={20}
+                            className={
+                              i === 0 ? "text-electric" : "text-silver"
+                            }
+                            lively={i === 0 ? "pulse" : "none"}
+                            trigger={i === 0 ? "loop" : "hover"}
+                          />
                         </motion.div>
                       ))}
                     </div>
@@ -178,8 +234,12 @@ export default function VSCodePageClient() {
                     {/* Customization Panel */}
                     <div className="bg-[#1e1e1e] border border-graphite p-4">
                       <div className="flex items-center justify-between mb-4">
-                        <span className="text-sm text-bone font-medium">Heart</span>
-                        <span className="text-xs text-silver">UI / Actions</span>
+                        <span className="text-sm text-bone font-medium">
+                          Heart
+                        </span>
+                        <span className="text-xs text-silver">
+                          UI / Actions
+                        </span>
                       </div>
                       <div className="grid grid-cols-3 gap-4 text-xs">
                         <div>
@@ -213,7 +273,9 @@ export default function VSCodePageClient() {
               transition={{ duration: 0.5 }}
               className="text-center mb-12"
             >
-              <span className="tag tag-electric mb-4 inline-block">Features</span>
+              <span className="tag tag-electric mb-4 inline-block">
+                Features
+              </span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone">
                 Everything you need, in your editor
               </h2>
@@ -232,7 +294,9 @@ export default function VSCodePageClient() {
                   <div className="w-12 h-12 bg-graphite border border-electric/20 flex items-center justify-center mb-4 group-hover:border-electric/40 transition-colors">
                     <feature.icon size={24} className="text-electric" />
                   </div>
-                  <h3 className="font-display font-semibold text-bone mb-2">{feature.title}</h3>
+                  <h3 className="font-display font-semibold text-bone mb-2">
+                    {feature.title}
+                  </h3>
                   <p className="text-sm text-silver">{feature.description}</p>
                 </motion.div>
               ))}
@@ -255,8 +319,8 @@ export default function VSCodePageClient() {
                 Pick the perfect motion
               </h2>
               <p className="text-silver max-w-2xl mx-auto">
-                Preview any animation style directly in VS Code. Choose from 9 motion types
-                and see exactly how your icons will animate.
+                Preview any animation style directly in VS Code. Choose from 9
+                motion types and see exactly how your icons will animate.
               </p>
             </motion.div>
 
@@ -274,7 +338,18 @@ export default function VSCodePageClient() {
                     <Star
                       size={24}
                       className="text-silver group-hover:text-electric transition-colors"
-                      lively={type.name.toLowerCase() as 'scale' | 'rotate' | 'translate' | 'shake' | 'pulse' | 'bounce' | 'draw' | 'spin' | 'none'}
+                      lively={
+                        type.name.toLowerCase() as
+                          | "scale"
+                          | "rotate"
+                          | "translate"
+                          | "shake"
+                          | "pulse"
+                          | "bounce"
+                          | "draw"
+                          | "spin"
+                          | "none"
+                      }
                       trigger="loop"
                     />
                   </div>
@@ -295,22 +370,25 @@ export default function VSCodePageClient() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <span className="tag tag-electric mb-4 inline-block">Code Generation</span>
+                <span className="tag tag-electric mb-4 inline-block">
+                  Code Generation
+                </span>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-bone mb-6">
                   Insert code in one click
                 </h2>
                 <p className="text-silver mb-8">
-                  The extension generates ready-to-use code with all your customizations applied.
-                  Insert directly into your editor or copy to clipboard. Supports React, Vue, and raw SVG.
+                  The extension generates ready-to-use code with all your
+                  customizations applied. Insert directly into your editor or
+                  copy to clipboard. Supports React, Vue, and raw SVG.
                 </p>
 
                 <ul className="space-y-4">
                   {[
-                    'React/JSX component with props',
-                    'Vue template with bindings',
-                    'Raw SVG with custom attributes',
-                    'Automatic import statements',
-                    'All customizations included'
+                    "React/JSX component with props",
+                    "Vue template with bindings",
+                    "Raw SVG with custom attributes",
+                    "Automatic import statements",
+                    "All customizations included",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <Check size={18} className="text-electric shrink-0" />
@@ -331,7 +409,9 @@ export default function VSCodePageClient() {
                     <div className="w-3 h-3 rounded-full bg-amber" />
                     <div className="w-3 h-3 rounded-full bg-leaf-dim" />
                     <div className="w-3 h-3 rounded-full bg-leaf" />
-                    <span className="ml-4 text-xs text-silver">Generated Code</span>
+                    <span className="ml-4 text-xs text-silver">
+                      Generated Code
+                    </span>
                   </div>
                   <pre className="p-6 text-sm leading-relaxed overflow-x-auto">
                     <code className="text-ghost">{`import { Heart } from 'livelyicons'
@@ -365,8 +445,9 @@ export default function VSCodePageClient() {
                 Ready to supercharge your workflow?
               </h2>
               <p className="text-lg text-silver mb-10 max-w-2xl mx-auto">
-                Install the VS Code extension and start using animated icons in your projects today.
-                It's free, open-source, and takes seconds to set up.
+                Install the VS Code extension and start using animated icons in
+                your projects today. It's free, open-source, and takes seconds
+                to set up.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -379,7 +460,10 @@ export default function VSCodePageClient() {
                   <Download size={18} />
                   Install from Marketplace
                 </a>
-                <Link href="/plugins/figma" className="btn-secondary flex items-center justify-center gap-2">
+                <Link
+                  href="/plugins/figma"
+                  className="btn-secondary flex items-center justify-center gap-2"
+                >
                   Try Figma Plugin
                   <ArrowRight size={18} />
                 </Link>
@@ -396,12 +480,10 @@ export default function VSCodePageClient() {
             <Link href="/">
               <LogoWithText iconSize={24} />
             </Link>
-            <p className="text-sm text-silver">
-              Built with Motion for React
-            </p>
+            <p className="text-sm text-silver">Built with Motion for React</p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }

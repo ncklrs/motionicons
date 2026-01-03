@@ -20,25 +20,35 @@
  * ```
  */
 export type IconName =
+  | 'AbTest'
   | 'Accessibility'
+  | 'Achievement'
+  | 'Acorn'
   | 'Activity'
+  | 'Aggregate'
+  | 'Airbnb'
   | 'Airplay'
+  | 'Airport'
   | 'AlarmClock'
   | 'AlertCircle'
   | 'AlertCircle2'
   | 'AlertOctagon'
   | 'AlertTriangle'
   | 'Alias'
+  | 'Amazon'
   | 'Ambulance'
+  | 'Ambulance2'
   | 'Analytics'
   | 'Anchor'
   | 'Anchor2'
   | 'Angry'
+  | 'Angular'
   | 'Annoyed'
   | 'Apartment'
   | 'Api'
   | 'Apple'
   | 'Approved'
+  | 'Arcade'
   | 'Archive'
   | 'Archive2'
   | 'AreaChart'
@@ -67,15 +77,27 @@ export type IconName =
   | 'ArrowsExpand'
   | 'ArrowsMaximize2'
   | 'ArrowsMinimize2'
+  | 'Asana'
+  | 'Assigned'
+  | 'Assignment'
   | 'AtSign'
   | 'Atom2'
+  | 'Attendance'
+  | 'Attribution'
   | 'AudioDescription'
   | 'AudioLines'
+  | 'Automation'
   | 'Award'
+  | 'Aws'
   | 'Axe'
+  | 'Azure'
   | 'Baby'
   | 'Backlink'
+  | 'Backlog'
   | 'Backpack'
+  | 'Backpack2'
+  | 'Bacon'
+  | 'Bacteria'
   | 'Badge2'
   | 'BadgeAlert'
   | 'BadgeCheck'
@@ -87,15 +109,20 @@ export type IconName =
   | 'BadgePercent'
   | 'BadgePlus'
   | 'BadgeX'
+  | 'Baggage'
+  | 'BaggageClaim'
   | 'Ban'
   | 'Banana'
   | 'Bandage'
+  | 'Bandage2'
+  | 'Bandcamp'
   | 'Bank'
   | 'Banknote'
   | 'BarChart'
   | 'BarChart2'
   | 'BarChartHorizontal'
   | 'Barcode'
+  | 'Barcode2'
   | 'Barometer'
   | 'Baseball'
   | 'Basket'
@@ -108,24 +135,35 @@ export type IconName =
   | 'BatteryLow'
   | 'BatteryQuarter'
   | 'BatteryThreeQuarters'
+  | 'Beach'
   | 'Beaker2'
   | 'Bear'
   | 'Bed'
   | 'Bee'
   | 'Beer'
+  | 'Behance'
   | 'Bell'
   | 'BellOff'
   | 'BellRing'
+  | 'Benchmark'
   | 'Bicycle'
   | 'Bike'
   | 'Binder'
   | 'Biohazard2'
   | 'Bird'
+  | 'Bitbucket'
   | 'Bitcoin'
   | 'Blender'
   | 'Block'
+  | 'Block2'
+  | 'Blocker'
+  | 'BloodDrop'
+  | 'BloodPressure'
+  | 'Bluesky'
   | 'Bluetooth'
+  | 'BoardingPass'
   | 'Boat'
+  | 'BodyScan'
   | 'Bold'
   | 'Bone'
   | 'Book'
@@ -133,13 +171,17 @@ export type IconName =
   | 'BookMarked'
   | 'BookOpen'
   | 'Bookmark'
+  | 'Bookshelf'
+  | 'Boss'
   | 'Bot'
+  | 'Boulder'
   | 'Bowling'
   | 'Braille'
   | 'Brain'
   | 'BrainCircuit'
   | 'BrainCog'
   | 'Branch'
+  | 'Bread'
   | 'Briefcase2'
   | 'BriefcaseMedical'
   | 'Brightness'
@@ -148,9 +190,14 @@ export type IconName =
   | 'Bug'
   | 'Building'
   | 'Building2'
+  | 'Burger'
   | 'Bus'
   | 'BusinessCard'
   | 'Butterfly'
+  | 'ButtonA'
+  | 'ButtonB'
+  | 'ButtonX'
+  | 'ButtonY'
   | 'Cable'
   | 'Cactus'
   | 'Cake'
@@ -164,22 +211,35 @@ export type IconName =
   | 'Caliper'
   | 'Camera'
   | 'CameraMovie'
+  | 'Camping'
   | 'Candle'
+  | 'Candy'
   | 'Cap'
+  | 'Capsule'
   | 'Car'
   | 'CarFront'
   | 'Carpet'
   | 'Carrot'
+  | 'CarryOn'
+  | 'CartCheck'
+  | 'CartMinus'
+  | 'CartPlus'
+  | 'CartX'
   | 'Cast'
   | 'Castle'
   | 'Cat'
+  | 'Cave'
   | 'Certificate'
+  | 'Certificate2'
   | 'Chain'
   | 'ChainBroken'
   | 'Chair'
+  | 'Chalkboard'
   | 'Check'
   | 'CheckCircle'
   | 'CheckCircle2'
+  | 'CheckIn'
+  | 'CheckOut'
   | 'CheckSquare'
   | 'Checkbox'
   | 'CheckboxChecked'
@@ -191,13 +251,18 @@ export type IconName =
   | 'ChevronsLeft'
   | 'ChevronsRight'
   | 'ChevronsUp'
+  | 'Chicken'
   | 'Chimney'
   | 'ChipAi'
+  | 'Chocolate'
   | 'Chopsticks'
+  | 'Chrome'
   | 'Church'
+  | 'Churn'
   | 'Cinema'
   | 'Circle'
   | 'Citation'
+  | 'Classroom'
   | 'Clipboard'
   | 'Clipboard2'
   | 'ClipboardCheck'
@@ -226,28 +291,46 @@ export type IconName =
   | 'CloudRain'
   | 'CloudSnow'
   | 'CloudSun'
+  | 'Clubhouse'
   | 'Coat'
   | 'Code'
   | 'CodeBlock'
   | 'CodeSquare'
   | 'Code2'
+  | 'Codepen'
+  | 'Codesandbox'
   | 'Coffee'
+  | 'Cohort'
+  | 'Coin'
   | 'Coins'
   | 'Columns'
   | 'Command'
+  | 'Comment'
+  | 'CommentCheck'
+  | 'CommentPlus'
+  | 'CommentX'
+  | 'Compare'
   | 'Compass'
   | 'Compass2'
+  | 'Competitive'
   | 'Complete'
+  | 'Concierge'
   | 'Confused'
+  | 'Console'
   | 'Contact'
   | 'Contact2'
   | 'Container'
   | 'Contract'
+  | 'Contract2'
   | 'Contrast'
+  | 'Controller'
+  | 'ControllerWireless'
   | 'Cookie'
   | 'Cool'
+  | 'Coop'
   | 'Copier'
   | 'Copy'
+  | 'Coral'
   | 'CornerDownLeft'
   | 'CornerDownLeft2'
   | 'CornerDownRight'
@@ -256,28 +339,48 @@ export type IconName =
   | 'CornerUpLeft2'
   | 'CornerUpRight'
   | 'CornerUpRight2'
+  | 'Correlation'
+  | 'Coupon'
+  | 'Course'
   | 'Cpu'
+  | 'Crafting'
   | 'CreditCard'
+  | 'Croissant'
   | 'Cross'
   | 'Crosshair'
   | 'Crosshair2'
   | 'Crown'
+  | 'Cruise'
+  | 'Crutches'
   | 'Cry'
+  | 'Crystal'
   | 'Css'
   | 'Cup'
+  | 'Cupcake'
+  | 'Curriculum'
   | 'Cursor'
   | 'CursorClick'
   | 'CursorText'
   | 'Curtain'
+  | 'CustomsIcon'
   | 'Cycling'
+  | 'Dashboard'
+  | 'DataPoint'
   | 'Database'
   | 'Database2'
   | 'DatabaseBackup'
   | 'DatabaseZap'
+  | 'Deadline'
+  | 'Deal'
   | 'DeepLink'
   | 'Deer'
+  | 'Deezer'
   | 'Defend'
+  | 'Delegated'
+  | 'Dependency'
+  | 'Desert'
   | 'Desk'
+  | 'Desk2'
   | 'Desktop'
   | 'Dial'
   | 'Diamond'
@@ -287,35 +390,58 @@ export type IconName =
   | 'Dice4'
   | 'Dice5'
   | 'Dice6'
+  | 'Dictionary'
   | 'Dimension'
+  | 'Diploma'
   | 'Directions'
   | 'Disc'
   | 'Disc2'
   | 'Disc3'
+  | 'Discord'
+  | 'Discount'
+  | 'Dislike'
+  | 'Distraction'
   | 'Divide2'
+  | 'Dividend'
   | 'Dna'
   | 'Dna2'
+  | 'DnaHelix'
   | 'DocumentPrinter'
   | 'Dog'
   | 'DollarSign'
+  | 'Donut'
+  | 'DonutChart'
   | 'Door'
   | 'DoorClosed'
   | 'DoorOpen'
   | 'Download'
+  | 'Downtrend'
+  | 'Dpad'
   | 'Dress'
+  | 'Dribbble'
   | 'Drill'
   | 'Droplet'
+  | 'DueDate'
   | 'Dumbbell'
+  | 'Duplicate'
   | 'Ear'
   | 'EarHearing'
   | 'EarOff'
+  | 'Ebay'
+  | 'Edge'
   | 'Edit'
+  | 'Egg2'
   | 'Electron'
   | 'Elephant'
+  | 'Emergency'
   | 'Envelope2'
   | 'Equalizer'
   | 'Equals'
   | 'Eraser'
+  | 'Estimate'
+  | 'Etsy'
+  | 'Exam'
+  | 'Experiment'
   | 'Exposure'
   | 'ExternalLink'
   | 'ExternalLink2'
@@ -323,11 +449,16 @@ export type IconName =
   | 'Eye2'
   | 'EyeOff'
   | 'FaceId'
+  | 'Facebook'
   | 'Factory'
   | 'FastForward'
   | 'Faucet'
   | 'Fax'
+  | 'Feed'
+  | 'Feedback'
   | 'Fence'
+  | 'Fern'
+  | 'Figma'
   | 'File'
   | 'FileArchive'
   | 'FileAudio'
@@ -346,6 +477,7 @@ export type IconName =
   | 'Filter'
   | 'Fingerprint'
   | 'FireTruck'
+  | 'Firefox'
   | 'Firewall'
   | 'FirstAid'
   | 'Fish'
@@ -355,23 +487,33 @@ export type IconName =
   | 'FlashlightOff'
   | 'Flask2'
   | 'FlaskRound'
+  | 'Flat'
+  | 'FlightTicket'
   | 'Flower'
   | 'Flower2'
+  | 'Focus'
   | 'FocusRing'
   | 'Folder'
   | 'FolderMinus'
   | 'FolderOpen'
   | 'FolderPlus'
   | 'Follow'
+  | 'Follow2'
   | 'Football'
   | 'Footprints'
+  | 'Forecast'
+  | 'Forest'
   | 'Fork'
   | 'Fortress'
+  | 'Fossil'
   | 'Fox'
   | 'Fraction'
+  | 'FreeShipping'
   | 'Frown'
   | 'Fuel'
   | 'Function'
+  | 'Funnel'
+  | 'FunnelChart'
   | 'Future'
   | 'Gamepad'
   | 'Gamepad2'
@@ -380,58 +522,77 @@ export type IconName =
   | 'Gate'
   | 'Gauge'
   | 'Generator'
+  | 'Geyser'
   | 'Gift'
   | 'GitBranch'
   | 'GitCommit'
   | 'GitFork'
   | 'GitMerge'
   | 'GitPullRequest'
+  | 'Github'
+  | 'Gitlab'
   | 'Glasses'
   | 'Globe'
   | 'Globe2'
   | 'Glue'
   | 'Golf'
+  | 'Goodreads'
+  | 'GoogleCloud'
   | 'Grab'
   | 'GrabCursor'
   | 'Grabbing'
+  | 'Grade'
   | 'GraduationCap'
   | 'Grape'
   | 'GreaterThan'
   | 'Grid'
   | 'Grid2x2'
   | 'Grid3x3'
+  | 'Growth'
   | 'Guard'
   | 'Hail'
   | 'Hammer'
   | 'Hand'
   | 'HandMetal'
   | 'HandWave'
+  | 'Handheld'
   | 'Handshake'
+  | 'Handshake2'
   | 'Happy'
   | 'HardDrive'
   | 'HardDrive2'
   | 'Hash'
   | 'Hashtag'
+  | 'Hashtag2'
   | 'Hat'
   | 'Heading1'
   | 'Heading2'
   | 'Heading3'
   | 'Headphones'
+  | 'HealthBar'
   | 'Heart'
   | 'HeartPulse'
   | 'HeartShape'
+  | 'Heartbeat'
+  | 'Heatmap'
   | 'Helicopter'
   | 'HelpCircle'
   | 'HelpCursor'
   | 'Hexagon'
+  | 'HighScore'
   | 'Highlighter'
+  | 'Hiking'
   | 'History'
   | 'Hockey'
   | 'Home'
+  | 'Homework'
   | 'Hoodie'
   | 'Horse'
   | 'Hospital'
+  | 'Hotdog'
   | 'Hotel'
+  | 'HotelBed'
+  | 'HotelKey'
   | 'Hourglass'
   | 'House2'
   | 'HouseCheck'
@@ -442,23 +603,39 @@ export type IconName =
   | 'Html'
   | 'Humidity'
   | 'Hyperlink'
+  | 'Hypothesis'
   | 'IceCream'
+  | 'IceCream2'
   | 'IdCard'
+  | 'Immigration'
+  | 'Immunity'
+  | 'InProgress'
+  | 'InStock'
   | 'Inbox'
   | 'Incomplete'
   | 'Indent'
   | 'Infinity'
+  | 'Influencer'
   | 'Info'
   | 'InfoCircle'
   | 'Ink'
+  | 'Instagram'
   | 'InternalLink'
+  | 'Inventory'
+  | 'Inventory2'
+  | 'Investment2'
   | 'Invoice'
+  | 'Island'
   | 'Italic'
+  | 'Ivy'
   | 'Jacket'
   | 'JavascriptIcon'
   | 'Joystick'
+  | 'Joystick2'
   | 'Json'
+  | 'Jungle'
   | 'Kanban'
+  | 'KanbanBoard'
   | 'Kettle'
   | 'Key'
   | 'KeyRound'
@@ -467,8 +644,12 @@ export type IconName =
   | 'KeyboardNav'
   | 'Knife2'
   | 'Knob'
+  | 'KoFi'
+  | 'Kpi'
+  | 'LabResults'
   | 'Ladder'
   | 'Ladle'
+  | 'Lake'
   | 'Lamp'
   | 'LampCeiling'
   | 'LampDesk'
@@ -481,20 +662,31 @@ export type IconName =
   | 'Layout'
   | 'LayoutGrid'
   | 'LayoutList'
+  | 'Leaderboard'
   | 'Leaf'
   | 'Leaf2'
+  | 'Lecture'
   | 'LessThan'
+  | 'Letterboxd'
   | 'Level'
+  | 'LevelUp'
   | 'Library'
+  | 'Library2'
   | 'Lightbulb'
   | 'LightbulbOff'
   | 'Lighthouse'
+  | 'Like'
+  | 'LikeFilled'
+  | 'Line'
   | 'LineChart'
+  | 'Linear'
   | 'Link'
   | 'Link2Off'
+  | 'Linkedin'
   | 'Lion'
   | 'List'
   | 'Live'
+  | 'LiveStream'
   | 'Lively'
   | 'Loader'
   | 'Loading'
@@ -503,6 +695,9 @@ export type IconName =
   | 'Lock'
   | 'LockKeyhole'
   | 'LockOpen'
+  | 'Lollipop'
+  | 'Loot'
+  | 'Loss'
   | 'Love'
   | 'Luggage'
   | 'Lungs'
@@ -512,19 +707,27 @@ export type IconName =
   | 'MailOpen'
   | 'MailPlus'
   | 'Mailbox'
+  | 'ManaBar'
   | 'Map'
   | 'MapPin'
   | 'MapPinned'
   | 'Markdown'
   | 'Marker'
+  | 'Market'
   | 'Martini'
+  | 'Mastodon'
   | 'Maximize'
   | 'Maximize2'
   | 'Medal'
+  | 'Medal2'
+  | 'MedicalBag'
+  | 'MedicalCross'
+  | 'Medium'
   | 'Meeting'
   | 'Meh'
   | 'Memory'
   | 'Mention'
+  | 'Mention2'
   | 'Menu'
   | 'MenuDots'
   | 'MenuDotsHorizontal'
@@ -533,12 +736,16 @@ export type IconName =
   | 'MessageCircle'
   | 'MessageSquare'
   | 'MessagesSquare'
+  | 'Messenger'
+  | 'Meta'
+  | 'Metric'
   | 'Mic'
   | 'MicOff'
   | 'Microscope'
   | 'Microscope2'
   | 'Microwave'
   | 'Milestone'
+  | 'Milestone2'
   | 'Minimize'
   | 'Minimize2'
   | 'Minus'
@@ -546,16 +753,20 @@ export type IconName =
   | 'MinusCircle'
   | 'MinusSquare'
   | 'Molecule'
+  | 'Monday'
   | 'Monitor'
   | 'Moon'
   | 'MoreHorizontal'
+  | 'Moss'
   | 'Motorcycle'
   | 'Mountain'
   | 'MountainSnow'
   | 'Mouse'
   | 'MoveCursor'
   | 'MoveHorizontal'
+  | 'Multiplayer'
   | 'Multiply'
+  | 'Mushroom'
   | 'Music'
   | 'Music2'
   | 'Music3'
@@ -564,19 +775,34 @@ export type IconName =
   | 'Navigation'
   | 'Navigation2'
   | 'Neon'
+  | 'Netflix'
   | 'NeuralNetwork'
+  | 'Nextjs'
+  | 'Nodejs'
+  | 'Noodles'
   | 'NotAllowed'
   | 'NotEqual'
   | 'Notebook'
   | 'NotebookPen'
+  | 'NotebookPen2'
+  | 'Notebook2'
+  | 'Notion'
+  | 'Npm'
   | 'Nucleus'
+  | 'Ocean'
   | 'Octagon'
   | 'Odometer'
   | 'Office'
   | 'Ok'
+  | 'OnHold'
+  | 'Opera'
+  | 'OutOfStock'
   | 'Outdent'
   | 'Outlet'
+  | 'Outlier'
   | 'Oval'
+  | 'Overdue'
+  | 'Oxygen'
   | 'Package'
   | 'PageSetup'
   | 'Paintbrush'
@@ -593,10 +819,15 @@ export type IconName =
   | 'Paperclip2'
   | 'Parallelogram'
   | 'Parking'
+  | 'Partnership'
   | 'Passport'
+  | 'Passport2'
+  | 'Patreon'
   | 'Pause'
   | 'PauseCircle'
+  | 'Paypal'
   | 'Peace'
+  | 'Pebbles'
   | 'Pen'
   | 'Pen2'
   | 'PenLine'
@@ -618,12 +849,19 @@ export type IconName =
   | 'PhoneOff'
   | 'PhoneOutgoing'
   | 'Pi'
+  | 'Pickup'
   | 'PictureFrame'
   | 'PieChart'
+  | 'PieChart2'
   | 'PiggyBank'
   | 'Pill'
+  | 'Pill2'
+  | 'Pills'
   | 'Pinch'
   | 'PineTree'
+  | 'Pinecone'
+  | 'Pinterest'
+  | 'Pitch'
   | 'Pizza'
   | 'Plane'
   | 'PlaneLanding'
@@ -646,26 +884,44 @@ export type IconName =
   | 'PointUp'
   | 'Pointer2'
   | 'PoliceCar'
+  | 'Poll'
+  | 'Pomodoro'
+  | 'Pool'
+  | 'Popsicle'
   | 'Portfolio'
+  | 'Post'
   | 'Pot'
   | 'Potion'
   | 'PowerOff'
+  | 'PowerUp'
+  | 'Prescription'
   | 'Presentation'
   | 'Presentation2'
+  | 'PriceTag'
+  | 'PriceTagPlus'
   | 'PrintPreview'
   | 'PrintQueue'
   | 'Printer'
   | 'Printer2'
   | 'PrinterCheck'
   | 'PrinterX'
+  | 'Priority'
+  | 'PriorityHigh'
+  | 'PriorityLow'
+  | 'Profit'
   | 'Progress'
   | 'Projector'
   | 'Protection'
   | 'Protractor'
+  | 'Pulse'
   | 'Puzzle'
   | 'PuzzlePiece'
+  | 'Pvp'
   | 'QrCode'
+  | 'QrScan'
+  | 'Quest'
   | 'Queue'
+  | 'Quiz'
   | 'Quote'
   | 'Rabbit'
   | 'Radiation'
@@ -675,24 +931,51 @@ export type IconName =
   | 'Rainbow'
   | 'Rake'
   | 'Ram'
+  | 'Rating'
+  | 'React'
+  | 'Reaction'
   | 'Receipt'
   | 'Receipt2'
+  | 'ReceiptCheck'
+  | 'ReceiptX'
   | 'Record'
+  | 'Recovery'
   | 'Rectangle'
+  | 'Recurring'
+  | 'Reddit'
   | 'ReducedMotion'
   | 'Reference'
   | 'Refresh'
   | 'Refrigerator'
+  | 'Refund'
   | 'Regex'
+  | 'Regression'
   | 'Rejected'
+  | 'Reminder'
+  | 'Reorder'
   | 'Repeat'
+  | 'Report'
+  | 'Repost'
+  | 'Research'
+  | 'Reservation'
   | 'ResizeDiagonal'
   | 'ResizeHorizontal'
   | 'ResizeVertical'
+  | 'Respawn'
+  | 'Retention'
+  | 'Return'
+  | 'Revenue'
+  | 'Review2'
   | 'Rewind'
+  | 'Rice'
+  | 'River'
+  | 'RoadTrip'
+  | 'Roadmap'
   | 'Robot'
   | 'Rocket'
+  | 'Roi'
   | 'Roller'
+  | 'RoomService'
   | 'Rose'
   | 'Route'
   | 'Router'
@@ -703,10 +986,15 @@ export type IconName =
   | 'Ruler2'
   | 'RulerSquare'
   | 'Running'
+  | 'Runway'
   | 'Sad'
+  | 'Safari'
   | 'Sailboat'
+  | 'Salad'
   | 'Sandwich'
   | 'Save'
+  | 'Save2'
+  | 'SavePlus'
   | 'Saw'
   | 'Scale2'
   | 'Scan'
@@ -715,7 +1003,9 @@ export type IconName =
   | 'ScanLine'
   | 'Scanner'
   | 'Scanner2'
+  | 'ScatterPlot'
   | 'Schedule'
+  | 'Schedule2'
   | 'School'
   | 'Scissors2'
   | 'Scooter'
@@ -726,7 +1016,10 @@ export type IconName =
   | 'Search'
   | 'SearchMinus'
   | 'SearchPlus'
+  | 'Seaweed'
   | 'Seedling'
+  | 'Segment'
+  | 'Seminar'
   | 'Send'
   | 'Send2'
   | 'Server'
@@ -736,6 +1029,10 @@ export type IconName =
   | 'ServerOff'
   | 'Settings'
   | 'Share'
+  | 'Share2'
+  | 'ShareForward'
+  | 'Shareholder'
+  | 'Shell'
   | 'Shield'
   | 'Shield2'
   | 'ShieldAlert'
@@ -752,19 +1049,26 @@ export type IconName =
   | 'ShieldUser'
   | 'ShieldX'
   | 'Ship'
+  | 'Shipping'
+  | 'ShippingFast'
   | 'Shirt'
+  | 'Shopify'
   | 'ShoppingBag'
+  | 'ShoppingBagPlus'
   | 'ShoppingCart'
   | 'Shortcut'
   | 'Shorts'
   | 'Shovel'
+  | 'Shrimp'
   | 'Shuffle'
   | 'Sidebar'
   | 'SidebarClose'
   | 'SidebarOpen'
   | 'Sigma'
+  | 'Sign'
   | 'SignLanguage'
   | 'Signal'
+  | 'SignalApp'
   | 'SignalHigh'
   | 'SignalLow'
   | 'SignalZero'
@@ -773,17 +1077,23 @@ export type IconName =
   | 'Skiing'
   | 'SkipBack'
   | 'SkipForward'
+  | 'Slack'
   | 'Sleep'
   | 'Slider'
   | 'SliderHorizontal'
   | 'SliderVertical'
   | 'Smartphone'
   | 'Smile'
+  | 'Snapchat'
   | 'Snippet'
   | 'Snowflake'
   | 'Soccer'
   | 'Sofa'
+  | 'Soundcloud'
+  | 'Soup'
+  | 'Spa'
   | 'Sparkles'
+  | 'Sparkline'
   | 'Spatula'
   | 'Speaker'
   | 'Speaker2'
@@ -791,24 +1101,41 @@ export type IconName =
   | 'SpeedDial'
   | 'Speedometer'
   | 'Spoon2'
+  | 'Spotify'
   | 'Spotlight'
+  | 'Sprint'
   | 'Sprout'
   | 'Sqrt'
   | 'Square'
   | 'Ssd'
+  | 'Stackoverflow'
+  | 'Stakeholder'
   | 'Stamp'
+  | 'Stamp2'
   | 'Stapler'
   | 'Star'
+  | 'Starfish'
+  | 'Startup'
   | 'Statistics'
+  | 'Steak'
   | 'Stethoscope'
+  | 'Stethoscope2'
   | 'StopCircle'
   | 'Stopwatch'
   | 'Storage'
   | 'Store'
+  | 'StoreFront'
+  | 'Story'
+  | 'Strategy'
+  | 'Strava'
   | 'Stream'
   | 'Strikethrough'
+  | 'Stripe'
+  | 'StudentId'
   | 'Studio'
   | 'Subscript'
+  | 'Substack'
+  | 'Subtask'
   | 'Subtitle'
   | 'Sun'
   | 'Sunglasses'
@@ -817,6 +1144,9 @@ export type IconName =
   | 'Superscript'
   | 'SurgeProtector'
   | 'Surprised'
+  | 'Survey'
+  | 'Sushi'
+  | 'Svelte'
   | 'Sweater'
   | 'Swimming'
   | 'SwitchOff'
@@ -824,36 +1154,55 @@ export type IconName =
   | 'Sword'
   | 'Swords'
   | 'Syringe'
+  | 'Syringe2'
   | 'Table'
   | 'Table2'
   | 'Tablet'
+  | 'Taco'
   | 'Tag'
+  | 'TagPerson'
   | 'Tag2'
   | 'Tags'
+  | 'Tailwind'
   | 'Tape'
   | 'TapeMeasure'
   | 'Target'
+  | 'Target2'
+  | 'Task'
+  | 'TaskCheck'
+  | 'TaskList'
   | 'Team'
+  | 'Teams'
+  | 'Telegram'
+  | 'Temperature'
   | 'TemperatureDial'
+  | 'Template'
   | 'Tennis'
   | 'Tent'
   | 'Terminal'
   | 'Terminal2'
+  | 'TerminalGate'
   | 'TerminalSquare'
   | 'TestTube'
   | 'TestTube2'
   | 'TestTubes'
+  | 'Testimonial'
   | 'Text'
   | 'TextCursor'
   | 'TextSize'
+  | 'Textbook'
   | 'Thermometer'
   | 'Thermometer2'
   | 'ThermometerMedical'
+  | 'Threads'
   | 'ThumbsDown'
   | 'ThumbsUp'
   | 'Ticket'
   | 'Tie'
+  | 'Tiktok'
+  | 'TimeTracking'
   | 'Timeline'
+  | 'Timeline2'
   | 'Timer'
   | 'Toaster'
   | 'Toggle'
@@ -873,25 +1222,37 @@ export type IconName =
   | 'Tree2'
   | 'TreePalm'
   | 'TreePine'
+  | 'Treemap'
+  | 'Trello'
+  | 'Trending'
   | 'TrendingDown'
   | 'TrendingUp'
   | 'Triangle'
+  | 'Trigger'
   | 'Trophy'
+  | 'Trophy2'
   | 'Truck'
   | 'Tshirt'
   | 'Tulip'
+  | 'Tumblr'
   | 'Turtle'
+  | 'Tutor'
   | 'Tv'
+  | 'Twitch'
+  | 'Twitter'
   | 'TwoFactor'
   | 'TypescriptIcon'
   | 'Ufo'
   | 'Umbrella'
   | 'Underline'
   | 'Unfollow'
+  | 'Unfollow2'
+  | 'University'
   | 'Unlock'
   | 'Unverified'
   | 'Upload'
   | 'Ups'
+  | 'Uptrend'
   | 'UsbDrive'
   | 'User'
   | 'UserCheck'
@@ -903,14 +1264,25 @@ export type IconName =
   | 'Users'
   | 'Utensils'
   | 'UtensilsCrossed'
+  | 'Vaccine'
+  | 'Variance'
   | 'Vault'
+  | 'Vercel'
   | 'Verified'
+  | 'Verified2'
+  | 'Viber'
   | 'Video'
   | 'Video2'
   | 'VideoOff'
+  | 'Vimeo'
   | 'Vinyl'
+  | 'Viral'
+  | 'Virus'
+  | 'Visa'
+  | 'Vitals'
   | 'VoiceControl'
   | 'Voicemail'
+  | 'Volcano'
   | 'Volleyball'
   | 'Volume'
   | 'Volume1'
@@ -918,7 +1290,10 @@ export type IconName =
   | 'VolumeDial'
   | 'VolumeOff'
   | 'VolumeX'
+  | 'Vscode'
+  | 'Vue'
   | 'WaitCursor'
+  | 'Walker'
   | 'Wallet'
   | 'WalletCards'
   | 'Wand'
@@ -927,15 +1302,21 @@ export type IconName =
   | 'Warehouse'
   | 'Watch'
   | 'WatchAccessory'
+  | 'Waterfall'
   | 'WateringCan'
   | 'Waveform'
   | 'Waves'
   | 'Waypoints'
   | 'Webcam'
   | 'Webhook'
+  | 'Wechat'
   | 'Weight'
+  | 'Whatsapp'
   | 'Wheelchair'
+  | 'Wheelchair2'
   | 'Whisk'
+  | 'Whiteboard'
+  | 'Widget'
   | 'Wifi'
   | 'WifiOff'
   | 'Wind'
@@ -943,14 +1324,21 @@ export type IconName =
   | 'Window2'
   | 'Wine'
   | 'Wink'
+  | 'Wishlist'
   | 'Wolf'
+  | 'Workflow'
   | 'Wrench'
   | 'X'
   | 'XCircle'
   | 'XCircle2'
   | 'XSquare'
+  | 'XTwitter'
   | 'Xml'
-  | 'Zap';
+  | 'XpBar'
+  | 'Xray'
+  | 'Youtube'
+  | 'Zap'
+  | 'Zoom';
 
 /**
  * Union type of all available icon names (kebab-case)
@@ -958,25 +1346,35 @@ export type IconName =
  * Useful for configuration objects or CLI tools
  */
 export type IconNameKebab =
+  | 'ab-test'
   | 'accessibility'
+  | 'achievement'
+  | 'acorn'
   | 'activity'
+  | 'aggregate'
+  | 'airbnb'
   | 'airplay'
+  | 'airport'
   | 'alarm-clock'
   | 'alert-circle'
   | 'alert-circle-2'
   | 'alert-octagon'
   | 'alert-triangle'
   | 'alias'
+  | 'amazon'
   | 'ambulance'
+  | 'ambulance-2'
   | 'analytics'
   | 'anchor'
   | 'anchor-2'
   | 'angry'
+  | 'angular'
   | 'annoyed'
   | 'apartment'
   | 'api'
   | 'apple'
   | 'approved'
+  | 'arcade'
   | 'archive'
   | 'archive-2'
   | 'area-chart'
@@ -1005,15 +1403,27 @@ export type IconNameKebab =
   | 'arrows-expand'
   | 'arrows-maximize-2'
   | 'arrows-minimize-2'
+  | 'asana'
+  | 'assigned'
+  | 'assignment'
   | 'at-sign'
   | 'atom-2'
+  | 'attendance'
+  | 'attribution'
   | 'audio-description'
   | 'audio-lines'
+  | 'automation'
   | 'award'
+  | 'aws'
   | 'axe'
+  | 'azure'
   | 'baby'
   | 'backlink'
+  | 'backlog'
   | 'backpack'
+  | 'backpack2'
+  | 'bacon'
+  | 'bacteria'
   | 'badge-2'
   | 'badge-alert'
   | 'badge-check'
@@ -1025,15 +1435,20 @@ export type IconNameKebab =
   | 'badge-percent'
   | 'badge-plus'
   | 'badge-x'
+  | 'baggage'
+  | 'baggage-claim'
   | 'ban'
   | 'banana'
   | 'bandage'
+  | 'bandage-2'
+  | 'bandcamp'
   | 'bank'
   | 'banknote'
   | 'bar-chart'
   | 'bar-chart-2'
   | 'bar-chart-horizontal'
   | 'barcode'
+  | 'barcode-2'
   | 'barometer'
   | 'baseball'
   | 'basket'
@@ -1046,24 +1461,35 @@ export type IconNameKebab =
   | 'battery-low'
   | 'battery-quarter'
   | 'battery-three-quarters'
+  | 'beach'
   | 'beaker-2'
   | 'bear'
   | 'bed'
   | 'bee'
   | 'beer'
+  | 'behance'
   | 'bell'
   | 'bell-off'
   | 'bell-ring'
+  | 'benchmark'
   | 'bicycle'
   | 'bike'
   | 'binder'
   | 'biohazard-2'
   | 'bird'
+  | 'bitbucket'
   | 'bitcoin'
   | 'blender'
   | 'block'
+  | 'block-2'
+  | 'blocker'
+  | 'blood-drop'
+  | 'blood-pressure'
+  | 'bluesky'
   | 'bluetooth'
+  | 'boarding-pass'
   | 'boat'
+  | 'body-scan'
   | 'bold'
   | 'bone'
   | 'book'
@@ -1071,13 +1497,17 @@ export type IconNameKebab =
   | 'book-marked'
   | 'book-open'
   | 'bookmark'
+  | 'bookshelf'
+  | 'boss'
   | 'bot'
+  | 'boulder'
   | 'bowling'
   | 'braille'
   | 'brain'
   | 'brain-circuit'
   | 'brain-cog'
   | 'branch'
+  | 'bread'
   | 'briefcase-2'
   | 'briefcase-medical'
   | 'brightness'
@@ -1086,9 +1516,14 @@ export type IconNameKebab =
   | 'bug'
   | 'building'
   | 'building2'
+  | 'burger'
   | 'bus'
   | 'business-card'
   | 'butterfly'
+  | 'button-a'
+  | 'button-b'
+  | 'button-x'
+  | 'button-y'
   | 'cable'
   | 'cactus'
   | 'cake'
@@ -1102,22 +1537,35 @@ export type IconNameKebab =
   | 'caliper'
   | 'camera'
   | 'camera-movie'
+  | 'camping'
   | 'candle'
+  | 'candy'
   | 'cap'
+  | 'capsule'
   | 'car'
   | 'car-front'
   | 'carpet'
   | 'carrot'
+  | 'carry-on'
+  | 'cart-check'
+  | 'cart-minus'
+  | 'cart-plus'
+  | 'cart-x'
   | 'cast'
   | 'castle'
   | 'cat'
+  | 'cave'
   | 'certificate'
+  | 'certificate2'
   | 'chain'
   | 'chain-broken'
   | 'chair'
+  | 'chalkboard'
   | 'check'
   | 'check-circle'
   | 'check-circle-2'
+  | 'check-in'
+  | 'check-out'
   | 'check-square'
   | 'checkbox'
   | 'checkbox-checked'
@@ -1129,13 +1577,18 @@ export type IconNameKebab =
   | 'chevrons-left'
   | 'chevrons-right'
   | 'chevrons-up'
+  | 'chicken'
   | 'chimney'
   | 'chip-ai'
+  | 'chocolate'
   | 'chopsticks'
+  | 'chrome'
   | 'church'
+  | 'churn'
   | 'cinema'
   | 'circle'
   | 'citation'
+  | 'classroom'
   | 'clipboard'
   | 'clipboard-2'
   | 'clipboard-check'
@@ -1164,28 +1617,46 @@ export type IconNameKebab =
   | 'cloud-rain'
   | 'cloud-snow'
   | 'cloud-sun'
+  | 'clubhouse'
   | 'coat'
   | 'code'
   | 'code-block'
   | 'code-square'
   | 'code2'
+  | 'codepen'
+  | 'codesandbox'
   | 'coffee'
+  | 'cohort'
+  | 'coin'
   | 'coins'
   | 'columns'
   | 'command'
+  | 'comment'
+  | 'comment-check'
+  | 'comment-plus'
+  | 'comment-x'
+  | 'compare'
   | 'compass'
   | 'compass-2'
+  | 'competitive'
   | 'complete'
+  | 'concierge'
   | 'confused'
+  | 'console'
   | 'contact'
   | 'contact2'
   | 'container'
   | 'contract'
+  | 'contract-2'
   | 'contrast'
+  | 'controller'
+  | 'controller-wireless'
   | 'cookie'
   | 'cool'
+  | 'coop'
   | 'copier'
   | 'copy'
+  | 'coral'
   | 'corner-down-left'
   | 'corner-down-left-2'
   | 'corner-down-right'
@@ -1194,28 +1665,48 @@ export type IconNameKebab =
   | 'corner-up-left-2'
   | 'corner-up-right'
   | 'corner-up-right-2'
+  | 'correlation'
+  | 'coupon'
+  | 'course'
   | 'cpu'
+  | 'crafting'
   | 'credit-card'
+  | 'croissant'
   | 'cross'
   | 'crosshair'
   | 'crosshair-2'
   | 'crown'
+  | 'cruise'
+  | 'crutches'
   | 'cry'
+  | 'crystal'
   | 'css'
   | 'cup'
+  | 'cupcake'
+  | 'curriculum'
   | 'cursor'
   | 'cursor-click'
   | 'cursor-text'
   | 'curtain'
+  | 'customs-icon'
   | 'cycling'
+  | 'dashboard'
+  | 'data-point'
   | 'database'
   | 'database-2'
   | 'database-backup'
   | 'database-zap'
+  | 'deadline'
+  | 'deal'
   | 'deep-link'
   | 'deer'
+  | 'deezer'
   | 'defend'
+  | 'delegated'
+  | 'dependency'
+  | 'desert'
   | 'desk'
+  | 'desk2'
   | 'desktop'
   | 'dial'
   | 'diamond'
@@ -1225,35 +1716,58 @@ export type IconNameKebab =
   | 'dice-4'
   | 'dice-5'
   | 'dice-6'
+  | 'dictionary'
   | 'dimension'
+  | 'diploma'
   | 'directions'
   | 'disc'
   | 'disc-2'
   | 'disc-3'
+  | 'discord'
+  | 'discount'
+  | 'dislike'
+  | 'distraction'
   | 'divide-2'
+  | 'dividend'
   | 'dna'
   | 'dna-2'
+  | 'dna-helix'
   | 'document-printer'
   | 'dog'
   | 'dollar-sign'
+  | 'donut'
+  | 'donut-chart'
   | 'door'
   | 'door-closed'
   | 'door-open'
   | 'download'
+  | 'downtrend'
+  | 'dpad'
   | 'dress'
+  | 'dribbble'
   | 'drill'
   | 'droplet'
+  | 'due-date'
   | 'dumbbell'
+  | 'duplicate'
   | 'ear'
   | 'ear-hearing'
   | 'ear-off'
+  | 'ebay'
+  | 'edge'
   | 'edit'
+  | 'egg2'
   | 'electron'
   | 'elephant'
+  | 'emergency'
   | 'envelope-2'
   | 'equalizer'
   | 'equals'
   | 'eraser'
+  | 'estimate'
+  | 'etsy'
+  | 'exam'
+  | 'experiment'
   | 'exposure'
   | 'external-link'
   | 'external-link-2'
@@ -1261,11 +1775,16 @@ export type IconNameKebab =
   | 'eye-2'
   | 'eye-off'
   | 'face-id'
+  | 'facebook'
   | 'factory'
   | 'fast-forward'
   | 'faucet'
   | 'fax'
+  | 'feed'
+  | 'feedback'
   | 'fence'
+  | 'fern'
+  | 'figma'
   | 'file'
   | 'file-archive'
   | 'file-audio'
@@ -1284,6 +1803,7 @@ export type IconNameKebab =
   | 'filter'
   | 'fingerprint'
   | 'fire-truck'
+  | 'firefox'
   | 'firewall'
   | 'first-aid'
   | 'fish'
@@ -1293,23 +1813,33 @@ export type IconNameKebab =
   | 'flashlight-off'
   | 'flask-2'
   | 'flask-round'
+  | 'flat'
+  | 'flight-ticket'
   | 'flower'
   | 'flower-2'
+  | 'focus'
   | 'focus-ring'
   | 'folder'
   | 'folder-minus'
   | 'folder-open'
   | 'folder-plus'
   | 'follow'
+  | 'follow-2'
   | 'football'
   | 'footprints'
+  | 'forecast'
+  | 'forest'
   | 'fork'
   | 'fortress'
+  | 'fossil'
   | 'fox'
   | 'fraction'
+  | 'free-shipping'
   | 'frown'
   | 'fuel'
   | 'function'
+  | 'funnel'
+  | 'funnel-chart'
   | 'future'
   | 'gamepad'
   | 'gamepad-2'
@@ -1318,58 +1848,77 @@ export type IconNameKebab =
   | 'gate'
   | 'gauge'
   | 'generator'
+  | 'geyser'
   | 'gift'
   | 'git-branch'
   | 'git-commit'
   | 'git-fork'
   | 'git-merge'
   | 'git-pull-request'
+  | 'github'
+  | 'gitlab'
   | 'glasses'
   | 'globe'
   | 'globe-2'
   | 'glue'
   | 'golf'
+  | 'goodreads'
+  | 'google-cloud'
   | 'grab'
   | 'grab-cursor'
   | 'grabbing'
+  | 'grade'
   | 'graduation-cap'
   | 'grape'
   | 'greater-than'
   | 'grid'
   | 'grid-2x2'
   | 'grid-3x3'
+  | 'growth'
   | 'guard'
   | 'hail'
   | 'hammer'
   | 'hand'
   | 'hand-metal'
   | 'hand-wave'
+  | 'handheld'
   | 'handshake'
+  | 'handshake-2'
   | 'happy'
   | 'hard-drive'
   | 'hard-drive-2'
   | 'hash'
   | 'hashtag'
+  | 'hashtag-2'
   | 'hat'
   | 'heading-1'
   | 'heading-2'
   | 'heading-3'
   | 'headphones'
+  | 'health-bar'
   | 'heart'
   | 'heart-pulse'
   | 'heart-shape'
+  | 'heartbeat'
+  | 'heatmap'
   | 'helicopter'
   | 'help-circle'
   | 'help-cursor'
   | 'hexagon'
+  | 'high-score'
   | 'highlighter'
+  | 'hiking'
   | 'history'
   | 'hockey'
   | 'home'
+  | 'homework'
   | 'hoodie'
   | 'horse'
   | 'hospital'
+  | 'hotdog'
   | 'hotel'
+  | 'hotel-bed'
+  | 'hotel-key'
   | 'hourglass'
   | 'house-2'
   | 'house-check'
@@ -1380,23 +1929,39 @@ export type IconNameKebab =
   | 'html'
   | 'humidity'
   | 'hyperlink'
+  | 'hypothesis'
   | 'ice-cream'
+  | 'ice-cream-2'
   | 'id-card'
+  | 'immigration'
+  | 'immunity'
+  | 'in-progress'
+  | 'in-stock'
   | 'inbox'
   | 'incomplete'
   | 'indent'
   | 'infinity'
+  | 'influencer'
   | 'info'
   | 'info-circle'
   | 'ink'
+  | 'instagram'
   | 'internal-link'
+  | 'inventory'
+  | 'inventory-2'
+  | 'investment-2'
   | 'invoice'
+  | 'island'
   | 'italic'
+  | 'ivy'
   | 'jacket'
   | 'javascript-icon'
   | 'joystick'
+  | 'joystick-2'
   | 'json'
+  | 'jungle'
   | 'kanban'
+  | 'kanban-board'
   | 'kettle'
   | 'key'
   | 'key-round'
@@ -1405,8 +1970,12 @@ export type IconNameKebab =
   | 'keyboard-nav'
   | 'knife-2'
   | 'knob'
+  | 'ko-fi'
+  | 'kpi'
+  | 'lab-results'
   | 'ladder'
   | 'ladle'
+  | 'lake'
   | 'lamp'
   | 'lamp-ceiling'
   | 'lamp-desk'
@@ -1419,20 +1988,31 @@ export type IconNameKebab =
   | 'layout'
   | 'layout-grid'
   | 'layout-list'
+  | 'leaderboard'
   | 'leaf'
   | 'leaf-2'
+  | 'lecture'
   | 'less-than'
+  | 'letterboxd'
   | 'level'
+  | 'level-up'
   | 'library'
+  | 'library2'
   | 'lightbulb'
   | 'lightbulb-off'
   | 'lighthouse'
+  | 'like'
+  | 'like-filled'
+  | 'line'
   | 'line-chart'
+  | 'linear'
   | 'link'
   | 'link-2-off'
+  | 'linkedin'
   | 'lion'
   | 'list'
   | 'live'
+  | 'live-stream'
   | 'lively'
   | 'loader'
   | 'loading'
@@ -1441,6 +2021,9 @@ export type IconNameKebab =
   | 'lock'
   | 'lock-keyhole'
   | 'lock-open'
+  | 'lollipop'
+  | 'loot'
+  | 'loss'
   | 'love'
   | 'luggage'
   | 'lungs'
@@ -1450,19 +2033,27 @@ export type IconNameKebab =
   | 'mail-open'
   | 'mail-plus'
   | 'mailbox'
+  | 'mana-bar'
   | 'map'
   | 'map-pin'
   | 'map-pinned'
   | 'markdown'
   | 'marker'
+  | 'market'
   | 'martini'
+  | 'mastodon'
   | 'maximize'
   | 'maximize-2'
   | 'medal'
+  | 'medal2'
+  | 'medical-bag'
+  | 'medical-cross'
+  | 'medium'
   | 'meeting'
   | 'meh'
   | 'memory'
   | 'mention'
+  | 'mention-2'
   | 'menu'
   | 'menu-dots'
   | 'menu-dots-horizontal'
@@ -1471,12 +2062,16 @@ export type IconNameKebab =
   | 'message-circle'
   | 'message-square'
   | 'messages-square'
+  | 'messenger'
+  | 'meta'
+  | 'metric'
   | 'mic'
   | 'mic-off'
   | 'microscope'
   | 'microscope-2'
   | 'microwave'
   | 'milestone'
+  | 'milestone-2'
   | 'minimize'
   | 'minimize-2'
   | 'minus'
@@ -1484,16 +2079,20 @@ export type IconNameKebab =
   | 'minus-circle'
   | 'minus-square'
   | 'molecule'
+  | 'monday'
   | 'monitor'
   | 'moon'
   | 'more-horizontal'
+  | 'moss'
   | 'motorcycle'
   | 'mountain'
   | 'mountain-snow'
   | 'mouse'
   | 'move-cursor'
   | 'move-horizontal'
+  | 'multiplayer'
   | 'multiply'
+  | 'mushroom'
   | 'music'
   | 'music-2'
   | 'music-3'
@@ -1502,19 +2101,34 @@ export type IconNameKebab =
   | 'navigation'
   | 'navigation-2'
   | 'neon'
+  | 'netflix'
   | 'neural-network'
+  | 'nextjs'
+  | 'nodejs'
+  | 'noodles'
   | 'not-allowed'
   | 'not-equal'
   | 'notebook'
   | 'notebook-pen'
+  | 'notebook-pen2'
+  | 'notebook2'
+  | 'notion'
+  | 'npm'
   | 'nucleus'
+  | 'ocean'
   | 'octagon'
   | 'odometer'
   | 'office'
   | 'ok'
+  | 'on-hold'
+  | 'opera'
+  | 'out-of-stock'
   | 'outdent'
   | 'outlet'
+  | 'outlier'
   | 'oval'
+  | 'overdue'
+  | 'oxygen'
   | 'package'
   | 'page-setup'
   | 'paintbrush'
@@ -1531,10 +2145,15 @@ export type IconNameKebab =
   | 'paperclip-2'
   | 'parallelogram'
   | 'parking'
+  | 'partnership'
   | 'passport'
+  | 'passport-2'
+  | 'patreon'
   | 'pause'
   | 'pause-circle'
+  | 'paypal'
   | 'peace'
+  | 'pebbles'
   | 'pen'
   | 'pen-2'
   | 'pen-line'
@@ -1556,12 +2175,19 @@ export type IconNameKebab =
   | 'phone-off'
   | 'phone-outgoing'
   | 'pi'
+  | 'pickup'
   | 'picture-frame'
   | 'pie-chart'
+  | 'pie-chart-2'
   | 'piggy-bank'
   | 'pill'
+  | 'pill-2'
+  | 'pills'
   | 'pinch'
   | 'pine-tree'
+  | 'pinecone'
+  | 'pinterest'
+  | 'pitch'
   | 'pizza'
   | 'plane'
   | 'plane-landing'
@@ -1584,26 +2210,44 @@ export type IconNameKebab =
   | 'point-up'
   | 'pointer-2'
   | 'police-car'
+  | 'poll'
+  | 'pomodoro'
+  | 'pool'
+  | 'popsicle'
   | 'portfolio'
+  | 'post'
   | 'pot'
   | 'potion'
   | 'power-off'
+  | 'power-up'
+  | 'prescription'
   | 'presentation'
   | 'presentation-2'
+  | 'price-tag'
+  | 'price-tag-plus'
   | 'print-preview'
   | 'print-queue'
   | 'printer'
   | 'printer-2'
   | 'printer-check'
   | 'printer-x'
+  | 'priority'
+  | 'priority-high'
+  | 'priority-low'
+  | 'profit'
   | 'progress'
   | 'projector'
   | 'protection'
   | 'protractor'
+  | 'pulse'
   | 'puzzle'
   | 'puzzle-piece'
+  | 'pvp'
   | 'qr-code'
+  | 'qr-scan'
+  | 'quest'
   | 'queue'
+  | 'quiz'
   | 'quote'
   | 'rabbit'
   | 'radiation'
@@ -1613,24 +2257,51 @@ export type IconNameKebab =
   | 'rainbow'
   | 'rake'
   | 'ram'
+  | 'rating'
+  | 'react'
+  | 'reaction'
   | 'receipt'
   | 'receipt-2'
+  | 'receipt-check'
+  | 'receipt-x'
   | 'record'
+  | 'recovery'
   | 'rectangle'
+  | 'recurring'
+  | 'reddit'
   | 'reduced-motion'
   | 'reference'
   | 'refresh'
   | 'refrigerator'
+  | 'refund'
   | 'regex'
+  | 'regression'
   | 'rejected'
+  | 'reminder'
+  | 'reorder'
   | 'repeat'
+  | 'report'
+  | 'repost'
+  | 'research'
+  | 'reservation'
   | 'resize-diagonal'
   | 'resize-horizontal'
   | 'resize-vertical'
+  | 'respawn'
+  | 'retention'
+  | 'return'
+  | 'revenue'
+  | 'review-2'
   | 'rewind'
+  | 'rice'
+  | 'river'
+  | 'road-trip'
+  | 'roadmap'
   | 'robot'
   | 'rocket'
+  | 'roi'
   | 'roller'
+  | 'room-service'
   | 'rose'
   | 'route'
   | 'router'
@@ -1641,10 +2312,15 @@ export type IconNameKebab =
   | 'ruler-2'
   | 'ruler-square'
   | 'running'
+  | 'runway'
   | 'sad'
+  | 'safari'
   | 'sailboat'
+  | 'salad'
   | 'sandwich'
   | 'save'
+  | 'save-2'
+  | 'save-plus'
   | 'saw'
   | 'scale-2'
   | 'scan'
@@ -1653,7 +2329,9 @@ export type IconNameKebab =
   | 'scan-line'
   | 'scanner'
   | 'scanner-2'
+  | 'scatter-plot'
   | 'schedule'
+  | 'schedule2'
   | 'school'
   | 'scissors-2'
   | 'scooter'
@@ -1664,7 +2342,10 @@ export type IconNameKebab =
   | 'search'
   | 'search-minus'
   | 'search-plus'
+  | 'seaweed'
   | 'seedling'
+  | 'segment'
+  | 'seminar'
   | 'send'
   | 'send-2'
   | 'server'
@@ -1674,6 +2355,10 @@ export type IconNameKebab =
   | 'server-off'
   | 'settings'
   | 'share'
+  | 'share-2'
+  | 'share-forward'
+  | 'shareholder'
+  | 'shell'
   | 'shield'
   | 'shield-2'
   | 'shield-alert'
@@ -1690,19 +2375,26 @@ export type IconNameKebab =
   | 'shield-user'
   | 'shield-x'
   | 'ship'
+  | 'shipping'
+  | 'shipping-fast'
   | 'shirt'
+  | 'shopify'
   | 'shopping-bag'
+  | 'shopping-bag-plus'
   | 'shopping-cart'
   | 'shortcut'
   | 'shorts'
   | 'shovel'
+  | 'shrimp'
   | 'shuffle'
   | 'sidebar'
   | 'sidebar-close'
   | 'sidebar-open'
   | 'sigma'
+  | 'sign'
   | 'sign-language'
   | 'signal'
+  | 'signal-app'
   | 'signal-high'
   | 'signal-low'
   | 'signal-zero'
@@ -1711,17 +2403,23 @@ export type IconNameKebab =
   | 'skiing'
   | 'skip-back'
   | 'skip-forward'
+  | 'slack'
   | 'sleep'
   | 'slider'
   | 'slider-horizontal'
   | 'slider-vertical'
   | 'smartphone'
   | 'smile'
+  | 'snapchat'
   | 'snippet'
   | 'snowflake'
   | 'soccer'
   | 'sofa'
+  | 'soundcloud'
+  | 'soup'
+  | 'spa'
   | 'sparkles'
+  | 'sparkline'
   | 'spatula'
   | 'speaker'
   | 'speaker-2'
@@ -1729,24 +2427,41 @@ export type IconNameKebab =
   | 'speed-dial'
   | 'speedometer'
   | 'spoon-2'
+  | 'spotify'
   | 'spotlight'
+  | 'sprint'
   | 'sprout'
   | 'sqrt'
   | 'square'
   | 'ssd'
+  | 'stackoverflow'
+  | 'stakeholder'
   | 'stamp'
+  | 'stamp-2'
   | 'stapler'
   | 'star'
+  | 'starfish'
+  | 'startup'
   | 'statistics'
+  | 'steak'
   | 'stethoscope'
+  | 'stethoscope-2'
   | 'stop-circle'
   | 'stopwatch'
   | 'storage'
   | 'store'
+  | 'store-front'
+  | 'story'
+  | 'strategy'
+  | 'strava'
   | 'stream'
   | 'strikethrough'
+  | 'stripe'
+  | 'student-id'
   | 'studio'
   | 'subscript'
+  | 'substack'
+  | 'subtask'
   | 'subtitle'
   | 'sun'
   | 'sunglasses'
@@ -1755,6 +2470,9 @@ export type IconNameKebab =
   | 'superscript'
   | 'surge-protector'
   | 'surprised'
+  | 'survey'
+  | 'sushi'
+  | 'svelte'
   | 'sweater'
   | 'swimming'
   | 'switch-off'
@@ -1762,36 +2480,55 @@ export type IconNameKebab =
   | 'sword'
   | 'swords'
   | 'syringe'
+  | 'syringe-2'
   | 'table'
   | 'table-2'
   | 'tablet'
+  | 'taco'
   | 'tag'
+  | 'tag-person'
   | 'tag2'
   | 'tags'
+  | 'tailwind'
   | 'tape'
   | 'tape-measure'
   | 'target'
+  | 'target-2'
+  | 'task'
+  | 'task-check'
+  | 'task-list'
   | 'team'
+  | 'teams'
+  | 'telegram'
+  | 'temperature'
   | 'temperature-dial'
+  | 'template'
   | 'tennis'
   | 'tent'
   | 'terminal'
   | 'terminal-2'
+  | 'terminal-gate'
   | 'terminal-square'
   | 'test-tube'
   | 'test-tube-2'
   | 'test-tubes'
+  | 'testimonial'
   | 'text'
   | 'text-cursor'
   | 'text-size'
+  | 'textbook'
   | 'thermometer'
   | 'thermometer-2'
   | 'thermometer-medical'
+  | 'threads'
   | 'thumbs-down'
   | 'thumbs-up'
   | 'ticket'
   | 'tie'
+  | 'tiktok'
+  | 'time-tracking'
   | 'timeline'
+  | 'timeline-2'
   | 'timer'
   | 'toaster'
   | 'toggle'
@@ -1811,25 +2548,37 @@ export type IconNameKebab =
   | 'tree-2'
   | 'tree-palm'
   | 'tree-pine'
+  | 'treemap'
+  | 'trello'
+  | 'trending'
   | 'trending-down'
   | 'trending-up'
   | 'triangle'
+  | 'trigger'
   | 'trophy'
+  | 'trophy2'
   | 'truck'
   | 'tshirt'
   | 'tulip'
+  | 'tumblr'
   | 'turtle'
+  | 'tutor'
   | 'tv'
+  | 'twitch'
+  | 'twitter'
   | 'two-factor'
   | 'typescript-icon'
   | 'ufo'
   | 'umbrella'
   | 'underline'
   | 'unfollow'
+  | 'unfollow-2'
+  | 'university'
   | 'unlock'
   | 'unverified'
   | 'upload'
   | 'ups'
+  | 'uptrend'
   | 'usb-drive'
   | 'user'
   | 'user-check'
@@ -1841,14 +2590,25 @@ export type IconNameKebab =
   | 'users'
   | 'utensils'
   | 'utensils-crossed'
+  | 'vaccine'
+  | 'variance'
   | 'vault'
+  | 'vercel'
   | 'verified'
+  | 'verified-2'
+  | 'viber'
   | 'video'
   | 'video-2'
   | 'video-off'
+  | 'vimeo'
   | 'vinyl'
+  | 'viral'
+  | 'virus'
+  | 'visa'
+  | 'vitals'
   | 'voice-control'
   | 'voicemail'
+  | 'volcano'
   | 'volleyball'
   | 'volume'
   | 'volume-1'
@@ -1856,7 +2616,10 @@ export type IconNameKebab =
   | 'volume-dial'
   | 'volume-off'
   | 'volume-x'
+  | 'vscode'
+  | 'vue'
   | 'wait-cursor'
+  | 'walker'
   | 'wallet'
   | 'wallet-cards'
   | 'wand'
@@ -1865,15 +2628,21 @@ export type IconNameKebab =
   | 'warehouse'
   | 'watch'
   | 'watch-accessory'
+  | 'waterfall'
   | 'watering-can'
   | 'waveform'
   | 'waves'
   | 'waypoints'
   | 'webcam'
   | 'webhook'
+  | 'wechat'
   | 'weight'
+  | 'whatsapp'
   | 'wheelchair'
+  | 'wheelchair-2'
   | 'whisk'
+  | 'whiteboard'
+  | 'widget'
   | 'wifi'
   | 'wifi-off'
   | 'wind'
@@ -1881,14 +2650,21 @@ export type IconNameKebab =
   | 'window-2'
   | 'wine'
   | 'wink'
+  | 'wishlist'
   | 'wolf'
+  | 'workflow'
   | 'wrench'
   | 'x'
   | 'x-circle'
   | 'x-circle-2'
   | 'x-square'
+  | 'x-twitter'
   | 'xml'
-  | 'zap';
+  | 'xp-bar'
+  | 'xray'
+  | 'youtube'
+  | 'zap'
+  | 'zoom';
 
 /**
  * Array of all icon names (PascalCase)
@@ -1902,25 +2678,35 @@ export type IconNameKebab =
  * ```
  */
 export const ICON_NAMES = [
+  'AbTest',
   'Accessibility',
+  'Achievement',
+  'Acorn',
   'Activity',
+  'Aggregate',
+  'Airbnb',
   'Airplay',
+  'Airport',
   'AlarmClock',
   'AlertCircle',
   'AlertCircle2',
   'AlertOctagon',
   'AlertTriangle',
   'Alias',
+  'Amazon',
   'Ambulance',
+  'Ambulance2',
   'Analytics',
   'Anchor',
   'Anchor2',
   'Angry',
+  'Angular',
   'Annoyed',
   'Apartment',
   'Api',
   'Apple',
   'Approved',
+  'Arcade',
   'Archive',
   'Archive2',
   'AreaChart',
@@ -1949,15 +2735,27 @@ export const ICON_NAMES = [
   'ArrowsExpand',
   'ArrowsMaximize2',
   'ArrowsMinimize2',
+  'Asana',
+  'Assigned',
+  'Assignment',
   'AtSign',
   'Atom2',
+  'Attendance',
+  'Attribution',
   'AudioDescription',
   'AudioLines',
+  'Automation',
   'Award',
+  'Aws',
   'Axe',
+  'Azure',
   'Baby',
   'Backlink',
+  'Backlog',
   'Backpack',
+  'Backpack2',
+  'Bacon',
+  'Bacteria',
   'Badge2',
   'BadgeAlert',
   'BadgeCheck',
@@ -1969,15 +2767,20 @@ export const ICON_NAMES = [
   'BadgePercent',
   'BadgePlus',
   'BadgeX',
+  'Baggage',
+  'BaggageClaim',
   'Ban',
   'Banana',
   'Bandage',
+  'Bandage2',
+  'Bandcamp',
   'Bank',
   'Banknote',
   'BarChart',
   'BarChart2',
   'BarChartHorizontal',
   'Barcode',
+  'Barcode2',
   'Barometer',
   'Baseball',
   'Basket',
@@ -1990,24 +2793,35 @@ export const ICON_NAMES = [
   'BatteryLow',
   'BatteryQuarter',
   'BatteryThreeQuarters',
+  'Beach',
   'Beaker2',
   'Bear',
   'Bed',
   'Bee',
   'Beer',
+  'Behance',
   'Bell',
   'BellOff',
   'BellRing',
+  'Benchmark',
   'Bicycle',
   'Bike',
   'Binder',
   'Biohazard2',
   'Bird',
+  'Bitbucket',
   'Bitcoin',
   'Blender',
   'Block',
+  'Block2',
+  'Blocker',
+  'BloodDrop',
+  'BloodPressure',
+  'Bluesky',
   'Bluetooth',
+  'BoardingPass',
   'Boat',
+  'BodyScan',
   'Bold',
   'Bone',
   'Book',
@@ -2015,13 +2829,17 @@ export const ICON_NAMES = [
   'BookMarked',
   'BookOpen',
   'Bookmark',
+  'Bookshelf',
+  'Boss',
   'Bot',
+  'Boulder',
   'Bowling',
   'Braille',
   'Brain',
   'BrainCircuit',
   'BrainCog',
   'Branch',
+  'Bread',
   'Briefcase2',
   'BriefcaseMedical',
   'Brightness',
@@ -2030,9 +2848,14 @@ export const ICON_NAMES = [
   'Bug',
   'Building',
   'Building2',
+  'Burger',
   'Bus',
   'BusinessCard',
   'Butterfly',
+  'ButtonA',
+  'ButtonB',
+  'ButtonX',
+  'ButtonY',
   'Cable',
   'Cactus',
   'Cake',
@@ -2046,22 +2869,35 @@ export const ICON_NAMES = [
   'Caliper',
   'Camera',
   'CameraMovie',
+  'Camping',
   'Candle',
+  'Candy',
   'Cap',
+  'Capsule',
   'Car',
   'CarFront',
   'Carpet',
   'Carrot',
+  'CarryOn',
+  'CartCheck',
+  'CartMinus',
+  'CartPlus',
+  'CartX',
   'Cast',
   'Castle',
   'Cat',
+  'Cave',
   'Certificate',
+  'Certificate2',
   'Chain',
   'ChainBroken',
   'Chair',
+  'Chalkboard',
   'Check',
   'CheckCircle',
   'CheckCircle2',
+  'CheckIn',
+  'CheckOut',
   'CheckSquare',
   'Checkbox',
   'CheckboxChecked',
@@ -2073,13 +2909,18 @@ export const ICON_NAMES = [
   'ChevronsLeft',
   'ChevronsRight',
   'ChevronsUp',
+  'Chicken',
   'Chimney',
   'ChipAi',
+  'Chocolate',
   'Chopsticks',
+  'Chrome',
   'Church',
+  'Churn',
   'Cinema',
   'Circle',
   'Citation',
+  'Classroom',
   'Clipboard',
   'Clipboard2',
   'ClipboardCheck',
@@ -2108,28 +2949,46 @@ export const ICON_NAMES = [
   'CloudRain',
   'CloudSnow',
   'CloudSun',
+  'Clubhouse',
   'Coat',
   'Code',
   'CodeBlock',
   'CodeSquare',
   'Code2',
+  'Codepen',
+  'Codesandbox',
   'Coffee',
+  'Cohort',
+  'Coin',
   'Coins',
   'Columns',
   'Command',
+  'Comment',
+  'CommentCheck',
+  'CommentPlus',
+  'CommentX',
+  'Compare',
   'Compass',
   'Compass2',
+  'Competitive',
   'Complete',
+  'Concierge',
   'Confused',
+  'Console',
   'Contact',
   'Contact2',
   'Container',
   'Contract',
+  'Contract2',
   'Contrast',
+  'Controller',
+  'ControllerWireless',
   'Cookie',
   'Cool',
+  'Coop',
   'Copier',
   'Copy',
+  'Coral',
   'CornerDownLeft',
   'CornerDownLeft2',
   'CornerDownRight',
@@ -2138,28 +2997,48 @@ export const ICON_NAMES = [
   'CornerUpLeft2',
   'CornerUpRight',
   'CornerUpRight2',
+  'Correlation',
+  'Coupon',
+  'Course',
   'Cpu',
+  'Crafting',
   'CreditCard',
+  'Croissant',
   'Cross',
   'Crosshair',
   'Crosshair2',
   'Crown',
+  'Cruise',
+  'Crutches',
   'Cry',
+  'Crystal',
   'Css',
   'Cup',
+  'Cupcake',
+  'Curriculum',
   'Cursor',
   'CursorClick',
   'CursorText',
   'Curtain',
+  'CustomsIcon',
   'Cycling',
+  'Dashboard',
+  'DataPoint',
   'Database',
   'Database2',
   'DatabaseBackup',
   'DatabaseZap',
+  'Deadline',
+  'Deal',
   'DeepLink',
   'Deer',
+  'Deezer',
   'Defend',
+  'Delegated',
+  'Dependency',
+  'Desert',
   'Desk',
+  'Desk2',
   'Desktop',
   'Dial',
   'Diamond',
@@ -2169,35 +3048,58 @@ export const ICON_NAMES = [
   'Dice4',
   'Dice5',
   'Dice6',
+  'Dictionary',
   'Dimension',
+  'Diploma',
   'Directions',
   'Disc',
   'Disc2',
   'Disc3',
+  'Discord',
+  'Discount',
+  'Dislike',
+  'Distraction',
   'Divide2',
+  'Dividend',
   'Dna',
   'Dna2',
+  'DnaHelix',
   'DocumentPrinter',
   'Dog',
   'DollarSign',
+  'Donut',
+  'DonutChart',
   'Door',
   'DoorClosed',
   'DoorOpen',
   'Download',
+  'Downtrend',
+  'Dpad',
   'Dress',
+  'Dribbble',
   'Drill',
   'Droplet',
+  'DueDate',
   'Dumbbell',
+  'Duplicate',
   'Ear',
   'EarHearing',
   'EarOff',
+  'Ebay',
+  'Edge',
   'Edit',
+  'Egg2',
   'Electron',
   'Elephant',
+  'Emergency',
   'Envelope2',
   'Equalizer',
   'Equals',
   'Eraser',
+  'Estimate',
+  'Etsy',
+  'Exam',
+  'Experiment',
   'Exposure',
   'ExternalLink',
   'ExternalLink2',
@@ -2205,11 +3107,16 @@ export const ICON_NAMES = [
   'Eye2',
   'EyeOff',
   'FaceId',
+  'Facebook',
   'Factory',
   'FastForward',
   'Faucet',
   'Fax',
+  'Feed',
+  'Feedback',
   'Fence',
+  'Fern',
+  'Figma',
   'File',
   'FileArchive',
   'FileAudio',
@@ -2228,6 +3135,7 @@ export const ICON_NAMES = [
   'Filter',
   'Fingerprint',
   'FireTruck',
+  'Firefox',
   'Firewall',
   'FirstAid',
   'Fish',
@@ -2237,23 +3145,33 @@ export const ICON_NAMES = [
   'FlashlightOff',
   'Flask2',
   'FlaskRound',
+  'Flat',
+  'FlightTicket',
   'Flower',
   'Flower2',
+  'Focus',
   'FocusRing',
   'Folder',
   'FolderMinus',
   'FolderOpen',
   'FolderPlus',
   'Follow',
+  'Follow2',
   'Football',
   'Footprints',
+  'Forecast',
+  'Forest',
   'Fork',
   'Fortress',
+  'Fossil',
   'Fox',
   'Fraction',
+  'FreeShipping',
   'Frown',
   'Fuel',
   'Function',
+  'Funnel',
+  'FunnelChart',
   'Future',
   'Gamepad',
   'Gamepad2',
@@ -2262,58 +3180,77 @@ export const ICON_NAMES = [
   'Gate',
   'Gauge',
   'Generator',
+  'Geyser',
   'Gift',
   'GitBranch',
   'GitCommit',
   'GitFork',
   'GitMerge',
   'GitPullRequest',
+  'Github',
+  'Gitlab',
   'Glasses',
   'Globe',
   'Globe2',
   'Glue',
   'Golf',
+  'Goodreads',
+  'GoogleCloud',
   'Grab',
   'GrabCursor',
   'Grabbing',
+  'Grade',
   'GraduationCap',
   'Grape',
   'GreaterThan',
   'Grid',
   'Grid2x2',
   'Grid3x3',
+  'Growth',
   'Guard',
   'Hail',
   'Hammer',
   'Hand',
   'HandMetal',
   'HandWave',
+  'Handheld',
   'Handshake',
+  'Handshake2',
   'Happy',
   'HardDrive',
   'HardDrive2',
   'Hash',
   'Hashtag',
+  'Hashtag2',
   'Hat',
   'Heading1',
   'Heading2',
   'Heading3',
   'Headphones',
+  'HealthBar',
   'Heart',
   'HeartPulse',
   'HeartShape',
+  'Heartbeat',
+  'Heatmap',
   'Helicopter',
   'HelpCircle',
   'HelpCursor',
   'Hexagon',
+  'HighScore',
   'Highlighter',
+  'Hiking',
   'History',
   'Hockey',
   'Home',
+  'Homework',
   'Hoodie',
   'Horse',
   'Hospital',
+  'Hotdog',
   'Hotel',
+  'HotelBed',
+  'HotelKey',
   'Hourglass',
   'House2',
   'HouseCheck',
@@ -2324,23 +3261,39 @@ export const ICON_NAMES = [
   'Html',
   'Humidity',
   'Hyperlink',
+  'Hypothesis',
   'IceCream',
+  'IceCream2',
   'IdCard',
+  'Immigration',
+  'Immunity',
+  'InProgress',
+  'InStock',
   'Inbox',
   'Incomplete',
   'Indent',
   'Infinity',
+  'Influencer',
   'Info',
   'InfoCircle',
   'Ink',
+  'Instagram',
   'InternalLink',
+  'Inventory',
+  'Inventory2',
+  'Investment2',
   'Invoice',
+  'Island',
   'Italic',
+  'Ivy',
   'Jacket',
   'JavascriptIcon',
   'Joystick',
+  'Joystick2',
   'Json',
+  'Jungle',
   'Kanban',
+  'KanbanBoard',
   'Kettle',
   'Key',
   'KeyRound',
@@ -2349,8 +3302,12 @@ export const ICON_NAMES = [
   'KeyboardNav',
   'Knife2',
   'Knob',
+  'KoFi',
+  'Kpi',
+  'LabResults',
   'Ladder',
   'Ladle',
+  'Lake',
   'Lamp',
   'LampCeiling',
   'LampDesk',
@@ -2363,20 +3320,31 @@ export const ICON_NAMES = [
   'Layout',
   'LayoutGrid',
   'LayoutList',
+  'Leaderboard',
   'Leaf',
   'Leaf2',
+  'Lecture',
   'LessThan',
+  'Letterboxd',
   'Level',
+  'LevelUp',
   'Library',
+  'Library2',
   'Lightbulb',
   'LightbulbOff',
   'Lighthouse',
+  'Like',
+  'LikeFilled',
+  'Line',
   'LineChart',
+  'Linear',
   'Link',
   'Link2Off',
+  'Linkedin',
   'Lion',
   'List',
   'Live',
+  'LiveStream',
   'Lively',
   'Loader',
   'Loading',
@@ -2385,6 +3353,9 @@ export const ICON_NAMES = [
   'Lock',
   'LockKeyhole',
   'LockOpen',
+  'Lollipop',
+  'Loot',
+  'Loss',
   'Love',
   'Luggage',
   'Lungs',
@@ -2394,19 +3365,27 @@ export const ICON_NAMES = [
   'MailOpen',
   'MailPlus',
   'Mailbox',
+  'ManaBar',
   'Map',
   'MapPin',
   'MapPinned',
   'Markdown',
   'Marker',
+  'Market',
   'Martini',
+  'Mastodon',
   'Maximize',
   'Maximize2',
   'Medal',
+  'Medal2',
+  'MedicalBag',
+  'MedicalCross',
+  'Medium',
   'Meeting',
   'Meh',
   'Memory',
   'Mention',
+  'Mention2',
   'Menu',
   'MenuDots',
   'MenuDotsHorizontal',
@@ -2415,12 +3394,16 @@ export const ICON_NAMES = [
   'MessageCircle',
   'MessageSquare',
   'MessagesSquare',
+  'Messenger',
+  'Meta',
+  'Metric',
   'Mic',
   'MicOff',
   'Microscope',
   'Microscope2',
   'Microwave',
   'Milestone',
+  'Milestone2',
   'Minimize',
   'Minimize2',
   'Minus',
@@ -2428,16 +3411,20 @@ export const ICON_NAMES = [
   'MinusCircle',
   'MinusSquare',
   'Molecule',
+  'Monday',
   'Monitor',
   'Moon',
   'MoreHorizontal',
+  'Moss',
   'Motorcycle',
   'Mountain',
   'MountainSnow',
   'Mouse',
   'MoveCursor',
   'MoveHorizontal',
+  'Multiplayer',
   'Multiply',
+  'Mushroom',
   'Music',
   'Music2',
   'Music3',
@@ -2446,19 +3433,34 @@ export const ICON_NAMES = [
   'Navigation',
   'Navigation2',
   'Neon',
+  'Netflix',
   'NeuralNetwork',
+  'Nextjs',
+  'Nodejs',
+  'Noodles',
   'NotAllowed',
   'NotEqual',
   'Notebook',
   'NotebookPen',
+  'NotebookPen2',
+  'Notebook2',
+  'Notion',
+  'Npm',
   'Nucleus',
+  'Ocean',
   'Octagon',
   'Odometer',
   'Office',
   'Ok',
+  'OnHold',
+  'Opera',
+  'OutOfStock',
   'Outdent',
   'Outlet',
+  'Outlier',
   'Oval',
+  'Overdue',
+  'Oxygen',
   'Package',
   'PageSetup',
   'Paintbrush',
@@ -2475,10 +3477,15 @@ export const ICON_NAMES = [
   'Paperclip2',
   'Parallelogram',
   'Parking',
+  'Partnership',
   'Passport',
+  'Passport2',
+  'Patreon',
   'Pause',
   'PauseCircle',
+  'Paypal',
   'Peace',
+  'Pebbles',
   'Pen',
   'Pen2',
   'PenLine',
@@ -2500,12 +3507,19 @@ export const ICON_NAMES = [
   'PhoneOff',
   'PhoneOutgoing',
   'Pi',
+  'Pickup',
   'PictureFrame',
   'PieChart',
+  'PieChart2',
   'PiggyBank',
   'Pill',
+  'Pill2',
+  'Pills',
   'Pinch',
   'PineTree',
+  'Pinecone',
+  'Pinterest',
+  'Pitch',
   'Pizza',
   'Plane',
   'PlaneLanding',
@@ -2528,26 +3542,44 @@ export const ICON_NAMES = [
   'PointUp',
   'Pointer2',
   'PoliceCar',
+  'Poll',
+  'Pomodoro',
+  'Pool',
+  'Popsicle',
   'Portfolio',
+  'Post',
   'Pot',
   'Potion',
   'PowerOff',
+  'PowerUp',
+  'Prescription',
   'Presentation',
   'Presentation2',
+  'PriceTag',
+  'PriceTagPlus',
   'PrintPreview',
   'PrintQueue',
   'Printer',
   'Printer2',
   'PrinterCheck',
   'PrinterX',
+  'Priority',
+  'PriorityHigh',
+  'PriorityLow',
+  'Profit',
   'Progress',
   'Projector',
   'Protection',
   'Protractor',
+  'Pulse',
   'Puzzle',
   'PuzzlePiece',
+  'Pvp',
   'QrCode',
+  'QrScan',
+  'Quest',
   'Queue',
+  'Quiz',
   'Quote',
   'Rabbit',
   'Radiation',
@@ -2557,24 +3589,51 @@ export const ICON_NAMES = [
   'Rainbow',
   'Rake',
   'Ram',
+  'Rating',
+  'React',
+  'Reaction',
   'Receipt',
   'Receipt2',
+  'ReceiptCheck',
+  'ReceiptX',
   'Record',
+  'Recovery',
   'Rectangle',
+  'Recurring',
+  'Reddit',
   'ReducedMotion',
   'Reference',
   'Refresh',
   'Refrigerator',
+  'Refund',
   'Regex',
+  'Regression',
   'Rejected',
+  'Reminder',
+  'Reorder',
   'Repeat',
+  'Report',
+  'Repost',
+  'Research',
+  'Reservation',
   'ResizeDiagonal',
   'ResizeHorizontal',
   'ResizeVertical',
+  'Respawn',
+  'Retention',
+  'Return',
+  'Revenue',
+  'Review2',
   'Rewind',
+  'Rice',
+  'River',
+  'RoadTrip',
+  'Roadmap',
   'Robot',
   'Rocket',
+  'Roi',
   'Roller',
+  'RoomService',
   'Rose',
   'Route',
   'Router',
@@ -2585,10 +3644,15 @@ export const ICON_NAMES = [
   'Ruler2',
   'RulerSquare',
   'Running',
+  'Runway',
   'Sad',
+  'Safari',
   'Sailboat',
+  'Salad',
   'Sandwich',
   'Save',
+  'Save2',
+  'SavePlus',
   'Saw',
   'Scale2',
   'Scan',
@@ -2597,7 +3661,9 @@ export const ICON_NAMES = [
   'ScanLine',
   'Scanner',
   'Scanner2',
+  'ScatterPlot',
   'Schedule',
+  'Schedule2',
   'School',
   'Scissors2',
   'Scooter',
@@ -2608,7 +3674,10 @@ export const ICON_NAMES = [
   'Search',
   'SearchMinus',
   'SearchPlus',
+  'Seaweed',
   'Seedling',
+  'Segment',
+  'Seminar',
   'Send',
   'Send2',
   'Server',
@@ -2618,6 +3687,10 @@ export const ICON_NAMES = [
   'ServerOff',
   'Settings',
   'Share',
+  'Share2',
+  'ShareForward',
+  'Shareholder',
+  'Shell',
   'Shield',
   'Shield2',
   'ShieldAlert',
@@ -2634,19 +3707,26 @@ export const ICON_NAMES = [
   'ShieldUser',
   'ShieldX',
   'Ship',
+  'Shipping',
+  'ShippingFast',
   'Shirt',
+  'Shopify',
   'ShoppingBag',
+  'ShoppingBagPlus',
   'ShoppingCart',
   'Shortcut',
   'Shorts',
   'Shovel',
+  'Shrimp',
   'Shuffle',
   'Sidebar',
   'SidebarClose',
   'SidebarOpen',
   'Sigma',
+  'Sign',
   'SignLanguage',
   'Signal',
+  'SignalApp',
   'SignalHigh',
   'SignalLow',
   'SignalZero',
@@ -2655,17 +3735,23 @@ export const ICON_NAMES = [
   'Skiing',
   'SkipBack',
   'SkipForward',
+  'Slack',
   'Sleep',
   'Slider',
   'SliderHorizontal',
   'SliderVertical',
   'Smartphone',
   'Smile',
+  'Snapchat',
   'Snippet',
   'Snowflake',
   'Soccer',
   'Sofa',
+  'Soundcloud',
+  'Soup',
+  'Spa',
   'Sparkles',
+  'Sparkline',
   'Spatula',
   'Speaker',
   'Speaker2',
@@ -2673,24 +3759,41 @@ export const ICON_NAMES = [
   'SpeedDial',
   'Speedometer',
   'Spoon2',
+  'Spotify',
   'Spotlight',
+  'Sprint',
   'Sprout',
   'Sqrt',
   'Square',
   'Ssd',
+  'Stackoverflow',
+  'Stakeholder',
   'Stamp',
+  'Stamp2',
   'Stapler',
   'Star',
+  'Starfish',
+  'Startup',
   'Statistics',
+  'Steak',
   'Stethoscope',
+  'Stethoscope2',
   'StopCircle',
   'Stopwatch',
   'Storage',
   'Store',
+  'StoreFront',
+  'Story',
+  'Strategy',
+  'Strava',
   'Stream',
   'Strikethrough',
+  'Stripe',
+  'StudentId',
   'Studio',
   'Subscript',
+  'Substack',
+  'Subtask',
   'Subtitle',
   'Sun',
   'Sunglasses',
@@ -2699,6 +3802,9 @@ export const ICON_NAMES = [
   'Superscript',
   'SurgeProtector',
   'Surprised',
+  'Survey',
+  'Sushi',
+  'Svelte',
   'Sweater',
   'Swimming',
   'SwitchOff',
@@ -2706,36 +3812,55 @@ export const ICON_NAMES = [
   'Sword',
   'Swords',
   'Syringe',
+  'Syringe2',
   'Table',
   'Table2',
   'Tablet',
+  'Taco',
   'Tag',
+  'TagPerson',
   'Tag2',
   'Tags',
+  'Tailwind',
   'Tape',
   'TapeMeasure',
   'Target',
+  'Target2',
+  'Task',
+  'TaskCheck',
+  'TaskList',
   'Team',
+  'Teams',
+  'Telegram',
+  'Temperature',
   'TemperatureDial',
+  'Template',
   'Tennis',
   'Tent',
   'Terminal',
   'Terminal2',
+  'TerminalGate',
   'TerminalSquare',
   'TestTube',
   'TestTube2',
   'TestTubes',
+  'Testimonial',
   'Text',
   'TextCursor',
   'TextSize',
+  'Textbook',
   'Thermometer',
   'Thermometer2',
   'ThermometerMedical',
+  'Threads',
   'ThumbsDown',
   'ThumbsUp',
   'Ticket',
   'Tie',
+  'Tiktok',
+  'TimeTracking',
   'Timeline',
+  'Timeline2',
   'Timer',
   'Toaster',
   'Toggle',
@@ -2755,25 +3880,37 @@ export const ICON_NAMES = [
   'Tree2',
   'TreePalm',
   'TreePine',
+  'Treemap',
+  'Trello',
+  'Trending',
   'TrendingDown',
   'TrendingUp',
   'Triangle',
+  'Trigger',
   'Trophy',
+  'Trophy2',
   'Truck',
   'Tshirt',
   'Tulip',
+  'Tumblr',
   'Turtle',
+  'Tutor',
   'Tv',
+  'Twitch',
+  'Twitter',
   'TwoFactor',
   'TypescriptIcon',
   'Ufo',
   'Umbrella',
   'Underline',
   'Unfollow',
+  'Unfollow2',
+  'University',
   'Unlock',
   'Unverified',
   'Upload',
   'Ups',
+  'Uptrend',
   'UsbDrive',
   'User',
   'UserCheck',
@@ -2785,14 +3922,25 @@ export const ICON_NAMES = [
   'Users',
   'Utensils',
   'UtensilsCrossed',
+  'Vaccine',
+  'Variance',
   'Vault',
+  'Vercel',
   'Verified',
+  'Verified2',
+  'Viber',
   'Video',
   'Video2',
   'VideoOff',
+  'Vimeo',
   'Vinyl',
+  'Viral',
+  'Virus',
+  'Visa',
+  'Vitals',
   'VoiceControl',
   'Voicemail',
+  'Volcano',
   'Volleyball',
   'Volume',
   'Volume1',
@@ -2800,7 +3948,10 @@ export const ICON_NAMES = [
   'VolumeDial',
   'VolumeOff',
   'VolumeX',
+  'Vscode',
+  'Vue',
   'WaitCursor',
+  'Walker',
   'Wallet',
   'WalletCards',
   'Wand',
@@ -2809,15 +3960,21 @@ export const ICON_NAMES = [
   'Warehouse',
   'Watch',
   'WatchAccessory',
+  'Waterfall',
   'WateringCan',
   'Waveform',
   'Waves',
   'Waypoints',
   'Webcam',
   'Webhook',
+  'Wechat',
   'Weight',
+  'Whatsapp',
   'Wheelchair',
+  'Wheelchair2',
   'Whisk',
+  'Whiteboard',
+  'Widget',
   'Wifi',
   'WifiOff',
   'Wind',
@@ -2825,39 +3982,56 @@ export const ICON_NAMES = [
   'Window2',
   'Wine',
   'Wink',
+  'Wishlist',
   'Wolf',
+  'Workflow',
   'Wrench',
   'X',
   'XCircle',
   'XCircle2',
   'XSquare',
+  'XTwitter',
   'Xml',
+  'XpBar',
+  'Xray',
+  'Youtube',
   'Zap',
+  'Zoom',
 ] as const;
 
 /**
  * Array of all icon names (kebab-case)
  */
 export const ICON_NAMES_KEBAB = [
+  'ab-test',
   'accessibility',
+  'achievement',
+  'acorn',
   'activity',
+  'aggregate',
+  'airbnb',
   'airplay',
+  'airport',
   'alarm-clock',
   'alert-circle',
   'alert-circle-2',
   'alert-octagon',
   'alert-triangle',
   'alias',
+  'amazon',
   'ambulance',
+  'ambulance-2',
   'analytics',
   'anchor',
   'anchor-2',
   'angry',
+  'angular',
   'annoyed',
   'apartment',
   'api',
   'apple',
   'approved',
+  'arcade',
   'archive',
   'archive-2',
   'area-chart',
@@ -2886,15 +4060,27 @@ export const ICON_NAMES_KEBAB = [
   'arrows-expand',
   'arrows-maximize-2',
   'arrows-minimize-2',
+  'asana',
+  'assigned',
+  'assignment',
   'at-sign',
   'atom-2',
+  'attendance',
+  'attribution',
   'audio-description',
   'audio-lines',
+  'automation',
   'award',
+  'aws',
   'axe',
+  'azure',
   'baby',
   'backlink',
+  'backlog',
   'backpack',
+  'backpack2',
+  'bacon',
+  'bacteria',
   'badge-2',
   'badge-alert',
   'badge-check',
@@ -2906,15 +4092,20 @@ export const ICON_NAMES_KEBAB = [
   'badge-percent',
   'badge-plus',
   'badge-x',
+  'baggage',
+  'baggage-claim',
   'ban',
   'banana',
   'bandage',
+  'bandage-2',
+  'bandcamp',
   'bank',
   'banknote',
   'bar-chart',
   'bar-chart-2',
   'bar-chart-horizontal',
   'barcode',
+  'barcode-2',
   'barometer',
   'baseball',
   'basket',
@@ -2927,24 +4118,35 @@ export const ICON_NAMES_KEBAB = [
   'battery-low',
   'battery-quarter',
   'battery-three-quarters',
+  'beach',
   'beaker-2',
   'bear',
   'bed',
   'bee',
   'beer',
+  'behance',
   'bell',
   'bell-off',
   'bell-ring',
+  'benchmark',
   'bicycle',
   'bike',
   'binder',
   'biohazard-2',
   'bird',
+  'bitbucket',
   'bitcoin',
   'blender',
   'block',
+  'block-2',
+  'blocker',
+  'blood-drop',
+  'blood-pressure',
+  'bluesky',
   'bluetooth',
+  'boarding-pass',
   'boat',
+  'body-scan',
   'bold',
   'bone',
   'book',
@@ -2952,13 +4154,17 @@ export const ICON_NAMES_KEBAB = [
   'book-marked',
   'book-open',
   'bookmark',
+  'bookshelf',
+  'boss',
   'bot',
+  'boulder',
   'bowling',
   'braille',
   'brain',
   'brain-circuit',
   'brain-cog',
   'branch',
+  'bread',
   'briefcase-2',
   'briefcase-medical',
   'brightness',
@@ -2967,9 +4173,14 @@ export const ICON_NAMES_KEBAB = [
   'bug',
   'building',
   'building2',
+  'burger',
   'bus',
   'business-card',
   'butterfly',
+  'button-a',
+  'button-b',
+  'button-x',
+  'button-y',
   'cable',
   'cactus',
   'cake',
@@ -2983,22 +4194,35 @@ export const ICON_NAMES_KEBAB = [
   'caliper',
   'camera',
   'camera-movie',
+  'camping',
   'candle',
+  'candy',
   'cap',
+  'capsule',
   'car',
   'car-front',
   'carpet',
   'carrot',
+  'carry-on',
+  'cart-check',
+  'cart-minus',
+  'cart-plus',
+  'cart-x',
   'cast',
   'castle',
   'cat',
+  'cave',
   'certificate',
+  'certificate2',
   'chain',
   'chain-broken',
   'chair',
+  'chalkboard',
   'check',
   'check-circle',
   'check-circle-2',
+  'check-in',
+  'check-out',
   'check-square',
   'checkbox',
   'checkbox-checked',
@@ -3010,13 +4234,18 @@ export const ICON_NAMES_KEBAB = [
   'chevrons-left',
   'chevrons-right',
   'chevrons-up',
+  'chicken',
   'chimney',
   'chip-ai',
+  'chocolate',
   'chopsticks',
+  'chrome',
   'church',
+  'churn',
   'cinema',
   'circle',
   'citation',
+  'classroom',
   'clipboard',
   'clipboard-2',
   'clipboard-check',
@@ -3045,28 +4274,46 @@ export const ICON_NAMES_KEBAB = [
   'cloud-rain',
   'cloud-snow',
   'cloud-sun',
+  'clubhouse',
   'coat',
   'code',
   'code-block',
   'code-square',
   'code2',
+  'codepen',
+  'codesandbox',
   'coffee',
+  'cohort',
+  'coin',
   'coins',
   'columns',
   'command',
+  'comment',
+  'comment-check',
+  'comment-plus',
+  'comment-x',
+  'compare',
   'compass',
   'compass-2',
+  'competitive',
   'complete',
+  'concierge',
   'confused',
+  'console',
   'contact',
   'contact2',
   'container',
   'contract',
+  'contract-2',
   'contrast',
+  'controller',
+  'controller-wireless',
   'cookie',
   'cool',
+  'coop',
   'copier',
   'copy',
+  'coral',
   'corner-down-left',
   'corner-down-left-2',
   'corner-down-right',
@@ -3075,28 +4322,48 @@ export const ICON_NAMES_KEBAB = [
   'corner-up-left-2',
   'corner-up-right',
   'corner-up-right-2',
+  'correlation',
+  'coupon',
+  'course',
   'cpu',
+  'crafting',
   'credit-card',
+  'croissant',
   'cross',
   'crosshair',
   'crosshair-2',
   'crown',
+  'cruise',
+  'crutches',
   'cry',
+  'crystal',
   'css',
   'cup',
+  'cupcake',
+  'curriculum',
   'cursor',
   'cursor-click',
   'cursor-text',
   'curtain',
+  'customs-icon',
   'cycling',
+  'dashboard',
+  'data-point',
   'database',
   'database-2',
   'database-backup',
   'database-zap',
+  'deadline',
+  'deal',
   'deep-link',
   'deer',
+  'deezer',
   'defend',
+  'delegated',
+  'dependency',
+  'desert',
   'desk',
+  'desk2',
   'desktop',
   'dial',
   'diamond',
@@ -3106,35 +4373,58 @@ export const ICON_NAMES_KEBAB = [
   'dice-4',
   'dice-5',
   'dice-6',
+  'dictionary',
   'dimension',
+  'diploma',
   'directions',
   'disc',
   'disc-2',
   'disc-3',
+  'discord',
+  'discount',
+  'dislike',
+  'distraction',
   'divide-2',
+  'dividend',
   'dna',
   'dna-2',
+  'dna-helix',
   'document-printer',
   'dog',
   'dollar-sign',
+  'donut',
+  'donut-chart',
   'door',
   'door-closed',
   'door-open',
   'download',
+  'downtrend',
+  'dpad',
   'dress',
+  'dribbble',
   'drill',
   'droplet',
+  'due-date',
   'dumbbell',
+  'duplicate',
   'ear',
   'ear-hearing',
   'ear-off',
+  'ebay',
+  'edge',
   'edit',
+  'egg2',
   'electron',
   'elephant',
+  'emergency',
   'envelope-2',
   'equalizer',
   'equals',
   'eraser',
+  'estimate',
+  'etsy',
+  'exam',
+  'experiment',
   'exposure',
   'external-link',
   'external-link-2',
@@ -3142,11 +4432,16 @@ export const ICON_NAMES_KEBAB = [
   'eye-2',
   'eye-off',
   'face-id',
+  'facebook',
   'factory',
   'fast-forward',
   'faucet',
   'fax',
+  'feed',
+  'feedback',
   'fence',
+  'fern',
+  'figma',
   'file',
   'file-archive',
   'file-audio',
@@ -3165,6 +4460,7 @@ export const ICON_NAMES_KEBAB = [
   'filter',
   'fingerprint',
   'fire-truck',
+  'firefox',
   'firewall',
   'first-aid',
   'fish',
@@ -3174,23 +4470,33 @@ export const ICON_NAMES_KEBAB = [
   'flashlight-off',
   'flask-2',
   'flask-round',
+  'flat',
+  'flight-ticket',
   'flower',
   'flower-2',
+  'focus',
   'focus-ring',
   'folder',
   'folder-minus',
   'folder-open',
   'folder-plus',
   'follow',
+  'follow-2',
   'football',
   'footprints',
+  'forecast',
+  'forest',
   'fork',
   'fortress',
+  'fossil',
   'fox',
   'fraction',
+  'free-shipping',
   'frown',
   'fuel',
   'function',
+  'funnel',
+  'funnel-chart',
   'future',
   'gamepad',
   'gamepad-2',
@@ -3199,58 +4505,77 @@ export const ICON_NAMES_KEBAB = [
   'gate',
   'gauge',
   'generator',
+  'geyser',
   'gift',
   'git-branch',
   'git-commit',
   'git-fork',
   'git-merge',
   'git-pull-request',
+  'github',
+  'gitlab',
   'glasses',
   'globe',
   'globe-2',
   'glue',
   'golf',
+  'goodreads',
+  'google-cloud',
   'grab',
   'grab-cursor',
   'grabbing',
+  'grade',
   'graduation-cap',
   'grape',
   'greater-than',
   'grid',
   'grid-2x2',
   'grid-3x3',
+  'growth',
   'guard',
   'hail',
   'hammer',
   'hand',
   'hand-metal',
   'hand-wave',
+  'handheld',
   'handshake',
+  'handshake-2',
   'happy',
   'hard-drive',
   'hard-drive-2',
   'hash',
   'hashtag',
+  'hashtag-2',
   'hat',
   'heading-1',
   'heading-2',
   'heading-3',
   'headphones',
+  'health-bar',
   'heart',
   'heart-pulse',
   'heart-shape',
+  'heartbeat',
+  'heatmap',
   'helicopter',
   'help-circle',
   'help-cursor',
   'hexagon',
+  'high-score',
   'highlighter',
+  'hiking',
   'history',
   'hockey',
   'home',
+  'homework',
   'hoodie',
   'horse',
   'hospital',
+  'hotdog',
   'hotel',
+  'hotel-bed',
+  'hotel-key',
   'hourglass',
   'house-2',
   'house-check',
@@ -3261,23 +4586,39 @@ export const ICON_NAMES_KEBAB = [
   'html',
   'humidity',
   'hyperlink',
+  'hypothesis',
   'ice-cream',
+  'ice-cream-2',
   'id-card',
+  'immigration',
+  'immunity',
+  'in-progress',
+  'in-stock',
   'inbox',
   'incomplete',
   'indent',
   'infinity',
+  'influencer',
   'info',
   'info-circle',
   'ink',
+  'instagram',
   'internal-link',
+  'inventory',
+  'inventory-2',
+  'investment-2',
   'invoice',
+  'island',
   'italic',
+  'ivy',
   'jacket',
   'javascript-icon',
   'joystick',
+  'joystick-2',
   'json',
+  'jungle',
   'kanban',
+  'kanban-board',
   'kettle',
   'key',
   'key-round',
@@ -3286,8 +4627,12 @@ export const ICON_NAMES_KEBAB = [
   'keyboard-nav',
   'knife-2',
   'knob',
+  'ko-fi',
+  'kpi',
+  'lab-results',
   'ladder',
   'ladle',
+  'lake',
   'lamp',
   'lamp-ceiling',
   'lamp-desk',
@@ -3300,20 +4645,31 @@ export const ICON_NAMES_KEBAB = [
   'layout',
   'layout-grid',
   'layout-list',
+  'leaderboard',
   'leaf',
   'leaf-2',
+  'lecture',
   'less-than',
+  'letterboxd',
   'level',
+  'level-up',
   'library',
+  'library2',
   'lightbulb',
   'lightbulb-off',
   'lighthouse',
+  'like',
+  'like-filled',
+  'line',
   'line-chart',
+  'linear',
   'link',
   'link-2-off',
+  'linkedin',
   'lion',
   'list',
   'live',
+  'live-stream',
   'lively',
   'loader',
   'loading',
@@ -3322,6 +4678,9 @@ export const ICON_NAMES_KEBAB = [
   'lock',
   'lock-keyhole',
   'lock-open',
+  'lollipop',
+  'loot',
+  'loss',
   'love',
   'luggage',
   'lungs',
@@ -3331,19 +4690,27 @@ export const ICON_NAMES_KEBAB = [
   'mail-open',
   'mail-plus',
   'mailbox',
+  'mana-bar',
   'map',
   'map-pin',
   'map-pinned',
   'markdown',
   'marker',
+  'market',
   'martini',
+  'mastodon',
   'maximize',
   'maximize-2',
   'medal',
+  'medal2',
+  'medical-bag',
+  'medical-cross',
+  'medium',
   'meeting',
   'meh',
   'memory',
   'mention',
+  'mention-2',
   'menu',
   'menu-dots',
   'menu-dots-horizontal',
@@ -3352,12 +4719,16 @@ export const ICON_NAMES_KEBAB = [
   'message-circle',
   'message-square',
   'messages-square',
+  'messenger',
+  'meta',
+  'metric',
   'mic',
   'mic-off',
   'microscope',
   'microscope-2',
   'microwave',
   'milestone',
+  'milestone-2',
   'minimize',
   'minimize-2',
   'minus',
@@ -3365,16 +4736,20 @@ export const ICON_NAMES_KEBAB = [
   'minus-circle',
   'minus-square',
   'molecule',
+  'monday',
   'monitor',
   'moon',
   'more-horizontal',
+  'moss',
   'motorcycle',
   'mountain',
   'mountain-snow',
   'mouse',
   'move-cursor',
   'move-horizontal',
+  'multiplayer',
   'multiply',
+  'mushroom',
   'music',
   'music-2',
   'music-3',
@@ -3383,19 +4758,34 @@ export const ICON_NAMES_KEBAB = [
   'navigation',
   'navigation-2',
   'neon',
+  'netflix',
   'neural-network',
+  'nextjs',
+  'nodejs',
+  'noodles',
   'not-allowed',
   'not-equal',
   'notebook',
   'notebook-pen',
+  'notebook-pen2',
+  'notebook2',
+  'notion',
+  'npm',
   'nucleus',
+  'ocean',
   'octagon',
   'odometer',
   'office',
   'ok',
+  'on-hold',
+  'opera',
+  'out-of-stock',
   'outdent',
   'outlet',
+  'outlier',
   'oval',
+  'overdue',
+  'oxygen',
   'package',
   'page-setup',
   'paintbrush',
@@ -3412,10 +4802,15 @@ export const ICON_NAMES_KEBAB = [
   'paperclip-2',
   'parallelogram',
   'parking',
+  'partnership',
   'passport',
+  'passport-2',
+  'patreon',
   'pause',
   'pause-circle',
+  'paypal',
   'peace',
+  'pebbles',
   'pen',
   'pen-2',
   'pen-line',
@@ -3437,12 +4832,19 @@ export const ICON_NAMES_KEBAB = [
   'phone-off',
   'phone-outgoing',
   'pi',
+  'pickup',
   'picture-frame',
   'pie-chart',
+  'pie-chart-2',
   'piggy-bank',
   'pill',
+  'pill-2',
+  'pills',
   'pinch',
   'pine-tree',
+  'pinecone',
+  'pinterest',
+  'pitch',
   'pizza',
   'plane',
   'plane-landing',
@@ -3465,26 +4867,44 @@ export const ICON_NAMES_KEBAB = [
   'point-up',
   'pointer-2',
   'police-car',
+  'poll',
+  'pomodoro',
+  'pool',
+  'popsicle',
   'portfolio',
+  'post',
   'pot',
   'potion',
   'power-off',
+  'power-up',
+  'prescription',
   'presentation',
   'presentation-2',
+  'price-tag',
+  'price-tag-plus',
   'print-preview',
   'print-queue',
   'printer',
   'printer-2',
   'printer-check',
   'printer-x',
+  'priority',
+  'priority-high',
+  'priority-low',
+  'profit',
   'progress',
   'projector',
   'protection',
   'protractor',
+  'pulse',
   'puzzle',
   'puzzle-piece',
+  'pvp',
   'qr-code',
+  'qr-scan',
+  'quest',
   'queue',
+  'quiz',
   'quote',
   'rabbit',
   'radiation',
@@ -3494,24 +4914,51 @@ export const ICON_NAMES_KEBAB = [
   'rainbow',
   'rake',
   'ram',
+  'rating',
+  'react',
+  'reaction',
   'receipt',
   'receipt-2',
+  'receipt-check',
+  'receipt-x',
   'record',
+  'recovery',
   'rectangle',
+  'recurring',
+  'reddit',
   'reduced-motion',
   'reference',
   'refresh',
   'refrigerator',
+  'refund',
   'regex',
+  'regression',
   'rejected',
+  'reminder',
+  'reorder',
   'repeat',
+  'report',
+  'repost',
+  'research',
+  'reservation',
   'resize-diagonal',
   'resize-horizontal',
   'resize-vertical',
+  'respawn',
+  'retention',
+  'return',
+  'revenue',
+  'review-2',
   'rewind',
+  'rice',
+  'river',
+  'road-trip',
+  'roadmap',
   'robot',
   'rocket',
+  'roi',
   'roller',
+  'room-service',
   'rose',
   'route',
   'router',
@@ -3522,10 +4969,15 @@ export const ICON_NAMES_KEBAB = [
   'ruler-2',
   'ruler-square',
   'running',
+  'runway',
   'sad',
+  'safari',
   'sailboat',
+  'salad',
   'sandwich',
   'save',
+  'save-2',
+  'save-plus',
   'saw',
   'scale-2',
   'scan',
@@ -3534,7 +4986,9 @@ export const ICON_NAMES_KEBAB = [
   'scan-line',
   'scanner',
   'scanner-2',
+  'scatter-plot',
   'schedule',
+  'schedule2',
   'school',
   'scissors-2',
   'scooter',
@@ -3545,7 +4999,10 @@ export const ICON_NAMES_KEBAB = [
   'search',
   'search-minus',
   'search-plus',
+  'seaweed',
   'seedling',
+  'segment',
+  'seminar',
   'send',
   'send-2',
   'server',
@@ -3555,6 +5012,10 @@ export const ICON_NAMES_KEBAB = [
   'server-off',
   'settings',
   'share',
+  'share-2',
+  'share-forward',
+  'shareholder',
+  'shell',
   'shield',
   'shield-2',
   'shield-alert',
@@ -3571,19 +5032,26 @@ export const ICON_NAMES_KEBAB = [
   'shield-user',
   'shield-x',
   'ship',
+  'shipping',
+  'shipping-fast',
   'shirt',
+  'shopify',
   'shopping-bag',
+  'shopping-bag-plus',
   'shopping-cart',
   'shortcut',
   'shorts',
   'shovel',
+  'shrimp',
   'shuffle',
   'sidebar',
   'sidebar-close',
   'sidebar-open',
   'sigma',
+  'sign',
   'sign-language',
   'signal',
+  'signal-app',
   'signal-high',
   'signal-low',
   'signal-zero',
@@ -3592,17 +5060,23 @@ export const ICON_NAMES_KEBAB = [
   'skiing',
   'skip-back',
   'skip-forward',
+  'slack',
   'sleep',
   'slider',
   'slider-horizontal',
   'slider-vertical',
   'smartphone',
   'smile',
+  'snapchat',
   'snippet',
   'snowflake',
   'soccer',
   'sofa',
+  'soundcloud',
+  'soup',
+  'spa',
   'sparkles',
+  'sparkline',
   'spatula',
   'speaker',
   'speaker-2',
@@ -3610,24 +5084,41 @@ export const ICON_NAMES_KEBAB = [
   'speed-dial',
   'speedometer',
   'spoon-2',
+  'spotify',
   'spotlight',
+  'sprint',
   'sprout',
   'sqrt',
   'square',
   'ssd',
+  'stackoverflow',
+  'stakeholder',
   'stamp',
+  'stamp-2',
   'stapler',
   'star',
+  'starfish',
+  'startup',
   'statistics',
+  'steak',
   'stethoscope',
+  'stethoscope-2',
   'stop-circle',
   'stopwatch',
   'storage',
   'store',
+  'store-front',
+  'story',
+  'strategy',
+  'strava',
   'stream',
   'strikethrough',
+  'stripe',
+  'student-id',
   'studio',
   'subscript',
+  'substack',
+  'subtask',
   'subtitle',
   'sun',
   'sunglasses',
@@ -3636,6 +5127,9 @@ export const ICON_NAMES_KEBAB = [
   'superscript',
   'surge-protector',
   'surprised',
+  'survey',
+  'sushi',
+  'svelte',
   'sweater',
   'swimming',
   'switch-off',
@@ -3643,36 +5137,55 @@ export const ICON_NAMES_KEBAB = [
   'sword',
   'swords',
   'syringe',
+  'syringe-2',
   'table',
   'table-2',
   'tablet',
+  'taco',
   'tag',
+  'tag-person',
   'tag2',
   'tags',
+  'tailwind',
   'tape',
   'tape-measure',
   'target',
+  'target-2',
+  'task',
+  'task-check',
+  'task-list',
   'team',
+  'teams',
+  'telegram',
+  'temperature',
   'temperature-dial',
+  'template',
   'tennis',
   'tent',
   'terminal',
   'terminal-2',
+  'terminal-gate',
   'terminal-square',
   'test-tube',
   'test-tube-2',
   'test-tubes',
+  'testimonial',
   'text',
   'text-cursor',
   'text-size',
+  'textbook',
   'thermometer',
   'thermometer-2',
   'thermometer-medical',
+  'threads',
   'thumbs-down',
   'thumbs-up',
   'ticket',
   'tie',
+  'tiktok',
+  'time-tracking',
   'timeline',
+  'timeline-2',
   'timer',
   'toaster',
   'toggle',
@@ -3692,25 +5205,37 @@ export const ICON_NAMES_KEBAB = [
   'tree-2',
   'tree-palm',
   'tree-pine',
+  'treemap',
+  'trello',
+  'trending',
   'trending-down',
   'trending-up',
   'triangle',
+  'trigger',
   'trophy',
+  'trophy2',
   'truck',
   'tshirt',
   'tulip',
+  'tumblr',
   'turtle',
+  'tutor',
   'tv',
+  'twitch',
+  'twitter',
   'two-factor',
   'typescript-icon',
   'ufo',
   'umbrella',
   'underline',
   'unfollow',
+  'unfollow-2',
+  'university',
   'unlock',
   'unverified',
   'upload',
   'ups',
+  'uptrend',
   'usb-drive',
   'user',
   'user-check',
@@ -3722,14 +5247,25 @@ export const ICON_NAMES_KEBAB = [
   'users',
   'utensils',
   'utensils-crossed',
+  'vaccine',
+  'variance',
   'vault',
+  'vercel',
   'verified',
+  'verified-2',
+  'viber',
   'video',
   'video-2',
   'video-off',
+  'vimeo',
   'vinyl',
+  'viral',
+  'virus',
+  'visa',
+  'vitals',
   'voice-control',
   'voicemail',
+  'volcano',
   'volleyball',
   'volume',
   'volume-1',
@@ -3737,7 +5273,10 @@ export const ICON_NAMES_KEBAB = [
   'volume-dial',
   'volume-off',
   'volume-x',
+  'vscode',
+  'vue',
   'wait-cursor',
+  'walker',
   'wallet',
   'wallet-cards',
   'wand',
@@ -3746,15 +5285,21 @@ export const ICON_NAMES_KEBAB = [
   'warehouse',
   'watch',
   'watch-accessory',
+  'waterfall',
   'watering-can',
   'waveform',
   'waves',
   'waypoints',
   'webcam',
   'webhook',
+  'wechat',
   'weight',
+  'whatsapp',
   'wheelchair',
+  'wheelchair-2',
   'whisk',
+  'whiteboard',
+  'widget',
   'wifi',
   'wifi-off',
   'wind',
@@ -3762,44 +5307,61 @@ export const ICON_NAMES_KEBAB = [
   'window-2',
   'wine',
   'wink',
+  'wishlist',
   'wolf',
+  'workflow',
   'wrench',
   'x',
   'x-circle',
   'x-circle-2',
   'x-square',
+  'x-twitter',
   'xml',
+  'xp-bar',
+  'xray',
+  'youtube',
   'zap',
+  'zoom',
 ] as const;
 
 /**
  * Total number of icons in the library
  */
-export const ICON_COUNT = 930 as const;
+export const ICON_COUNT = 1319 as const;
 
 /**
  * Mapping from kebab-case to PascalCase names
  */
 export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
+  'ab-test': 'AbTest',
   'accessibility': 'Accessibility',
+  'achievement': 'Achievement',
+  'acorn': 'Acorn',
   'activity': 'Activity',
+  'aggregate': 'Aggregate',
+  'airbnb': 'Airbnb',
   'airplay': 'Airplay',
+  'airport': 'Airport',
   'alarm-clock': 'AlarmClock',
   'alert-circle': 'AlertCircle',
   'alert-circle-2': 'AlertCircle2',
   'alert-octagon': 'AlertOctagon',
   'alert-triangle': 'AlertTriangle',
   'alias': 'Alias',
+  'amazon': 'Amazon',
   'ambulance': 'Ambulance',
+  'ambulance-2': 'Ambulance2',
   'analytics': 'Analytics',
   'anchor': 'Anchor',
   'anchor-2': 'Anchor2',
   'angry': 'Angry',
+  'angular': 'Angular',
   'annoyed': 'Annoyed',
   'apartment': 'Apartment',
   'api': 'Api',
   'apple': 'Apple',
   'approved': 'Approved',
+  'arcade': 'Arcade',
   'archive': 'Archive',
   'archive-2': 'Archive2',
   'area-chart': 'AreaChart',
@@ -3828,15 +5390,27 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'arrows-expand': 'ArrowsExpand',
   'arrows-maximize-2': 'ArrowsMaximize2',
   'arrows-minimize-2': 'ArrowsMinimize2',
+  'asana': 'Asana',
+  'assigned': 'Assigned',
+  'assignment': 'Assignment',
   'at-sign': 'AtSign',
   'atom-2': 'Atom2',
+  'attendance': 'Attendance',
+  'attribution': 'Attribution',
   'audio-description': 'AudioDescription',
   'audio-lines': 'AudioLines',
+  'automation': 'Automation',
   'award': 'Award',
+  'aws': 'Aws',
   'axe': 'Axe',
+  'azure': 'Azure',
   'baby': 'Baby',
   'backlink': 'Backlink',
+  'backlog': 'Backlog',
   'backpack': 'Backpack',
+  'backpack2': 'Backpack2',
+  'bacon': 'Bacon',
+  'bacteria': 'Bacteria',
   'badge-2': 'Badge2',
   'badge-alert': 'BadgeAlert',
   'badge-check': 'BadgeCheck',
@@ -3848,15 +5422,20 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'badge-percent': 'BadgePercent',
   'badge-plus': 'BadgePlus',
   'badge-x': 'BadgeX',
+  'baggage': 'Baggage',
+  'baggage-claim': 'BaggageClaim',
   'ban': 'Ban',
   'banana': 'Banana',
   'bandage': 'Bandage',
+  'bandage-2': 'Bandage2',
+  'bandcamp': 'Bandcamp',
   'bank': 'Bank',
   'banknote': 'Banknote',
   'bar-chart': 'BarChart',
   'bar-chart-2': 'BarChart2',
   'bar-chart-horizontal': 'BarChartHorizontal',
   'barcode': 'Barcode',
+  'barcode-2': 'Barcode2',
   'barometer': 'Barometer',
   'baseball': 'Baseball',
   'basket': 'Basket',
@@ -3869,24 +5448,35 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'battery-low': 'BatteryLow',
   'battery-quarter': 'BatteryQuarter',
   'battery-three-quarters': 'BatteryThreeQuarters',
+  'beach': 'Beach',
   'beaker-2': 'Beaker2',
   'bear': 'Bear',
   'bed': 'Bed',
   'bee': 'Bee',
   'beer': 'Beer',
+  'behance': 'Behance',
   'bell': 'Bell',
   'bell-off': 'BellOff',
   'bell-ring': 'BellRing',
+  'benchmark': 'Benchmark',
   'bicycle': 'Bicycle',
   'bike': 'Bike',
   'binder': 'Binder',
   'biohazard-2': 'Biohazard2',
   'bird': 'Bird',
+  'bitbucket': 'Bitbucket',
   'bitcoin': 'Bitcoin',
   'blender': 'Blender',
   'block': 'Block',
+  'block-2': 'Block2',
+  'blocker': 'Blocker',
+  'blood-drop': 'BloodDrop',
+  'blood-pressure': 'BloodPressure',
+  'bluesky': 'Bluesky',
   'bluetooth': 'Bluetooth',
+  'boarding-pass': 'BoardingPass',
   'boat': 'Boat',
+  'body-scan': 'BodyScan',
   'bold': 'Bold',
   'bone': 'Bone',
   'book': 'Book',
@@ -3894,13 +5484,17 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'book-marked': 'BookMarked',
   'book-open': 'BookOpen',
   'bookmark': 'Bookmark',
+  'bookshelf': 'Bookshelf',
+  'boss': 'Boss',
   'bot': 'Bot',
+  'boulder': 'Boulder',
   'bowling': 'Bowling',
   'braille': 'Braille',
   'brain': 'Brain',
   'brain-circuit': 'BrainCircuit',
   'brain-cog': 'BrainCog',
   'branch': 'Branch',
+  'bread': 'Bread',
   'briefcase-2': 'Briefcase2',
   'briefcase-medical': 'BriefcaseMedical',
   'brightness': 'Brightness',
@@ -3909,9 +5503,14 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'bug': 'Bug',
   'building': 'Building',
   'building2': 'Building2',
+  'burger': 'Burger',
   'bus': 'Bus',
   'business-card': 'BusinessCard',
   'butterfly': 'Butterfly',
+  'button-a': 'ButtonA',
+  'button-b': 'ButtonB',
+  'button-x': 'ButtonX',
+  'button-y': 'ButtonY',
   'cable': 'Cable',
   'cactus': 'Cactus',
   'cake': 'Cake',
@@ -3925,22 +5524,35 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'caliper': 'Caliper',
   'camera': 'Camera',
   'camera-movie': 'CameraMovie',
+  'camping': 'Camping',
   'candle': 'Candle',
+  'candy': 'Candy',
   'cap': 'Cap',
+  'capsule': 'Capsule',
   'car': 'Car',
   'car-front': 'CarFront',
   'carpet': 'Carpet',
   'carrot': 'Carrot',
+  'carry-on': 'CarryOn',
+  'cart-check': 'CartCheck',
+  'cart-minus': 'CartMinus',
+  'cart-plus': 'CartPlus',
+  'cart-x': 'CartX',
   'cast': 'Cast',
   'castle': 'Castle',
   'cat': 'Cat',
+  'cave': 'Cave',
   'certificate': 'Certificate',
+  'certificate2': 'Certificate2',
   'chain': 'Chain',
   'chain-broken': 'ChainBroken',
   'chair': 'Chair',
+  'chalkboard': 'Chalkboard',
   'check': 'Check',
   'check-circle': 'CheckCircle',
   'check-circle-2': 'CheckCircle2',
+  'check-in': 'CheckIn',
+  'check-out': 'CheckOut',
   'check-square': 'CheckSquare',
   'checkbox': 'Checkbox',
   'checkbox-checked': 'CheckboxChecked',
@@ -3952,13 +5564,18 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'chevrons-left': 'ChevronsLeft',
   'chevrons-right': 'ChevronsRight',
   'chevrons-up': 'ChevronsUp',
+  'chicken': 'Chicken',
   'chimney': 'Chimney',
   'chip-ai': 'ChipAi',
+  'chocolate': 'Chocolate',
   'chopsticks': 'Chopsticks',
+  'chrome': 'Chrome',
   'church': 'Church',
+  'churn': 'Churn',
   'cinema': 'Cinema',
   'circle': 'Circle',
   'citation': 'Citation',
+  'classroom': 'Classroom',
   'clipboard': 'Clipboard',
   'clipboard-2': 'Clipboard2',
   'clipboard-check': 'ClipboardCheck',
@@ -3987,28 +5604,46 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'cloud-rain': 'CloudRain',
   'cloud-snow': 'CloudSnow',
   'cloud-sun': 'CloudSun',
+  'clubhouse': 'Clubhouse',
   'coat': 'Coat',
   'code': 'Code',
   'code-block': 'CodeBlock',
   'code-square': 'CodeSquare',
   'code2': 'Code2',
+  'codepen': 'Codepen',
+  'codesandbox': 'Codesandbox',
   'coffee': 'Coffee',
+  'cohort': 'Cohort',
+  'coin': 'Coin',
   'coins': 'Coins',
   'columns': 'Columns',
   'command': 'Command',
+  'comment': 'Comment',
+  'comment-check': 'CommentCheck',
+  'comment-plus': 'CommentPlus',
+  'comment-x': 'CommentX',
+  'compare': 'Compare',
   'compass': 'Compass',
   'compass-2': 'Compass2',
+  'competitive': 'Competitive',
   'complete': 'Complete',
+  'concierge': 'Concierge',
   'confused': 'Confused',
+  'console': 'Console',
   'contact': 'Contact',
   'contact2': 'Contact2',
   'container': 'Container',
   'contract': 'Contract',
+  'contract-2': 'Contract2',
   'contrast': 'Contrast',
+  'controller': 'Controller',
+  'controller-wireless': 'ControllerWireless',
   'cookie': 'Cookie',
   'cool': 'Cool',
+  'coop': 'Coop',
   'copier': 'Copier',
   'copy': 'Copy',
+  'coral': 'Coral',
   'corner-down-left': 'CornerDownLeft',
   'corner-down-left-2': 'CornerDownLeft2',
   'corner-down-right': 'CornerDownRight',
@@ -4017,28 +5652,48 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'corner-up-left-2': 'CornerUpLeft2',
   'corner-up-right': 'CornerUpRight',
   'corner-up-right-2': 'CornerUpRight2',
+  'correlation': 'Correlation',
+  'coupon': 'Coupon',
+  'course': 'Course',
   'cpu': 'Cpu',
+  'crafting': 'Crafting',
   'credit-card': 'CreditCard',
+  'croissant': 'Croissant',
   'cross': 'Cross',
   'crosshair': 'Crosshair',
   'crosshair-2': 'Crosshair2',
   'crown': 'Crown',
+  'cruise': 'Cruise',
+  'crutches': 'Crutches',
   'cry': 'Cry',
+  'crystal': 'Crystal',
   'css': 'Css',
   'cup': 'Cup',
+  'cupcake': 'Cupcake',
+  'curriculum': 'Curriculum',
   'cursor': 'Cursor',
   'cursor-click': 'CursorClick',
   'cursor-text': 'CursorText',
   'curtain': 'Curtain',
+  'customs-icon': 'CustomsIcon',
   'cycling': 'Cycling',
+  'dashboard': 'Dashboard',
+  'data-point': 'DataPoint',
   'database': 'Database',
   'database-2': 'Database2',
   'database-backup': 'DatabaseBackup',
   'database-zap': 'DatabaseZap',
+  'deadline': 'Deadline',
+  'deal': 'Deal',
   'deep-link': 'DeepLink',
   'deer': 'Deer',
+  'deezer': 'Deezer',
   'defend': 'Defend',
+  'delegated': 'Delegated',
+  'dependency': 'Dependency',
+  'desert': 'Desert',
   'desk': 'Desk',
+  'desk2': 'Desk2',
   'desktop': 'Desktop',
   'dial': 'Dial',
   'diamond': 'Diamond',
@@ -4048,35 +5703,58 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'dice-4': 'Dice4',
   'dice-5': 'Dice5',
   'dice-6': 'Dice6',
+  'dictionary': 'Dictionary',
   'dimension': 'Dimension',
+  'diploma': 'Diploma',
   'directions': 'Directions',
   'disc': 'Disc',
   'disc-2': 'Disc2',
   'disc-3': 'Disc3',
+  'discord': 'Discord',
+  'discount': 'Discount',
+  'dislike': 'Dislike',
+  'distraction': 'Distraction',
   'divide-2': 'Divide2',
+  'dividend': 'Dividend',
   'dna': 'Dna',
   'dna-2': 'Dna2',
+  'dna-helix': 'DnaHelix',
   'document-printer': 'DocumentPrinter',
   'dog': 'Dog',
   'dollar-sign': 'DollarSign',
+  'donut': 'Donut',
+  'donut-chart': 'DonutChart',
   'door': 'Door',
   'door-closed': 'DoorClosed',
   'door-open': 'DoorOpen',
   'download': 'Download',
+  'downtrend': 'Downtrend',
+  'dpad': 'Dpad',
   'dress': 'Dress',
+  'dribbble': 'Dribbble',
   'drill': 'Drill',
   'droplet': 'Droplet',
+  'due-date': 'DueDate',
   'dumbbell': 'Dumbbell',
+  'duplicate': 'Duplicate',
   'ear': 'Ear',
   'ear-hearing': 'EarHearing',
   'ear-off': 'EarOff',
+  'ebay': 'Ebay',
+  'edge': 'Edge',
   'edit': 'Edit',
+  'egg2': 'Egg2',
   'electron': 'Electron',
   'elephant': 'Elephant',
+  'emergency': 'Emergency',
   'envelope-2': 'Envelope2',
   'equalizer': 'Equalizer',
   'equals': 'Equals',
   'eraser': 'Eraser',
+  'estimate': 'Estimate',
+  'etsy': 'Etsy',
+  'exam': 'Exam',
+  'experiment': 'Experiment',
   'exposure': 'Exposure',
   'external-link': 'ExternalLink',
   'external-link-2': 'ExternalLink2',
@@ -4084,11 +5762,16 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'eye-2': 'Eye2',
   'eye-off': 'EyeOff',
   'face-id': 'FaceId',
+  'facebook': 'Facebook',
   'factory': 'Factory',
   'fast-forward': 'FastForward',
   'faucet': 'Faucet',
   'fax': 'Fax',
+  'feed': 'Feed',
+  'feedback': 'Feedback',
   'fence': 'Fence',
+  'fern': 'Fern',
+  'figma': 'Figma',
   'file': 'File',
   'file-archive': 'FileArchive',
   'file-audio': 'FileAudio',
@@ -4107,6 +5790,7 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'filter': 'Filter',
   'fingerprint': 'Fingerprint',
   'fire-truck': 'FireTruck',
+  'firefox': 'Firefox',
   'firewall': 'Firewall',
   'first-aid': 'FirstAid',
   'fish': 'Fish',
@@ -4116,23 +5800,33 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'flashlight-off': 'FlashlightOff',
   'flask-2': 'Flask2',
   'flask-round': 'FlaskRound',
+  'flat': 'Flat',
+  'flight-ticket': 'FlightTicket',
   'flower': 'Flower',
   'flower-2': 'Flower2',
+  'focus': 'Focus',
   'focus-ring': 'FocusRing',
   'folder': 'Folder',
   'folder-minus': 'FolderMinus',
   'folder-open': 'FolderOpen',
   'folder-plus': 'FolderPlus',
   'follow': 'Follow',
+  'follow-2': 'Follow2',
   'football': 'Football',
   'footprints': 'Footprints',
+  'forecast': 'Forecast',
+  'forest': 'Forest',
   'fork': 'Fork',
   'fortress': 'Fortress',
+  'fossil': 'Fossil',
   'fox': 'Fox',
   'fraction': 'Fraction',
+  'free-shipping': 'FreeShipping',
   'frown': 'Frown',
   'fuel': 'Fuel',
   'function': 'Function',
+  'funnel': 'Funnel',
+  'funnel-chart': 'FunnelChart',
   'future': 'Future',
   'gamepad': 'Gamepad',
   'gamepad-2': 'Gamepad2',
@@ -4141,58 +5835,77 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'gate': 'Gate',
   'gauge': 'Gauge',
   'generator': 'Generator',
+  'geyser': 'Geyser',
   'gift': 'Gift',
   'git-branch': 'GitBranch',
   'git-commit': 'GitCommit',
   'git-fork': 'GitFork',
   'git-merge': 'GitMerge',
   'git-pull-request': 'GitPullRequest',
+  'github': 'Github',
+  'gitlab': 'Gitlab',
   'glasses': 'Glasses',
   'globe': 'Globe',
   'globe-2': 'Globe2',
   'glue': 'Glue',
   'golf': 'Golf',
+  'goodreads': 'Goodreads',
+  'google-cloud': 'GoogleCloud',
   'grab': 'Grab',
   'grab-cursor': 'GrabCursor',
   'grabbing': 'Grabbing',
+  'grade': 'Grade',
   'graduation-cap': 'GraduationCap',
   'grape': 'Grape',
   'greater-than': 'GreaterThan',
   'grid': 'Grid',
   'grid-2x2': 'Grid2x2',
   'grid-3x3': 'Grid3x3',
+  'growth': 'Growth',
   'guard': 'Guard',
   'hail': 'Hail',
   'hammer': 'Hammer',
   'hand': 'Hand',
   'hand-metal': 'HandMetal',
   'hand-wave': 'HandWave',
+  'handheld': 'Handheld',
   'handshake': 'Handshake',
+  'handshake-2': 'Handshake2',
   'happy': 'Happy',
   'hard-drive': 'HardDrive',
   'hard-drive-2': 'HardDrive2',
   'hash': 'Hash',
   'hashtag': 'Hashtag',
+  'hashtag-2': 'Hashtag2',
   'hat': 'Hat',
   'heading-1': 'Heading1',
   'heading-2': 'Heading2',
   'heading-3': 'Heading3',
   'headphones': 'Headphones',
+  'health-bar': 'HealthBar',
   'heart': 'Heart',
   'heart-pulse': 'HeartPulse',
   'heart-shape': 'HeartShape',
+  'heartbeat': 'Heartbeat',
+  'heatmap': 'Heatmap',
   'helicopter': 'Helicopter',
   'help-circle': 'HelpCircle',
   'help-cursor': 'HelpCursor',
   'hexagon': 'Hexagon',
+  'high-score': 'HighScore',
   'highlighter': 'Highlighter',
+  'hiking': 'Hiking',
   'history': 'History',
   'hockey': 'Hockey',
   'home': 'Home',
+  'homework': 'Homework',
   'hoodie': 'Hoodie',
   'horse': 'Horse',
   'hospital': 'Hospital',
+  'hotdog': 'Hotdog',
   'hotel': 'Hotel',
+  'hotel-bed': 'HotelBed',
+  'hotel-key': 'HotelKey',
   'hourglass': 'Hourglass',
   'house-2': 'House2',
   'house-check': 'HouseCheck',
@@ -4203,23 +5916,39 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'html': 'Html',
   'humidity': 'Humidity',
   'hyperlink': 'Hyperlink',
+  'hypothesis': 'Hypothesis',
   'ice-cream': 'IceCream',
+  'ice-cream-2': 'IceCream2',
   'id-card': 'IdCard',
+  'immigration': 'Immigration',
+  'immunity': 'Immunity',
+  'in-progress': 'InProgress',
+  'in-stock': 'InStock',
   'inbox': 'Inbox',
   'incomplete': 'Incomplete',
   'indent': 'Indent',
   'infinity': 'Infinity',
+  'influencer': 'Influencer',
   'info': 'Info',
   'info-circle': 'InfoCircle',
   'ink': 'Ink',
+  'instagram': 'Instagram',
   'internal-link': 'InternalLink',
+  'inventory': 'Inventory',
+  'inventory-2': 'Inventory2',
+  'investment-2': 'Investment2',
   'invoice': 'Invoice',
+  'island': 'Island',
   'italic': 'Italic',
+  'ivy': 'Ivy',
   'jacket': 'Jacket',
   'javascript-icon': 'JavascriptIcon',
   'joystick': 'Joystick',
+  'joystick-2': 'Joystick2',
   'json': 'Json',
+  'jungle': 'Jungle',
   'kanban': 'Kanban',
+  'kanban-board': 'KanbanBoard',
   'kettle': 'Kettle',
   'key': 'Key',
   'key-round': 'KeyRound',
@@ -4228,8 +5957,12 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'keyboard-nav': 'KeyboardNav',
   'knife-2': 'Knife2',
   'knob': 'Knob',
+  'ko-fi': 'KoFi',
+  'kpi': 'Kpi',
+  'lab-results': 'LabResults',
   'ladder': 'Ladder',
   'ladle': 'Ladle',
+  'lake': 'Lake',
   'lamp': 'Lamp',
   'lamp-ceiling': 'LampCeiling',
   'lamp-desk': 'LampDesk',
@@ -4242,20 +5975,31 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'layout': 'Layout',
   'layout-grid': 'LayoutGrid',
   'layout-list': 'LayoutList',
+  'leaderboard': 'Leaderboard',
   'leaf': 'Leaf',
   'leaf-2': 'Leaf2',
+  'lecture': 'Lecture',
   'less-than': 'LessThan',
+  'letterboxd': 'Letterboxd',
   'level': 'Level',
+  'level-up': 'LevelUp',
   'library': 'Library',
+  'library2': 'Library2',
   'lightbulb': 'Lightbulb',
   'lightbulb-off': 'LightbulbOff',
   'lighthouse': 'Lighthouse',
+  'like': 'Like',
+  'like-filled': 'LikeFilled',
+  'line': 'Line',
   'line-chart': 'LineChart',
+  'linear': 'Linear',
   'link': 'Link',
   'link-2-off': 'Link2Off',
+  'linkedin': 'Linkedin',
   'lion': 'Lion',
   'list': 'List',
   'live': 'Live',
+  'live-stream': 'LiveStream',
   'lively': 'Lively',
   'loader': 'Loader',
   'loading': 'Loading',
@@ -4264,6 +6008,9 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'lock': 'Lock',
   'lock-keyhole': 'LockKeyhole',
   'lock-open': 'LockOpen',
+  'lollipop': 'Lollipop',
+  'loot': 'Loot',
+  'loss': 'Loss',
   'love': 'Love',
   'luggage': 'Luggage',
   'lungs': 'Lungs',
@@ -4273,19 +6020,27 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'mail-open': 'MailOpen',
   'mail-plus': 'MailPlus',
   'mailbox': 'Mailbox',
+  'mana-bar': 'ManaBar',
   'map': 'Map',
   'map-pin': 'MapPin',
   'map-pinned': 'MapPinned',
   'markdown': 'Markdown',
   'marker': 'Marker',
+  'market': 'Market',
   'martini': 'Martini',
+  'mastodon': 'Mastodon',
   'maximize': 'Maximize',
   'maximize-2': 'Maximize2',
   'medal': 'Medal',
+  'medal2': 'Medal2',
+  'medical-bag': 'MedicalBag',
+  'medical-cross': 'MedicalCross',
+  'medium': 'Medium',
   'meeting': 'Meeting',
   'meh': 'Meh',
   'memory': 'Memory',
   'mention': 'Mention',
+  'mention-2': 'Mention2',
   'menu': 'Menu',
   'menu-dots': 'MenuDots',
   'menu-dots-horizontal': 'MenuDotsHorizontal',
@@ -4294,12 +6049,16 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'message-circle': 'MessageCircle',
   'message-square': 'MessageSquare',
   'messages-square': 'MessagesSquare',
+  'messenger': 'Messenger',
+  'meta': 'Meta',
+  'metric': 'Metric',
   'mic': 'Mic',
   'mic-off': 'MicOff',
   'microscope': 'Microscope',
   'microscope-2': 'Microscope2',
   'microwave': 'Microwave',
   'milestone': 'Milestone',
+  'milestone-2': 'Milestone2',
   'minimize': 'Minimize',
   'minimize-2': 'Minimize2',
   'minus': 'Minus',
@@ -4307,16 +6066,20 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'minus-circle': 'MinusCircle',
   'minus-square': 'MinusSquare',
   'molecule': 'Molecule',
+  'monday': 'Monday',
   'monitor': 'Monitor',
   'moon': 'Moon',
   'more-horizontal': 'MoreHorizontal',
+  'moss': 'Moss',
   'motorcycle': 'Motorcycle',
   'mountain': 'Mountain',
   'mountain-snow': 'MountainSnow',
   'mouse': 'Mouse',
   'move-cursor': 'MoveCursor',
   'move-horizontal': 'MoveHorizontal',
+  'multiplayer': 'Multiplayer',
   'multiply': 'Multiply',
+  'mushroom': 'Mushroom',
   'music': 'Music',
   'music-2': 'Music2',
   'music-3': 'Music3',
@@ -4325,19 +6088,34 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'navigation': 'Navigation',
   'navigation-2': 'Navigation2',
   'neon': 'Neon',
+  'netflix': 'Netflix',
   'neural-network': 'NeuralNetwork',
+  'nextjs': 'Nextjs',
+  'nodejs': 'Nodejs',
+  'noodles': 'Noodles',
   'not-allowed': 'NotAllowed',
   'not-equal': 'NotEqual',
   'notebook': 'Notebook',
   'notebook-pen': 'NotebookPen',
+  'notebook-pen2': 'NotebookPen2',
+  'notebook2': 'Notebook2',
+  'notion': 'Notion',
+  'npm': 'Npm',
   'nucleus': 'Nucleus',
+  'ocean': 'Ocean',
   'octagon': 'Octagon',
   'odometer': 'Odometer',
   'office': 'Office',
   'ok': 'Ok',
+  'on-hold': 'OnHold',
+  'opera': 'Opera',
+  'out-of-stock': 'OutOfStock',
   'outdent': 'Outdent',
   'outlet': 'Outlet',
+  'outlier': 'Outlier',
   'oval': 'Oval',
+  'overdue': 'Overdue',
+  'oxygen': 'Oxygen',
   'package': 'Package',
   'page-setup': 'PageSetup',
   'paintbrush': 'Paintbrush',
@@ -4354,10 +6132,15 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'paperclip-2': 'Paperclip2',
   'parallelogram': 'Parallelogram',
   'parking': 'Parking',
+  'partnership': 'Partnership',
   'passport': 'Passport',
+  'passport-2': 'Passport2',
+  'patreon': 'Patreon',
   'pause': 'Pause',
   'pause-circle': 'PauseCircle',
+  'paypal': 'Paypal',
   'peace': 'Peace',
+  'pebbles': 'Pebbles',
   'pen': 'Pen',
   'pen-2': 'Pen2',
   'pen-line': 'PenLine',
@@ -4379,12 +6162,19 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'phone-off': 'PhoneOff',
   'phone-outgoing': 'PhoneOutgoing',
   'pi': 'Pi',
+  'pickup': 'Pickup',
   'picture-frame': 'PictureFrame',
   'pie-chart': 'PieChart',
+  'pie-chart-2': 'PieChart2',
   'piggy-bank': 'PiggyBank',
   'pill': 'Pill',
+  'pill-2': 'Pill2',
+  'pills': 'Pills',
   'pinch': 'Pinch',
   'pine-tree': 'PineTree',
+  'pinecone': 'Pinecone',
+  'pinterest': 'Pinterest',
+  'pitch': 'Pitch',
   'pizza': 'Pizza',
   'plane': 'Plane',
   'plane-landing': 'PlaneLanding',
@@ -4407,26 +6197,44 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'point-up': 'PointUp',
   'pointer-2': 'Pointer2',
   'police-car': 'PoliceCar',
+  'poll': 'Poll',
+  'pomodoro': 'Pomodoro',
+  'pool': 'Pool',
+  'popsicle': 'Popsicle',
   'portfolio': 'Portfolio',
+  'post': 'Post',
   'pot': 'Pot',
   'potion': 'Potion',
   'power-off': 'PowerOff',
+  'power-up': 'PowerUp',
+  'prescription': 'Prescription',
   'presentation': 'Presentation',
   'presentation-2': 'Presentation2',
+  'price-tag': 'PriceTag',
+  'price-tag-plus': 'PriceTagPlus',
   'print-preview': 'PrintPreview',
   'print-queue': 'PrintQueue',
   'printer': 'Printer',
   'printer-2': 'Printer2',
   'printer-check': 'PrinterCheck',
   'printer-x': 'PrinterX',
+  'priority': 'Priority',
+  'priority-high': 'PriorityHigh',
+  'priority-low': 'PriorityLow',
+  'profit': 'Profit',
   'progress': 'Progress',
   'projector': 'Projector',
   'protection': 'Protection',
   'protractor': 'Protractor',
+  'pulse': 'Pulse',
   'puzzle': 'Puzzle',
   'puzzle-piece': 'PuzzlePiece',
+  'pvp': 'Pvp',
   'qr-code': 'QrCode',
+  'qr-scan': 'QrScan',
+  'quest': 'Quest',
   'queue': 'Queue',
+  'quiz': 'Quiz',
   'quote': 'Quote',
   'rabbit': 'Rabbit',
   'radiation': 'Radiation',
@@ -4436,24 +6244,51 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'rainbow': 'Rainbow',
   'rake': 'Rake',
   'ram': 'Ram',
+  'rating': 'Rating',
+  'react': 'React',
+  'reaction': 'Reaction',
   'receipt': 'Receipt',
   'receipt-2': 'Receipt2',
+  'receipt-check': 'ReceiptCheck',
+  'receipt-x': 'ReceiptX',
   'record': 'Record',
+  'recovery': 'Recovery',
   'rectangle': 'Rectangle',
+  'recurring': 'Recurring',
+  'reddit': 'Reddit',
   'reduced-motion': 'ReducedMotion',
   'reference': 'Reference',
   'refresh': 'Refresh',
   'refrigerator': 'Refrigerator',
+  'refund': 'Refund',
   'regex': 'Regex',
+  'regression': 'Regression',
   'rejected': 'Rejected',
+  'reminder': 'Reminder',
+  'reorder': 'Reorder',
   'repeat': 'Repeat',
+  'report': 'Report',
+  'repost': 'Repost',
+  'research': 'Research',
+  'reservation': 'Reservation',
   'resize-diagonal': 'ResizeDiagonal',
   'resize-horizontal': 'ResizeHorizontal',
   'resize-vertical': 'ResizeVertical',
+  'respawn': 'Respawn',
+  'retention': 'Retention',
+  'return': 'Return',
+  'revenue': 'Revenue',
+  'review-2': 'Review2',
   'rewind': 'Rewind',
+  'rice': 'Rice',
+  'river': 'River',
+  'road-trip': 'RoadTrip',
+  'roadmap': 'Roadmap',
   'robot': 'Robot',
   'rocket': 'Rocket',
+  'roi': 'Roi',
   'roller': 'Roller',
+  'room-service': 'RoomService',
   'rose': 'Rose',
   'route': 'Route',
   'router': 'Router',
@@ -4464,10 +6299,15 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'ruler-2': 'Ruler2',
   'ruler-square': 'RulerSquare',
   'running': 'Running',
+  'runway': 'Runway',
   'sad': 'Sad',
+  'safari': 'Safari',
   'sailboat': 'Sailboat',
+  'salad': 'Salad',
   'sandwich': 'Sandwich',
   'save': 'Save',
+  'save-2': 'Save2',
+  'save-plus': 'SavePlus',
   'saw': 'Saw',
   'scale-2': 'Scale2',
   'scan': 'Scan',
@@ -4476,7 +6316,9 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'scan-line': 'ScanLine',
   'scanner': 'Scanner',
   'scanner-2': 'Scanner2',
+  'scatter-plot': 'ScatterPlot',
   'schedule': 'Schedule',
+  'schedule2': 'Schedule2',
   'school': 'School',
   'scissors-2': 'Scissors2',
   'scooter': 'Scooter',
@@ -4487,7 +6329,10 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'search': 'Search',
   'search-minus': 'SearchMinus',
   'search-plus': 'SearchPlus',
+  'seaweed': 'Seaweed',
   'seedling': 'Seedling',
+  'segment': 'Segment',
+  'seminar': 'Seminar',
   'send': 'Send',
   'send-2': 'Send2',
   'server': 'Server',
@@ -4497,6 +6342,10 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'server-off': 'ServerOff',
   'settings': 'Settings',
   'share': 'Share',
+  'share-2': 'Share2',
+  'share-forward': 'ShareForward',
+  'shareholder': 'Shareholder',
+  'shell': 'Shell',
   'shield': 'Shield',
   'shield-2': 'Shield2',
   'shield-alert': 'ShieldAlert',
@@ -4513,19 +6362,26 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'shield-user': 'ShieldUser',
   'shield-x': 'ShieldX',
   'ship': 'Ship',
+  'shipping': 'Shipping',
+  'shipping-fast': 'ShippingFast',
   'shirt': 'Shirt',
+  'shopify': 'Shopify',
   'shopping-bag': 'ShoppingBag',
+  'shopping-bag-plus': 'ShoppingBagPlus',
   'shopping-cart': 'ShoppingCart',
   'shortcut': 'Shortcut',
   'shorts': 'Shorts',
   'shovel': 'Shovel',
+  'shrimp': 'Shrimp',
   'shuffle': 'Shuffle',
   'sidebar': 'Sidebar',
   'sidebar-close': 'SidebarClose',
   'sidebar-open': 'SidebarOpen',
   'sigma': 'Sigma',
+  'sign': 'Sign',
   'sign-language': 'SignLanguage',
   'signal': 'Signal',
+  'signal-app': 'SignalApp',
   'signal-high': 'SignalHigh',
   'signal-low': 'SignalLow',
   'signal-zero': 'SignalZero',
@@ -4534,17 +6390,23 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'skiing': 'Skiing',
   'skip-back': 'SkipBack',
   'skip-forward': 'SkipForward',
+  'slack': 'Slack',
   'sleep': 'Sleep',
   'slider': 'Slider',
   'slider-horizontal': 'SliderHorizontal',
   'slider-vertical': 'SliderVertical',
   'smartphone': 'Smartphone',
   'smile': 'Smile',
+  'snapchat': 'Snapchat',
   'snippet': 'Snippet',
   'snowflake': 'Snowflake',
   'soccer': 'Soccer',
   'sofa': 'Sofa',
+  'soundcloud': 'Soundcloud',
+  'soup': 'Soup',
+  'spa': 'Spa',
   'sparkles': 'Sparkles',
+  'sparkline': 'Sparkline',
   'spatula': 'Spatula',
   'speaker': 'Speaker',
   'speaker-2': 'Speaker2',
@@ -4552,24 +6414,41 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'speed-dial': 'SpeedDial',
   'speedometer': 'Speedometer',
   'spoon-2': 'Spoon2',
+  'spotify': 'Spotify',
   'spotlight': 'Spotlight',
+  'sprint': 'Sprint',
   'sprout': 'Sprout',
   'sqrt': 'Sqrt',
   'square': 'Square',
   'ssd': 'Ssd',
+  'stackoverflow': 'Stackoverflow',
+  'stakeholder': 'Stakeholder',
   'stamp': 'Stamp',
+  'stamp-2': 'Stamp2',
   'stapler': 'Stapler',
   'star': 'Star',
+  'starfish': 'Starfish',
+  'startup': 'Startup',
   'statistics': 'Statistics',
+  'steak': 'Steak',
   'stethoscope': 'Stethoscope',
+  'stethoscope-2': 'Stethoscope2',
   'stop-circle': 'StopCircle',
   'stopwatch': 'Stopwatch',
   'storage': 'Storage',
   'store': 'Store',
+  'store-front': 'StoreFront',
+  'story': 'Story',
+  'strategy': 'Strategy',
+  'strava': 'Strava',
   'stream': 'Stream',
   'strikethrough': 'Strikethrough',
+  'stripe': 'Stripe',
+  'student-id': 'StudentId',
   'studio': 'Studio',
   'subscript': 'Subscript',
+  'substack': 'Substack',
+  'subtask': 'Subtask',
   'subtitle': 'Subtitle',
   'sun': 'Sun',
   'sunglasses': 'Sunglasses',
@@ -4578,6 +6457,9 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'superscript': 'Superscript',
   'surge-protector': 'SurgeProtector',
   'surprised': 'Surprised',
+  'survey': 'Survey',
+  'sushi': 'Sushi',
+  'svelte': 'Svelte',
   'sweater': 'Sweater',
   'swimming': 'Swimming',
   'switch-off': 'SwitchOff',
@@ -4585,36 +6467,55 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'sword': 'Sword',
   'swords': 'Swords',
   'syringe': 'Syringe',
+  'syringe-2': 'Syringe2',
   'table': 'Table',
   'table-2': 'Table2',
   'tablet': 'Tablet',
+  'taco': 'Taco',
   'tag': 'Tag',
+  'tag-person': 'TagPerson',
   'tag2': 'Tag2',
   'tags': 'Tags',
+  'tailwind': 'Tailwind',
   'tape': 'Tape',
   'tape-measure': 'TapeMeasure',
   'target': 'Target',
+  'target-2': 'Target2',
+  'task': 'Task',
+  'task-check': 'TaskCheck',
+  'task-list': 'TaskList',
   'team': 'Team',
+  'teams': 'Teams',
+  'telegram': 'Telegram',
+  'temperature': 'Temperature',
   'temperature-dial': 'TemperatureDial',
+  'template': 'Template',
   'tennis': 'Tennis',
   'tent': 'Tent',
   'terminal': 'Terminal',
   'terminal-2': 'Terminal2',
+  'terminal-gate': 'TerminalGate',
   'terminal-square': 'TerminalSquare',
   'test-tube': 'TestTube',
   'test-tube-2': 'TestTube2',
   'test-tubes': 'TestTubes',
+  'testimonial': 'Testimonial',
   'text': 'Text',
   'text-cursor': 'TextCursor',
   'text-size': 'TextSize',
+  'textbook': 'Textbook',
   'thermometer': 'Thermometer',
   'thermometer-2': 'Thermometer2',
   'thermometer-medical': 'ThermometerMedical',
+  'threads': 'Threads',
   'thumbs-down': 'ThumbsDown',
   'thumbs-up': 'ThumbsUp',
   'ticket': 'Ticket',
   'tie': 'Tie',
+  'tiktok': 'Tiktok',
+  'time-tracking': 'TimeTracking',
   'timeline': 'Timeline',
+  'timeline-2': 'Timeline2',
   'timer': 'Timer',
   'toaster': 'Toaster',
   'toggle': 'Toggle',
@@ -4634,25 +6535,37 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'tree-2': 'Tree2',
   'tree-palm': 'TreePalm',
   'tree-pine': 'TreePine',
+  'treemap': 'Treemap',
+  'trello': 'Trello',
+  'trending': 'Trending',
   'trending-down': 'TrendingDown',
   'trending-up': 'TrendingUp',
   'triangle': 'Triangle',
+  'trigger': 'Trigger',
   'trophy': 'Trophy',
+  'trophy2': 'Trophy2',
   'truck': 'Truck',
   'tshirt': 'Tshirt',
   'tulip': 'Tulip',
+  'tumblr': 'Tumblr',
   'turtle': 'Turtle',
+  'tutor': 'Tutor',
   'tv': 'Tv',
+  'twitch': 'Twitch',
+  'twitter': 'Twitter',
   'two-factor': 'TwoFactor',
   'typescript-icon': 'TypescriptIcon',
   'ufo': 'Ufo',
   'umbrella': 'Umbrella',
   'underline': 'Underline',
   'unfollow': 'Unfollow',
+  'unfollow-2': 'Unfollow2',
+  'university': 'University',
   'unlock': 'Unlock',
   'unverified': 'Unverified',
   'upload': 'Upload',
   'ups': 'Ups',
+  'uptrend': 'Uptrend',
   'usb-drive': 'UsbDrive',
   'user': 'User',
   'user-check': 'UserCheck',
@@ -4664,14 +6577,25 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'users': 'Users',
   'utensils': 'Utensils',
   'utensils-crossed': 'UtensilsCrossed',
+  'vaccine': 'Vaccine',
+  'variance': 'Variance',
   'vault': 'Vault',
+  'vercel': 'Vercel',
   'verified': 'Verified',
+  'verified-2': 'Verified2',
+  'viber': 'Viber',
   'video': 'Video',
   'video-2': 'Video2',
   'video-off': 'VideoOff',
+  'vimeo': 'Vimeo',
   'vinyl': 'Vinyl',
+  'viral': 'Viral',
+  'virus': 'Virus',
+  'visa': 'Visa',
+  'vitals': 'Vitals',
   'voice-control': 'VoiceControl',
   'voicemail': 'Voicemail',
+  'volcano': 'Volcano',
   'volleyball': 'Volleyball',
   'volume': 'Volume',
   'volume-1': 'Volume1',
@@ -4679,7 +6603,10 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'volume-dial': 'VolumeDial',
   'volume-off': 'VolumeOff',
   'volume-x': 'VolumeX',
+  'vscode': 'Vscode',
+  'vue': 'Vue',
   'wait-cursor': 'WaitCursor',
+  'walker': 'Walker',
   'wallet': 'Wallet',
   'wallet-cards': 'WalletCards',
   'wand': 'Wand',
@@ -4688,15 +6615,21 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'warehouse': 'Warehouse',
   'watch': 'Watch',
   'watch-accessory': 'WatchAccessory',
+  'waterfall': 'Waterfall',
   'watering-can': 'WateringCan',
   'waveform': 'Waveform',
   'waves': 'Waves',
   'waypoints': 'Waypoints',
   'webcam': 'Webcam',
   'webhook': 'Webhook',
+  'wechat': 'Wechat',
   'weight': 'Weight',
+  'whatsapp': 'Whatsapp',
   'wheelchair': 'Wheelchair',
+  'wheelchair-2': 'Wheelchair2',
   'whisk': 'Whisk',
+  'whiteboard': 'Whiteboard',
+  'widget': 'Widget',
   'wifi': 'Wifi',
   'wifi-off': 'WifiOff',
   'wind': 'Wind',
@@ -4704,14 +6637,21 @@ export const ICON_NAME_MAP: Record<IconNameKebab, IconName> = {
   'window-2': 'Window2',
   'wine': 'Wine',
   'wink': 'Wink',
+  'wishlist': 'Wishlist',
   'wolf': 'Wolf',
+  'workflow': 'Workflow',
   'wrench': 'Wrench',
   'x': 'X',
   'x-circle': 'XCircle',
   'x-circle-2': 'XCircle2',
   'x-square': 'XSquare',
+  'x-twitter': 'XTwitter',
   'xml': 'Xml',
+  'xp-bar': 'XpBar',
+  'xray': 'Xray',
+  'youtube': 'Youtube',
   'zap': 'Zap',
+  'zoom': 'Zoom',
 };
 
 /**

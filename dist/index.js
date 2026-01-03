@@ -358,25 +358,35 @@ function useIconConfig(props) {
 
 // src/lib/icon-names.ts
 var ICON_NAMES = [
+  "AbTest",
   "Accessibility",
+  "Achievement",
+  "Acorn",
   "Activity",
+  "Aggregate",
+  "Airbnb",
   "Airplay",
+  "Airport",
   "AlarmClock",
   "AlertCircle",
   "AlertCircle2",
   "AlertOctagon",
   "AlertTriangle",
   "Alias",
+  "Amazon",
   "Ambulance",
+  "Ambulance2",
   "Analytics",
   "Anchor",
   "Anchor2",
   "Angry",
+  "Angular",
   "Annoyed",
   "Apartment",
   "Api",
   "Apple",
   "Approved",
+  "Arcade",
   "Archive",
   "Archive2",
   "AreaChart",
@@ -405,15 +415,27 @@ var ICON_NAMES = [
   "ArrowsExpand",
   "ArrowsMaximize2",
   "ArrowsMinimize2",
+  "Asana",
+  "Assigned",
+  "Assignment",
   "AtSign",
   "Atom2",
+  "Attendance",
+  "Attribution",
   "AudioDescription",
   "AudioLines",
+  "Automation",
   "Award",
+  "Aws",
   "Axe",
+  "Azure",
   "Baby",
   "Backlink",
+  "Backlog",
   "Backpack",
+  "Backpack2",
+  "Bacon",
+  "Bacteria",
   "Badge2",
   "BadgeAlert",
   "BadgeCheck",
@@ -425,15 +447,20 @@ var ICON_NAMES = [
   "BadgePercent",
   "BadgePlus",
   "BadgeX",
+  "Baggage",
+  "BaggageClaim",
   "Ban",
   "Banana",
   "Bandage",
+  "Bandage2",
+  "Bandcamp",
   "Bank",
   "Banknote",
   "BarChart",
   "BarChart2",
   "BarChartHorizontal",
   "Barcode",
+  "Barcode2",
   "Barometer",
   "Baseball",
   "Basket",
@@ -446,24 +473,35 @@ var ICON_NAMES = [
   "BatteryLow",
   "BatteryQuarter",
   "BatteryThreeQuarters",
+  "Beach",
   "Beaker2",
   "Bear",
   "Bed",
   "Bee",
   "Beer",
+  "Behance",
   "Bell",
   "BellOff",
   "BellRing",
+  "Benchmark",
   "Bicycle",
   "Bike",
   "Binder",
   "Biohazard2",
   "Bird",
+  "Bitbucket",
   "Bitcoin",
   "Blender",
   "Block",
+  "Block2",
+  "Blocker",
+  "BloodDrop",
+  "BloodPressure",
+  "Bluesky",
   "Bluetooth",
+  "BoardingPass",
   "Boat",
+  "BodyScan",
   "Bold",
   "Bone",
   "Book",
@@ -471,13 +509,17 @@ var ICON_NAMES = [
   "BookMarked",
   "BookOpen",
   "Bookmark",
+  "Bookshelf",
+  "Boss",
   "Bot",
+  "Boulder",
   "Bowling",
   "Braille",
   "Brain",
   "BrainCircuit",
   "BrainCog",
   "Branch",
+  "Bread",
   "Briefcase2",
   "BriefcaseMedical",
   "Brightness",
@@ -486,9 +528,14 @@ var ICON_NAMES = [
   "Bug",
   "Building",
   "Building2",
+  "Burger",
   "Bus",
   "BusinessCard",
   "Butterfly",
+  "ButtonA",
+  "ButtonB",
+  "ButtonX",
+  "ButtonY",
   "Cable",
   "Cactus",
   "Cake",
@@ -502,22 +549,35 @@ var ICON_NAMES = [
   "Caliper",
   "Camera",
   "CameraMovie",
+  "Camping",
   "Candle",
+  "Candy",
   "Cap",
+  "Capsule",
   "Car",
   "CarFront",
   "Carpet",
   "Carrot",
+  "CarryOn",
+  "CartCheck",
+  "CartMinus",
+  "CartPlus",
+  "CartX",
   "Cast",
   "Castle",
   "Cat",
+  "Cave",
   "Certificate",
+  "Certificate2",
   "Chain",
   "ChainBroken",
   "Chair",
+  "Chalkboard",
   "Check",
   "CheckCircle",
   "CheckCircle2",
+  "CheckIn",
+  "CheckOut",
   "CheckSquare",
   "Checkbox",
   "CheckboxChecked",
@@ -529,13 +589,18 @@ var ICON_NAMES = [
   "ChevronsLeft",
   "ChevronsRight",
   "ChevronsUp",
+  "Chicken",
   "Chimney",
   "ChipAi",
+  "Chocolate",
   "Chopsticks",
+  "Chrome",
   "Church",
+  "Churn",
   "Cinema",
   "Circle",
   "Citation",
+  "Classroom",
   "Clipboard",
   "Clipboard2",
   "ClipboardCheck",
@@ -564,28 +629,46 @@ var ICON_NAMES = [
   "CloudRain",
   "CloudSnow",
   "CloudSun",
+  "Clubhouse",
   "Coat",
   "Code",
   "CodeBlock",
   "CodeSquare",
   "Code2",
+  "Codepen",
+  "Codesandbox",
   "Coffee",
+  "Cohort",
+  "Coin",
   "Coins",
   "Columns",
   "Command",
+  "Comment",
+  "CommentCheck",
+  "CommentPlus",
+  "CommentX",
+  "Compare",
   "Compass",
   "Compass2",
+  "Competitive",
   "Complete",
+  "Concierge",
   "Confused",
+  "Console",
   "Contact",
   "Contact2",
   "Container",
   "Contract",
+  "Contract2",
   "Contrast",
+  "Controller",
+  "ControllerWireless",
   "Cookie",
   "Cool",
+  "Coop",
   "Copier",
   "Copy",
+  "Coral",
   "CornerDownLeft",
   "CornerDownLeft2",
   "CornerDownRight",
@@ -594,28 +677,48 @@ var ICON_NAMES = [
   "CornerUpLeft2",
   "CornerUpRight",
   "CornerUpRight2",
+  "Correlation",
+  "Coupon",
+  "Course",
   "Cpu",
+  "Crafting",
   "CreditCard",
+  "Croissant",
   "Cross",
   "Crosshair",
   "Crosshair2",
   "Crown",
+  "Cruise",
+  "Crutches",
   "Cry",
+  "Crystal",
   "Css",
   "Cup",
+  "Cupcake",
+  "Curriculum",
   "Cursor",
   "CursorClick",
   "CursorText",
   "Curtain",
+  "CustomsIcon",
   "Cycling",
+  "Dashboard",
+  "DataPoint",
   "Database",
   "Database2",
   "DatabaseBackup",
   "DatabaseZap",
+  "Deadline",
+  "Deal",
   "DeepLink",
   "Deer",
+  "Deezer",
   "Defend",
+  "Delegated",
+  "Dependency",
+  "Desert",
   "Desk",
+  "Desk2",
   "Desktop",
   "Dial",
   "Diamond",
@@ -625,35 +728,58 @@ var ICON_NAMES = [
   "Dice4",
   "Dice5",
   "Dice6",
+  "Dictionary",
   "Dimension",
+  "Diploma",
   "Directions",
   "Disc",
   "Disc2",
   "Disc3",
+  "Discord",
+  "Discount",
+  "Dislike",
+  "Distraction",
   "Divide2",
+  "Dividend",
   "Dna",
   "Dna2",
+  "DnaHelix",
   "DocumentPrinter",
   "Dog",
   "DollarSign",
+  "Donut",
+  "DonutChart",
   "Door",
   "DoorClosed",
   "DoorOpen",
   "Download",
+  "Downtrend",
+  "Dpad",
   "Dress",
+  "Dribbble",
   "Drill",
   "Droplet",
+  "DueDate",
   "Dumbbell",
+  "Duplicate",
   "Ear",
   "EarHearing",
   "EarOff",
+  "Ebay",
+  "Edge",
   "Edit",
+  "Egg2",
   "Electron",
   "Elephant",
+  "Emergency",
   "Envelope2",
   "Equalizer",
   "Equals",
   "Eraser",
+  "Estimate",
+  "Etsy",
+  "Exam",
+  "Experiment",
   "Exposure",
   "ExternalLink",
   "ExternalLink2",
@@ -661,11 +787,16 @@ var ICON_NAMES = [
   "Eye2",
   "EyeOff",
   "FaceId",
+  "Facebook",
   "Factory",
   "FastForward",
   "Faucet",
   "Fax",
+  "Feed",
+  "Feedback",
   "Fence",
+  "Fern",
+  "Figma",
   "File",
   "FileArchive",
   "FileAudio",
@@ -684,6 +815,7 @@ var ICON_NAMES = [
   "Filter",
   "Fingerprint",
   "FireTruck",
+  "Firefox",
   "Firewall",
   "FirstAid",
   "Fish",
@@ -693,23 +825,33 @@ var ICON_NAMES = [
   "FlashlightOff",
   "Flask2",
   "FlaskRound",
+  "Flat",
+  "FlightTicket",
   "Flower",
   "Flower2",
+  "Focus",
   "FocusRing",
   "Folder",
   "FolderMinus",
   "FolderOpen",
   "FolderPlus",
   "Follow",
+  "Follow2",
   "Football",
   "Footprints",
+  "Forecast",
+  "Forest",
   "Fork",
   "Fortress",
+  "Fossil",
   "Fox",
   "Fraction",
+  "FreeShipping",
   "Frown",
   "Fuel",
   "Function",
+  "Funnel",
+  "FunnelChart",
   "Future",
   "Gamepad",
   "Gamepad2",
@@ -718,58 +860,77 @@ var ICON_NAMES = [
   "Gate",
   "Gauge",
   "Generator",
+  "Geyser",
   "Gift",
   "GitBranch",
   "GitCommit",
   "GitFork",
   "GitMerge",
   "GitPullRequest",
+  "Github",
+  "Gitlab",
   "Glasses",
   "Globe",
   "Globe2",
   "Glue",
   "Golf",
+  "Goodreads",
+  "GoogleCloud",
   "Grab",
   "GrabCursor",
   "Grabbing",
+  "Grade",
   "GraduationCap",
   "Grape",
   "GreaterThan",
   "Grid",
   "Grid2x2",
   "Grid3x3",
+  "Growth",
   "Guard",
   "Hail",
   "Hammer",
   "Hand",
   "HandMetal",
   "HandWave",
+  "Handheld",
   "Handshake",
+  "Handshake2",
   "Happy",
   "HardDrive",
   "HardDrive2",
   "Hash",
   "Hashtag",
+  "Hashtag2",
   "Hat",
   "Heading1",
   "Heading2",
   "Heading3",
   "Headphones",
+  "HealthBar",
   "Heart",
   "HeartPulse",
   "HeartShape",
+  "Heartbeat",
+  "Heatmap",
   "Helicopter",
   "HelpCircle",
   "HelpCursor",
   "Hexagon",
+  "HighScore",
   "Highlighter",
+  "Hiking",
   "History",
   "Hockey",
   "Home",
+  "Homework",
   "Hoodie",
   "Horse",
   "Hospital",
+  "Hotdog",
   "Hotel",
+  "HotelBed",
+  "HotelKey",
   "Hourglass",
   "House2",
   "HouseCheck",
@@ -780,23 +941,39 @@ var ICON_NAMES = [
   "Html",
   "Humidity",
   "Hyperlink",
+  "Hypothesis",
   "IceCream",
+  "IceCream2",
   "IdCard",
+  "Immigration",
+  "Immunity",
+  "InProgress",
+  "InStock",
   "Inbox",
   "Incomplete",
   "Indent",
   "Infinity",
+  "Influencer",
   "Info",
   "InfoCircle",
   "Ink",
+  "Instagram",
   "InternalLink",
+  "Inventory",
+  "Inventory2",
+  "Investment2",
   "Invoice",
+  "Island",
   "Italic",
+  "Ivy",
   "Jacket",
   "JavascriptIcon",
   "Joystick",
+  "Joystick2",
   "Json",
+  "Jungle",
   "Kanban",
+  "KanbanBoard",
   "Kettle",
   "Key",
   "KeyRound",
@@ -805,8 +982,12 @@ var ICON_NAMES = [
   "KeyboardNav",
   "Knife2",
   "Knob",
+  "KoFi",
+  "Kpi",
+  "LabResults",
   "Ladder",
   "Ladle",
+  "Lake",
   "Lamp",
   "LampCeiling",
   "LampDesk",
@@ -819,20 +1000,31 @@ var ICON_NAMES = [
   "Layout",
   "LayoutGrid",
   "LayoutList",
+  "Leaderboard",
   "Leaf",
   "Leaf2",
+  "Lecture",
   "LessThan",
+  "Letterboxd",
   "Level",
+  "LevelUp",
   "Library",
+  "Library2",
   "Lightbulb",
   "LightbulbOff",
   "Lighthouse",
+  "Like",
+  "LikeFilled",
+  "Line",
   "LineChart",
+  "Linear",
   "Link",
   "Link2Off",
+  "Linkedin",
   "Lion",
   "List",
   "Live",
+  "LiveStream",
   "Lively",
   "Loader",
   "Loading",
@@ -841,6 +1033,9 @@ var ICON_NAMES = [
   "Lock",
   "LockKeyhole",
   "LockOpen",
+  "Lollipop",
+  "Loot",
+  "Loss",
   "Love",
   "Luggage",
   "Lungs",
@@ -850,19 +1045,27 @@ var ICON_NAMES = [
   "MailOpen",
   "MailPlus",
   "Mailbox",
+  "ManaBar",
   "Map",
   "MapPin",
   "MapPinned",
   "Markdown",
   "Marker",
+  "Market",
   "Martini",
+  "Mastodon",
   "Maximize",
   "Maximize2",
   "Medal",
+  "Medal2",
+  "MedicalBag",
+  "MedicalCross",
+  "Medium",
   "Meeting",
   "Meh",
   "Memory",
   "Mention",
+  "Mention2",
   "Menu",
   "MenuDots",
   "MenuDotsHorizontal",
@@ -871,12 +1074,16 @@ var ICON_NAMES = [
   "MessageCircle",
   "MessageSquare",
   "MessagesSquare",
+  "Messenger",
+  "Meta",
+  "Metric",
   "Mic",
   "MicOff",
   "Microscope",
   "Microscope2",
   "Microwave",
   "Milestone",
+  "Milestone2",
   "Minimize",
   "Minimize2",
   "Minus",
@@ -884,16 +1091,20 @@ var ICON_NAMES = [
   "MinusCircle",
   "MinusSquare",
   "Molecule",
+  "Monday",
   "Monitor",
   "Moon",
   "MoreHorizontal",
+  "Moss",
   "Motorcycle",
   "Mountain",
   "MountainSnow",
   "Mouse",
   "MoveCursor",
   "MoveHorizontal",
+  "Multiplayer",
   "Multiply",
+  "Mushroom",
   "Music",
   "Music2",
   "Music3",
@@ -902,19 +1113,34 @@ var ICON_NAMES = [
   "Navigation",
   "Navigation2",
   "Neon",
+  "Netflix",
   "NeuralNetwork",
+  "Nextjs",
+  "Nodejs",
+  "Noodles",
   "NotAllowed",
   "NotEqual",
   "Notebook",
   "NotebookPen",
+  "NotebookPen2",
+  "Notebook2",
+  "Notion",
+  "Npm",
   "Nucleus",
+  "Ocean",
   "Octagon",
   "Odometer",
   "Office",
   "Ok",
+  "OnHold",
+  "Opera",
+  "OutOfStock",
   "Outdent",
   "Outlet",
+  "Outlier",
   "Oval",
+  "Overdue",
+  "Oxygen",
   "Package",
   "PageSetup",
   "Paintbrush",
@@ -931,10 +1157,15 @@ var ICON_NAMES = [
   "Paperclip2",
   "Parallelogram",
   "Parking",
+  "Partnership",
   "Passport",
+  "Passport2",
+  "Patreon",
   "Pause",
   "PauseCircle",
+  "Paypal",
   "Peace",
+  "Pebbles",
   "Pen",
   "Pen2",
   "PenLine",
@@ -956,12 +1187,19 @@ var ICON_NAMES = [
   "PhoneOff",
   "PhoneOutgoing",
   "Pi",
+  "Pickup",
   "PictureFrame",
   "PieChart",
+  "PieChart2",
   "PiggyBank",
   "Pill",
+  "Pill2",
+  "Pills",
   "Pinch",
   "PineTree",
+  "Pinecone",
+  "Pinterest",
+  "Pitch",
   "Pizza",
   "Plane",
   "PlaneLanding",
@@ -984,26 +1222,44 @@ var ICON_NAMES = [
   "PointUp",
   "Pointer2",
   "PoliceCar",
+  "Poll",
+  "Pomodoro",
+  "Pool",
+  "Popsicle",
   "Portfolio",
+  "Post",
   "Pot",
   "Potion",
   "PowerOff",
+  "PowerUp",
+  "Prescription",
   "Presentation",
   "Presentation2",
+  "PriceTag",
+  "PriceTagPlus",
   "PrintPreview",
   "PrintQueue",
   "Printer",
   "Printer2",
   "PrinterCheck",
   "PrinterX",
+  "Priority",
+  "PriorityHigh",
+  "PriorityLow",
+  "Profit",
   "Progress",
   "Projector",
   "Protection",
   "Protractor",
+  "Pulse",
   "Puzzle",
   "PuzzlePiece",
+  "Pvp",
   "QrCode",
+  "QrScan",
+  "Quest",
   "Queue",
+  "Quiz",
   "Quote",
   "Rabbit",
   "Radiation",
@@ -1013,24 +1269,51 @@ var ICON_NAMES = [
   "Rainbow",
   "Rake",
   "Ram",
+  "Rating",
+  "React",
+  "Reaction",
   "Receipt",
   "Receipt2",
+  "ReceiptCheck",
+  "ReceiptX",
   "Record",
+  "Recovery",
   "Rectangle",
+  "Recurring",
+  "Reddit",
   "ReducedMotion",
   "Reference",
   "Refresh",
   "Refrigerator",
+  "Refund",
   "Regex",
+  "Regression",
   "Rejected",
+  "Reminder",
+  "Reorder",
   "Repeat",
+  "Report",
+  "Repost",
+  "Research",
+  "Reservation",
   "ResizeDiagonal",
   "ResizeHorizontal",
   "ResizeVertical",
+  "Respawn",
+  "Retention",
+  "Return",
+  "Revenue",
+  "Review2",
   "Rewind",
+  "Rice",
+  "River",
+  "RoadTrip",
+  "Roadmap",
   "Robot",
   "Rocket",
+  "Roi",
   "Roller",
+  "RoomService",
   "Rose",
   "Route",
   "Router",
@@ -1041,10 +1324,15 @@ var ICON_NAMES = [
   "Ruler2",
   "RulerSquare",
   "Running",
+  "Runway",
   "Sad",
+  "Safari",
   "Sailboat",
+  "Salad",
   "Sandwich",
   "Save",
+  "Save2",
+  "SavePlus",
   "Saw",
   "Scale2",
   "Scan",
@@ -1053,7 +1341,9 @@ var ICON_NAMES = [
   "ScanLine",
   "Scanner",
   "Scanner2",
+  "ScatterPlot",
   "Schedule",
+  "Schedule2",
   "School",
   "Scissors2",
   "Scooter",
@@ -1064,7 +1354,10 @@ var ICON_NAMES = [
   "Search",
   "SearchMinus",
   "SearchPlus",
+  "Seaweed",
   "Seedling",
+  "Segment",
+  "Seminar",
   "Send",
   "Send2",
   "Server",
@@ -1074,6 +1367,10 @@ var ICON_NAMES = [
   "ServerOff",
   "Settings",
   "Share",
+  "Share2",
+  "ShareForward",
+  "Shareholder",
+  "Shell",
   "Shield",
   "Shield2",
   "ShieldAlert",
@@ -1090,19 +1387,26 @@ var ICON_NAMES = [
   "ShieldUser",
   "ShieldX",
   "Ship",
+  "Shipping",
+  "ShippingFast",
   "Shirt",
+  "Shopify",
   "ShoppingBag",
+  "ShoppingBagPlus",
   "ShoppingCart",
   "Shortcut",
   "Shorts",
   "Shovel",
+  "Shrimp",
   "Shuffle",
   "Sidebar",
   "SidebarClose",
   "SidebarOpen",
   "Sigma",
+  "Sign",
   "SignLanguage",
   "Signal",
+  "SignalApp",
   "SignalHigh",
   "SignalLow",
   "SignalZero",
@@ -1111,17 +1415,23 @@ var ICON_NAMES = [
   "Skiing",
   "SkipBack",
   "SkipForward",
+  "Slack",
   "Sleep",
   "Slider",
   "SliderHorizontal",
   "SliderVertical",
   "Smartphone",
   "Smile",
+  "Snapchat",
   "Snippet",
   "Snowflake",
   "Soccer",
   "Sofa",
+  "Soundcloud",
+  "Soup",
+  "Spa",
   "Sparkles",
+  "Sparkline",
   "Spatula",
   "Speaker",
   "Speaker2",
@@ -1129,24 +1439,41 @@ var ICON_NAMES = [
   "SpeedDial",
   "Speedometer",
   "Spoon2",
+  "Spotify",
   "Spotlight",
+  "Sprint",
   "Sprout",
   "Sqrt",
   "Square",
   "Ssd",
+  "Stackoverflow",
+  "Stakeholder",
   "Stamp",
+  "Stamp2",
   "Stapler",
   "Star",
+  "Starfish",
+  "Startup",
   "Statistics",
+  "Steak",
   "Stethoscope",
+  "Stethoscope2",
   "StopCircle",
   "Stopwatch",
   "Storage",
   "Store",
+  "StoreFront",
+  "Story",
+  "Strategy",
+  "Strava",
   "Stream",
   "Strikethrough",
+  "Stripe",
+  "StudentId",
   "Studio",
   "Subscript",
+  "Substack",
+  "Subtask",
   "Subtitle",
   "Sun",
   "Sunglasses",
@@ -1155,6 +1482,9 @@ var ICON_NAMES = [
   "Superscript",
   "SurgeProtector",
   "Surprised",
+  "Survey",
+  "Sushi",
+  "Svelte",
   "Sweater",
   "Swimming",
   "SwitchOff",
@@ -1162,36 +1492,55 @@ var ICON_NAMES = [
   "Sword",
   "Swords",
   "Syringe",
+  "Syringe2",
   "Table",
   "Table2",
   "Tablet",
+  "Taco",
   "Tag",
+  "TagPerson",
   "Tag2",
   "Tags",
+  "Tailwind",
   "Tape",
   "TapeMeasure",
   "Target",
+  "Target2",
+  "Task",
+  "TaskCheck",
+  "TaskList",
   "Team",
+  "Teams",
+  "Telegram",
+  "Temperature",
   "TemperatureDial",
+  "Template",
   "Tennis",
   "Tent",
   "Terminal",
   "Terminal2",
+  "TerminalGate",
   "TerminalSquare",
   "TestTube",
   "TestTube2",
   "TestTubes",
+  "Testimonial",
   "Text",
   "TextCursor",
   "TextSize",
+  "Textbook",
   "Thermometer",
   "Thermometer2",
   "ThermometerMedical",
+  "Threads",
   "ThumbsDown",
   "ThumbsUp",
   "Ticket",
   "Tie",
+  "Tiktok",
+  "TimeTracking",
   "Timeline",
+  "Timeline2",
   "Timer",
   "Toaster",
   "Toggle",
@@ -1211,25 +1560,37 @@ var ICON_NAMES = [
   "Tree2",
   "TreePalm",
   "TreePine",
+  "Treemap",
+  "Trello",
+  "Trending",
   "TrendingDown",
   "TrendingUp",
   "Triangle",
+  "Trigger",
   "Trophy",
+  "Trophy2",
   "Truck",
   "Tshirt",
   "Tulip",
+  "Tumblr",
   "Turtle",
+  "Tutor",
   "Tv",
+  "Twitch",
+  "Twitter",
   "TwoFactor",
   "TypescriptIcon",
   "Ufo",
   "Umbrella",
   "Underline",
   "Unfollow",
+  "Unfollow2",
+  "University",
   "Unlock",
   "Unverified",
   "Upload",
   "Ups",
+  "Uptrend",
   "UsbDrive",
   "User",
   "UserCheck",
@@ -1241,14 +1602,25 @@ var ICON_NAMES = [
   "Users",
   "Utensils",
   "UtensilsCrossed",
+  "Vaccine",
+  "Variance",
   "Vault",
+  "Vercel",
   "Verified",
+  "Verified2",
+  "Viber",
   "Video",
   "Video2",
   "VideoOff",
+  "Vimeo",
   "Vinyl",
+  "Viral",
+  "Virus",
+  "Visa",
+  "Vitals",
   "VoiceControl",
   "Voicemail",
+  "Volcano",
   "Volleyball",
   "Volume",
   "Volume1",
@@ -1256,7 +1628,10 @@ var ICON_NAMES = [
   "VolumeDial",
   "VolumeOff",
   "VolumeX",
+  "Vscode",
+  "Vue",
   "WaitCursor",
+  "Walker",
   "Wallet",
   "WalletCards",
   "Wand",
@@ -1265,15 +1640,21 @@ var ICON_NAMES = [
   "Warehouse",
   "Watch",
   "WatchAccessory",
+  "Waterfall",
   "WateringCan",
   "Waveform",
   "Waves",
   "Waypoints",
   "Webcam",
   "Webhook",
+  "Wechat",
   "Weight",
+  "Whatsapp",
   "Wheelchair",
+  "Wheelchair2",
   "Whisk",
+  "Whiteboard",
+  "Widget",
   "Wifi",
   "WifiOff",
   "Wind",
@@ -1281,35 +1662,52 @@ var ICON_NAMES = [
   "Window2",
   "Wine",
   "Wink",
+  "Wishlist",
   "Wolf",
+  "Workflow",
   "Wrench",
   "X",
   "XCircle",
   "XCircle2",
   "XSquare",
+  "XTwitter",
   "Xml",
-  "Zap"
+  "XpBar",
+  "Xray",
+  "Youtube",
+  "Zap",
+  "Zoom"
 ];
 var ICON_NAMES_KEBAB = [
+  "ab-test",
   "accessibility",
+  "achievement",
+  "acorn",
   "activity",
+  "aggregate",
+  "airbnb",
   "airplay",
+  "airport",
   "alarm-clock",
   "alert-circle",
   "alert-circle-2",
   "alert-octagon",
   "alert-triangle",
   "alias",
+  "amazon",
   "ambulance",
+  "ambulance-2",
   "analytics",
   "anchor",
   "anchor-2",
   "angry",
+  "angular",
   "annoyed",
   "apartment",
   "api",
   "apple",
   "approved",
+  "arcade",
   "archive",
   "archive-2",
   "area-chart",
@@ -1338,15 +1736,27 @@ var ICON_NAMES_KEBAB = [
   "arrows-expand",
   "arrows-maximize-2",
   "arrows-minimize-2",
+  "asana",
+  "assigned",
+  "assignment",
   "at-sign",
   "atom-2",
+  "attendance",
+  "attribution",
   "audio-description",
   "audio-lines",
+  "automation",
   "award",
+  "aws",
   "axe",
+  "azure",
   "baby",
   "backlink",
+  "backlog",
   "backpack",
+  "backpack2",
+  "bacon",
+  "bacteria",
   "badge-2",
   "badge-alert",
   "badge-check",
@@ -1358,15 +1768,20 @@ var ICON_NAMES_KEBAB = [
   "badge-percent",
   "badge-plus",
   "badge-x",
+  "baggage",
+  "baggage-claim",
   "ban",
   "banana",
   "bandage",
+  "bandage-2",
+  "bandcamp",
   "bank",
   "banknote",
   "bar-chart",
   "bar-chart-2",
   "bar-chart-horizontal",
   "barcode",
+  "barcode-2",
   "barometer",
   "baseball",
   "basket",
@@ -1379,24 +1794,35 @@ var ICON_NAMES_KEBAB = [
   "battery-low",
   "battery-quarter",
   "battery-three-quarters",
+  "beach",
   "beaker-2",
   "bear",
   "bed",
   "bee",
   "beer",
+  "behance",
   "bell",
   "bell-off",
   "bell-ring",
+  "benchmark",
   "bicycle",
   "bike",
   "binder",
   "biohazard-2",
   "bird",
+  "bitbucket",
   "bitcoin",
   "blender",
   "block",
+  "block-2",
+  "blocker",
+  "blood-drop",
+  "blood-pressure",
+  "bluesky",
   "bluetooth",
+  "boarding-pass",
   "boat",
+  "body-scan",
   "bold",
   "bone",
   "book",
@@ -1404,13 +1830,17 @@ var ICON_NAMES_KEBAB = [
   "book-marked",
   "book-open",
   "bookmark",
+  "bookshelf",
+  "boss",
   "bot",
+  "boulder",
   "bowling",
   "braille",
   "brain",
   "brain-circuit",
   "brain-cog",
   "branch",
+  "bread",
   "briefcase-2",
   "briefcase-medical",
   "brightness",
@@ -1419,9 +1849,14 @@ var ICON_NAMES_KEBAB = [
   "bug",
   "building",
   "building2",
+  "burger",
   "bus",
   "business-card",
   "butterfly",
+  "button-a",
+  "button-b",
+  "button-x",
+  "button-y",
   "cable",
   "cactus",
   "cake",
@@ -1435,22 +1870,35 @@ var ICON_NAMES_KEBAB = [
   "caliper",
   "camera",
   "camera-movie",
+  "camping",
   "candle",
+  "candy",
   "cap",
+  "capsule",
   "car",
   "car-front",
   "carpet",
   "carrot",
+  "carry-on",
+  "cart-check",
+  "cart-minus",
+  "cart-plus",
+  "cart-x",
   "cast",
   "castle",
   "cat",
+  "cave",
   "certificate",
+  "certificate2",
   "chain",
   "chain-broken",
   "chair",
+  "chalkboard",
   "check",
   "check-circle",
   "check-circle-2",
+  "check-in",
+  "check-out",
   "check-square",
   "checkbox",
   "checkbox-checked",
@@ -1462,13 +1910,18 @@ var ICON_NAMES_KEBAB = [
   "chevrons-left",
   "chevrons-right",
   "chevrons-up",
+  "chicken",
   "chimney",
   "chip-ai",
+  "chocolate",
   "chopsticks",
+  "chrome",
   "church",
+  "churn",
   "cinema",
   "circle",
   "citation",
+  "classroom",
   "clipboard",
   "clipboard-2",
   "clipboard-check",
@@ -1497,28 +1950,46 @@ var ICON_NAMES_KEBAB = [
   "cloud-rain",
   "cloud-snow",
   "cloud-sun",
+  "clubhouse",
   "coat",
   "code",
   "code-block",
   "code-square",
   "code2",
+  "codepen",
+  "codesandbox",
   "coffee",
+  "cohort",
+  "coin",
   "coins",
   "columns",
   "command",
+  "comment",
+  "comment-check",
+  "comment-plus",
+  "comment-x",
+  "compare",
   "compass",
   "compass-2",
+  "competitive",
   "complete",
+  "concierge",
   "confused",
+  "console",
   "contact",
   "contact2",
   "container",
   "contract",
+  "contract-2",
   "contrast",
+  "controller",
+  "controller-wireless",
   "cookie",
   "cool",
+  "coop",
   "copier",
   "copy",
+  "coral",
   "corner-down-left",
   "corner-down-left-2",
   "corner-down-right",
@@ -1527,28 +1998,48 @@ var ICON_NAMES_KEBAB = [
   "corner-up-left-2",
   "corner-up-right",
   "corner-up-right-2",
+  "correlation",
+  "coupon",
+  "course",
   "cpu",
+  "crafting",
   "credit-card",
+  "croissant",
   "cross",
   "crosshair",
   "crosshair-2",
   "crown",
+  "cruise",
+  "crutches",
   "cry",
+  "crystal",
   "css",
   "cup",
+  "cupcake",
+  "curriculum",
   "cursor",
   "cursor-click",
   "cursor-text",
   "curtain",
+  "customs-icon",
   "cycling",
+  "dashboard",
+  "data-point",
   "database",
   "database-2",
   "database-backup",
   "database-zap",
+  "deadline",
+  "deal",
   "deep-link",
   "deer",
+  "deezer",
   "defend",
+  "delegated",
+  "dependency",
+  "desert",
   "desk",
+  "desk2",
   "desktop",
   "dial",
   "diamond",
@@ -1558,35 +2049,58 @@ var ICON_NAMES_KEBAB = [
   "dice-4",
   "dice-5",
   "dice-6",
+  "dictionary",
   "dimension",
+  "diploma",
   "directions",
   "disc",
   "disc-2",
   "disc-3",
+  "discord",
+  "discount",
+  "dislike",
+  "distraction",
   "divide-2",
+  "dividend",
   "dna",
   "dna-2",
+  "dna-helix",
   "document-printer",
   "dog",
   "dollar-sign",
+  "donut",
+  "donut-chart",
   "door",
   "door-closed",
   "door-open",
   "download",
+  "downtrend",
+  "dpad",
   "dress",
+  "dribbble",
   "drill",
   "droplet",
+  "due-date",
   "dumbbell",
+  "duplicate",
   "ear",
   "ear-hearing",
   "ear-off",
+  "ebay",
+  "edge",
   "edit",
+  "egg2",
   "electron",
   "elephant",
+  "emergency",
   "envelope-2",
   "equalizer",
   "equals",
   "eraser",
+  "estimate",
+  "etsy",
+  "exam",
+  "experiment",
   "exposure",
   "external-link",
   "external-link-2",
@@ -1594,11 +2108,16 @@ var ICON_NAMES_KEBAB = [
   "eye-2",
   "eye-off",
   "face-id",
+  "facebook",
   "factory",
   "fast-forward",
   "faucet",
   "fax",
+  "feed",
+  "feedback",
   "fence",
+  "fern",
+  "figma",
   "file",
   "file-archive",
   "file-audio",
@@ -1617,6 +2136,7 @@ var ICON_NAMES_KEBAB = [
   "filter",
   "fingerprint",
   "fire-truck",
+  "firefox",
   "firewall",
   "first-aid",
   "fish",
@@ -1626,23 +2146,33 @@ var ICON_NAMES_KEBAB = [
   "flashlight-off",
   "flask-2",
   "flask-round",
+  "flat",
+  "flight-ticket",
   "flower",
   "flower-2",
+  "focus",
   "focus-ring",
   "folder",
   "folder-minus",
   "folder-open",
   "folder-plus",
   "follow",
+  "follow-2",
   "football",
   "footprints",
+  "forecast",
+  "forest",
   "fork",
   "fortress",
+  "fossil",
   "fox",
   "fraction",
+  "free-shipping",
   "frown",
   "fuel",
   "function",
+  "funnel",
+  "funnel-chart",
   "future",
   "gamepad",
   "gamepad-2",
@@ -1651,58 +2181,77 @@ var ICON_NAMES_KEBAB = [
   "gate",
   "gauge",
   "generator",
+  "geyser",
   "gift",
   "git-branch",
   "git-commit",
   "git-fork",
   "git-merge",
   "git-pull-request",
+  "github",
+  "gitlab",
   "glasses",
   "globe",
   "globe-2",
   "glue",
   "golf",
+  "goodreads",
+  "google-cloud",
   "grab",
   "grab-cursor",
   "grabbing",
+  "grade",
   "graduation-cap",
   "grape",
   "greater-than",
   "grid",
   "grid-2x2",
   "grid-3x3",
+  "growth",
   "guard",
   "hail",
   "hammer",
   "hand",
   "hand-metal",
   "hand-wave",
+  "handheld",
   "handshake",
+  "handshake-2",
   "happy",
   "hard-drive",
   "hard-drive-2",
   "hash",
   "hashtag",
+  "hashtag-2",
   "hat",
   "heading-1",
   "heading-2",
   "heading-3",
   "headphones",
+  "health-bar",
   "heart",
   "heart-pulse",
   "heart-shape",
+  "heartbeat",
+  "heatmap",
   "helicopter",
   "help-circle",
   "help-cursor",
   "hexagon",
+  "high-score",
   "highlighter",
+  "hiking",
   "history",
   "hockey",
   "home",
+  "homework",
   "hoodie",
   "horse",
   "hospital",
+  "hotdog",
   "hotel",
+  "hotel-bed",
+  "hotel-key",
   "hourglass",
   "house-2",
   "house-check",
@@ -1713,23 +2262,39 @@ var ICON_NAMES_KEBAB = [
   "html",
   "humidity",
   "hyperlink",
+  "hypothesis",
   "ice-cream",
+  "ice-cream-2",
   "id-card",
+  "immigration",
+  "immunity",
+  "in-progress",
+  "in-stock",
   "inbox",
   "incomplete",
   "indent",
   "infinity",
+  "influencer",
   "info",
   "info-circle",
   "ink",
+  "instagram",
   "internal-link",
+  "inventory",
+  "inventory-2",
+  "investment-2",
   "invoice",
+  "island",
   "italic",
+  "ivy",
   "jacket",
   "javascript-icon",
   "joystick",
+  "joystick-2",
   "json",
+  "jungle",
   "kanban",
+  "kanban-board",
   "kettle",
   "key",
   "key-round",
@@ -1738,8 +2303,12 @@ var ICON_NAMES_KEBAB = [
   "keyboard-nav",
   "knife-2",
   "knob",
+  "ko-fi",
+  "kpi",
+  "lab-results",
   "ladder",
   "ladle",
+  "lake",
   "lamp",
   "lamp-ceiling",
   "lamp-desk",
@@ -1752,20 +2321,32 @@ var ICON_NAMES_KEBAB = [
   "layout",
   "layout-grid",
   "layout-list",
+  "leaderboard",
   "leaf",
   "leaf-2",
+  "lecture",
   "less-than",
+  "letterboxd",
   "level",
+  "level-up",
   "library",
+  "library2",
   "lightbulb",
   "lightbulb-off",
   "lighthouse",
+  "like",
+  "like-filled",
+  "line",
   "line-chart",
+  "linear",
   "link",
   "link-2-off",
+  "linkedin",
   "lion",
   "list",
   "live",
+  "live-stream",
+  "lively",
   "loader",
   "loading",
   "locate",
@@ -1773,6 +2354,9 @@ var ICON_NAMES_KEBAB = [
   "lock",
   "lock-keyhole",
   "lock-open",
+  "lollipop",
+  "loot",
+  "loss",
   "love",
   "luggage",
   "lungs",
@@ -1782,19 +2366,27 @@ var ICON_NAMES_KEBAB = [
   "mail-open",
   "mail-plus",
   "mailbox",
+  "mana-bar",
   "map",
   "map-pin",
   "map-pinned",
   "markdown",
   "marker",
+  "market",
   "martini",
+  "mastodon",
   "maximize",
   "maximize-2",
   "medal",
+  "medal2",
+  "medical-bag",
+  "medical-cross",
+  "medium",
   "meeting",
   "meh",
   "memory",
   "mention",
+  "mention-2",
   "menu",
   "menu-dots",
   "menu-dots-horizontal",
@@ -1803,12 +2395,16 @@ var ICON_NAMES_KEBAB = [
   "message-circle",
   "message-square",
   "messages-square",
+  "messenger",
+  "meta",
+  "metric",
   "mic",
   "mic-off",
   "microscope",
   "microscope-2",
   "microwave",
   "milestone",
+  "milestone-2",
   "minimize",
   "minimize-2",
   "minus",
@@ -1816,16 +2412,20 @@ var ICON_NAMES_KEBAB = [
   "minus-circle",
   "minus-square",
   "molecule",
+  "monday",
   "monitor",
   "moon",
   "more-horizontal",
+  "moss",
   "motorcycle",
   "mountain",
   "mountain-snow",
   "mouse",
   "move-cursor",
   "move-horizontal",
+  "multiplayer",
   "multiply",
+  "mushroom",
   "music",
   "music-2",
   "music-3",
@@ -1834,19 +2434,34 @@ var ICON_NAMES_KEBAB = [
   "navigation",
   "navigation-2",
   "neon",
+  "netflix",
   "neural-network",
+  "nextjs",
+  "nodejs",
+  "noodles",
   "not-allowed",
   "not-equal",
   "notebook",
   "notebook-pen",
+  "notebook-pen2",
+  "notebook2",
+  "notion",
+  "npm",
   "nucleus",
+  "ocean",
   "octagon",
   "odometer",
   "office",
   "ok",
+  "on-hold",
+  "opera",
+  "out-of-stock",
   "outdent",
   "outlet",
+  "outlier",
   "oval",
+  "overdue",
+  "oxygen",
   "package",
   "page-setup",
   "paintbrush",
@@ -1863,10 +2478,15 @@ var ICON_NAMES_KEBAB = [
   "paperclip-2",
   "parallelogram",
   "parking",
+  "partnership",
   "passport",
+  "passport-2",
+  "patreon",
   "pause",
   "pause-circle",
+  "paypal",
   "peace",
+  "pebbles",
   "pen",
   "pen-2",
   "pen-line",
@@ -1888,12 +2508,19 @@ var ICON_NAMES_KEBAB = [
   "phone-off",
   "phone-outgoing",
   "pi",
+  "pickup",
   "picture-frame",
   "pie-chart",
+  "pie-chart-2",
   "piggy-bank",
   "pill",
+  "pill-2",
+  "pills",
   "pinch",
   "pine-tree",
+  "pinecone",
+  "pinterest",
+  "pitch",
   "pizza",
   "plane",
   "plane-landing",
@@ -1916,26 +2543,44 @@ var ICON_NAMES_KEBAB = [
   "point-up",
   "pointer-2",
   "police-car",
+  "poll",
+  "pomodoro",
+  "pool",
+  "popsicle",
   "portfolio",
+  "post",
   "pot",
   "potion",
   "power-off",
+  "power-up",
+  "prescription",
   "presentation",
   "presentation-2",
+  "price-tag",
+  "price-tag-plus",
   "print-preview",
   "print-queue",
   "printer",
   "printer-2",
   "printer-check",
   "printer-x",
+  "priority",
+  "priority-high",
+  "priority-low",
+  "profit",
   "progress",
   "projector",
   "protection",
   "protractor",
+  "pulse",
   "puzzle",
   "puzzle-piece",
+  "pvp",
   "qr-code",
+  "qr-scan",
+  "quest",
   "queue",
+  "quiz",
   "quote",
   "rabbit",
   "radiation",
@@ -1945,24 +2590,51 @@ var ICON_NAMES_KEBAB = [
   "rainbow",
   "rake",
   "ram",
+  "rating",
+  "react",
+  "reaction",
   "receipt",
   "receipt-2",
+  "receipt-check",
+  "receipt-x",
   "record",
+  "recovery",
   "rectangle",
+  "recurring",
+  "reddit",
   "reduced-motion",
   "reference",
   "refresh",
   "refrigerator",
+  "refund",
   "regex",
+  "regression",
   "rejected",
+  "reminder",
+  "reorder",
   "repeat",
+  "report",
+  "repost",
+  "research",
+  "reservation",
   "resize-diagonal",
   "resize-horizontal",
   "resize-vertical",
+  "respawn",
+  "retention",
+  "return",
+  "revenue",
+  "review-2",
   "rewind",
+  "rice",
+  "river",
+  "road-trip",
+  "roadmap",
   "robot",
   "rocket",
+  "roi",
   "roller",
+  "room-service",
   "rose",
   "route",
   "router",
@@ -1973,10 +2645,15 @@ var ICON_NAMES_KEBAB = [
   "ruler-2",
   "ruler-square",
   "running",
+  "runway",
   "sad",
+  "safari",
   "sailboat",
+  "salad",
   "sandwich",
   "save",
+  "save-2",
+  "save-plus",
   "saw",
   "scale-2",
   "scan",
@@ -1985,7 +2662,9 @@ var ICON_NAMES_KEBAB = [
   "scan-line",
   "scanner",
   "scanner-2",
+  "scatter-plot",
   "schedule",
+  "schedule2",
   "school",
   "scissors-2",
   "scooter",
@@ -1996,7 +2675,10 @@ var ICON_NAMES_KEBAB = [
   "search",
   "search-minus",
   "search-plus",
+  "seaweed",
   "seedling",
+  "segment",
+  "seminar",
   "send",
   "send-2",
   "server",
@@ -2006,6 +2688,10 @@ var ICON_NAMES_KEBAB = [
   "server-off",
   "settings",
   "share",
+  "share-2",
+  "share-forward",
+  "shareholder",
+  "shell",
   "shield",
   "shield-2",
   "shield-alert",
@@ -2022,19 +2708,26 @@ var ICON_NAMES_KEBAB = [
   "shield-user",
   "shield-x",
   "ship",
+  "shipping",
+  "shipping-fast",
   "shirt",
+  "shopify",
   "shopping-bag",
+  "shopping-bag-plus",
   "shopping-cart",
   "shortcut",
   "shorts",
   "shovel",
+  "shrimp",
   "shuffle",
   "sidebar",
   "sidebar-close",
   "sidebar-open",
   "sigma",
+  "sign",
   "sign-language",
   "signal",
+  "signal-app",
   "signal-high",
   "signal-low",
   "signal-zero",
@@ -2043,17 +2736,23 @@ var ICON_NAMES_KEBAB = [
   "skiing",
   "skip-back",
   "skip-forward",
+  "slack",
   "sleep",
   "slider",
   "slider-horizontal",
   "slider-vertical",
   "smartphone",
   "smile",
+  "snapchat",
   "snippet",
   "snowflake",
   "soccer",
   "sofa",
+  "soundcloud",
+  "soup",
+  "spa",
   "sparkles",
+  "sparkline",
   "spatula",
   "speaker",
   "speaker-2",
@@ -2061,24 +2760,41 @@ var ICON_NAMES_KEBAB = [
   "speed-dial",
   "speedometer",
   "spoon-2",
+  "spotify",
   "spotlight",
+  "sprint",
   "sprout",
   "sqrt",
   "square",
   "ssd",
+  "stackoverflow",
+  "stakeholder",
   "stamp",
+  "stamp-2",
   "stapler",
   "star",
+  "starfish",
+  "startup",
   "statistics",
+  "steak",
   "stethoscope",
+  "stethoscope-2",
   "stop-circle",
   "stopwatch",
   "storage",
   "store",
+  "store-front",
+  "story",
+  "strategy",
+  "strava",
   "stream",
   "strikethrough",
+  "stripe",
+  "student-id",
   "studio",
   "subscript",
+  "substack",
+  "subtask",
   "subtitle",
   "sun",
   "sunglasses",
@@ -2087,6 +2803,9 @@ var ICON_NAMES_KEBAB = [
   "superscript",
   "surge-protector",
   "surprised",
+  "survey",
+  "sushi",
+  "svelte",
   "sweater",
   "swimming",
   "switch-off",
@@ -2094,36 +2813,55 @@ var ICON_NAMES_KEBAB = [
   "sword",
   "swords",
   "syringe",
+  "syringe-2",
   "table",
   "table-2",
   "tablet",
+  "taco",
   "tag",
+  "tag-person",
   "tag2",
   "tags",
+  "tailwind",
   "tape",
   "tape-measure",
   "target",
+  "target-2",
+  "task",
+  "task-check",
+  "task-list",
   "team",
+  "teams",
+  "telegram",
+  "temperature",
   "temperature-dial",
+  "template",
   "tennis",
   "tent",
   "terminal",
   "terminal-2",
+  "terminal-gate",
   "terminal-square",
   "test-tube",
   "test-tube-2",
   "test-tubes",
+  "testimonial",
   "text",
   "text-cursor",
   "text-size",
+  "textbook",
   "thermometer",
   "thermometer-2",
   "thermometer-medical",
+  "threads",
   "thumbs-down",
   "thumbs-up",
   "ticket",
   "tie",
+  "tiktok",
+  "time-tracking",
   "timeline",
+  "timeline-2",
   "timer",
   "toaster",
   "toggle",
@@ -2143,25 +2881,37 @@ var ICON_NAMES_KEBAB = [
   "tree-2",
   "tree-palm",
   "tree-pine",
+  "treemap",
+  "trello",
+  "trending",
   "trending-down",
   "trending-up",
   "triangle",
+  "trigger",
   "trophy",
+  "trophy2",
   "truck",
   "tshirt",
   "tulip",
+  "tumblr",
   "turtle",
+  "tutor",
   "tv",
+  "twitch",
+  "twitter",
   "two-factor",
   "typescript-icon",
   "ufo",
   "umbrella",
   "underline",
   "unfollow",
+  "unfollow-2",
+  "university",
   "unlock",
   "unverified",
   "upload",
   "ups",
+  "uptrend",
   "usb-drive",
   "user",
   "user-check",
@@ -2173,14 +2923,25 @@ var ICON_NAMES_KEBAB = [
   "users",
   "utensils",
   "utensils-crossed",
+  "vaccine",
+  "variance",
   "vault",
+  "vercel",
   "verified",
+  "verified-2",
+  "viber",
   "video",
   "video-2",
   "video-off",
+  "vimeo",
   "vinyl",
+  "viral",
+  "virus",
+  "visa",
+  "vitals",
   "voice-control",
   "voicemail",
+  "volcano",
   "volleyball",
   "volume",
   "volume-1",
@@ -2188,7 +2949,10 @@ var ICON_NAMES_KEBAB = [
   "volume-dial",
   "volume-off",
   "volume-x",
+  "vscode",
+  "vue",
   "wait-cursor",
+  "walker",
   "wallet",
   "wallet-cards",
   "wand",
@@ -2197,15 +2961,21 @@ var ICON_NAMES_KEBAB = [
   "warehouse",
   "watch",
   "watch-accessory",
+  "waterfall",
   "watering-can",
   "waveform",
   "waves",
   "waypoints",
   "webcam",
   "webhook",
+  "wechat",
   "weight",
+  "whatsapp",
   "wheelchair",
+  "wheelchair-2",
   "whisk",
+  "whiteboard",
+  "widget",
   "wifi",
   "wifi-off",
   "wind",
@@ -2213,36 +2983,53 @@ var ICON_NAMES_KEBAB = [
   "window-2",
   "wine",
   "wink",
+  "wishlist",
   "wolf",
+  "workflow",
   "wrench",
   "x",
   "x-circle",
   "x-circle-2",
   "x-square",
+  "x-twitter",
   "xml",
-  "zap"
+  "xp-bar",
+  "xray",
+  "youtube",
+  "zap",
+  "zoom"
 ];
-var ICON_COUNT = 930;
+var ICON_COUNT = 1319;
 var ICON_NAME_MAP = {
+  "ab-test": "AbTest",
   "accessibility": "Accessibility",
+  "achievement": "Achievement",
+  "acorn": "Acorn",
   "activity": "Activity",
+  "aggregate": "Aggregate",
+  "airbnb": "Airbnb",
   "airplay": "Airplay",
+  "airport": "Airport",
   "alarm-clock": "AlarmClock",
   "alert-circle": "AlertCircle",
   "alert-circle-2": "AlertCircle2",
   "alert-octagon": "AlertOctagon",
   "alert-triangle": "AlertTriangle",
   "alias": "Alias",
+  "amazon": "Amazon",
   "ambulance": "Ambulance",
+  "ambulance-2": "Ambulance2",
   "analytics": "Analytics",
   "anchor": "Anchor",
   "anchor-2": "Anchor2",
   "angry": "Angry",
+  "angular": "Angular",
   "annoyed": "Annoyed",
   "apartment": "Apartment",
   "api": "Api",
   "apple": "Apple",
   "approved": "Approved",
+  "arcade": "Arcade",
   "archive": "Archive",
   "archive-2": "Archive2",
   "area-chart": "AreaChart",
@@ -2271,15 +3058,27 @@ var ICON_NAME_MAP = {
   "arrows-expand": "ArrowsExpand",
   "arrows-maximize-2": "ArrowsMaximize2",
   "arrows-minimize-2": "ArrowsMinimize2",
+  "asana": "Asana",
+  "assigned": "Assigned",
+  "assignment": "Assignment",
   "at-sign": "AtSign",
   "atom-2": "Atom2",
+  "attendance": "Attendance",
+  "attribution": "Attribution",
   "audio-description": "AudioDescription",
   "audio-lines": "AudioLines",
+  "automation": "Automation",
   "award": "Award",
+  "aws": "Aws",
   "axe": "Axe",
+  "azure": "Azure",
   "baby": "Baby",
   "backlink": "Backlink",
+  "backlog": "Backlog",
   "backpack": "Backpack",
+  "backpack2": "Backpack2",
+  "bacon": "Bacon",
+  "bacteria": "Bacteria",
   "badge-2": "Badge2",
   "badge-alert": "BadgeAlert",
   "badge-check": "BadgeCheck",
@@ -2291,15 +3090,20 @@ var ICON_NAME_MAP = {
   "badge-percent": "BadgePercent",
   "badge-plus": "BadgePlus",
   "badge-x": "BadgeX",
+  "baggage": "Baggage",
+  "baggage-claim": "BaggageClaim",
   "ban": "Ban",
   "banana": "Banana",
   "bandage": "Bandage",
+  "bandage-2": "Bandage2",
+  "bandcamp": "Bandcamp",
   "bank": "Bank",
   "banknote": "Banknote",
   "bar-chart": "BarChart",
   "bar-chart-2": "BarChart2",
   "bar-chart-horizontal": "BarChartHorizontal",
   "barcode": "Barcode",
+  "barcode-2": "Barcode2",
   "barometer": "Barometer",
   "baseball": "Baseball",
   "basket": "Basket",
@@ -2312,24 +3116,35 @@ var ICON_NAME_MAP = {
   "battery-low": "BatteryLow",
   "battery-quarter": "BatteryQuarter",
   "battery-three-quarters": "BatteryThreeQuarters",
+  "beach": "Beach",
   "beaker-2": "Beaker2",
   "bear": "Bear",
   "bed": "Bed",
   "bee": "Bee",
   "beer": "Beer",
+  "behance": "Behance",
   "bell": "Bell",
   "bell-off": "BellOff",
   "bell-ring": "BellRing",
+  "benchmark": "Benchmark",
   "bicycle": "Bicycle",
   "bike": "Bike",
   "binder": "Binder",
   "biohazard-2": "Biohazard2",
   "bird": "Bird",
+  "bitbucket": "Bitbucket",
   "bitcoin": "Bitcoin",
   "blender": "Blender",
   "block": "Block",
+  "block-2": "Block2",
+  "blocker": "Blocker",
+  "blood-drop": "BloodDrop",
+  "blood-pressure": "BloodPressure",
+  "bluesky": "Bluesky",
   "bluetooth": "Bluetooth",
+  "boarding-pass": "BoardingPass",
   "boat": "Boat",
+  "body-scan": "BodyScan",
   "bold": "Bold",
   "bone": "Bone",
   "book": "Book",
@@ -2337,13 +3152,17 @@ var ICON_NAME_MAP = {
   "book-marked": "BookMarked",
   "book-open": "BookOpen",
   "bookmark": "Bookmark",
+  "bookshelf": "Bookshelf",
+  "boss": "Boss",
   "bot": "Bot",
+  "boulder": "Boulder",
   "bowling": "Bowling",
   "braille": "Braille",
   "brain": "Brain",
   "brain-circuit": "BrainCircuit",
   "brain-cog": "BrainCog",
   "branch": "Branch",
+  "bread": "Bread",
   "briefcase-2": "Briefcase2",
   "briefcase-medical": "BriefcaseMedical",
   "brightness": "Brightness",
@@ -2352,9 +3171,14 @@ var ICON_NAME_MAP = {
   "bug": "Bug",
   "building": "Building",
   "building2": "Building2",
+  "burger": "Burger",
   "bus": "Bus",
   "business-card": "BusinessCard",
   "butterfly": "Butterfly",
+  "button-a": "ButtonA",
+  "button-b": "ButtonB",
+  "button-x": "ButtonX",
+  "button-y": "ButtonY",
   "cable": "Cable",
   "cactus": "Cactus",
   "cake": "Cake",
@@ -2368,22 +3192,35 @@ var ICON_NAME_MAP = {
   "caliper": "Caliper",
   "camera": "Camera",
   "camera-movie": "CameraMovie",
+  "camping": "Camping",
   "candle": "Candle",
+  "candy": "Candy",
   "cap": "Cap",
+  "capsule": "Capsule",
   "car": "Car",
   "car-front": "CarFront",
   "carpet": "Carpet",
   "carrot": "Carrot",
+  "carry-on": "CarryOn",
+  "cart-check": "CartCheck",
+  "cart-minus": "CartMinus",
+  "cart-plus": "CartPlus",
+  "cart-x": "CartX",
   "cast": "Cast",
   "castle": "Castle",
   "cat": "Cat",
+  "cave": "Cave",
   "certificate": "Certificate",
+  "certificate2": "Certificate2",
   "chain": "Chain",
   "chain-broken": "ChainBroken",
   "chair": "Chair",
+  "chalkboard": "Chalkboard",
   "check": "Check",
   "check-circle": "CheckCircle",
   "check-circle-2": "CheckCircle2",
+  "check-in": "CheckIn",
+  "check-out": "CheckOut",
   "check-square": "CheckSquare",
   "checkbox": "Checkbox",
   "checkbox-checked": "CheckboxChecked",
@@ -2395,13 +3232,18 @@ var ICON_NAME_MAP = {
   "chevrons-left": "ChevronsLeft",
   "chevrons-right": "ChevronsRight",
   "chevrons-up": "ChevronsUp",
+  "chicken": "Chicken",
   "chimney": "Chimney",
   "chip-ai": "ChipAi",
+  "chocolate": "Chocolate",
   "chopsticks": "Chopsticks",
+  "chrome": "Chrome",
   "church": "Church",
+  "churn": "Churn",
   "cinema": "Cinema",
   "circle": "Circle",
   "citation": "Citation",
+  "classroom": "Classroom",
   "clipboard": "Clipboard",
   "clipboard-2": "Clipboard2",
   "clipboard-check": "ClipboardCheck",
@@ -2430,28 +3272,46 @@ var ICON_NAME_MAP = {
   "cloud-rain": "CloudRain",
   "cloud-snow": "CloudSnow",
   "cloud-sun": "CloudSun",
+  "clubhouse": "Clubhouse",
   "coat": "Coat",
   "code": "Code",
   "code-block": "CodeBlock",
   "code-square": "CodeSquare",
   "code2": "Code2",
+  "codepen": "Codepen",
+  "codesandbox": "Codesandbox",
   "coffee": "Coffee",
+  "cohort": "Cohort",
+  "coin": "Coin",
   "coins": "Coins",
   "columns": "Columns",
   "command": "Command",
+  "comment": "Comment",
+  "comment-check": "CommentCheck",
+  "comment-plus": "CommentPlus",
+  "comment-x": "CommentX",
+  "compare": "Compare",
   "compass": "Compass",
   "compass-2": "Compass2",
+  "competitive": "Competitive",
   "complete": "Complete",
+  "concierge": "Concierge",
   "confused": "Confused",
+  "console": "Console",
   "contact": "Contact",
   "contact2": "Contact2",
   "container": "Container",
   "contract": "Contract",
+  "contract-2": "Contract2",
   "contrast": "Contrast",
+  "controller": "Controller",
+  "controller-wireless": "ControllerWireless",
   "cookie": "Cookie",
   "cool": "Cool",
+  "coop": "Coop",
   "copier": "Copier",
   "copy": "Copy",
+  "coral": "Coral",
   "corner-down-left": "CornerDownLeft",
   "corner-down-left-2": "CornerDownLeft2",
   "corner-down-right": "CornerDownRight",
@@ -2460,28 +3320,48 @@ var ICON_NAME_MAP = {
   "corner-up-left-2": "CornerUpLeft2",
   "corner-up-right": "CornerUpRight",
   "corner-up-right-2": "CornerUpRight2",
+  "correlation": "Correlation",
+  "coupon": "Coupon",
+  "course": "Course",
   "cpu": "Cpu",
+  "crafting": "Crafting",
   "credit-card": "CreditCard",
+  "croissant": "Croissant",
   "cross": "Cross",
   "crosshair": "Crosshair",
   "crosshair-2": "Crosshair2",
   "crown": "Crown",
+  "cruise": "Cruise",
+  "crutches": "Crutches",
   "cry": "Cry",
+  "crystal": "Crystal",
   "css": "Css",
   "cup": "Cup",
+  "cupcake": "Cupcake",
+  "curriculum": "Curriculum",
   "cursor": "Cursor",
   "cursor-click": "CursorClick",
   "cursor-text": "CursorText",
   "curtain": "Curtain",
+  "customs-icon": "CustomsIcon",
   "cycling": "Cycling",
+  "dashboard": "Dashboard",
+  "data-point": "DataPoint",
   "database": "Database",
   "database-2": "Database2",
   "database-backup": "DatabaseBackup",
   "database-zap": "DatabaseZap",
+  "deadline": "Deadline",
+  "deal": "Deal",
   "deep-link": "DeepLink",
   "deer": "Deer",
+  "deezer": "Deezer",
   "defend": "Defend",
+  "delegated": "Delegated",
+  "dependency": "Dependency",
+  "desert": "Desert",
   "desk": "Desk",
+  "desk2": "Desk2",
   "desktop": "Desktop",
   "dial": "Dial",
   "diamond": "Diamond",
@@ -2491,35 +3371,58 @@ var ICON_NAME_MAP = {
   "dice-4": "Dice4",
   "dice-5": "Dice5",
   "dice-6": "Dice6",
+  "dictionary": "Dictionary",
   "dimension": "Dimension",
+  "diploma": "Diploma",
   "directions": "Directions",
   "disc": "Disc",
   "disc-2": "Disc2",
   "disc-3": "Disc3",
+  "discord": "Discord",
+  "discount": "Discount",
+  "dislike": "Dislike",
+  "distraction": "Distraction",
   "divide-2": "Divide2",
+  "dividend": "Dividend",
   "dna": "Dna",
   "dna-2": "Dna2",
+  "dna-helix": "DnaHelix",
   "document-printer": "DocumentPrinter",
   "dog": "Dog",
   "dollar-sign": "DollarSign",
+  "donut": "Donut",
+  "donut-chart": "DonutChart",
   "door": "Door",
   "door-closed": "DoorClosed",
   "door-open": "DoorOpen",
   "download": "Download",
+  "downtrend": "Downtrend",
+  "dpad": "Dpad",
   "dress": "Dress",
+  "dribbble": "Dribbble",
   "drill": "Drill",
   "droplet": "Droplet",
+  "due-date": "DueDate",
   "dumbbell": "Dumbbell",
+  "duplicate": "Duplicate",
   "ear": "Ear",
   "ear-hearing": "EarHearing",
   "ear-off": "EarOff",
+  "ebay": "Ebay",
+  "edge": "Edge",
   "edit": "Edit",
+  "egg2": "Egg2",
   "electron": "Electron",
   "elephant": "Elephant",
+  "emergency": "Emergency",
   "envelope-2": "Envelope2",
   "equalizer": "Equalizer",
   "equals": "Equals",
   "eraser": "Eraser",
+  "estimate": "Estimate",
+  "etsy": "Etsy",
+  "exam": "Exam",
+  "experiment": "Experiment",
   "exposure": "Exposure",
   "external-link": "ExternalLink",
   "external-link-2": "ExternalLink2",
@@ -2527,11 +3430,16 @@ var ICON_NAME_MAP = {
   "eye-2": "Eye2",
   "eye-off": "EyeOff",
   "face-id": "FaceId",
+  "facebook": "Facebook",
   "factory": "Factory",
   "fast-forward": "FastForward",
   "faucet": "Faucet",
   "fax": "Fax",
+  "feed": "Feed",
+  "feedback": "Feedback",
   "fence": "Fence",
+  "fern": "Fern",
+  "figma": "Figma",
   "file": "File",
   "file-archive": "FileArchive",
   "file-audio": "FileAudio",
@@ -2550,6 +3458,7 @@ var ICON_NAME_MAP = {
   "filter": "Filter",
   "fingerprint": "Fingerprint",
   "fire-truck": "FireTruck",
+  "firefox": "Firefox",
   "firewall": "Firewall",
   "first-aid": "FirstAid",
   "fish": "Fish",
@@ -2559,23 +3468,33 @@ var ICON_NAME_MAP = {
   "flashlight-off": "FlashlightOff",
   "flask-2": "Flask2",
   "flask-round": "FlaskRound",
+  "flat": "Flat",
+  "flight-ticket": "FlightTicket",
   "flower": "Flower",
   "flower-2": "Flower2",
+  "focus": "Focus",
   "focus-ring": "FocusRing",
   "folder": "Folder",
   "folder-minus": "FolderMinus",
   "folder-open": "FolderOpen",
   "folder-plus": "FolderPlus",
   "follow": "Follow",
+  "follow-2": "Follow2",
   "football": "Football",
   "footprints": "Footprints",
+  "forecast": "Forecast",
+  "forest": "Forest",
   "fork": "Fork",
   "fortress": "Fortress",
+  "fossil": "Fossil",
   "fox": "Fox",
   "fraction": "Fraction",
+  "free-shipping": "FreeShipping",
   "frown": "Frown",
   "fuel": "Fuel",
   "function": "Function",
+  "funnel": "Funnel",
+  "funnel-chart": "FunnelChart",
   "future": "Future",
   "gamepad": "Gamepad",
   "gamepad-2": "Gamepad2",
@@ -2584,58 +3503,77 @@ var ICON_NAME_MAP = {
   "gate": "Gate",
   "gauge": "Gauge",
   "generator": "Generator",
+  "geyser": "Geyser",
   "gift": "Gift",
   "git-branch": "GitBranch",
   "git-commit": "GitCommit",
   "git-fork": "GitFork",
   "git-merge": "GitMerge",
   "git-pull-request": "GitPullRequest",
+  "github": "Github",
+  "gitlab": "Gitlab",
   "glasses": "Glasses",
   "globe": "Globe",
   "globe-2": "Globe2",
   "glue": "Glue",
   "golf": "Golf",
+  "goodreads": "Goodreads",
+  "google-cloud": "GoogleCloud",
   "grab": "Grab",
   "grab-cursor": "GrabCursor",
   "grabbing": "Grabbing",
+  "grade": "Grade",
   "graduation-cap": "GraduationCap",
   "grape": "Grape",
   "greater-than": "GreaterThan",
   "grid": "Grid",
   "grid-2x2": "Grid2x2",
   "grid-3x3": "Grid3x3",
+  "growth": "Growth",
   "guard": "Guard",
   "hail": "Hail",
   "hammer": "Hammer",
   "hand": "Hand",
   "hand-metal": "HandMetal",
   "hand-wave": "HandWave",
+  "handheld": "Handheld",
   "handshake": "Handshake",
+  "handshake-2": "Handshake2",
   "happy": "Happy",
   "hard-drive": "HardDrive",
   "hard-drive-2": "HardDrive2",
   "hash": "Hash",
   "hashtag": "Hashtag",
+  "hashtag-2": "Hashtag2",
   "hat": "Hat",
   "heading-1": "Heading1",
   "heading-2": "Heading2",
   "heading-3": "Heading3",
   "headphones": "Headphones",
+  "health-bar": "HealthBar",
   "heart": "Heart",
   "heart-pulse": "HeartPulse",
   "heart-shape": "HeartShape",
+  "heartbeat": "Heartbeat",
+  "heatmap": "Heatmap",
   "helicopter": "Helicopter",
   "help-circle": "HelpCircle",
   "help-cursor": "HelpCursor",
   "hexagon": "Hexagon",
+  "high-score": "HighScore",
   "highlighter": "Highlighter",
+  "hiking": "Hiking",
   "history": "History",
   "hockey": "Hockey",
   "home": "Home",
+  "homework": "Homework",
   "hoodie": "Hoodie",
   "horse": "Horse",
   "hospital": "Hospital",
+  "hotdog": "Hotdog",
   "hotel": "Hotel",
+  "hotel-bed": "HotelBed",
+  "hotel-key": "HotelKey",
   "hourglass": "Hourglass",
   "house-2": "House2",
   "house-check": "HouseCheck",
@@ -2646,23 +3584,39 @@ var ICON_NAME_MAP = {
   "html": "Html",
   "humidity": "Humidity",
   "hyperlink": "Hyperlink",
+  "hypothesis": "Hypothesis",
   "ice-cream": "IceCream",
+  "ice-cream-2": "IceCream2",
   "id-card": "IdCard",
+  "immigration": "Immigration",
+  "immunity": "Immunity",
+  "in-progress": "InProgress",
+  "in-stock": "InStock",
   "inbox": "Inbox",
   "incomplete": "Incomplete",
   "indent": "Indent",
   "infinity": "Infinity",
+  "influencer": "Influencer",
   "info": "Info",
   "info-circle": "InfoCircle",
   "ink": "Ink",
+  "instagram": "Instagram",
   "internal-link": "InternalLink",
+  "inventory": "Inventory",
+  "inventory-2": "Inventory2",
+  "investment-2": "Investment2",
   "invoice": "Invoice",
+  "island": "Island",
   "italic": "Italic",
+  "ivy": "Ivy",
   "jacket": "Jacket",
   "javascript-icon": "JavascriptIcon",
   "joystick": "Joystick",
+  "joystick-2": "Joystick2",
   "json": "Json",
+  "jungle": "Jungle",
   "kanban": "Kanban",
+  "kanban-board": "KanbanBoard",
   "kettle": "Kettle",
   "key": "Key",
   "key-round": "KeyRound",
@@ -2671,8 +3625,12 @@ var ICON_NAME_MAP = {
   "keyboard-nav": "KeyboardNav",
   "knife-2": "Knife2",
   "knob": "Knob",
+  "ko-fi": "KoFi",
+  "kpi": "Kpi",
+  "lab-results": "LabResults",
   "ladder": "Ladder",
   "ladle": "Ladle",
+  "lake": "Lake",
   "lamp": "Lamp",
   "lamp-ceiling": "LampCeiling",
   "lamp-desk": "LampDesk",
@@ -2685,20 +3643,32 @@ var ICON_NAME_MAP = {
   "layout": "Layout",
   "layout-grid": "LayoutGrid",
   "layout-list": "LayoutList",
+  "leaderboard": "Leaderboard",
   "leaf": "Leaf",
   "leaf-2": "Leaf2",
+  "lecture": "Lecture",
   "less-than": "LessThan",
+  "letterboxd": "Letterboxd",
   "level": "Level",
+  "level-up": "LevelUp",
   "library": "Library",
+  "library2": "Library2",
   "lightbulb": "Lightbulb",
   "lightbulb-off": "LightbulbOff",
   "lighthouse": "Lighthouse",
+  "like": "Like",
+  "like-filled": "LikeFilled",
+  "line": "Line",
   "line-chart": "LineChart",
+  "linear": "Linear",
   "link": "Link",
   "link-2-off": "Link2Off",
+  "linkedin": "Linkedin",
   "lion": "Lion",
   "list": "List",
   "live": "Live",
+  "live-stream": "LiveStream",
+  "lively": "Lively",
   "loader": "Loader",
   "loading": "Loading",
   "locate": "Locate",
@@ -2706,6 +3676,9 @@ var ICON_NAME_MAP = {
   "lock": "Lock",
   "lock-keyhole": "LockKeyhole",
   "lock-open": "LockOpen",
+  "lollipop": "Lollipop",
+  "loot": "Loot",
+  "loss": "Loss",
   "love": "Love",
   "luggage": "Luggage",
   "lungs": "Lungs",
@@ -2715,19 +3688,27 @@ var ICON_NAME_MAP = {
   "mail-open": "MailOpen",
   "mail-plus": "MailPlus",
   "mailbox": "Mailbox",
+  "mana-bar": "ManaBar",
   "map": "Map",
   "map-pin": "MapPin",
   "map-pinned": "MapPinned",
   "markdown": "Markdown",
   "marker": "Marker",
+  "market": "Market",
   "martini": "Martini",
+  "mastodon": "Mastodon",
   "maximize": "Maximize",
   "maximize-2": "Maximize2",
   "medal": "Medal",
+  "medal2": "Medal2",
+  "medical-bag": "MedicalBag",
+  "medical-cross": "MedicalCross",
+  "medium": "Medium",
   "meeting": "Meeting",
   "meh": "Meh",
   "memory": "Memory",
   "mention": "Mention",
+  "mention-2": "Mention2",
   "menu": "Menu",
   "menu-dots": "MenuDots",
   "menu-dots-horizontal": "MenuDotsHorizontal",
@@ -2736,12 +3717,16 @@ var ICON_NAME_MAP = {
   "message-circle": "MessageCircle",
   "message-square": "MessageSquare",
   "messages-square": "MessagesSquare",
+  "messenger": "Messenger",
+  "meta": "Meta",
+  "metric": "Metric",
   "mic": "Mic",
   "mic-off": "MicOff",
   "microscope": "Microscope",
   "microscope-2": "Microscope2",
   "microwave": "Microwave",
   "milestone": "Milestone",
+  "milestone-2": "Milestone2",
   "minimize": "Minimize",
   "minimize-2": "Minimize2",
   "minus": "Minus",
@@ -2749,16 +3734,20 @@ var ICON_NAME_MAP = {
   "minus-circle": "MinusCircle",
   "minus-square": "MinusSquare",
   "molecule": "Molecule",
+  "monday": "Monday",
   "monitor": "Monitor",
   "moon": "Moon",
   "more-horizontal": "MoreHorizontal",
+  "moss": "Moss",
   "motorcycle": "Motorcycle",
   "mountain": "Mountain",
   "mountain-snow": "MountainSnow",
   "mouse": "Mouse",
   "move-cursor": "MoveCursor",
   "move-horizontal": "MoveHorizontal",
+  "multiplayer": "Multiplayer",
   "multiply": "Multiply",
+  "mushroom": "Mushroom",
   "music": "Music",
   "music-2": "Music2",
   "music-3": "Music3",
@@ -2767,19 +3756,34 @@ var ICON_NAME_MAP = {
   "navigation": "Navigation",
   "navigation-2": "Navigation2",
   "neon": "Neon",
+  "netflix": "Netflix",
   "neural-network": "NeuralNetwork",
+  "nextjs": "Nextjs",
+  "nodejs": "Nodejs",
+  "noodles": "Noodles",
   "not-allowed": "NotAllowed",
   "not-equal": "NotEqual",
   "notebook": "Notebook",
   "notebook-pen": "NotebookPen",
+  "notebook-pen2": "NotebookPen2",
+  "notebook2": "Notebook2",
+  "notion": "Notion",
+  "npm": "Npm",
   "nucleus": "Nucleus",
+  "ocean": "Ocean",
   "octagon": "Octagon",
   "odometer": "Odometer",
   "office": "Office",
   "ok": "Ok",
+  "on-hold": "OnHold",
+  "opera": "Opera",
+  "out-of-stock": "OutOfStock",
   "outdent": "Outdent",
   "outlet": "Outlet",
+  "outlier": "Outlier",
   "oval": "Oval",
+  "overdue": "Overdue",
+  "oxygen": "Oxygen",
   "package": "Package",
   "page-setup": "PageSetup",
   "paintbrush": "Paintbrush",
@@ -2796,10 +3800,15 @@ var ICON_NAME_MAP = {
   "paperclip-2": "Paperclip2",
   "parallelogram": "Parallelogram",
   "parking": "Parking",
+  "partnership": "Partnership",
   "passport": "Passport",
+  "passport-2": "Passport2",
+  "patreon": "Patreon",
   "pause": "Pause",
   "pause-circle": "PauseCircle",
+  "paypal": "Paypal",
   "peace": "Peace",
+  "pebbles": "Pebbles",
   "pen": "Pen",
   "pen-2": "Pen2",
   "pen-line": "PenLine",
@@ -2821,12 +3830,19 @@ var ICON_NAME_MAP = {
   "phone-off": "PhoneOff",
   "phone-outgoing": "PhoneOutgoing",
   "pi": "Pi",
+  "pickup": "Pickup",
   "picture-frame": "PictureFrame",
   "pie-chart": "PieChart",
+  "pie-chart-2": "PieChart2",
   "piggy-bank": "PiggyBank",
   "pill": "Pill",
+  "pill-2": "Pill2",
+  "pills": "Pills",
   "pinch": "Pinch",
   "pine-tree": "PineTree",
+  "pinecone": "Pinecone",
+  "pinterest": "Pinterest",
+  "pitch": "Pitch",
   "pizza": "Pizza",
   "plane": "Plane",
   "plane-landing": "PlaneLanding",
@@ -2849,26 +3865,44 @@ var ICON_NAME_MAP = {
   "point-up": "PointUp",
   "pointer-2": "Pointer2",
   "police-car": "PoliceCar",
+  "poll": "Poll",
+  "pomodoro": "Pomodoro",
+  "pool": "Pool",
+  "popsicle": "Popsicle",
   "portfolio": "Portfolio",
+  "post": "Post",
   "pot": "Pot",
   "potion": "Potion",
   "power-off": "PowerOff",
+  "power-up": "PowerUp",
+  "prescription": "Prescription",
   "presentation": "Presentation",
   "presentation-2": "Presentation2",
+  "price-tag": "PriceTag",
+  "price-tag-plus": "PriceTagPlus",
   "print-preview": "PrintPreview",
   "print-queue": "PrintQueue",
   "printer": "Printer",
   "printer-2": "Printer2",
   "printer-check": "PrinterCheck",
   "printer-x": "PrinterX",
+  "priority": "Priority",
+  "priority-high": "PriorityHigh",
+  "priority-low": "PriorityLow",
+  "profit": "Profit",
   "progress": "Progress",
   "projector": "Projector",
   "protection": "Protection",
   "protractor": "Protractor",
+  "pulse": "Pulse",
   "puzzle": "Puzzle",
   "puzzle-piece": "PuzzlePiece",
+  "pvp": "Pvp",
   "qr-code": "QrCode",
+  "qr-scan": "QrScan",
+  "quest": "Quest",
   "queue": "Queue",
+  "quiz": "Quiz",
   "quote": "Quote",
   "rabbit": "Rabbit",
   "radiation": "Radiation",
@@ -2878,24 +3912,51 @@ var ICON_NAME_MAP = {
   "rainbow": "Rainbow",
   "rake": "Rake",
   "ram": "Ram",
+  "rating": "Rating",
+  "react": "React",
+  "reaction": "Reaction",
   "receipt": "Receipt",
   "receipt-2": "Receipt2",
+  "receipt-check": "ReceiptCheck",
+  "receipt-x": "ReceiptX",
   "record": "Record",
+  "recovery": "Recovery",
   "rectangle": "Rectangle",
+  "recurring": "Recurring",
+  "reddit": "Reddit",
   "reduced-motion": "ReducedMotion",
   "reference": "Reference",
   "refresh": "Refresh",
   "refrigerator": "Refrigerator",
+  "refund": "Refund",
   "regex": "Regex",
+  "regression": "Regression",
   "rejected": "Rejected",
+  "reminder": "Reminder",
+  "reorder": "Reorder",
   "repeat": "Repeat",
+  "report": "Report",
+  "repost": "Repost",
+  "research": "Research",
+  "reservation": "Reservation",
   "resize-diagonal": "ResizeDiagonal",
   "resize-horizontal": "ResizeHorizontal",
   "resize-vertical": "ResizeVertical",
+  "respawn": "Respawn",
+  "retention": "Retention",
+  "return": "Return",
+  "revenue": "Revenue",
+  "review-2": "Review2",
   "rewind": "Rewind",
+  "rice": "Rice",
+  "river": "River",
+  "road-trip": "RoadTrip",
+  "roadmap": "Roadmap",
   "robot": "Robot",
   "rocket": "Rocket",
+  "roi": "Roi",
   "roller": "Roller",
+  "room-service": "RoomService",
   "rose": "Rose",
   "route": "Route",
   "router": "Router",
@@ -2906,10 +3967,15 @@ var ICON_NAME_MAP = {
   "ruler-2": "Ruler2",
   "ruler-square": "RulerSquare",
   "running": "Running",
+  "runway": "Runway",
   "sad": "Sad",
+  "safari": "Safari",
   "sailboat": "Sailboat",
+  "salad": "Salad",
   "sandwich": "Sandwich",
   "save": "Save",
+  "save-2": "Save2",
+  "save-plus": "SavePlus",
   "saw": "Saw",
   "scale-2": "Scale2",
   "scan": "Scan",
@@ -2918,7 +3984,9 @@ var ICON_NAME_MAP = {
   "scan-line": "ScanLine",
   "scanner": "Scanner",
   "scanner-2": "Scanner2",
+  "scatter-plot": "ScatterPlot",
   "schedule": "Schedule",
+  "schedule2": "Schedule2",
   "school": "School",
   "scissors-2": "Scissors2",
   "scooter": "Scooter",
@@ -2929,7 +3997,10 @@ var ICON_NAME_MAP = {
   "search": "Search",
   "search-minus": "SearchMinus",
   "search-plus": "SearchPlus",
+  "seaweed": "Seaweed",
   "seedling": "Seedling",
+  "segment": "Segment",
+  "seminar": "Seminar",
   "send": "Send",
   "send-2": "Send2",
   "server": "Server",
@@ -2939,6 +4010,10 @@ var ICON_NAME_MAP = {
   "server-off": "ServerOff",
   "settings": "Settings",
   "share": "Share",
+  "share-2": "Share2",
+  "share-forward": "ShareForward",
+  "shareholder": "Shareholder",
+  "shell": "Shell",
   "shield": "Shield",
   "shield-2": "Shield2",
   "shield-alert": "ShieldAlert",
@@ -2955,19 +4030,26 @@ var ICON_NAME_MAP = {
   "shield-user": "ShieldUser",
   "shield-x": "ShieldX",
   "ship": "Ship",
+  "shipping": "Shipping",
+  "shipping-fast": "ShippingFast",
   "shirt": "Shirt",
+  "shopify": "Shopify",
   "shopping-bag": "ShoppingBag",
+  "shopping-bag-plus": "ShoppingBagPlus",
   "shopping-cart": "ShoppingCart",
   "shortcut": "Shortcut",
   "shorts": "Shorts",
   "shovel": "Shovel",
+  "shrimp": "Shrimp",
   "shuffle": "Shuffle",
   "sidebar": "Sidebar",
   "sidebar-close": "SidebarClose",
   "sidebar-open": "SidebarOpen",
   "sigma": "Sigma",
+  "sign": "Sign",
   "sign-language": "SignLanguage",
   "signal": "Signal",
+  "signal-app": "SignalApp",
   "signal-high": "SignalHigh",
   "signal-low": "SignalLow",
   "signal-zero": "SignalZero",
@@ -2976,17 +4058,23 @@ var ICON_NAME_MAP = {
   "skiing": "Skiing",
   "skip-back": "SkipBack",
   "skip-forward": "SkipForward",
+  "slack": "Slack",
   "sleep": "Sleep",
   "slider": "Slider",
   "slider-horizontal": "SliderHorizontal",
   "slider-vertical": "SliderVertical",
   "smartphone": "Smartphone",
   "smile": "Smile",
+  "snapchat": "Snapchat",
   "snippet": "Snippet",
   "snowflake": "Snowflake",
   "soccer": "Soccer",
   "sofa": "Sofa",
+  "soundcloud": "Soundcloud",
+  "soup": "Soup",
+  "spa": "Spa",
   "sparkles": "Sparkles",
+  "sparkline": "Sparkline",
   "spatula": "Spatula",
   "speaker": "Speaker",
   "speaker-2": "Speaker2",
@@ -2994,24 +4082,41 @@ var ICON_NAME_MAP = {
   "speed-dial": "SpeedDial",
   "speedometer": "Speedometer",
   "spoon-2": "Spoon2",
+  "spotify": "Spotify",
   "spotlight": "Spotlight",
+  "sprint": "Sprint",
   "sprout": "Sprout",
   "sqrt": "Sqrt",
   "square": "Square",
   "ssd": "Ssd",
+  "stackoverflow": "Stackoverflow",
+  "stakeholder": "Stakeholder",
   "stamp": "Stamp",
+  "stamp-2": "Stamp2",
   "stapler": "Stapler",
   "star": "Star",
+  "starfish": "Starfish",
+  "startup": "Startup",
   "statistics": "Statistics",
+  "steak": "Steak",
   "stethoscope": "Stethoscope",
+  "stethoscope-2": "Stethoscope2",
   "stop-circle": "StopCircle",
   "stopwatch": "Stopwatch",
   "storage": "Storage",
   "store": "Store",
+  "store-front": "StoreFront",
+  "story": "Story",
+  "strategy": "Strategy",
+  "strava": "Strava",
   "stream": "Stream",
   "strikethrough": "Strikethrough",
+  "stripe": "Stripe",
+  "student-id": "StudentId",
   "studio": "Studio",
   "subscript": "Subscript",
+  "substack": "Substack",
+  "subtask": "Subtask",
   "subtitle": "Subtitle",
   "sun": "Sun",
   "sunglasses": "Sunglasses",
@@ -3020,6 +4125,9 @@ var ICON_NAME_MAP = {
   "superscript": "Superscript",
   "surge-protector": "SurgeProtector",
   "surprised": "Surprised",
+  "survey": "Survey",
+  "sushi": "Sushi",
+  "svelte": "Svelte",
   "sweater": "Sweater",
   "swimming": "Swimming",
   "switch-off": "SwitchOff",
@@ -3027,36 +4135,55 @@ var ICON_NAME_MAP = {
   "sword": "Sword",
   "swords": "Swords",
   "syringe": "Syringe",
+  "syringe-2": "Syringe2",
   "table": "Table",
   "table-2": "Table2",
   "tablet": "Tablet",
+  "taco": "Taco",
   "tag": "Tag",
+  "tag-person": "TagPerson",
   "tag2": "Tag2",
   "tags": "Tags",
+  "tailwind": "Tailwind",
   "tape": "Tape",
   "tape-measure": "TapeMeasure",
   "target": "Target",
+  "target-2": "Target2",
+  "task": "Task",
+  "task-check": "TaskCheck",
+  "task-list": "TaskList",
   "team": "Team",
+  "teams": "Teams",
+  "telegram": "Telegram",
+  "temperature": "Temperature",
   "temperature-dial": "TemperatureDial",
+  "template": "Template",
   "tennis": "Tennis",
   "tent": "Tent",
   "terminal": "Terminal",
   "terminal-2": "Terminal2",
+  "terminal-gate": "TerminalGate",
   "terminal-square": "TerminalSquare",
   "test-tube": "TestTube",
   "test-tube-2": "TestTube2",
   "test-tubes": "TestTubes",
+  "testimonial": "Testimonial",
   "text": "Text",
   "text-cursor": "TextCursor",
   "text-size": "TextSize",
+  "textbook": "Textbook",
   "thermometer": "Thermometer",
   "thermometer-2": "Thermometer2",
   "thermometer-medical": "ThermometerMedical",
+  "threads": "Threads",
   "thumbs-down": "ThumbsDown",
   "thumbs-up": "ThumbsUp",
   "ticket": "Ticket",
   "tie": "Tie",
+  "tiktok": "Tiktok",
+  "time-tracking": "TimeTracking",
   "timeline": "Timeline",
+  "timeline-2": "Timeline2",
   "timer": "Timer",
   "toaster": "Toaster",
   "toggle": "Toggle",
@@ -3076,25 +4203,37 @@ var ICON_NAME_MAP = {
   "tree-2": "Tree2",
   "tree-palm": "TreePalm",
   "tree-pine": "TreePine",
+  "treemap": "Treemap",
+  "trello": "Trello",
+  "trending": "Trending",
   "trending-down": "TrendingDown",
   "trending-up": "TrendingUp",
   "triangle": "Triangle",
+  "trigger": "Trigger",
   "trophy": "Trophy",
+  "trophy2": "Trophy2",
   "truck": "Truck",
   "tshirt": "Tshirt",
   "tulip": "Tulip",
+  "tumblr": "Tumblr",
   "turtle": "Turtle",
+  "tutor": "Tutor",
   "tv": "Tv",
+  "twitch": "Twitch",
+  "twitter": "Twitter",
   "two-factor": "TwoFactor",
   "typescript-icon": "TypescriptIcon",
   "ufo": "Ufo",
   "umbrella": "Umbrella",
   "underline": "Underline",
   "unfollow": "Unfollow",
+  "unfollow-2": "Unfollow2",
+  "university": "University",
   "unlock": "Unlock",
   "unverified": "Unverified",
   "upload": "Upload",
   "ups": "Ups",
+  "uptrend": "Uptrend",
   "usb-drive": "UsbDrive",
   "user": "User",
   "user-check": "UserCheck",
@@ -3106,14 +4245,25 @@ var ICON_NAME_MAP = {
   "users": "Users",
   "utensils": "Utensils",
   "utensils-crossed": "UtensilsCrossed",
+  "vaccine": "Vaccine",
+  "variance": "Variance",
   "vault": "Vault",
+  "vercel": "Vercel",
   "verified": "Verified",
+  "verified-2": "Verified2",
+  "viber": "Viber",
   "video": "Video",
   "video-2": "Video2",
   "video-off": "VideoOff",
+  "vimeo": "Vimeo",
   "vinyl": "Vinyl",
+  "viral": "Viral",
+  "virus": "Virus",
+  "visa": "Visa",
+  "vitals": "Vitals",
   "voice-control": "VoiceControl",
   "voicemail": "Voicemail",
+  "volcano": "Volcano",
   "volleyball": "Volleyball",
   "volume": "Volume",
   "volume-1": "Volume1",
@@ -3121,7 +4271,10 @@ var ICON_NAME_MAP = {
   "volume-dial": "VolumeDial",
   "volume-off": "VolumeOff",
   "volume-x": "VolumeX",
+  "vscode": "Vscode",
+  "vue": "Vue",
   "wait-cursor": "WaitCursor",
+  "walker": "Walker",
   "wallet": "Wallet",
   "wallet-cards": "WalletCards",
   "wand": "Wand",
@@ -3130,15 +4283,21 @@ var ICON_NAME_MAP = {
   "warehouse": "Warehouse",
   "watch": "Watch",
   "watch-accessory": "WatchAccessory",
+  "waterfall": "Waterfall",
   "watering-can": "WateringCan",
   "waveform": "Waveform",
   "waves": "Waves",
   "waypoints": "Waypoints",
   "webcam": "Webcam",
   "webhook": "Webhook",
+  "wechat": "Wechat",
   "weight": "Weight",
+  "whatsapp": "Whatsapp",
   "wheelchair": "Wheelchair",
+  "wheelchair-2": "Wheelchair2",
   "whisk": "Whisk",
+  "whiteboard": "Whiteboard",
+  "widget": "Widget",
   "wifi": "Wifi",
   "wifi-off": "WifiOff",
   "wind": "Wind",
@@ -3146,14 +4305,21 @@ var ICON_NAME_MAP = {
   "window-2": "Window2",
   "wine": "Wine",
   "wink": "Wink",
+  "wishlist": "Wishlist",
   "wolf": "Wolf",
+  "workflow": "Workflow",
   "wrench": "Wrench",
   "x": "X",
   "x-circle": "XCircle",
   "x-circle-2": "XCircle2",
   "x-square": "XSquare",
+  "x-twitter": "XTwitter",
   "xml": "Xml",
-  "zap": "Zap"
+  "xp-bar": "XpBar",
+  "xray": "Xray",
+  "youtube": "Youtube",
+  "zap": "Zap",
+  "zoom": "Zoom"
 };
 function isIconName(name) {
   return ICON_NAMES.includes(name);
@@ -3411,9 +4577,9 @@ var customPresets = {
   })
 };
 var LazyMotionSvg = React3.lazy(async () => {
-  const { motion: motion1241 } = await import('motion/react');
+  const { motion: motion1320 } = await import('motion/react');
   const MotionSvgWrapper = React3.forwardRef((props, ref) => {
-    return /* @__PURE__ */ React3__namespace.createElement(motion1241.svg, { ref, ...props });
+    return /* @__PURE__ */ React3__namespace.createElement(motion1320.svg, { ref, ...props });
   });
   MotionSvgWrapper.displayName = "MotionSvgWrapper";
   return { default: MotionSvgWrapper };
@@ -3479,9 +4645,9 @@ function LazyMotionIcon({
   );
 }
 var LazyMotionPath = React3.lazy(async () => {
-  const { motion: motion1241 } = await import('motion/react');
+  const { motion: motion1320 } = await import('motion/react');
   const MotionPathWrapper = React3.forwardRef((props, ref) => {
-    return /* @__PURE__ */ React3__namespace.createElement(motion1241.path, { ref, ...props });
+    return /* @__PURE__ */ React3__namespace.createElement(motion1320.path, { ref, ...props });
   });
   MotionPathWrapper.displayName = "MotionPathWrapper";
   return { default: MotionPathWrapper };
@@ -12842,6 +14008,37 @@ var Eye = ({
     )
   );
 };
+var Facebook = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
 var FaceId = ({
   size = 24,
   strokeWidth = 2,
@@ -17057,6 +18254,39 @@ var Info = ({
     /* @__PURE__ */ React.createElement(react.motion.line, { x1: "12", y1: "8", x2: "12.01", y2: "8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
   );
 };
+var Instagram = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "3", y: "3", width: "18", height: "18", rx: "5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "17.5", cy: "6.5", r: "0.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
 var Invoice = ({
   size = 24,
   strokeWidth = 2,
@@ -18328,6 +19558,41 @@ var LineChart = ({
     /* @__PURE__ */ React.createElement(react.motion.path, { d: "m19 9-5 5-4-4-3 3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
   );
 };
+var Linkedin = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "3", y: "3", width: "18", height: "18", rx: "3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "8", cy: "8", r: "0.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 11v6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 17v-4c0-2 1-3 3-3s3 1 3 3v4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 11v6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
 var Link = ({
   size = 24,
   strokeWidth = 2,
@@ -19529,6 +20794,38 @@ var Mention = ({
     },
     /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
     /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Meta = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 12c-2-3-4-5-6-5s-4 2-4 5 2 5 4 5 4-2 6-5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 12c2 3 4 5 6 5s4-2 4-5-2-5-4-5-4 2-6 5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
   );
 };
 var MenuDotsHorizontal = ({
@@ -38655,10 +39952,12 @@ var Safari = ({
       "aria-label": ariaLabel,
       "aria-hidden": ariaLabel ? void 0 : true
     },
-    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "7", cy: "9", r: "5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
-    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "17", cy: "9", r: "5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
-    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 9h4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
-    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 14v7M17 14v7", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16.24 7.76l-1.41 5.66-5.66 1.41 1.41-5.66z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2v2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 20v2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M20 12h2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M2 12h2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
   );
 };
 var Spa = ({
@@ -45194,6 +46493,38 @@ var XpBar = ({
     /* @__PURE__ */ React.createElement(react.motion.path, { d: "M2 5h3M19 5h3M10.5 5h3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
   );
 };
+var Youtube = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "2", y: "5", width: "20", height: "14", rx: "4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 8.5l5 3.5-5 3.5v-7z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
 var Assignment = ({
   size = 24,
   strokeWidth = 2,
@@ -46167,6 +47498,2759 @@ var Whiteboard = ({
     /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 8h10M7 12h6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
   );
 };
+var Behance = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 6h5.5a3 3 0 0 1 0 6H3V6Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 12h6a3 3 0 0 1 0 6H3v-6Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M14 14h7a4 4 0 1 0-1-5 4 4 0 0 0-6 5 4 4 0 0 0 6.5 1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 6h5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Bluesky = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 6c1.5 2 3.5 4 6 4s4.5-2 6-4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 8c2 3 5 6 9 6s7-3 9-6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 14c1.5 2.5 3.5 5 6 5s4.5-2.5 6-5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Discord = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09-.01-.02-.04-.03-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.24 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.11-.08.22-.17.33-.25.02-.02.05-.02.07-.01 3.44 1.57 7.15 1.57 10.55 0 .02-.01.05-.01.07.01.11.09.22.17.33.26.04.03.04.09-.01.11-.52.31-1.07.56-1.64.78-.04.01-.05.06-.04.09.32.61.68 1.19 1.07 1.74.02.03.05.03.07.02 1.72-.53 3.45-1.33 5.24-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.1-11.95-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.83 2.12-1.89 2.12z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Dribbble = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M19.13 5.09C15.22 9.14 10.4 10.44 2.25 10.94", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Figma = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M5 5.5A2.5 2.5 0 0 1 7.5 3H12v5H7.5A2.5 2.5 0 0 1 5 5.5Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M5 12a2.5 2.5 0 0 1 2.5-2.5H12v5H7.5A2.5 2.5 0 0 1 5 12Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M5 18.5A2.5 2.5 0 0 1 7.5 16H12v2.5a2.5 2.5 0 0 1-5 0Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 3h4.5A2.5 2.5 0 0 1 19 5.5 2.5 2.5 0 0 1 16.5 8H12V3Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "16.5", cy: "12", r: "2.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Github = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 18c-4.51 2-5-2-7-2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Goodreads = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M18 12c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 6v12", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M18 12v6c0 1.657-1.343 3-3 3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Letterboxd = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "8", cy: "12", r: "5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "16", cy: "12", r: "5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10.5 9.5a5 5 0 013 0", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10.5 14.5a5 5 0 003 0", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Mastodon = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 14c0 3.5-2.5 6-6 6H9c-3.5 0-6-2.5-6-6V8c0-3 2.5-5.5 6-5.5h6c3.5 0 6 2.5 6 5.5v6z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 15c0 1.5 1 2.5 2.5 2.5s2.5-1 2.5-2.5V9M12 15c0 1.5 1 2.5 2.5 2.5s2.5-1 2.5-2.5V9", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 12h10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Medium = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 6L4 18M4 6L9 12L4 18", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 6L12 18M12 6L17 12L12 18", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M20 6L20 18", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Netflix = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 4v16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 4l10 16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M17 4v16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Pinterest = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 6c-2.5 0-4.5 2-4.5 4.5 0 1.5.7 2.8 1.8 3.7-.1.7-.4 1.8-.6 2.5-.2.8-.5 2-.6 2.8.5-.3 1.2-.8 1.8-1.2.5-.4 1-1 1.5-1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 6c2.2 0 4 1.8 4 4 0 1.5-.8 2.8-2 3.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 6v4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Reddit = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "14", r: "7", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "9", cy: "13", r: "1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "15", cy: "13", r: "1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 17c1.5 1 4.5 1 6 0", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 7V4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "17", cy: "5", r: "2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 4l3 1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "5", cy: "10", r: "1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "19", cy: "10", r: "1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Slack = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "13", y: "2", width: "3", height: "8", rx: "1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M19 8.5V10a1.5 1.5 0 0 0 3 0v-1.5a1.5 1.5 0 0 0-3 0z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "8", y: "14", width: "3", height: "8", rx: "1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M2 15.5a1.5 1.5 0 0 0 3 0V14a1.5 1.5 0 0 0-3 0v1.5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "14", y: "13", width: "8", height: "3", rx: "1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15.5 19H14a1.5 1.5 0 0 0 0 3h1.5a1.5 1.5 0 0 0 0-3z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.rect, { x: "2", y: "8", width: "8", height: "3", rx: "1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8.5 2H10a1.5 1.5 0 0 0 0 3H8.5a1.5 1.5 0 0 0 0-3z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Snapchat = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2C8.5 2 6 4.5 6 8v2c-1 0-2 .5-2 1.5S5 13 6 13c-.5 1.5-2 2.5-3 3 0 1 1 1.5 2.5 1.5.5 1 1 2.5 2 2.5s2-.5 2.5-.5c.5 0 1 .5 2 .5s1.5-1.5 2-2.5c1.5 0 2.5-.5 2.5-1.5-1-.5-2.5-1.5-3-3 1 0 2-.5 2-1.5S19 10 18 10V8c0-3.5-2.5-6-6-6Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 7c-1-.5-2 0-2.5 1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 7c1-.5 2 0 2.5 1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Spotify = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 15c2.5-1 5.5-1 8 0", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 12c3-1.5 7-1.5 10 0", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 9c4-2 8-2 12 0", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Strava = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 3L3 13h4l1 2 3-6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 3l-5 10h4l5 8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Substack = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 6h16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 10h16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 14v6l8 2 8-2v-6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Threads = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M19 12c0-3.866-3.134-7-7-7s-7 3.134-7 7c0 1.933.784 3.683 2.05 4.95", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15.5 10.5c-1-1.5-2.5-2-4-2-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c2 0 3.5-1 4-2.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M13 13c1 0 2-.5 2.5-1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Tiktok = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 12a4 4 0 1 0 4 4V4c1 2 3 4 6 4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Tumblr = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M14 4L10 4L10 10L7 10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 10L10 16C10 17.1046 10.8954 18 12 18L16 18", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Twitch = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 2H3v16h5v4l4-4h5l4-4V2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M11 11V7", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 11V7", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Twitter = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var XTwitter = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 4l16 16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M20 4L4 20", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Clubhouse = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M8 13c0-1.1.9-2 2-2s2 .9 2 2-2 3-2 3-2-1.9-2-3z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M12 13c0-1.1.9-2 2-2s2 .9 2 2-2 3-2 3-2-1.9-2-3z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M7 9c.5-1 1.5-1.5 2.5-1.5S11.5 8 12 9m1 0c.5-1 1.5-1.5 2.5-1.5S17.5 8 18 9",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Line = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M21 15c0 1.1-.9 2-2 2H7l-4 4V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v10z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M8 10h1v3",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M11 10v3",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M14 10h2m-1 0v3m2-3h1l1 2v-2",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Messenger = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M13 7l-3 4h4l-3 4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var SignalApp = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "11", r: "2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Teams = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M3 21h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M8 7h8m-4 0v7",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M7 16.5c0-.8.7-1.5 1.5-1.5h7c.8 0 1.5.7 1.5 1.5v1.5H7v-1.5z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M10 18v-3m4 3v-3",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Telegram = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 3L3 10l7 3 3 7 8-17z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 13l4-4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Viber = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M21 15c0 1.1-.9 2-2 2H7l-4 4V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v10z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M14.5 6.5c1.5.5 2.5 1.5 3 3",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M15 8c.5.3.7.5 1 1",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M10 14c1.5.5 2.5-.5 3-1s1-1 2-.5c1 .5 1.5 1.5 1.5 2.5s-1.5 2-3 2c-2 0-5-1-7-3s-3-5-3-7c0-1.5.5-3 2-3s2 .5 2.5 1.5c.5 1 0 1.5-.5 2-.5.5-1.5 1.5-1 3",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Wechat = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8.5 4C4.9 4 2 6.5 2 9.5c0 1.5.7 2.9 1.9 3.9l-.9 2.6 2.8-1.4c.9.3 1.8.4 2.7.4.3 0 .7 0 1-.1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M22 13c0-2.5-2.5-4.5-5.5-4.5S11 10.5 11 13s2.5 4.5 5.5 4.5c.7 0 1.4-.1 2-.3l2.5 1.3-.8-2.3c1.1-.9 1.8-2.1 1.8-3.2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "5.5", cy: "9", r: "0.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "8.5", cy: "9", r: "0.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "14.5", cy: "13", r: "0.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "17.5", cy: "13", r: "0.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Whatsapp = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 10a1 1 0 0 1 1-1h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-.5a1 1 0 0 1 1-1h.5a.5.5 0 0 1 .5.5v1.5a3 3 0 0 1-3 3h-1a2 2 0 0 1-2-2v-2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Zoom = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M2 8c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V8z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M18 10l4-2v8l-4-2",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M6 11h6",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M6 14h4",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Chrome = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 8V2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8.5 14L3.5 5.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15.5 14L20.5 5.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Edge = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M20 12c0-4.4-3.6-8-8-8-3.5 0-6.5 2.2-7.6 5.4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4.4 9.4C4.1 10.2 4 11.1 4 12c0 4.4 3.6 8 8 8 2.2 0 4.2-.9 5.7-2.3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M17.7 17.7c1-1.3 1.3-3 .8-4.7-.5-1.5-1.7-2.6-3.2-3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 14c1.5 1 3.5 1.5 5.3 1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Firefox = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 3c0 2 2 3 2 5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 8c-1 1-2 3-2 5 0 3 2 5 4 6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M18 6c-1 0-2 1-3 2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 8c1 1 2 3 2 5 0 2-1 4-3 5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Opera = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.ellipse, { cx: "12", cy: "12", rx: "4", ry: "7", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Angular = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2L3 6v6c0 5.25 3.83 10.17 9 11.38 5.17-1.21 9-6.13 9-11.38V6l-9-4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 7l-4 10h2l1-2.5h2l1 2.5h2L12 7z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10.5 12.5h3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Bitbucket = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 4L4 20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20L21 4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 4H21", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 13L9 20H15L16 13", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 13H16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var CodePen = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2L22 8V16L12 22L2 16V8L12 2Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 22V16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M22 8L12 14L2 8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M2 16L12 10L22 16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var CodeSandbox = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M21 16V8L12 3L3 8V16L12 21L21 16Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 12L21 8M12 12L3 8M12 12V21", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 3V12", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var GitLab = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 3L9 10H15L12 3Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 10L18 21L12 16L6 21L9 10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 10H2L6 21", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 10H22L18 21", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Nextjs = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.circle, { cx: "12", cy: "12", r: "10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 16V8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 8l10 12", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 8v5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Nodejs = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 8l4 8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 14v2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Npm = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 5h18v14H3V5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 8l3 4v4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 8h2a2 2 0 0 1 0 4h-2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M18 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var React4 = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "rotate",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React4.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React4.createElement(react.motion.circle, { cx: "12", cy: "12", r: "2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React4.createElement(react.motion.ellipse, { cx: "12", cy: "12", rx: "10", ry: "4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React4.createElement(react.motion.ellipse, { cx: "12", cy: "12", rx: "10", ry: "4", transform: "rotate(60 12 12)", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React4.createElement(react.motion.ellipse, { cx: "12", cy: "12", rx: "10", ry: "4", transform: "rotate(120 12 12)", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var StackOverflow = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M2 14V22H22V14", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 18H17", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 13L16 15", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 8L17 12", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Svelte = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M17.5 5.5c-2-3-6-3.5-8.5-1.5C6.5 6 6 9 7.5 11.5c-2 3 0 6 2.5 7.5 2.5 1.5 6 .5 8-2 1.5-2 1.5-4.5 0-6.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M14 6c-1-.5-3-.5-4 .5-1 1-.5 2.5.5 3.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 18c1 .5 3 .5 4-.5 1-1 .5-2.5-.5-3.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Tailwind = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 9c1-2 3-3 6-3 4.5 0 5.5 3 8 3 1.5 0 2.5-.5 3-1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M1 16c1-2 3-3 6-3 4.5 0 5.5 3 8 3 1.5 0 2.5-.5 3-1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Vercel = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2L2 20h20L12 2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Vscode = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 3L3 8v8l5 5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 3h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 3v5h5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 9l-3 3 3 3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M14 9l3 3-3 3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Vue = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M2 3h4l6 14L18 3h4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 3l6 10 6-10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Bandcamp = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 9L12 15L17 9", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Deezer = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 18L4 10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 18L8 6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 18L12 8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 18L16 12", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M20 18L20 14", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Soundcloud = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 14v2M6 12v4M9 10v6M12 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 6.5c3.5 0 6.5 2.5 6.5 6s-3 6-6.5 6H9", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Vimeo = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 8L8 4L12 8L8 12L4 8Z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 12Q12 10 16 12Q20 14 20 18Q20 22 16 22Q12 22 10 18", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var KoFi = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 10h12a4 4 0 014 4v0a4 4 0 01-4 4H6a3 3 0 01-3-3v-5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 10V8a2 2 0 012-2h8a2 2 0 012 2v2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M17 10c1-1.5 2-2 3.5-2s2.5 1 2.5 2.5-1 2.5-2.5 2.5c-1 0-2-.5-3-1.5", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Patreon = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 3v18M4 3h6c4 0 7 3 7 7s-3 7-7 7H4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M16 3c2.5 0 4.5 2 4.5 4.5S18.5 12 16 12s-4.5-2-4.5-4.5S13.5 3 16 3z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Asana = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 20.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M17 20.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Linear = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 3h18v18H3z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 12h8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M11 12l10 9", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M11 3v9", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Monday = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M18 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 16v4M12 14v6M18 16v4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Notion = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M4 4h16v16H4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 4v16", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 8v12", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 8l4 4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Trello = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 3h18v18H3z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 6h4v12H6z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M14 6h4v8h-4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Aws = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M3 14 Q12 18 21 14",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M21 14 L18 12 M21 14 L18 16",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M4 6 L6 12 L8 6 M5 9 L7 9",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M10 6 L10 12 M10 6 L12 12 M12 6 L12 12 M14 6 L16 9 M16 9 L14 12",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Azure = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M12 3 L4 21 M12 3 L20 21 M7 15 L17 15",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M8 5 Q6 5 5 7",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M16 5 Q18 5 19 7",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var GoogleCloud = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M12 3 L17 6 L19 10 L17 14 L12 17 L7 14 L5 10 L7 6 Z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M12 7 L15 9 L15 12 L12 14 L9 12 L9 9 Z",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M8 19 Q6 19 6 21 L18 21 Q18 19 16 19",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Paypal = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M6 4 L6 20 M6 4 L11 4 Q14 4 14 8 Q14 12 11 12 L6 12",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M10 6 L10 22 M10 6 L15 6 Q18 6 18 10 Q18 14 15 14 L10 14",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Stripe = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M16 8 Q12 8 12 11 Q12 13 16 13 Q20 13 20 16 Q20 19 16 19",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M6 5 L8 7 M8 9 L10 11 M10 13 L12 15",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    ),
+    /* @__PURE__ */ React.createElement(
+      react.motion.path,
+      {
+        d: "M3 10 L5 12 M5 14 L7 16 M7 18 L9 20",
+        ...isDraw ? pathAnimationProps : {},
+        pathLength: 1,
+        className: isDraw ? "draw-path" : ""
+      }
+    )
+  );
+};
+var Airbnb = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 2C9.5 2 8 4 8 6c0 1.5.5 2.5 1.5 3.5L12 12l2.5-2.5C15.5 8.5 16 7.5 16 6c0-2-1.5-4-4-4z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 12c-2 2-4 5-4 7 0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4 0-2-2-5-4-7", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 17h6", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Amazon = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 16c4 2 8 3 12 3 2.5 0 5-1 6-2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M20 14l1 2-1 1", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 8c0-2 1.5-3.5 3.5-3.5S15 6 15 8v6c0 1 .5 2 2 2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M15 11c0-1.7-1.3-3-3-3s-3 1.3-3 3v3c0 1.7 1.3 3 3 3s3-1.3 3-3", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Ebay = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 12h4c1.1 0 2 .9 2 2s-.9 2-2 2H4", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M10 8v8l3-4 3 4V8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M3 8v8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M17 12c0-1.5 1-2.5 2-2.5s2 1 2 2.5-1 2.5-2 2.5-2-1-2-2.5z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Etsy = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 4l10 2-2 1 2 10-10 2-1-2-1 2-2-10 2-1z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 9h8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M7 12h10", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 15h8", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
+var Shopify = ({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  animated,
+  lively = "scale",
+  trigger = "hover",
+  "aria-label": ariaLabel
+}) => {
+  const { animationProps, pathAnimationProps, drawWrapperProps } = useIconAnimation(animated, lively, trigger);
+  const isDraw = lively === "draw";
+  return /* @__PURE__ */ React.createElement(
+    react.motion.svg,
+    {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: `${className || ""} ${isDraw ? "draw-animation" : ""}`.trim(),
+      ...!isDraw ? animationProps : drawWrapperProps,
+      role: ariaLabel ? "img" : void 0,
+      "aria-label": ariaLabel,
+      "aria-hidden": ariaLabel ? void 0 : true
+    },
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M8 3h8c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M9 8c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M12 12c-1.5 0-2 1-2 2v3h4v-3c0-1 .5-2-2-2z", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" }),
+    /* @__PURE__ */ React.createElement(react.motion.path, { d: "M6 19l3 2 3-2 3 2 3-2", ...isDraw ? pathAnimationProps : {}, pathLength: 1, className: isDraw ? "draw-path" : "" })
+  );
+};
 
 Object.defineProperty(exports, "StaticAlertCircle", {
   enumerable: true,
@@ -46374,6 +50458,7 @@ exports.Achievement = Achievement;
 exports.Acorn = Acorn;
 exports.Activity = Activity;
 exports.Aggregate = Aggregate;
+exports.Airbnb = Airbnb;
 exports.Airplay = Airplay;
 exports.Airport = Airport;
 exports.AlarmClock = AlarmClock;
@@ -46382,12 +50467,14 @@ exports.AlertCircle2 = AlertCircle2;
 exports.AlertOctagon = AlertOctagon;
 exports.AlertTriangle = AlertTriangle;
 exports.Alias = Alias;
+exports.Amazon = Amazon;
 exports.Ambulance = Ambulance;
 exports.Ambulance2 = Ambulance2;
 exports.Analytics = Analytics;
 exports.Anchor = Anchor;
 exports.Anchor2 = Anchor2;
 exports.Angry = Angry;
+exports.Angular = Angular;
 exports.Annoyed = Annoyed;
 exports.Apartment = Apartment;
 exports.Api = Api;
@@ -46422,6 +50509,7 @@ exports.ArrowsCollapse = ArrowsCollapse;
 exports.ArrowsExpand = ArrowsExpand;
 exports.ArrowsMaximize2 = ArrowsMaximize2;
 exports.ArrowsMinimize2 = ArrowsMinimize2;
+exports.Asana = Asana;
 exports.Assigned = Assigned;
 exports.Assignment = Assignment;
 exports.AtSign = AtSign;
@@ -46432,7 +50520,9 @@ exports.AudioDescription = AudioDescription;
 exports.AudioLines = AudioLines;
 exports.Automation = Automation;
 exports.Award = Award;
+exports.Aws = Aws;
 exports.Axe = Axe;
+exports.Azure = Azure;
 exports.Baby = Baby;
 exports.Backlink = Backlink;
 exports.Backlog = Backlog;
@@ -46457,6 +50547,7 @@ exports.Ban = Ban;
 exports.Banana = Banana;
 exports.Bandage = Bandage;
 exports.Bandage2 = Bandage2;
+exports.Bandcamp = Bandcamp;
 exports.Bank = Bank;
 exports.Banknote = Banknote;
 exports.BarChart = BarChart;
@@ -46482,6 +50573,7 @@ exports.Bear = Bear;
 exports.Bed = Bed;
 exports.Bee = Bee;
 exports.Beer = Beer;
+exports.Behance = Behance;
 exports.Bell = Bell;
 exports.BellOff = BellOff;
 exports.BellRing = BellRing;
@@ -46491,6 +50583,7 @@ exports.Bike = Bike;
 exports.Binder = Binder;
 exports.Biohazard2 = Biohazard2;
 exports.Bird = Bird;
+exports.Bitbucket = Bitbucket;
 exports.Bitcoin = Bitcoin;
 exports.Blender = Blender;
 exports.Block = Block;
@@ -46498,6 +50591,7 @@ exports.Block2 = Block2;
 exports.Blocker = Blocker;
 exports.BloodDrop = BloodDrop;
 exports.BloodPressure = BloodPressure;
+exports.Bluesky = Bluesky;
 exports.Bluetooth = Bluetooth;
 exports.BoardingPass = BoardingPass;
 exports.Boat = Boat;
@@ -46594,6 +50688,7 @@ exports.Chimney = Chimney;
 exports.ChipAi = ChipAi;
 exports.Chocolate = Chocolate;
 exports.Chopsticks = Chopsticks;
+exports.Chrome = Chrome;
 exports.Church = Church;
 exports.Churn = Churn;
 exports.Cinema = Cinema;
@@ -46628,10 +50723,13 @@ exports.CloudLightning = CloudLightning;
 exports.CloudRain = CloudRain;
 exports.CloudSnow = CloudSnow;
 exports.CloudSun = CloudSun;
+exports.Clubhouse = Clubhouse;
 exports.Coat = Coat;
 exports.Code = Code;
 exports.Code2 = Code2;
 exports.CodeBlock = CodeBlock;
+exports.CodePen = CodePen;
+exports.CodeSandbox = CodeSandbox;
 exports.CodeSquare = CodeSquare;
 exports.Coffee = Coffee;
 exports.Cohort = Cohort;
@@ -46708,6 +50806,7 @@ exports.Deadline = Deadline;
 exports.Deal = Deal;
 exports.DeepLink = DeepLink;
 exports.Deer = Deer;
+exports.Deezer = Deezer;
 exports.Defend = Defend;
 exports.Delegated = Delegated;
 exports.Dependency = Dependency;
@@ -46730,6 +50829,7 @@ exports.Directions = Directions;
 exports.Disc = Disc;
 exports.Disc2 = Disc2;
 exports.Disc3 = Disc3;
+exports.Discord = Discord;
 exports.Discount = Discount;
 exports.Dislike = Dislike;
 exports.Distraction = Distraction;
@@ -46750,6 +50850,7 @@ exports.Download = Download;
 exports.Downtrend = Downtrend;
 exports.Dpad = Dpad;
 exports.Dress = Dress;
+exports.Dribbble = Dribbble;
 exports.Drill = Drill;
 exports.Droplet = Droplet;
 exports.DueDate = DueDate;
@@ -46758,6 +50859,8 @@ exports.Duplicate = Duplicate;
 exports.Ear = Ear;
 exports.EarHearing = EarHearing;
 exports.EarOff = EarOff;
+exports.Ebay = Ebay;
+exports.Edge = Edge;
 exports.Edit = Edit;
 exports.Egg2 = Egg2;
 exports.Electron = Electron;
@@ -46768,6 +50871,7 @@ exports.Equalizer = Equalizer;
 exports.Equals = Equals;
 exports.Eraser = Eraser;
 exports.Estimate = Estimate;
+exports.Etsy = Etsy;
 exports.Exam = Exam;
 exports.Experiment = Experiment;
 exports.Exposure = Exposure;
@@ -46777,6 +50881,7 @@ exports.Eye = Eye;
 exports.Eye2 = Eye2;
 exports.EyeOff = EyeOff;
 exports.FaceId = FaceId;
+exports.Facebook = Facebook;
 exports.Factory = Factory;
 exports.FastForward = FastForward;
 exports.Faucet = Faucet;
@@ -46785,6 +50890,7 @@ exports.Feed = Feed;
 exports.Feedback = Feedback;
 exports.Fence = Fence;
 exports.Fern = Fern;
+exports.Figma = Figma;
 exports.File = File;
 exports.FileArchive = FileArchive;
 exports.FileAudio = FileAudio;
@@ -46803,6 +50909,7 @@ exports.FilmSlate = FilmSlate;
 exports.Filter = Filter;
 exports.Fingerprint = Fingerprint;
 exports.FireTruck = FireTruck;
+exports.Firefox = Firefox;
 exports.Firewall = Firewall;
 exports.FirstAid = FirstAid;
 exports.Fish = Fish;
@@ -46852,13 +50959,17 @@ exports.Gift = Gift;
 exports.GitBranch = GitBranch;
 exports.GitCommit = GitCommit;
 exports.GitFork = GitFork;
+exports.GitLab = GitLab;
 exports.GitMerge = GitMerge;
 exports.GitPullRequest = GitPullRequest;
+exports.Github = Github;
 exports.Glasses = Glasses;
 exports.Globe = Globe;
 exports.Globe2 = Globe2;
 exports.Glue = Glue;
 exports.Golf = Golf;
+exports.Goodreads = Goodreads;
+exports.GoogleCloud = GoogleCloud;
 exports.Grab = Grab;
 exports.GrabCursor = GrabCursor;
 exports.Grabbing = Grabbing;
@@ -46945,6 +51056,7 @@ exports.Influencer = Influencer;
 exports.Info = Info;
 exports.InfoCircle = InfoCircle;
 exports.Ink = Ink;
+exports.Instagram = Instagram;
 exports.InternalLink = InternalLink;
 exports.Inventory = Inventory;
 exports.Inventory2 = Inventory2;
@@ -46969,6 +51081,7 @@ exports.Keyboard = Keyboard;
 exports.KeyboardNav = KeyboardNav;
 exports.Knife2 = Knife2;
 exports.Knob = Knob;
+exports.KoFi = KoFi;
 exports.Kpi = Kpi;
 exports.LabResults = LabResults;
 exports.Ladder = Ladder;
@@ -46993,6 +51106,7 @@ exports.Leaf = Leaf;
 exports.Leaf2 = Leaf2;
 exports.Lecture = Lecture;
 exports.LessThan = LessThan;
+exports.Letterboxd = Letterboxd;
 exports.Level = Level;
 exports.LevelUp = LevelUp;
 exports.Library = Library;
@@ -47002,9 +51116,12 @@ exports.LightbulbOff = LightbulbOff;
 exports.Lighthouse = Lighthouse;
 exports.Like = Like;
 exports.LikeFilled = LikeFilled;
+exports.Line = Line;
 exports.LineChart = LineChart;
+exports.Linear = Linear;
 exports.Link = Link;
 exports.Link2Off = Link2Off;
+exports.Linkedin = Linkedin;
 exports.Lion = Lion;
 exports.List = List;
 exports.Live = Live;
@@ -47037,12 +51154,14 @@ exports.Markdown = Markdown;
 exports.Marker = Marker;
 exports.Market = Market;
 exports.Martini = Martini;
+exports.Mastodon = Mastodon;
 exports.Maximize = Maximize;
 exports.Maximize2 = Maximize2;
 exports.Medal = Medal;
 exports.Medal2 = Medal2;
 exports.MedicalBag = MedicalBag;
 exports.MedicalCross = MedicalCross;
+exports.Medium = Medium;
 exports.Meeting = Meeting;
 exports.Meh = Meh;
 exports.Memory = Memory;
@@ -47056,6 +51175,8 @@ exports.MessageAi = MessageAi;
 exports.MessageCircle = MessageCircle;
 exports.MessageSquare = MessageSquare;
 exports.MessagesSquare = MessagesSquare;
+exports.Messenger = Messenger;
+exports.Meta = Meta;
 exports.Metric = Metric;
 exports.Mic = Mic;
 exports.MicOff = MicOff;
@@ -47071,6 +51192,7 @@ exports.Minus2 = Minus2;
 exports.MinusCircle = MinusCircle;
 exports.MinusSquare = MinusSquare;
 exports.Molecule = Molecule;
+exports.Monday = Monday;
 exports.Monitor = Monitor;
 exports.Moon = Moon;
 exports.MoreHorizontal = MoreHorizontal;
@@ -47092,7 +51214,10 @@ exports.NameBadge = NameBadge;
 exports.Navigation = Navigation;
 exports.Navigation2 = Navigation2;
 exports.Neon = Neon;
+exports.Netflix = Netflix;
 exports.NeuralNetwork = NeuralNetwork;
+exports.Nextjs = Nextjs;
+exports.Nodejs = Nodejs;
 exports.Noodles = Noodles;
 exports.NotAllowed = NotAllowed;
 exports.NotEqual = NotEqual;
@@ -47100,6 +51225,8 @@ exports.Notebook = Notebook;
 exports.Notebook2 = Notebook2;
 exports.NotebookPen = NotebookPen;
 exports.NotebookPen2 = NotebookPen2;
+exports.Notion = Notion;
+exports.Npm = Npm;
 exports.Nucleus = Nucleus;
 exports.Ocean = Ocean;
 exports.Octagon = Octagon;
@@ -47107,6 +51234,7 @@ exports.Odometer = Odometer;
 exports.Office = Office;
 exports.Ok = Ok;
 exports.OnHold = OnHold;
+exports.Opera = Opera;
 exports.OutOfStock = OutOfStock;
 exports.Outdent = Outdent;
 exports.Outlet = Outlet;
@@ -47133,8 +51261,10 @@ exports.Parking = Parking;
 exports.Partnership = Partnership;
 exports.Passport = Passport;
 exports.Passport2 = Passport2;
+exports.Patreon = Patreon;
 exports.Pause = Pause;
 exports.PauseCircle = PauseCircle;
+exports.Paypal = Paypal;
 exports.Peace = Peace;
 exports.Pebbles = Pebbles;
 exports.Pen = Pen;
@@ -47169,6 +51299,7 @@ exports.Pills = Pills;
 exports.Pinch = Pinch;
 exports.PineTree = PineTree;
 exports.Pinecone = Pinecone;
+exports.Pinterest = Pinterest;
 exports.Pitch = Pitch;
 exports.Pizza = Pizza;
 exports.Plane = Plane;
@@ -47240,6 +51371,7 @@ exports.Rainbow = Rainbow;
 exports.Rake = Rake;
 exports.Ram = Ram;
 exports.Rating = Rating;
+exports.ReactLogo = React4;
 exports.Reaction = Reaction;
 exports.Receipt = Receipt;
 exports.Receipt2 = Receipt2;
@@ -47249,6 +51381,7 @@ exports.Record = Record;
 exports.Recovery = Recovery;
 exports.Rectangle = Rectangle;
 exports.Recurring = Recurring;
+exports.Reddit = Reddit;
 exports.ReducedMotion = ReducedMotion;
 exports.Reference = Reference;
 exports.Refresh = Refresh;
@@ -47358,6 +51491,7 @@ exports.Ship = Ship;
 exports.Shipping = Shipping;
 exports.ShippingFast = ShippingFast;
 exports.Shirt = Shirt;
+exports.Shopify = Shopify;
 exports.ShoppingBag = ShoppingBag;
 exports.ShoppingBagPlus = ShoppingBagPlus;
 exports.ShoppingCart = ShoppingCart;
@@ -47373,6 +51507,7 @@ exports.Sigma = Sigma;
 exports.Sign = Sign;
 exports.SignLanguage = SignLanguage;
 exports.Signal = Signal;
+exports.SignalApp = SignalApp;
 exports.SignalHigh = SignalHigh;
 exports.SignalLow = SignalLow;
 exports.SignalZero = SignalZero;
@@ -47381,16 +51516,19 @@ exports.Sink = Sink;
 exports.Skiing = Skiing;
 exports.SkipBack = SkipBack;
 exports.SkipForward = SkipForward;
+exports.Slack = Slack;
 exports.Sleep = Sleep;
 exports.Slider = Slider;
 exports.SliderHorizontal = SliderHorizontal;
 exports.SliderVertical = SliderVertical;
 exports.Smartphone = Smartphone;
 exports.Smile = Smile;
+exports.Snapchat = Snapchat;
 exports.Snippet = Snippet;
 exports.Snowflake = Snowflake;
 exports.Soccer = Soccer;
 exports.Sofa = Sofa;
+exports.Soundcloud = Soundcloud;
 exports.Soup = Soup;
 exports.Spa = Spa;
 exports.Sparkles = Sparkles;
@@ -47402,12 +51540,14 @@ exports.Speaker3 = Speaker3;
 exports.SpeedDial = SpeedDial;
 exports.Speedometer = Speedometer;
 exports.Spoon2 = Spoon2;
+exports.Spotify = Spotify;
 exports.Spotlight = Spotlight;
 exports.Sprint = Sprint;
 exports.Sprout = Sprout;
 exports.Sqrt = Sqrt;
 exports.Square = Square;
 exports.Ssd = Ssd;
+exports.StackOverflow = StackOverflow;
 exports.Stakeholder = Stakeholder;
 exports.Stamp = Stamp;
 exports.Stamp2 = Stamp2;
@@ -47426,11 +51566,14 @@ exports.Store = Store;
 exports.StoreFront = StoreFront;
 exports.Story = Story;
 exports.Strategy = Strategy;
+exports.Strava = Strava;
 exports.Stream = Stream;
 exports.Strikethrough = Strikethrough;
+exports.Stripe = Stripe;
 exports.StudentId = StudentId;
 exports.Studio = Studio;
 exports.Subscript = Subscript;
+exports.Substack = Substack;
 exports.Subtask = Subtask;
 exports.Subtitle = Subtitle;
 exports.Sun = Sun;
@@ -47442,6 +51585,7 @@ exports.SurgeProtector = SurgeProtector;
 exports.Surprised = Surprised;
 exports.Survey = Survey;
 exports.Sushi = Sushi;
+exports.Svelte = Svelte;
 exports.Sweater = Sweater;
 exports.Swimming = Swimming;
 exports.SwitchOff = SwitchOff;
@@ -47458,6 +51602,7 @@ exports.Tag = Tag;
 exports.Tag2 = Tag2;
 exports.TagPerson = TagPerson;
 exports.Tags = Tags;
+exports.Tailwind = Tailwind;
 exports.Tape = Tape;
 exports.TapeMeasure = TapeMeasure;
 exports.Target = Target;
@@ -47466,6 +51611,8 @@ exports.Task = Task;
 exports.TaskCheck = TaskCheck;
 exports.TaskList = TaskList;
 exports.Team = Team;
+exports.Teams = Teams;
+exports.Telegram = Telegram;
 exports.Temperature = Temperature;
 exports.TemperatureDial = TemperatureDial;
 exports.Template = Template;
@@ -47486,10 +51633,12 @@ exports.Textbook = Textbook;
 exports.Thermometer = Thermometer;
 exports.Thermometer2 = Thermometer2;
 exports.ThermometerMedical = ThermometerMedical;
+exports.Threads = Threads;
 exports.ThumbsDown = ThumbsDown;
 exports.ThumbsUp = ThumbsUp;
 exports.Ticket = Ticket;
 exports.Tie = Tie;
+exports.Tiktok = Tiktok;
 exports.TimeTracking = TimeTracking;
 exports.Timeline = Timeline;
 exports.Timeline2 = Timeline2;
@@ -47513,6 +51662,7 @@ exports.Tree2 = Tree2;
 exports.TreePalm = TreePalm;
 exports.TreePine = TreePine;
 exports.Treemap = Treemap;
+exports.Trello = Trello;
 exports.Trending = Trending;
 exports.TrendingDown = TrendingDown;
 exports.TrendingUp = TrendingUp;
@@ -47523,9 +51673,12 @@ exports.Trophy2 = Trophy2;
 exports.Truck = Truck;
 exports.Tshirt = Tshirt;
 exports.Tulip = Tulip;
+exports.Tumblr = Tumblr;
 exports.Turtle = Turtle;
 exports.Tutor = Tutor;
 exports.Tv = Tv;
+exports.Twitch = Twitch;
+exports.Twitter = Twitter;
 exports.TwoFactor = TwoFactor;
 exports.TypescriptIcon = TypescriptIcon;
 exports.Ufo = Ufo;
@@ -47553,11 +51706,14 @@ exports.UtensilsCrossed = UtensilsCrossed;
 exports.Vaccine = Vaccine;
 exports.Variance = Variance;
 exports.Vault = Vault;
+exports.Vercel = Vercel;
 exports.Verified = Verified;
 exports.Verified2 = Verified2;
+exports.Viber = Viber;
 exports.Video = Video;
 exports.Video2 = Video2;
 exports.VideoOff = VideoOff;
+exports.Vimeo = Vimeo;
 exports.Vinyl = Vinyl;
 exports.Viral = Viral;
 exports.Virus = Virus;
@@ -47573,6 +51729,8 @@ exports.Volume2 = Volume2;
 exports.VolumeDial = VolumeDial;
 exports.VolumeOff = VolumeOff;
 exports.VolumeX = VolumeX;
+exports.Vscode = Vscode;
+exports.Vue = Vue;
 exports.WaitCursor = WaitCursor;
 exports.Walker = Walker;
 exports.Wallet = Wallet;
@@ -47590,7 +51748,9 @@ exports.Waves = Waves;
 exports.Waypoints = Waypoints;
 exports.Webcam = Webcam;
 exports.Webhook = Webhook;
+exports.Wechat = Wechat;
 exports.Weight = Weight;
+exports.Whatsapp = Whatsapp;
 exports.Wheelchair = Wheelchair;
 exports.Wheelchair2 = Wheelchair2;
 exports.Whisk = Whisk;
@@ -47611,10 +51771,13 @@ exports.X = X;
 exports.XCircle = XCircle;
 exports.XCircle2 = XCircle2;
 exports.XSquare = XSquare;
+exports.XTwitter = XTwitter;
 exports.Xml = Xml;
 exports.XpBar = XpBar;
 exports.Xray = Xray;
+exports.Youtube = Youtube;
 exports.Zap = Zap;
+exports.Zoom = Zoom;
 exports.animations = animations;
 exports.bounce = bounce;
 exports.cn = cn;
