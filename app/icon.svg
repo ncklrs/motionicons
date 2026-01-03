@@ -1,28 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
   <defs>
+    <!-- Background gradient - deep forest -->
     <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#065f46"/>
     </linearGradient>
-    <linearGradient id="star" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c7d2fe"/>
-      <stop offset="100%" stop-color="#ffffff"/>
+    <!-- Vine gradient -->
+    <linearGradient id="vine" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+    <!-- Leaf gradient -->
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#22c55e"/>
     </linearGradient>
   </defs>
 
-  <!-- Rounded square background -->
+  <!-- Background rounded square -->
   <rect width="32" height="32" rx="7" fill="url(#bg)"/>
 
-  <!-- Motion echo (subtle) -->
-  <g transform="translate(-1.5, 1.5)" opacity="0.35">
-    <path d="M16 7 L18.5 12.5 L24.5 13 L20 17 L21.5 23 L16 20 L10.5 23 L12 17 L7.5 13 L13.5 12.5 Z"
-          fill="white"/>
-  </g>
+  <!-- Main vine stem -->
+  <path
+    d="M10 24 C10 18, 10 14, 14 10 C16 8, 19 8, 22 9"
+    stroke="url(#vine)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    fill="none"
+  />
 
-  <!-- Main star -->
-  <path d="M16 7 L18.5 12.5 L24.5 13 L20 17 L21.5 23 L16 20 L10.5 23 L12 17 L7.5 13 L13.5 12.5 Z"
-        fill="url(#star)"/>
+  <!-- Tendril curl -->
+  <path
+    d="M22 9 C23 7, 25 7, 25 9"
+    stroke="url(#vine)"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    fill="none"
+  />
 
-  <!-- Tiny spark highlight -->
-  <circle cx="19" cy="11" r="1.2" fill="white"/>
+  <!-- Primary leaf -->
+  <path
+    d="M18 11 C20 8, 24 9, 23 13 C22 15, 19 14, 18 11"
+    fill="url(#leaf)"
+  />
+
+  <!-- Secondary leaf -->
+  <path
+    d="M12 17 C10 15, 11 13, 14 14 C15 15, 14 17, 12 17"
+    fill="url(#leaf)"
+    opacity="0.8"
+  />
+
+  <!-- Bud node -->
+  <circle cx="10" cy="24" r="1.5" fill="#86efac"/>
+
+  <!-- Highlight -->
+  <circle cx="20" cy="10.5" r="0.8" fill="white" opacity="0.6"/>
 </svg>
