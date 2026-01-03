@@ -1,15 +1,17 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
-import { motion } from "motion/react"
+import { motion, AnimatePresence } from "motion/react"
 import {
   Check, Heart, Star, Bell, Settings,
   Search, Refresh, Loader, ArrowRight,
   Menu, Copy, Download, Eye, Mail,
-  User, Home, Calendar
+  User, Home, Calendar, X
 } from "../src/icons"
 
 export default function HomePage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const features = [
     {
       icon: <Refresh size={24} />,
@@ -51,7 +53,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-void">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-void/80 backdrop-blur-xl border-b border-graphite">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 bg-electric rounded-sm flex items-center justify-center">
               <Star size={18} className="text-void" />
@@ -61,7 +63,8 @@ export default function HomePage() {
             </span>
           </Link>
 
-          <div className="flex items-center gap-8">
+          {/* Desktop navigation */}
+          <div className="hidden md:flex items-center gap-8">
             <Link
               href="/icons"
               className="text-sm text-silver hover:text-electric transition-colors"
@@ -82,7 +85,53 @@ export default function HomePage() {
               GitHub
             </a>
           </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-silver hover:text-electric transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile menu */}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden border-t border-graphite bg-void/95 backdrop-blur-xl overflow-hidden"
+            >
+              <div className="px-4 py-4 flex flex-col gap-2">
+                <Link
+                  href="/icons"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm text-silver hover:text-electric transition-colors py-2"
+                >
+                  Icons
+                </Link>
+                <Link
+                  href="/docs"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm text-silver hover:text-electric transition-colors py-2"
+                >
+                  Docs
+                </Link>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  className="text-sm text-silver hover:text-electric transition-colors py-2"
+                >
+                  GitHub
+                </a>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       {/* Hero Section */}

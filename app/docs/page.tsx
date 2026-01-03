@@ -1,15 +1,16 @@
 "use client"
 
 import Link from "next/link"
-import { motion } from "motion/react"
+import { motion, AnimatePresence } from "motion/react"
 import {
   Star, Check, ArrowRight, Copy, Heart, Settings,
-  Bell, Loader, Eye, Menu
+  Bell, Loader, Eye, Menu, X
 } from "../../src/icons"
 import { useState } from "react"
 
 export default function DocsPage() {
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const copyCode = (code: string, section: string) => {
     navigator.clipboard.writeText(code)
@@ -128,7 +129,7 @@ function App() {
     <div className="min-h-screen bg-void">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-void/80 backdrop-blur-xl border-b border-graphite">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 bg-electric rounded-sm flex items-center justify-center">
               <Star size={18} className="text-void" />
@@ -138,7 +139,8 @@ function App() {
             </span>
           </Link>
 
-          <div className="flex items-center gap-8">
+          {/* Desktop navigation */}
+          <div className="hidden md:flex items-center gap-8">
             <Link
               href="/icons"
               className="text-sm text-silver hover:text-electric transition-colors"
@@ -152,7 +154,46 @@ function App() {
               Docs
             </Link>
           </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-silver hover:text-electric transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile menu */}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden border-t border-graphite bg-void/95 backdrop-blur-xl overflow-hidden"
+            >
+              <div className="px-4 py-4 flex flex-col gap-2">
+                <Link
+                  href="/icons"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm text-silver hover:text-electric transition-colors py-2"
+                >
+                  Icons
+                </Link>
+                <Link
+                  href="/docs"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm text-electric py-2"
+                >
+                  Docs
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       <div className="pt-16 flex">
