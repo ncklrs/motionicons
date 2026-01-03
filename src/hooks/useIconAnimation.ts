@@ -251,26 +251,38 @@ export function useIconAnimation(
 
 
     // Variants for draw - starts fully visible, redraws on hover
+    // Note: transition must be inside the variant for keyframe arrays to work
     const drawVariants: Variants = {
       initial: { pathLength: 1, opacity: 1 },
       hover: {
         pathLength: [1, 0, 1],
-        opacity: 1
+        opacity: 1,
+        transition: {
+          duration: 1.2,
+          ease: 'easeInOut',
+          times: [0, 0.5, 1]
+        }
       }
     };
 
     // Variants for inView - draws in when scrolled into view
     const drawInViewVariants: Variants = {
       initial: { pathLength: 0, opacity: 0.3 },
-      hover: { pathLength: 1, opacity: 1 }
+      hover: {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          ease: 'easeInOut'
+        }
+      }
     };
 
     switch (trigger) {
       case 'hover':
         return {
           variants: drawVariants,
-          initial: 'initial',
-          transition: { duration: 0.8, ease: 'easeInOut' as const }
+          initial: 'initial'
         };
 
       case 'loop':
@@ -295,8 +307,7 @@ export function useIconAnimation(
       case 'inView':
         return {
           variants: drawInViewVariants,
-          initial: 'initial',
-          transition: drawTransition
+          initial: 'initial'
         };
 
       default:
