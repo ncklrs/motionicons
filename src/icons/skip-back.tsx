@@ -9,7 +9,7 @@ export const SkipBack = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'translate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,8 +32,8 @@ export const SkipBack = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.polygon points="19 20 9 12 19 4 19 20" {...(isDraw ? pathAnimationProps : {})} />
-      <motion.line x1="5" y1="19" x2="5" y2="5" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M19 20L9 12l10-8v16z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M5 19V5" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

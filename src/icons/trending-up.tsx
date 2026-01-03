@@ -9,7 +9,7 @@ export const TrendingUp = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'draw',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,8 +32,8 @@ export const TrendingUp = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.polyline points="22 7 13.5 15.5 8.5 10.5 2 17" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.polyline points="16 7 22 7 22 13" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M22 7l-8.5 8.5-5-5L2 17" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M16 7h6v6" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

@@ -32,8 +32,8 @@ export const AtSign = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.circle cx="12" cy="12" r="4" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

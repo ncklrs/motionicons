@@ -9,7 +9,7 @@ export const FastForward = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'translate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,8 +32,8 @@ export const FastForward = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.polygon points="13 19 22 12 13 5 13 19" {...(isDraw ? pathAnimationProps : {})} />
-      <motion.polygon points="2 19 11 12 2 5 2 19" {...(isDraw ? pathAnimationProps : {})} />
+      <motion.path d="M2 5l9 7-9 7V5z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M13 5l9 7-9 7V5z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

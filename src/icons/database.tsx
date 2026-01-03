@@ -32,9 +32,9 @@ export const Database = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.ellipse cx="12" cy="5" rx="9" ry="3" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.path d="M3 5v14a9 3 0 0 0 18 0V5" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.path d="M3 12a9 3 0 0 0 18 0" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M12 2C16.4183 2 20 3.79086 20 6V18C20 20.2091 16.4183 22 12 22C7.58172 22 4 20.2091 4 18V6C4 3.79086 7.58172 2 12 2Z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M20 12C20 14.2091 16.4183 16 12 16C7.58172 16 4 14.2091 4 12" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M20 6C20 8.20914 16.4183 10 12 10C7.58172 10 4 8.20914 4 6" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

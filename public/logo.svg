@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <!-- Primary gradient -->
+    <linearGradient id="primary" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+
+    <!-- Echo gradient (faded) -->
+    <linearGradient id="echo1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="echo2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Motion echo 2 (furthest) -->
+  <g transform="translate(-16, 16)">
+    <path d="M100 30 L118 72 L164 76 L130 108 L140 154 L100 130 L60 154 L70 108 L36 76 L82 72 Z"
+          fill="url(#echo2)"/>
+  </g>
+
+  <!-- Motion echo 1 -->
+  <g transform="translate(-8, 8)">
+    <path d="M100 30 L118 72 L164 76 L130 108 L140 154 L100 130 L60 154 L70 108 L36 76 L82 72 Z"
+          fill="url(#echo1)"/>
+  </g>
+
+  <!-- Main star -->
+  <path d="M100 30 L118 72 L164 76 L130 108 L140 154 L100 130 L60 154 L70 108 L36 76 L82 72 Z"
+        fill="url(#primary)"/>
+
+  <!-- Highlight spark -->
+  <circle cx="118" cy="58" r="4" fill="white" opacity="0.9"/>
+  <circle cx="108" cy="48" r="2" fill="white" opacity="0.6"/>
+</svg>

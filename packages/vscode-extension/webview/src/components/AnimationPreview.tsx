@@ -278,6 +278,7 @@ export function AnimationPreview({
       }, 50);
       return () => clearTimeout(timer);
     }
+    return undefined;
   }, [trigger, hasPlayed]);
 
   // Animation classes

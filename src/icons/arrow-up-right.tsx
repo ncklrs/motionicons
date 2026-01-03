@@ -9,7 +9,7 @@ export const ArrowUpRight = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'translate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,8 +32,8 @@ export const ArrowUpRight = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.line x1="7" y1="17" x2="17" y2="7" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.polyline points="7 7 17 7 17 17" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M7 17L17 7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M7 7h10v10" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

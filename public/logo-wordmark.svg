@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="echoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="60%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon mark -->
+  <g transform="translate(4, 4)">
+    <!-- Motion echo -->
+    <g transform="translate(-2, 2)" opacity="0.35">
+      <path d="M20 4 L24 12 L33 12.5 L27 18 L28.5 27 L20 22.5 L11.5 27 L13 18 L7 12.5 L16 12 Z"
+            fill="url(#iconGrad)"/>
+    </g>
+    <!-- Main star -->
+    <path d="M20 4 L24 12 L33 12.5 L27 18 L28.5 27 L20 22.5 L11.5 27 L13 18 L7 12.5 L16 12 Z"
+          fill="url(#iconGrad)"/>
+    <!-- Spark -->
+    <circle cx="24.5" cy="10" r="1.5" fill="white" opacity="0.9"/>
+  </g>
+
+  <!-- Wordmark: LivelyIcons -->
+  <text x="52" y="33" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="url(#textGrad)">Lively</tspan><tspan fill="#e2e8f0">Icons</tspan>
+  </text>
+</svg>

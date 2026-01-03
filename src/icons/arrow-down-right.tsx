@@ -9,7 +9,7 @@ export const ArrowDownRight = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'translate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,8 +32,8 @@ export const ArrowDownRight = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.line x1="7" y1="7" x2="17" y2="17" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.polyline points="17 7 17 17 7 17" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M7 7l10 10" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M17 7v10H7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

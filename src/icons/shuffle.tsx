@@ -9,7 +9,7 @@ export const Shuffle = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'shake',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,11 +32,8 @@ export const Shuffle = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.polyline points="16 3 21 3 21 8" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.line x1="4" y1="20" x2="21" y2="3" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.polyline points="21 16 21 21 16 21" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.line x1="15" y1="15" x2="21" y2="21" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.line x1="4" y1="4" x2="9" y2="9" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M16 3h5v5M4 20L21 3" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M21 16v5h-5M15 15l6 6M4 4l5 5" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

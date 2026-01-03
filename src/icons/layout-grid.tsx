@@ -32,14 +32,10 @@ export const LayoutGrid = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      {/* Top left square */}
-      <motion.rect x="3" y="3" width="7" height="7" rx="1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      {/* Top right square */}
-      <motion.rect x="14" y="3" width="7" height="7" rx="1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      {/* Bottom left square */}
-      <motion.rect x="3" y="14" width="7" height="7" rx="1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      {/* Bottom right square */}
-      <motion.rect x="14" y="14" width="7" height="7" rx="1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="3" y="3" width="7" height="7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="14" y="3" width="7" height="7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="14" y="14" width="7" height="7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="3" y="14" width="7" height="7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

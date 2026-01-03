@@ -9,7 +9,7 @@ export const Rewind = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'translate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {
@@ -32,8 +32,8 @@ export const Rewind = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      <motion.polygon points="11 19 2 12 11 5 11 19" {...(isDraw ? pathAnimationProps : {})} />
-      <motion.polygon points="22 19 13 12 22 5 22 19" {...(isDraw ? pathAnimationProps : {})} />
+      <motion.path d="M11 5L2 12l9 7V5z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.path d="M22 5l-9 7 9 7V5z" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

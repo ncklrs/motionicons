@@ -1,15 +1,22 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ncklrs/motionicons/main/.github/logo-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ncklrs/motionicons/main/.github/logo-light.svg">
-  <img alt="MotionIcons" src="https://raw.githubusercontent.com/ncklrs/motionicons/main/.github/logo-dark.svg" width="320">
-</picture>
+<p align="center">
+  <img src="public/logo.svg" width="80" alt="LivelyIcons" />
+</p>
 
-# MotionIcons
+<h1 align="center">LivelyIcons</h1>
 
-A comprehensive library of **350 animated SVG icons** powered by [Motion](https://motion.dev) for React. Beautiful, customizable icons with built-in animations that bring your UI to life.
+<p align="center">
+  A comprehensive library of <strong>350 animated SVG icons</strong> powered by <a href="https://motion.dev">Motion</a> for React.<br/>
+  Beautiful, customizable icons with built-in animations that bring your UI to life.
+</p>
 
-[![npm version](https://img.shields.io/npm/v/motionicon.svg)](https://www.npmjs.com/package/motionicon)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a href="https://www.npmjs.com/package/livelyicons">
+    <img src="https://img.shields.io/npm/v/livelyicons.svg" alt="npm version" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" />
+  </a>
+</p>
 
 ## Features
 
@@ -25,17 +32,17 @@ A comprehensive library of **350 animated SVG icons** powered by [Motion](https:
 ## Installation
 
 ```bash
-npm install motionicon motion react react-dom
+npm install livelyicons motion react react-dom
 # or
-pnpm add motionicon motion react react-dom
+pnpm add livelyicons motion react react-dom
 # or
-yarn add motionicon motion react react-dom
+yarn add livelyicons motion react react-dom
 ```
 
 ## Quick Start
 
 ```tsx
-import { Heart, Star, Bell } from 'motionicon'
+import { Heart, Star, Bell } from 'livelyicons'
 
 function App() {
   return (
@@ -85,11 +92,29 @@ interface IconProps {
   size?: number              // Icon size in pixels (default: 24)
   strokeWidth?: number       // Stroke width (default: 2)
   className?: string         // Additional CSS classes
-  lively?: MotionType    // Animation type
+  lively?: MotionType        // Animation type
   trigger?: TriggerType      // When to trigger animation
   animated?: boolean         // Enable/disable animations
   'aria-label'?: string      // Accessibility label
 }
+```
+
+## CLI
+
+LivelyIcons includes a CLI for quick icon discovery:
+
+```bash
+# Search for icons by name (fuzzy matching)
+npx livelyicons search arrow
+
+# List all available icons
+npx livelyicons list
+
+# Copy import statement to clipboard
+npx livelyicons copy Heart
+
+# Get icon details
+npx livelyicons info Star
 ```
 
 ## Global Configuration
@@ -97,7 +122,7 @@ interface IconProps {
 Use `IconProvider` to set defaults for all icons in your app:
 
 ```tsx
-import { IconProvider, Heart, Star } from 'motionicon'
+import { IconProvider, Heart, Star } from 'livelyicons'
 
 function App() {
   return (
@@ -116,7 +141,7 @@ function App() {
 
 ## Accessibility
 
-MotionIcons respects `prefers-reduced-motion` by default. You can also manually control animations:
+LivelyIcons respects `prefers-reduced-motion` by default. You can also manually control animations:
 
 ```tsx
 // Disable animations for this icon
@@ -128,7 +153,7 @@ MotionIcons respects `prefers-reduced-motion` by default. You can also manually 
 
 ## Available Icons
 
-MotionIcons includes 350 icons across categories:
+LivelyIcons includes 350 icons across categories:
 
 - **Navigation** — Arrows, chevrons, menu, home
 - **Actions** — Check, close, edit, save, trash

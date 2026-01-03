@@ -32,16 +32,8 @@ export const LayoutList = ({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
-      {/* Top row - icon area */}
-      <motion.rect x="3" y="3" width="7" height="7" rx="1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      {/* Top row - content lines */}
-      <motion.line x1="14" y1="4" x2="21" y2="4" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.line x1="14" y1="9" x2="21" y2="9" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      {/* Bottom row - icon area */}
-      <motion.rect x="3" y="14" width="7" height="7" rx="1" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      {/* Bottom row - content lines */}
-      <motion.line x1="14" y1="15" x2="21" y2="15" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
-      <motion.line x1="14" y1="20" x2="21" y2="20" {...(isDraw ? pathAnimationProps : {})}  pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="3" y="3" width="18" height="7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
+      <motion.rect x="3" y="14" width="18" height="7" {...(isDraw ? pathAnimationProps : {})} pathLength={1} className={isDraw ? 'draw-path' : ''}/>
     </motion.svg>
   )
 }

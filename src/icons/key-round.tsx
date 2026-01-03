@@ -9,7 +9,7 @@ export const KeyRound = ({
   strokeWidth = 2,
   className,
   animated,
-  lively = 'scale',
+  lively = 'rotate',
   trigger = 'hover',
   'aria-label': ariaLabel
 }: IconProps) => {

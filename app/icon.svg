@@ -1,16 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1"/>
-      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="star" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#ffffff"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="url(#grad)"/>
-  <g fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Motion lines -->
-    <path d="M8 12 L8 20" opacity="0.4"/>
-    <path d="M11 10 L11 22" opacity="0.6"/>
-    <!-- Play/motion symbol -->
-    <path d="M15 10 L15 22 L24 16 Z" fill="white" stroke="none"/>
+
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+
+  <!-- Motion echo (subtle) -->
+  <g transform="translate(-1.5, 1.5)" opacity="0.35">
+    <path d="M16 7 L18.5 12.5 L24.5 13 L20 17 L21.5 23 L16 20 L10.5 23 L12 17 L7.5 13 L13.5 12.5 Z"
+          fill="white"/>
   </g>
+
+  <!-- Main star -->
+  <path d="M16 7 L18.5 12.5 L24.5 13 L20 17 L21.5 23 L16 20 L10.5 23 L12 17 L7.5 13 L13.5 12.5 Z"
+        fill="url(#star)"/>
+
+  <!-- Tiny spark highlight -->
+  <circle cx="19" cy="11" r="1.2" fill="white"/>
 </svg>

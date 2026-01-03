@@ -9,6 +9,7 @@ import {
   Menu, Copy, Download, Eye, Mail,
   User, Home, Calendar, X
 } from "../src/icons"
+import { LogoWithText } from "./components/Logo"
 
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -54,13 +55,8 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-void/80 backdrop-blur-xl border-b border-graphite">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-electric rounded-sm flex items-center justify-center">
-              <Star size={18} className="text-void" />
-            </div>
-            <span className="font-display font-bold text-lg text-bone">
-              LivelyIcons
-            </span>
+          <Link href="/">
+            <LogoWithText iconSize={32} />
           </Link>
 
           {/* Desktop navigation */}

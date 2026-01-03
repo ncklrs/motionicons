@@ -5,7 +5,6 @@ import type {
   WebviewMessage,
   CodeGenerationOptions,
   IconData,
-  ExtractedIcon,
   TriggerType,
   MotionType,
 } from './types';
@@ -416,37 +415,6 @@ export class IconPickerPanel {
   }
 
   /**
-   * Generate React code for an icon (legacy method for compatibility)
-   * @deprecated Use _generateJsxCode for JSX only, with separate import handling
-   */
-  private _generateCode(options: CodeGenerationOptions): string {
-    const { iconName, includeImport, importStyle } = options;
-
-    const lines: string[] = [];
-
-    // Add import statement if requested
-    if (includeImport) {
-      switch (importStyle) {
-        case 'named':
-          lines.push(`import { ${iconName} } from 'motionicon'`);
-          break;
-        case 'default':
-          lines.push(`import ${iconName} from 'motionicon/icons/${iconName}'`);
-          break;
-        case 'namespace':
-          lines.push(`import * as MotionIcons from 'motionicon'`);
-          break;
-      }
-      lines.push('');
-    }
-
-    // Generate JSX
-    lines.push(this._generateJsxCode(options));
-
-    return lines.join('\n');
-  }
-
-  /**
    * Add an icon to favorites
    */
   private async _addFavorite(iconId: string): Promise<void> {
@@ -503,8 +471,6 @@ export class IconPickerPanel {
    * Generate the HTML content for the webview
    */
   private _getHtmlForWebview(): string {
-    const webview = this._panel.webview;
-
     // Try to load the built webview app (built to dist/webview by vite)
     const webviewDistPath = path.join(
       this._extensionUri.fsPath,
