@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { motion } from "motion/react"
 import {
-  Monitor, PenTool, ArrowRight, Check, Download
+  Monitor, PenTool, ArrowRight, Check
 } from "../../src/icons"
 import { Navigation } from "../components/Navigation"
 import { LogoWithText } from "../components/Logo"
