@@ -24,7 +24,7 @@
 ## Features
 
 - **1300+ Icons** — Comprehensive icon set covering UI, navigation, media, commerce, and more
-- **9 Motion Types** — Scale, rotate, translate, shake, pulse, bounce, draw, spin, and none
+- **14 Motion Types** — Scale, rotate, translate, shake, pulse, bounce, draw, spin, ring, wiggle, heartbeat, swing, float, and none
 - **4 Trigger Modes** — Hover, loop, mount, and inView animations
 - **Fully Typed** — Complete TypeScript support with exported types
 - **Tree Shakeable** — Import only what you need ([see proof](#bundle-size))
@@ -127,6 +127,11 @@ function App() {
 | `bounce` | Bounces up and down |
 | `draw` | SVG path drawing effect |
 | `spin` | Continuous spinning |
+| `ring` | Bell-like oscillation |
+| `wiggle` | Playful side-to-side shake |
+| `heartbeat` | Organic pulse rhythm |
+| `swing` | Pendulum swing from top |
+| `float` | Gentle vertical bobbing |
 | `none` | No animation |
 
 ## Trigger Modes
