@@ -16,6 +16,11 @@ export type MotionType =
   | 'bounce'     // Bouncy spring effect
   | 'draw'       // SVG path drawing effect
   | 'spin'       // Continuous rotation
+  | 'ring'       // Bell swing from top pivot
+  | 'wiggle'     // Damped rotation oscillation
+  | 'heartbeat'  // Double-pulse scale effect
+  | 'swing'      // Pendulum swing effect
+  | 'float'      // Gentle vertical hover
   | 'none';      // No animation
 
 /**

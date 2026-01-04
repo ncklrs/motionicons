@@ -14,6 +14,9 @@ import {
   Star,
   Menu,
   X,
+  Tag,
+  Cloud,
+  Zap,
 } from "../../src/icons";
 import { useState } from "react";
 import { Navigation } from "../components/Navigation";
@@ -83,15 +86,20 @@ function App() {
   )
 }`;
 
-  const livelysCode = `// 9 lively types available
+  const livelysCode = `// 14 lively types available
 <Star lively="scale" />      // Grow/shrink (default)
 <Settings lively="rotate" /> // Spin rotation
 <ArrowRight lively="translate" /> // Slide movement
 <Bell lively="shake" />      // Shake/wobble
-<Heart lively="pulse" />     // Heartbeat pulse
+<Heart lively="pulse" />     // Pulse effect
 <Check lively="bounce" />    // Spring bounce
 <Eye lively="draw" />        // SVG path draw
 <Loader lively="spin" />     // Continuous spin
+<Bell lively="ring" />       // Bell swing
+<Zap lively="wiggle" />      // Playful wiggle
+<Heart lively="heartbeat" /> // Double pulse
+<Tag lively="swing" />       // Pendulum swing
+<Cloud lively="float" />     // Gentle hover
 <Menu lively="none" />       // No animation`;
 
   const triggerModesCode = `// 4 trigger modes
@@ -748,6 +756,11 @@ function LikeButton({ liked }: { liked: boolean }) {
       icon: Loader,
       desc: "Continuous spin",
     },
+    { name: "Ring", type: "ring" as const, icon: Bell, desc: "Bell swing" },
+    { name: "Wiggle", type: "wiggle" as const, icon: Zap, desc: "Playful wiggle" },
+    { name: "Heartbeat", type: "heartbeat" as const, icon: Heart, desc: "Double pulse" },
+    { name: "Swing", type: "swing" as const, icon: Tag, desc: "Pendulum swing" },
+    { name: "Float", type: "float" as const, icon: Cloud, desc: "Gentle hover" },
     { name: "None", type: "none" as const, icon: Menu, desc: "No animation" },
   ];
 
@@ -792,7 +805,7 @@ function LikeButton({ liked }: { liked: boolean }) {
               Getting Started
             </h1>
             <p className="text-silver text-lg mb-12">
-              350+ animated icons with 9 motion types and 4 trigger modes for
+              1300+ animated icons with 14 motion types and 4 trigger modes for
               React.
             </p>
           </motion.div>
@@ -935,12 +948,12 @@ function LikeButton({ liked }: { liked: boolean }) {
               Motion Types
             </h2>
             <p className="text-silver mb-6">
-              Choose from 9 distinct animation styles using the{" "}
+              Choose from 14 distinct animation styles using the{" "}
               <code className="text-electric">lively</code> prop:
             </p>
 
             {/* Interactive Demo Grid */}
-            <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-3 mb-8">
+            <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 gap-3 mb-8">
               {livelys.map((item) => (
                 <div key={item.name} className="group text-center">
                   <div className="aspect-square bg-carbon border border-graphite hover:border-electric/50 flex items-center justify-center cursor-pointer transition-colors">
@@ -960,7 +973,7 @@ function LikeButton({ liked }: { liked: boolean }) {
 
             <CodeBlock code={livelysCode} section="livelys" />
 
-            <div className="mt-8 grid sm:grid-cols-3 gap-4">
+            <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-carbon border border-graphite p-4">
                 <h4 className="text-sm font-semibold text-bone mb-2">
                   Transform
@@ -973,7 +986,13 @@ function LikeButton({ liked }: { liked: boolean }) {
                 <h4 className="text-sm font-semibold text-bone mb-2">
                   Emphasis
                 </h4>
-                <p className="text-xs text-silver">pulse, bounce</p>
+                <p className="text-xs text-silver">pulse, bounce, heartbeat</p>
+              </div>
+              <div className="bg-carbon border border-graphite p-4">
+                <h4 className="text-sm font-semibold text-bone mb-2">
+                  Playful
+                </h4>
+                <p className="text-xs text-silver">ring, wiggle, swing, float</p>
               </div>
               <div className="bg-carbon border border-graphite p-4">
                 <h4 className="text-sm font-semibold text-bone mb-2">
@@ -1224,7 +1243,8 @@ function LikeButton({ liked }: { liked: boolean }) {
             <div className="bg-carbon border border-graphite p-4">
               <code className="text-sm text-ghost">
                 "scale" | "rotate" | "translate" | "shake" | "pulse" | "bounce"
-                | "draw" | "spin" | "none"
+                | "draw" | "spin" | "ring" | "wiggle" | "heartbeat" | "swing"
+                | "float" | "none"
               </code>
             </div>
 
@@ -1348,7 +1368,7 @@ function LikeButton({ liked }: { liked: boolean }) {
                       </td>
                     </tr>
                     <tr className="border-b border-graphite/50">
-                      <td className="py-3 px-4">9 Motion Types</td>
+                      <td className="py-3 px-4">14 Motion Types</td>
                       <td className="py-3 px-4 text-center">
                         <Check size={16} className="text-electric mx-auto" />
                       </td>

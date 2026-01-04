@@ -7,7 +7,7 @@ const baseUrl = "https://livelyicons.com";
 export const metadata: Metadata = {
   title: "Documentation — Installation, Usage & API Reference",
   description:
-    "Complete guide to using LivelyIcons. Learn installation via npm/pnpm/yarn, basic usage, animation types (scale, rotate, pulse, draw, spin), trigger modes, IconProvider configuration, and customization options.",
+    "Complete guide to using LivelyIcons. Learn installation via npm/pnpm/yarn, basic usage, 14 animation types (scale, rotate, pulse, bounce, draw, spin, ring, wiggle, heartbeat, swing, float), trigger modes, IconProvider configuration, and customization options.",
   keywords: [
     "livelyicons documentation",
     "react icon library docs",
@@ -70,7 +70,7 @@ const faqJsonLd = {
       name: "What animation types are available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "LivelyIcons supports 9 animation types: scale, rotate, translate, shake, pulse, bounce, draw, spin, and none. Each can be triggered on hover, loop, mount, or when in view.",
+        text: "LivelyIcons supports 14 animation types: scale, rotate, translate, shake, pulse, bounce, draw, spin, ring, wiggle, heartbeat, swing, float, and none. Each can be triggered on hover, loop, mount, or when in view.",
       },
     },
     {

@@ -108,6 +108,16 @@ export const cssKeyframes = `
   50% { transform: translateY(-8px); }
 }
 
+/* Ring animation (bell swing) */
+@keyframes motionicon-ring {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-12deg); }
+  45% { transform: rotate(8deg); }
+  60% { transform: rotate(-6deg); }
+  75% { transform: rotate(3deg); }
+}
+
 /* Path drawing animation for SVG strokes */
 @keyframes motionicon-draw-path {
   0% { stroke-dashoffset: var(--path-length, 100); opacity: 0.3; }
@@ -203,6 +213,11 @@ export const cssAnimationClasses = `
   animation: motionicon-swing 0.6s ease;
 }
 
+/* Ring on hover (bell swing) */
+.motionicon-ring:hover {
+  animation: motionicon-ring 0.6s ease;
+}
+
 /* Float continuous */
 .motionicon-float {
   animation: motionicon-float 1.5s ease-in-out infinite;
@@ -253,6 +268,7 @@ export const cssAnimationClasses = `
   .motionicon-spin,
   .motionicon-fade,
   .motionicon-pop,
+  .motionicon-ring,
   .motionicon-wiggle,
   .motionicon-heartbeat,
   .motionicon-swing,
@@ -282,12 +298,12 @@ export const motionTypeToCssClass: Record<string, string> = {
   spin: 'motionicon-spin',
   fade: 'motionicon-fade',
   pop: 'motionicon-pop',
-  none: '',
-  // Custom presets
+  ring: 'motionicon-ring',
   wiggle: 'motionicon-wiggle',
   heartbeat: 'motionicon-heartbeat',
   swing: 'motionicon-swing',
-  float: 'motionicon-float'
+  float: 'motionicon-float',
+  none: ''
 };
 
 /**

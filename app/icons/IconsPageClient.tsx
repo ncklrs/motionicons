@@ -45,7 +45,7 @@ const fuseOptions = {
 
 const fuse = new Fuse(iconEntries, fuseOptions)
 
-const animationTypes: MotionType[] = ['scale', 'rotate', 'translate', 'shake', 'pulse', 'bounce', 'draw', 'spin', 'none']
+const animationTypes: MotionType[] = motionTypeList.map(t => t.type)
 
 // Generate code for different formats
 function generateCode(iconName: string, size: number, strokeWidth: number, lively: MotionType, format: ExportFormat): string {

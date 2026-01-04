@@ -20,7 +20,7 @@ const iconEntries = Object.entries(Icons)
     component: component as React.ComponentType<{ size?: number; strokeWidth?: number; lively?: MotionType; trigger?: TriggerType; className?: string }>
   }))
 
-const animationTypes: MotionType[] = ['scale', 'rotate', 'translate', 'shake', 'pulse', 'bounce', 'draw', 'spin', 'none']
+const animationTypes: MotionType[] = motionTypeList.map(t => t.type)
 const triggerTypes: TriggerType[] = ['hover', 'loop', 'mount', 'inView']
 
 // Generate code for different formats

@@ -8,7 +8,7 @@ const baseUrl = "https://livelyicons.com";
 export const metadata: Metadata = {
   title: "LivelyIcons — Animated React Icon Library with Motion",
   description:
-    "A comprehensive React icon library with 1300+ beautifully animated SVG icons. Built-in hover animations, 9 motion types (scale, rotate, pulse, draw, spin), tree-shakeable, TypeScript-first, and accessible by default.",
+    "A comprehensive React icon library with 1300+ beautifully animated SVG icons. Built-in hover animations, 14 motion types (scale, rotate, pulse, bounce, draw, spin, ring, wiggle, heartbeat, swing, float), tree-shakeable, TypeScript-first, and accessible by default.",
   alternates: {
     canonical: baseUrl,
   },

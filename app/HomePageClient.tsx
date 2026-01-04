@@ -6,7 +6,8 @@ import {
   Check, Heart, Star, Bell, Settings,
   Search, Refresh, Loader, ArrowRight,
   Copy, Download, Eye, Mail,
-  User, Home, Calendar, Menu
+  User, Home, Calendar, Menu,
+  Tag, Cloud, Zap
 } from "../src/icons"
 import { Navigation } from "./components/Navigation"
 
@@ -34,19 +35,20 @@ export default function HomePageClient() {
     }
   ]
 
-  const codeExample = `import { Heart, Loader, Star } from 'lively-icons'
+  const codeExample = `import { Heart, Bell, Star } from 'lively-icons'
 
-// 9 lively types × 4 trigger modes
-<Heart lively="pulse" />
-<Star lively="scale" trigger="hover" />
-<Loader lively="spin" trigger="loop" />
+// 14 lively types × 4 trigger modes
+<Heart lively="heartbeat" />
+<Bell lively="ring" trigger="hover" />
+<Star lively="wiggle" trigger="hover" />
 
 // Trigger modes:
 // hover (default), loop, mount, inView
 
 // Lively types:
-// scale, rotate, translate, shake
-// pulse, bounce, draw, spin, none`
+// scale, rotate, translate, shake, pulse
+// bounce, draw, spin, ring, wiggle
+// heartbeat, swing, float, none`
 
   return (
     <div className="min-h-screen bg-void">
@@ -70,7 +72,7 @@ export default function HomePageClient() {
             className="mb-8"
           >
             <span className="tag tag-electric">
-              1300+ Icons • 9 Motion Types
+              1300+ Icons • 14 Motion Types
             </span>
           </motion.div>
 
@@ -236,11 +238,11 @@ export default function HomePageClient() {
           <div className="text-center mb-16">
             <span className="tag mb-4 inline-block">Animation Types</span>
             <h2 className="font-display text-4xl font-bold text-bone">
-              9 distinct animation styles
+              14 distinct animation styles
             </h2>
           </div>
 
-          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-4">
+          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 gap-4">
             {[
               { name: 'Scale', icon: Star, type: 'scale' as const },
               { name: 'Rotate', icon: Settings, type: 'rotate' as const },
@@ -250,6 +252,11 @@ export default function HomePageClient() {
               { name: 'Bounce', icon: Check, type: 'bounce' as const },
               { name: 'Draw', icon: Eye, type: 'draw' as const },
               { name: 'Spin', icon: Loader, type: 'spin' as const },
+              { name: 'Ring', icon: Bell, type: 'ring' as const },
+              { name: 'Wiggle', icon: Zap, type: 'wiggle' as const },
+              { name: 'Heartbeat', icon: Heart, type: 'heartbeat' as const },
+              { name: 'Swing', icon: Tag, type: 'swing' as const },
+              { name: 'Float', icon: Cloud, type: 'float' as const },
               { name: 'None', icon: Menu, type: 'none' as const },
             ].map((item, i) => (
               <motion.div
@@ -290,7 +297,7 @@ export default function HomePageClient() {
               <span className="gradient-text"> animated icons</span>
             </h2>
             <p className="text-lg text-silver mb-10 max-w-2xl mx-auto">
-              1300+ beautifully crafted icons with 9 motion types, ready to bring life to your React applications.
+              1300+ beautifully crafted icons with 14 motion types, ready to bring life to your React applications.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
