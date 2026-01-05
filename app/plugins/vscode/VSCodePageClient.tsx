@@ -98,7 +98,7 @@ export default function VSCodePageClient() {
               <div className="inline-flex items-center gap-2 bg-[#007ACC]/20 border border-[#007ACC]/30 px-4 py-2 mb-8">
                 <Monitor size={18} className="text-[#007ACC]" />
                 <span className="text-sm text-[#007ACC] font-medium">
-                  VS Code Extension - Coming Soon
+                  VS Code Extension
                 </span>
               </div>
 
@@ -114,9 +114,15 @@ export default function VSCodePageClient() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <span className="btn-primary flex items-center justify-center gap-2 opacity-60 cursor-not-allowed">
-                  Coming Soon
-                </span>
+                <a
+                  href="https://marketplace.visualstudio.com/items?itemName=livelyicons.livelyicons-picker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary flex items-center justify-center gap-2"
+                >
+                  <Download size={18} />
+                  Install Extension
+                </a>
                 <a
                   href="https://github.com/livelyicons/icons"
                   target="_blank"
@@ -445,9 +451,15 @@ export default function VSCodePageClient() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <span className="btn-primary flex items-center justify-center gap-2 opacity-60 cursor-not-allowed">
-                  Coming Soon
-                </span>
+                <a
+                  href="https://marketplace.visualstudio.com/items?itemName=livelyicons.livelyicons-picker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary flex items-center justify-center gap-2"
+                >
+                  <Download size={18} />
+                  Install Extension
+                </a>
                 <Link
                   href="/plugins/figma"
                   className="btn-secondary flex items-center justify-center gap-2"
