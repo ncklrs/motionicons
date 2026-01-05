@@ -350,7 +350,7 @@ export default function FigmaPageClient() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="bg-void border border-graphite p-6 hover:border-[#a259ff]/30 transition-colors group"
                 >
-                  <div className="w-12 h-12 bg-graphite border border-[#a259ff]/20 flex items-center justify-center mb-4 group-hover:border-[#a259ff]/40 transition-colors">
+                  <div className="w-12 h-12 flex items-center justify-center mb-4">
                     <feature.icon size={24} className="text-[#a259ff]" />
                   </div>
                   <h3 className="font-display font-semibold text-bone mb-2">
